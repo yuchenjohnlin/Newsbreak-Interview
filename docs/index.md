@@ -17,4 +17,5 @@ Working notes & design record for the topic page generator.
 
 ## Open issues / to-think
 <!-- Drop questions here as they come up, then promote them to ADRs. -->
-TODO
+- [ ] **Decide tech stack** — leaning Python; write up [ADR 0005](decisions/0005-tech-stack-and-no-llm-html.md)
+- [ ] Pick web search / research API (Tavily recommended) — blocks the retrieval spike

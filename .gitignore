@@ -12,4 +12,12 @@ __pycache__/
 node_modules/
 .DS_Store
 
+# editable-install / build artifacts
+*.egg-info/
+build/
+dist/
+
+# Obsidian workspace
+.obsidian/
+
 # NOTE: out/ is committed on purpose — the built HTML is a deliverable.

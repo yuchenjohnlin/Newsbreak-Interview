@@ -23,7 +23,12 @@ everything upstream exists to fill it, everything downstream renders it.
 - Cache all search-API calls (keyed by input) so builds are cheap and reproducible.
 
 ## How to run
-TODO — fill in once tech stack is chosen.
+```
+pip install -e .
+python -m pipeline.cli run "<one-sentence event>"   # → out/<id>.html
+```
+Stages are stubs (raise NotImplementedError) until built. Each stage is also
+importable on its own (`pipeline.retrieve.run(...)`) for fast iteration.
 
 ## Where things live
 - Data contract / schema:   `schema/`  — see [docs/schema.md](docs/schema.md)
@@ -40,4 +45,8 @@ TODO — fill in once tech stack is chosen.
 - DESIGN.md is the graded deliverable — distill it from the ADRs at the END; don't edit it continuously.
 
 ## Tech stack
-TODO — undecided. LLM provider + web-search/research API both TBD.
+- Python (Pydantic = data contract; Jinja2 = render). Chosen for fluency; with the
+  LLM emitting data (not HTML), TS's frontend edge doesn't apply. See ADR 0005.
+- LLM provider: Anthropic Claude (default, swappable).
+- Web search / research API: **TBD** (Tavily recommended) — blocks the retrieval spike.
+- No frontend/backend: offline batch CLI → self-contained static HTML.
