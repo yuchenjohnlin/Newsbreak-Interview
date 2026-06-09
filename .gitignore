@@ -1,0 +1,15 @@
+# secrets
+.env
+.env.local
+.env.*.local
+
+# regenerable API cache
+data/cache/
+
+# runtime junk
+__pycache__/
+*.pyc
+node_modules/
+.DS_Store
+
+# NOTE: out/ is committed on purpose — the built HTML is a deliverable.
