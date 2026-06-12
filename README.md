@@ -53,7 +53,22 @@ artifacts to `data/runs/{slug}/` (intake plan, clipped evidence pack, raw and
 validated page JSON) so any stage can be inspected after the fact.
 
 Useful flags: `--model` (synthesis model, default `claude-sonnet-4-6`),
-`--max-docs` (evidence documents to gather, default 6), `--outdir`.
+`--max-docs` (evidence documents to gather, default 6), `--outdir`,
+`--template` (Jinja template in `templates/`). The default is
+`page.html.j2`; `page_featured.html.j2` is an alternate content-forward
+layout that puts the most interesting facts in the first viewport, uses more
+distinct section treatments, and keeps citations visually smaller.
+
+Example:
+
+```bash
+python generate.py --sentence "The 2026 FIFA World Cup kicks off at Estadio Azteca on June 11, 2026." \
+  --template page_featured.html.j2
+```
+
+Sourcing is live-web retrieval, not a vector database: the pipeline queries
+Brave Search, fetches candidate URLs, extracts article text with trafilatura,
+clips the evidence pack, and asks the model to cite source IDs from that pack.
 
 ## Repo map
 

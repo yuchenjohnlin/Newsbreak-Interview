@@ -1,0 +1,409 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Knicks Complete Largest Comeback in NBA Finals History, Lead Spurs 3-1</title><style>
+  :root {
+    --bg: #f7f6f2;
+    --surface: #ffffff;
+    --surface-2: #f1f0eb;
+    --ink: #171717;
+    --muted: #5f5f5a;
+    --faint: #8d8b84;
+    --line: #dfddd4;
+    --serif: Georgia, "Times New Roman", serif;
+    --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    --shadow: 0 10px 32px rgba(29, 27, 22, .08);
+  }
+  .theme-tech { --accent: #3156d4; --accent-ink: #18368f; --accent-soft: #edf2ff; --accent-warm: #c85d2c; }
+  .theme-show { --accent: #a21caf; --accent-ink: #75107d; --accent-soft: #fbecff; --accent-warm: #cf6f18; }
+  .theme-sports { --accent: #087f5b; --accent-ink: #045d43; --accent-soft: #e8f7f1; --accent-warm: #b84f2b; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 16px;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: inherit; }
+  .topline {
+    border-bottom: 1px solid var(--line);
+    background: rgba(255, 255, 255, .74);
+  }
+  .topline-inner {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 10px 24px;
+    display: flex;
+    justify-content: space-between;
+    gap: 18px;
+    color: var(--muted);
+    font-size: 12px;
+  }
+  .page {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 24px 72px;
+  }
+  .hero {
+    padding: 34px 0 28px;
+    display: grid;
+    grid-template-columns: minmax(0, 1.55fr) minmax(300px, .85fr);
+    gap: 30px;
+    align-items: stretch;
+  }
+  .label {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--accent-ink);
+    background: var(--accent-soft);
+    border: 1px solid rgba(0, 0, 0, .04);
+    border-radius: 999px;
+    padding: 4px 10px;
+    font-size: 11px;
+    font-weight: 750;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+  }
+  h1 {
+    font-family: var(--serif);
+    font-size: clamp(35px, 6vw, 62px);
+    line-height: 1.01;
+    letter-spacing: 0;
+    margin: 18px 0 16px;
+    max-width: 820px;
+  }
+  .dek {
+    max-width: 760px;
+    margin: 0;
+    color: var(--muted);
+    font-size: clamp(18px, 2vw, 22px);
+    line-height: 1.45;
+  }
+  .summary {
+    max-width: 780px;
+    margin: 22px 0 0;
+    font-size: 17px;
+    color: #30302c;
+  }
+  .hero-card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    box-shadow: var(--shadow);
+    min-height: 100%;
+  }
+  .hero-img {
+    margin: 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .hero-img img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+  }
+  .hero-img figcaption {
+    padding: 8px 12px 10px;
+    color: var(--faint);
+    font-size: 11px;
+    line-height: 1.35;
+  }
+  .scoreboard {
+    padding: 16px;
+  }
+  .score-title {
+    color: var(--faint);
+    font-size: 11px;
+    font-weight: 750;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  .score-item {
+    padding: 12px 0;
+    border-top: 1px solid var(--line);
+  }
+  .score-item:first-of-type { border-top: 0; padding-top: 0; }
+  .score-item b {
+    display: block;
+    color: var(--accent-ink);
+    font-size: 12px;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+    margin-bottom: 3px;
+  }
+  .score-item span { display: block; font-size: 15px; line-height: 1.42; }
+  .lede-strip {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1px;
+    background: var(--line);
+    border: 1px solid var(--line);
+    margin: 8px 0 24px;
+  }
+  .lede-fact {
+    background: var(--surface);
+    padding: 18px;
+    min-height: 128px;
+  }
+  .lede-fact .kicker {
+    color: var(--accent-ink);
+    font-size: 11px;
+    font-weight: 760;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+  .lede-fact p {
+    margin: 0;
+    font-family: var(--serif);
+    font-size: 20px;
+    line-height: 1.24;
+  }
+  section {
+    margin-top: 42px;
+  }
+  .section-head {
+    display: flex;
+    align-items: baseline;
+    gap: 14px;
+    border-bottom: 2px solid var(--ink);
+    margin-bottom: 18px;
+  }
+  h2 {
+    margin: 0;
+    font-size: 17px;
+    line-height: 1.2;
+  }
+  .section-note {
+    color: var(--faint);
+    font-size: 12px;
+    margin-left: auto;
+  }
+  .fact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 12px;
+  }
+  .fact {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    padding: 15px 16px;
+  }
+  .fact .label {
+    border: 0;
+    background: transparent;
+    padding: 0;
+    border-radius: 0;
+    color: var(--accent-ink);
+    font-size: 11px;
+    margin-bottom: 7px;
+  }
+  .fact .value { color: #292925; font-size: 15px; }
+  .timeline {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 10px;
+  }
+  .timeline li {
+    display: grid;
+    grid-template-columns: 108px minmax(0, 1fr);
+    gap: 16px;
+    background: var(--surface-2);
+    border-left: 4px solid var(--line);
+    padding: 13px 16px 13px 12px;
+  }
+  .timeline li.upcoming {
+    background: var(--accent-soft);
+    border-left-color: var(--accent);
+  }
+  .tl-date {
+    color: var(--accent-ink);
+    font-size: 12px;
+    font-weight: 760;
+    text-transform: uppercase;
+  }
+  .tl-label { font-weight: 720; }
+  .tl-desc { margin: 3px 0 0; color: var(--muted); font-size: 14px; }
+  .entity-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    gap: 10px;
+  }
+  .entity {
+    border-top: 3px solid var(--accent);
+    background: var(--surface);
+    padding: 12px 13px;
+  }
+  .entity b { display: block; font-size: 15px; margin-bottom: 4px; }
+  .entity span { display: block; color: var(--muted); font-size: 12.5px; line-height: 1.35; }
+  .category-block {
+    display: grid;
+    grid-template-columns: minmax(220px, .45fr) minmax(0, 1fr);
+    gap: 16px;
+  }
+  .category-intro {
+    background: var(--ink);
+    color: #fff;
+    padding: 18px;
+  }
+  .category-intro h3 { margin: 0 0 8px; font-size: 19px; }
+  .category-intro p { margin: 0; color: rgba(255,255,255,.75); font-size: 14px; }
+  .detail-panel {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    padding: 16px;
+  }
+  .kv {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 9px 14px;
+    margin: 0;
+  }
+  .kv dt {
+    color: var(--faint);
+    font-size: 12px;
+    font-weight: 720;
+    text-transform: uppercase;
+  }
+  .kv dd { margin: 0; font-size: 14.5px; }
+  .chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    margin-top: 12px;
+  }
+  .chip {
+    background: var(--accent-soft);
+    color: var(--accent-ink);
+    border: 1px solid rgba(0,0,0,.04);
+    border-radius: 999px;
+    padding: 4px 10px;
+    font-size: 12px;
+    font-weight: 650;
+  }
+  .matches {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+  }
+  .matches th {
+    color: var(--faint);
+    font-size: 11px;
+    text-align: left;
+    text-transform: uppercase;
+    padding: 8px;
+    border-bottom: 1px solid var(--line);
+  }
+  .matches td {
+    padding: 10px 8px;
+    border-bottom: 1px solid var(--line);
+    vertical-align: top;
+  }
+  .reaction-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 12px;
+  }
+  .reaction {
+    margin: 0;
+    background: #fff8ef;
+    border: 1px solid #ead9c5;
+    border-top: 4px solid var(--accent-warm);
+    padding: 15px 16px;
+  }
+  .reaction p { margin: 0; font-size: 15px; }
+  .reaction cite {
+    display: block;
+    margin-top: 10px;
+    color: var(--muted);
+    font-style: normal;
+    font-size: 12.5px;
+  }
+  .fact-board-late {
+    margin-top: 54px;
+  }
+  .context-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.1fr) minmax(260px, .9fr);
+    gap: 16px;
+  }
+  .why {
+    background: var(--accent-soft);
+    border-left: 5px solid var(--accent);
+    padding: 20px;
+    font-size: 17px;
+  }
+  .next {
+    margin: 0;
+    padding: 16px 18px 16px 36px;
+    background: var(--surface);
+    border: 1px solid var(--line);
+  }
+  .next li { margin-bottom: 9px; }
+  .source-method {
+    margin-bottom: 16px;
+    padding: 12px 14px;
+    background: var(--surface-2);
+    border: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 13px;
+  }
+  .sources {
+    columns: 2;
+    column-gap: 30px;
+    margin: 0;
+    padding-left: 22px;
+    font-size: 13px;
+  }
+  .sources li {
+    break-inside: avoid;
+    margin: 0 0 10px;
+    padding-left: 3px;
+  }
+  .sources a { color: var(--accent-ink); text-decoration: none; }
+  .src-meta {
+    display: block;
+    color: var(--faint);
+    font-size: 12px;
+  }
+  .freshness {
+    margin-top: 16px;
+    color: var(--faint);
+    font-size: 12px;
+  }
+  .cite {
+    vertical-align: super;
+    line-height: 0;
+    margin-left: 2px;
+  }
+  .cite a {
+    color: var(--accent-ink);
+    font-size: 9px;
+    font-weight: 760;
+    text-decoration: none;
+    opacity: .62;
+  }
+  .cite a:hover { opacity: 1; text-decoration: underline; }
+  footer {
+    margin-top: 44px;
+    padding-top: 16px;
+    border-top: 1px solid var(--line);
+    color: var(--faint);
+    font-size: 12px;
+  }
+  @media (max-width: 820px) {
+    .hero, .category-block, .context-grid { grid-template-columns: 1fr; }
+    .lede-strip { grid-template-columns: 1fr; }
+    .sources { columns: 1; }
+  }
+  @media (max-width: 560px) {
+    .page { padding: 0 16px 54px; }
+    .topline-inner { padding: 9px 16px; flex-direction: column; gap: 2px; }
+    .hero { padding-top: 24px; }
+    .timeline li { grid-template-columns: 1fr; gap: 4px; }
+    .kv { grid-template-columns: 1fr; gap: 2px; }
+  }
+</style></head><body class="theme-sports"><div class="topline"><div class="topline-inner"><span>Topic page generated Jun 12, 2026</span><span>7 fetched sources cited</span></div></div><main class="page"><header class="hero"><div><span class="label">Sports tracker</span><h1>Knicks Complete Largest Comeback in NBA Finals History, Lead Spurs 3-1</h1><p class="dek">OG Anunoby&#39;s tip-in with 1.2 seconds left capped a 29-point comeback as New York puts San Antonio on the brink of elimination.</p><p class="summary">The New York Knicks overcame a 29-point deficit to defeat the San Antonio Spurs 107-106 in Game 4 of the 2026 NBA Finals on June 11, the largest comeback in NBA Finals history. OG Anunoby tipped in a missed Jalen Brunson three-pointer with 1.2 seconds remaining to seal the win at Madison Square Garden. The Knicks now lead the best-of-seven series 3-1 and are one win away from their first championship since 1973. Game 5 is scheduled for Saturday, June 13 in San Antonio.</p></div><aside class="hero-card" aria-label="Most important signals"><figure class="hero-img"><img src="https://imgs.search.brave.com/qfzVKXzHlrrvCHhBFKPZ3FawtVNA5dH0QkAngpywfsE/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pY2hl/Zi5iYmNpLmNvLnVr/L2FjZS9icmFuZGVk/X3Nwb3J0LzEyMDAv/Y3BzcHJvZHBiLzlj/ZmUvbGl2ZS9lZjRh/NTkyMC02NTY3LTEx/ZjEtYTFmOS1hZmQ2/ZjNkZTljZmEuanBn" alt="OG Anunoby&#39;s tip-in with 1.2 seconds remaining sealed the Knicks&#39; record 29-point comeback win over the Spurs in Game 4 of the 2026 NBA Finals." loading="lazy" onerror="this.parentElement.style.display='none'"><figcaption>OG Anunoby&#39;s tip-in with 1.2 seconds remaining sealed the Knicks&#39; record 29-point comeback win over the Spurs in Game 4 of the 2026 NBA Finals.<sup class="cite"><a href="#src-1" aria-label="Source 1">1</a></sup></figcaption></figure><div class="scoreboard"><div class="score-title">Lead signals</div><div class="score-item"><b>Final score</b><span>Knicks 107, Spurs 106 (New York leads series 3-1)<sup class="cite"><a href="#src-1" aria-label="Source 1">1</a>,<a href="#src-3" aria-label="Source 3">3</a></sup></span></div><div class="score-item"><b>Record comeback</b><span>Knicks overcame a 29-point deficit — the largest comeback in NBA Finals history, surpassing the Celtics&#39; 24-point comeback vs. Lakers in 2008<sup class="cite"><a href="#src-1" aria-label="Source 1">1</a>,<a href="#src-3" aria-label="Source 3">3</a></sup></span></div><div class="score-item"><b>Game-winner</b><span>OG Anunoby tip-in with 1.2 seconds remaining gave Knicks a 107-106 lead<sup class="cite"><a href="#src-1" aria-label="Source 1">1</a>,<a href="#src-2" aria-label="Source 2">2</a>,<a href="#src-3" aria-label="Source 3">3</a></sup></span></div></div></aside></header><div class="lede-strip" aria-label="Lead facts"><article class="lede-fact"><div class="kicker">Halftime deficit</div><p>Knicks trailed 76-49 at half — the largest halftime deficit for a home team in Finals history<sup class="cite"><a href="#src-1" aria-label="Source 1">1</a>,<a href="#src-6" aria-label="Source 6">6</a></sup></p></article><article class="lede-fact"><div class="kicker">Brunson&#39;s performance</div><p>Jalen Brunson led all scorers with 36 points and gave Knicks their first lead at 105-104 with 1:22 remaining<sup class="cite"><a href="#src-3" aria-label="Source 3">3</a>,<a href="#src-5" aria-label="Source 5">5</a>,<a href="#src-6" aria-label="Source 6">6</a></sup></p></article><article class="lede-fact"><div class="kicker">Anunoby&#39;s performance</div><p>OG Anunoby scored 33 points on 10-for-15 shooting, including 7-of-9 from three, plus the game-winning tip-in and a critical block<sup class="cite"><a href="#src-2" aria-label="Source 2">2</a>,<a href="#src-3" aria-label="Source 3">3</a></sup></p></article></div><section><div class="section-head"><h2>Reaction layer</h2><span class="section-note">What made the story travel</span></div><div class="reaction-grid"><blockquote class="reaction"><p>Called the Spurs &#39;the dumbest basketball team in the history of civilisation&#39; after they blew the 29-point lead, saying San Antonio&#39;s mismanagement actively helped the Knicks win.<sup class="cite"><a href="#src-1" aria-label="Source 1">1</a></sup></p><cite>Charles Barkley, ESPN</cite></blockquote><blockquote class="reaction"><p>Said he couldn&#39;t explain the collapse: &#39;I think it&#39;s just execution, greediness of some sort. We clearly weren&#39;t the most hungry in the second half.&#39;<sup class="cite"><a href="#src-1" aria-label="Source 1">1</a></sup></p><cite>Victor Wembanyama, San Antonio Spurs</cite></blockquote><blockquote class="reaction"><p>Credited team belief: &#39;One word that caps that all is just belief. It was chipping away, one possession at a time. It wasn&#39;t going to be one play to get us back.&#39;<sup class="cite"><a href="#src-1" aria-label="Source 1">1</a></sup></p><cite>Jalen Brunson, New York Knicks</cite></blockquote><blockquote class="reaction"><p>Declared: &#39;What we witnessed in New York on Wednesday night was nothing short of the greatest comeback in NBA history.&#39;<sup class="cite"><a href="#src-4" aria-label="Source 4">4</a></sup></p><cite>Dan Devine, Yahoo Sports</cite></blockquote><blockquote class="reaction"><p>Called it &#39;the most stunning game I&#39;ve ever seen.&#39;<sup class="cite"><a href="#src-4" aria-label="Source 4">4</a></sup></p><cite>Michael Wilbon, ESPN</cite></blockquote><blockquote class="reaction"><p>Called Anunoby&#39;s putback &#39;the most iconic shot in the history of New York basketball.&#39;<sup class="cite"><a href="#src-4" aria-label="Source 4">4</a></sup></p><cite>Mike Brown, Knicks head coach</cite></blockquote></div></section><section><div class="section-head"><h2>Timeline</h2><span class="section-note">Past and upcoming moments</span></div><ol class="timeline"><li class="past"><div class="tl-date">Jun 3, 2026</div><div><div class="tl-label">Game 1: Spurs win 105-95<sup class="cite"><a href="#src-3" aria-label="Source 3">3</a></sup></div></div></li><li class="past"><div class="tl-date">Jun 5, 2026</div><div><div class="tl-label">Game 2: Knicks win 105-104, even series 1-1<sup class="cite"><a href="#src-3" aria-label="Source 3">3</a></sup></div></div></li><li class="past"><div class="tl-date">Jun 8, 2026</div><div><div class="tl-label">Game 3: Spurs win 115-111, take 2-1 series lead<sup class="cite"><a href="#src-3" aria-label="Source 3">3</a></sup></div></div></li><li class="past"><div class="tl-date">Jun 11, 2026</div><div><div class="tl-label">Game 4: Knicks complete 29-point comeback, win 107-106; lead series 3-1<sup class="cite"><a href="#src-1" aria-label="Source 1">1</a>,<a href="#src-3" aria-label="Source 3">3</a>,<a href="#src-4" aria-label="Source 4">4</a></sup></div></div></li><li class="upcoming"><div class="tl-date">Jun 13, 2026 / Upcoming</div><div><div class="tl-label">Game 5: Spurs vs. Knicks in San Antonio, 8:30 p.m. ET on ABC (elimination game for Spurs)<sup class="cite"><a href="#src-3" aria-label="Source 3">3</a>,<a href="#src-4" aria-label="Source 4">4</a></sup></div></div></li><li class="upcoming"><div class="tl-date">Jun 16, 2026 / Upcoming</div><div><div class="tl-label">Game 6 (if necessary): Knicks vs. Spurs, 8:30 p.m. ET on ABC<sup class="cite"><a href="#src-3" aria-label="Source 3">3</a></sup></div></div></li></ol></section><section><div class="section-head"><h2>People and stakes</h2><span class="section-note">Entities the page is tracking</span></div><div class="entity-grid"><article class="entity"><b>New York Knicks</b><span>Eastern Conference champion; leads Finals 3-1</span></article><article class="entity"><b>San Antonio Spurs</b><span>Western Conference champion; trails series 3-1</span></article><article class="entity"><b>OG Anunoby</b><span>Knicks forward; hit the game-winning tip-in and leads Finals MVP ladder</span></article><article class="entity"><b>Jalen Brunson</b><span>Knicks guard; game-high 36 points, gave team first lead in fourth quarter</span></article><article class="entity"><b>Victor Wembanyama</b><span>Spurs star; 24 pts/13 reb in Game 4, No. 3 on Finals MVP ladder</span></article><article class="entity"><b>Madison Square Garden</b><span>Host venue for Games 1-4 and potential Game 6</span></article><article class="entity"><b>Mike Brown</b><span>Head coach, New York Knicks</span></article><article class="entity"><b>Karl-Anthony Towns</b><span>Knicks center; averaging double-double in Finals, No. 2 on MVP ladder</span></article><article class="entity"><b>Dylan Harper</b><span>Spurs guard; 21 points in Game 4, youngest player to score 20+ in a Finals game</span></article><article class="entity"><b>Stephon Castle</b><span>Spurs guard; made both free throws to give Spurs 106-105 lead before Anunoby&#39;s winner</span></article></div></section><section><div class="section-head"><h2>Tournament details</h2><span class="section-note">Category-specific schema block</span></div><div class="category-block"><div class="category-intro"><h3>Format and scoreboard</h3><p>Sports pages emphasize structure, match state, results, and what comes next.</p></div><div class="detail-panel"><dl class="kv"><dt>Format</dt><dd>The NBA Finals is a best-of-seven series between the Eastern Conference champion New York Knicks and Western Conference champion San Antonio Spurs. The first team to win four games claims the title.</dd><dt>So far</dt><dd>New York Knicks lead series 3-1</dd><dt>How to watch</dt><dd>Games on ABC and ESPN; also streaming on fubo.</dd></dl><table class="matches"><thead><tr><th>Date</th><th>Match</th><th>Venue</th><th>Result</th></tr></thead><tbody><tr><td>Jun 3, 2026</td><td>Spurs vs. Knicks (Game 1)</td><td>Madison Square Garden, New York</td><td>Spurs 105, Knicks 95</td></tr><tr><td>Jun 5, 2026</td><td>Spurs vs. Knicks (Game 2)</td><td>Madison Square Garden, New York</td><td>Knicks 105, Spurs 104</td></tr><tr><td>Jun 8, 2026</td><td>Spurs vs. Knicks (Game 3)</td><td>Madison Square Garden, New York</td><td>Spurs 115, Knicks 111</td></tr><tr><td>Jun 11, 2026</td><td>Spurs vs. Knicks (Game 4)</td><td>Madison Square Garden, New York</td><td>Knicks 107, Spurs 106 — RECORD 29-PT COMEBACK</td></tr><tr><td>Jun 13, 2026</td><td>Spurs vs. Knicks (Game 5)</td><td>San Antonio</td><td>-</td></tr><tr><td>Jun 16, 2026</td><td>Knicks vs. Spurs (Game 6, if necessary)</td><td>New York</td><td>-</td></tr></tbody></table></div></div></section><section><div class="section-head"><h2>Context and next moves</h2><span class="section-note">Reader value beyond the headline</span></div><div class="context-grid"><div class="why">The Knicks are one win away from their first NBA championship since 1973 — which would close the longest title drought in franchise history and the longest gap between championships in NBA history. The Game 4 comeback itself is already cemented as the greatest in Finals history, instantly iconic in New York sports lore. For the young Spurs, led by 22-year-old Victor Wembanyama, squandering a 29-point lead has exposed costly inexperience on the game&#39;s biggest stage at the worst possible moment.</div><ol class="next"><li>Game 5 in San Antonio on Saturday, June 13 (8:30 p.m. ET, ABC/fubo) — Knicks can clinch their first championship since 1973; Spurs must win to stay alive.</li><li>Watch for Wembanyama&#39;s response: the Spurs star has been the biggest Finals factor when the series has gone San Antonio&#39;s way, and he&#39;ll need a dominant closeout-game performance to force Game 6.</li><li>Monitor NYPD presence around MSG: authorities have pledged increased security after arrests at watch parties for Games 2, 3, and 4; a potential clinching celebration could draw massive crowds.</li><li>The Finals MVP race: Anunoby leads the ladder, but Brunson and Wembanyama could leapfrog him depending on who stars in the elimination game.</li><li>If the Spurs win Game 5, the series returns to New York for Game 6 on Tuesday, June 16.</li></ol></div></section><section class="fact-board-late"><div class="section-head"><h2>Full fact board</h2><span class="section-note">Complete source-linked facts</span></div><div class="fact-grid"><article class="fact"><div class="label">Final score</div><div class="value">Knicks 107, Spurs 106 (New York leads series 3-1)<sup class="cite"><a href="#src-1" aria-label="Source 1">1</a>,<a href="#src-3" aria-label="Source 3">3</a></sup></div></article><article class="fact"><div class="label">Record comeback</div><div class="value">Knicks overcame a 29-point deficit — the largest comeback in NBA Finals history, surpassing the Celtics&#39; 24-point comeback vs. Lakers in 2008<sup class="cite"><a href="#src-1" aria-label="Source 1">1</a>,<a href="#src-3" aria-label="Source 3">3</a></sup></div></article><article class="fact"><div class="label">Game-winner</div><div class="value">OG Anunoby tip-in with 1.2 seconds remaining gave Knicks a 107-106 lead<sup class="cite"><a href="#src-1" aria-label="Source 1">1</a>,<a href="#src-2" aria-label="Source 2">2</a>,<a href="#src-3" aria-label="Source 3">3</a></sup></div></article><article class="fact"><div class="label">Halftime deficit</div><div class="value">Knicks trailed 76-49 at half — the largest halftime deficit for a home team in Finals history<sup class="cite"><a href="#src-1" aria-label="Source 1">1</a>,<a href="#src-6" aria-label="Source 6">6</a></sup></div></article><article class="fact"><div class="label">Brunson&#39;s performance</div><div class="value">Jalen Brunson led all scorers with 36 points and gave Knicks their first lead at 105-104 with 1:22 remaining<sup class="cite"><a href="#src-3" aria-label="Source 3">3</a>,<a href="#src-5" aria-label="Source 5">5</a>,<a href="#src-6" aria-label="Source 6">6</a></sup></div></article><article class="fact"><div class="label">Anunoby&#39;s performance</div><div class="value">OG Anunoby scored 33 points on 10-for-15 shooting, including 7-of-9 from three, plus the game-winning tip-in and a critical block<sup class="cite"><a href="#src-2" aria-label="Source 2">2</a>,<a href="#src-3" aria-label="Source 3">3</a></sup></div></article><article class="fact"><div class="label">Wembanyama&#39;s line</div><div class="value">Victor Wembanyama scored 24 points and grabbed 13 rebounds for San Antonio but shot 9-for-25 overall<sup class="cite"><a href="#src-1" aria-label="Source 1">1</a>,<a href="#src-6" aria-label="Source 6">6</a></sup></div></article><article class="fact"><div class="label">Win probability</div><div class="value">With 9:33 remaining, ESPN Analytics gave the Spurs a 99.6% win probability — a 1-in-250 chance for the Knicks<sup class="cite"><a href="#src-4" aria-label="Source 4">4</a></sup></div></article><article class="fact"><div class="label">Championship drought</div><div class="value">A Knicks title would be their first since 1973 — closing the longest gap between championships in NBA history<sup class="cite"><a href="#src-3" aria-label="Source 3">3</a>,<a href="#src-4" aria-label="Source 4">4</a></sup></div></article></div></section><section><div class="section-head"><h2>Sources</h2><span class="section-note">Live web, fetched pages, extracted text</span></div><div class="source-method">Sourcing method: the pipeline queries Brave Search, fetches candidate URLs, extracts article text with trafilatura, clips the evidence pack, and asks the model to cite source IDs from that pack. This is source-linked retrieval, not a vector-database RAG index.</div><ol class="sources"><li id="src-1"><a href="https://www.bbc.com/sport/basketball/articles/c04ylwkg67po" target="_blank" rel="noopener">NBA Finals 2026: New York Knicks beat San Antonio Spurs in record comeback</a><span class="src-meta">BBC Sport / Jun 11, 2026</span></li><li id="src-2"><a href="https://www.nba.com/news/finals-mvp-ladder-june-11-2026" target="_blank" rel="noopener">Finals MVP Ladder: OG Anunoby sprints to the top after Game 4 heroics</a><span class="src-meta">NBA.com / Jun 11, 2026</span></li><li id="src-3"><a href="https://www.cbssports.com/nba/news/2026-nba-playoff-bracket-matchups-schedule/" target="_blank" rel="noopener">2026 NBA playoff bracket, schedule: Knicks stun Spurs with largest comeback in NBA Finals history</a><span class="src-meta">CBS Sports / Jun 11, 2026</span></li><li id="src-4"><a href="https://www.nba.com/news/what-theyre-saying-knicks-win-game-4-nba-finals" target="_blank" rel="noopener">What They&#39;re Saying: Knicks complete historic Game 4 comeback vs. Spurs</a><span class="src-meta">NBA.com / Jun 11, 2026</span></li><li id="src-5"><a href="https://www.si.com/nba/finals/ranking-best-celebrity-moments-reactions-knicks-wild-game-4-comeback" target="_blank" rel="noopener">Ranking the Best Celebrity Moments and Reactions From Knicks&#39; Wild Game 4 Comeback</a><span class="src-meta">Sports Illustrated / Jun 11, 2026</span></li><li id="src-6"><a href="https://sports.yahoo.com/articles/greatest-comeback-finals-history-unreal-045555612.html" target="_blank" rel="noopener">&#39;Greatest Comeback in Finals History,&#39; &#39;UNREAL&#39; — NBA Players React to Knicks&#39; Historic Win in Game 4 of Finals vs. Spurs</a><span class="src-meta">Yahoo Sports / Jun 11, 2026</span></li><li id="src-7"><a href="https://www.cbsnews.com/newyork/news/knicks-game-4-crowd-arrests-near-madison-square-garden/" target="_blank" rel="noopener">More than a dozen face charges after rowdy crowd takes over streets following Knicks Game 4 NBA Finals win</a><span class="src-meta">CBS News New York / Jun 11, 2026</span></li></ol><div class="freshness">Evidence gathered at 2026-06-12T08:15:14+00:00; Game 5 has not yet been played and series results or injury news may have changed since.</div></section><footer>Generated from: "The New York Knicks pulled off a dramatic comeback in the NBA Finals on June 11, 2026, taking a nearly insurmountable lead." / schema v1.0</footer></main></body></html>

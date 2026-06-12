@@ -33,13 +33,45 @@ import os
 from fetch_content import fetch_and_extract
 from generate import build_pack
 from probe_search import call_brave, slug
-from render import render_page
+from render import render_error_page, render_page, write_report
 from schemas import GateError, validate_evidence, validate_intake
 from synthesize import client, synthesize_page
 
 MANAGER_MODEL = os.getenv("MANAGER_MODEL", "claude-sonnet-4-6")
 MAX_URLS_PER_FETCH = 8
 BRAVE_MIN_INTERVAL = 1.1  # free tier: 1 request/second
+
+# Resource levels: how much budget the manager gets. Viral/dynamic events
+# reward deeper digs (reactions, side stories); routine ones don't need them.
+DEPTH = {
+    "quick": {
+        "max_turns": 8,
+        "target_docs": "3-4",
+        "char_budget": 20000,
+        "guidance": "Be minimal: headline coverage only, no side stories. One or two searches.",
+    },
+    "standard": {
+        "max_turns": 16,
+        "target_docs": "4-6",
+        "char_budget": 30000,
+        "guidance": "Cover the event's main facets (what/when/result/what's-next).",
+    },
+    "deep": {
+        "max_turns": 24,
+        "target_docs": "6-9",
+        "char_budget": 54000,
+        "guidance": (
+            "This event is hot/viral: beyond the main facets, actively chase the secondary "
+            "coverage — fan and public reactions, controversies and incidents around the "
+            "event, viral moments, notable quotes and aftermath. Spend extra searches on "
+            "reaction/incident queries once the core story is covered, and include what "
+            "you find in the evidence pack so the page reflects the full conversation. "
+            "Pair the key people/teams you discover with incident words in queries — "
+            "'<name> fans incident', '<name> aftermath arrested viral' — specific names "
+            "surface specific incidents that generic 'reactions' queries miss."
+        ),
+    },
+}
 
 
 # --------------------------------------------------------------------------
@@ -52,11 +84,14 @@ class RunState:
         self.sentence = sentence
         self.docs: dict[int, dict] = {}        # doc_id -> raw fetch record
         self.fingerprints: set[str] = set()    # content dedup across fetches
+        self.thumbs: dict[str, str] = {}       # url -> thumbnail seen in search results
+        self.char_budget = 30000               # evidence budget; scaled by depth profile
         self.next_doc_id = 1
         self.last_search_ts = 0.0
         self.pack = None                       # EvidencePack
         self.page = None                       # TopicPage
         self.out_path: Path | None = None
+        self.rundir: Path | None = None        # artifact dir, set by run_agent
         self.log: list[dict] = []
         self.finished: dict | None = None      # {"status", "message"}
 
@@ -173,6 +208,9 @@ def tool_search_web(state: RunState, query: str, count: int = 6) -> dict:
         return {"error": f"search failed: {msg[:200]}"}
     finally:
         state.last_search_ts = time.time()
+    for h in norm:
+        if h.get("url") and h.get("thumbnail"):
+            state.thumbs[h["url"]] = h["thumbnail"]
     return {
         "results": [
             {
@@ -180,6 +218,7 @@ def tool_search_web(state: RunState, query: str, count: int = 6) -> dict:
                 "title": (h.get("title") or "")[:120],
                 "url": h.get("url"),
                 "snippet": (h.get("snippet") or "")[:150],
+                "has_image": bool(h.get("thumbnail")),
             }
             for i, h in enumerate(norm, 1)
             if h.get("url")
@@ -208,6 +247,7 @@ def tool_fetch_urls(state: RunState, urls: list[str]) -> dict:
             doc_id = state.next_doc_id
             state.next_doc_id += 1
             rec["rank"] = doc_id
+            rec["thumbnail_url"] = state.thumbs.get(url)
             state.docs[doc_id] = rec
             out.append({
                 "url": url,
@@ -230,20 +270,26 @@ def tool_create_input_schema(state: RunState, category: str, canonical_name: str
     if unknown:
         return {"error": f"unknown doc_ids: {unknown}", "available": sorted(state.docs)}
     raw_docs = [state.docs[i] for i in ids]
-    pack = build_pack(state.sentence, category, canonical_name, raw_docs)
+    pack = build_pack(state.sentence, category, canonical_name, raw_docs, total_budget=state.char_budget)
     try:
         pack.documents = validate_evidence(pack.documents)
     except GateError as e:
         return {"error": f"evidence gate failed: {e}", "hint": "fetch more usable documents first"}
     state.pack = pack
+    if state.rundir:
+        (state.rundir / "evidence.json").write_text(pack.model_dump_json(indent=2))
+    n_dropped = len(ids) - len(pack.documents)
     return {
         "ok": True,
         "category": category,
         "documents": [
-            {"source_id": d.source_id, "sitename": d.sitename, "published": d.date, "chars": d.char_len}
+            {"source_id": d.source_id, "url": d.url, "sitename": d.sitename, "published": d.date, "chars": d.char_len}
             for d in pack.documents
         ],
         "total_chars": sum(d.char_len for d in pack.documents),
+        "note": (f"{n_dropped} of {len(ids)} requested docs dropped by the {state.char_budget}-char "
+                 "evidence budget (freshest kept; source_ids were renumbered). If a dropped doc is "
+                 "essential, rebuild with a smaller doc_ids list that includes it.") if n_dropped else None,
     }
 
 
@@ -251,25 +297,34 @@ def tool_synthesize(state: RunState) -> dict:
     if state.pack is None:
         return {"error": "no evidence pack; call create_input_schema first"}
     try:
-        state.page, _raw = synthesize_page(state.pack)
+        state.page, raw = synthesize_page(state.pack)
     except Exception as e:  # noqa: BLE001 - surface to the agent as data
         return {"error": f"synthesis failed validation: {str(e)[:600]}",
                 "hint": "rebuild the evidence pack (different/more docs) and retry, or reject"}
+    if state.rundir:
+        (state.rundir / "page_raw.json").write_text(json.dumps(raw, indent=2, ensure_ascii=False))
+        (state.rundir / "page.json").write_text(state.page.model_dump_json(indent=2))
     p = state.page
     return {
         "ok": True,
         "headline": p.headline,
-        "n_key_facts": len(p.key_facts),
-        "n_timeline": len(p.timeline),
+        "key_facts": [f.label for f in p.key_facts],
+        "timeline": [t.label for t in p.timeline],
+        "reactions": [r.source for r in p.reactions],
         "n_sources": len(p.sources),
+        "has_hero_image": p.hero_image is not None,
     }
 
 
-def tool_render(state: RunState, outdir: Path) -> dict:
+def tool_render(state: RunState, outdir: Path, template_name: str = "page.html.j2") -> dict:
     if state.page is None:
         return {"error": "no validated page; call synthesize_topic_page first"}
     try:
-        state.out_path = render_page(state.page, outdir / f"{slug(state.sentence)}.html")
+        state.out_path = render_page(
+            state.page,
+            outdir / f"{slug(state.sentence)}.html",
+            template_name=template_name,
+        )
     except Exception as e:  # noqa: BLE001
         return {"error": f"render failed: {str(e)[:300]}"}
     return {"ok": True, "path": str(state.out_path)}
@@ -299,38 +354,75 @@ Policies:
 2. Never judge whether an unfamiliar event is real from memory — it may postdate your
    knowledge cutoff. Realness is decided by live evidence: if searching cannot surface
    coverage that corroborates the core claim, reject with that explanation.
-3. Retrieval: search the sentence itself, then 2-3 facet queries suited to the event
-   type. Fetch a diverse set of promising URLs (news outlets, official sites, reference).
-   Some will fail — bot blocks are normal; route around them. Aim for 4-6 usable docs,
-   preferring fresh publish dates.
+3. Retrieval: search the sentence itself, then facet queries suited to the event type.
+   Fetch a diverse set of promising URLs (news outlets, official sites, reference).
+   Some will fail — bot blocks are normal; route around them. Aim for {target_docs}
+   usable docs, preferring fresh publish dates.
+   Resource level for this run: {guidance}
 4. If evidence clearly contradicts a detail of the input sentence, proceed with what the
    evidence supports (the page reflects evidence, not the sentence) — but if the CORE
    claim is uncorroborated, reject.
 5. After create_input_schema -> synthesize_topic_page -> render_topic_page all succeed,
-   call finish(status=success) with a one-paragraph summary.
+   call finish(status=success). The finish summary must describe ONLY what the
+   synthesized page actually contains (the synthesize tool result lists its sections) —
+   not everything you gathered. If something important you fetched is missing from the
+   page and you have turns left, you may re-run synthesis after rebuilding the evidence
+   pack to feature it.
 6. Be frugal: you have at most {max_turns} assistant turns. Don't re-search what you
    already have; don't fetch more than you need.
 
 Before each tool call, state in one short line what you're doing and why."""
 
 
-def run_agent(sentence: str, outdir: Path, max_turns: int) -> dict:
+def run_agent(sentence: str, outdir: Path, depth: str = "standard",
+              template_name: str = "page.html.j2") -> dict:
+    profile = DEPTH[depth]
+    max_turns = profile["max_turns"]
     sentence = validate_intake(sentence)  # cheap structural gate stays in code
     state = RunState(sentence)
-    rundir = Path("data/runs") / slug(sentence)
+    state.char_budget = profile["char_budget"]
+    s = slug(sentence)
+    rundir = Path("data/runs") / s
     rundir.mkdir(parents=True, exist_ok=True)
+    state.rundir = rundir
+    started = time.time()
 
     dispatch = {
         "search_web": lambda **kw: tool_search_web(state, **kw),
         "fetch_urls": lambda **kw: tool_fetch_urls(state, **kw),
         "create_input_schema": lambda **kw: tool_create_input_schema(state, **kw),
         "synthesize_topic_page": lambda **kw: tool_synthesize(state, **kw),
-        "render_topic_page": lambda **kw: tool_render(state, outdir, **kw),
+        "render_topic_page": lambda **kw: tool_render(state, outdir, template_name=template_name, **kw),
         "finish": lambda **kw: tool_finish(state, **kw),
     }
 
-    system = MANAGER_SYSTEM.format(today=datetime.now(timezone.utc).strftime("%Y-%m-%d"), max_turns=max_turns)
+    system = MANAGER_SYSTEM.format(
+        today=datetime.now(timezone.utc).strftime("%Y-%m-%d"),
+        max_turns=max_turns,
+        target_docs=profile["target_docs"],
+        guidance=profile["guidance"],
+    )
     messages: list[dict] = [{"role": "user", "content": f"Input sentence: {sentence}"}]
+
+    def report(outcome: dict) -> dict:
+        payload = {
+            "sentence": sentence,
+            "orchestrator": "agent",
+            "depth": depth,
+            "finished_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+            "duration_s": round(time.time() - started, 1),
+            "n_docs_fetched": len(state.docs),
+            "n_tool_calls": len(state.log),
+            "template": template_name,
+            **outcome,
+        }
+        if outcome["status"] != "success":
+            err_path = outdir / f"{s}.html"
+            render_error_page(sentence, outcome["status"], outcome["message"], s, err_path)
+            payload["out_path"] = str(err_path)
+            print(f"  [error-page] -> {err_path}")
+        write_report(rundir, payload)
+        return payload
 
     for turn in range(1, max_turns + 1):
         resp = client().messages.create(
@@ -355,7 +447,7 @@ def run_agent(sentence: str, outdir: Path, max_turns: int) -> dict:
         (rundir / "agent_log.json").write_text(json.dumps(state.log, indent=2, ensure_ascii=False, default=str))
 
         if state.finished:
-            return {**state.finished, "out_path": str(state.out_path) if state.out_path else None, "turns": turn}
+            return report({**state.finished, "out_path": str(state.out_path) if state.out_path else None, "turns": turn})
         if not tool_results:
             messages.append({"role": "assistant", "content": resp.content})
             messages.append({"role": "user", "content": "Continue: use a tool, or call finish."})
@@ -363,7 +455,7 @@ def run_agent(sentence: str, outdir: Path, max_turns: int) -> dict:
         messages.append({"role": "assistant", "content": resp.content})
         messages.append({"role": "user", "content": tool_results})
 
-    return {"status": "failed", "message": f"manager did not finish within {max_turns} turns", "out_path": None}
+    return report({"status": "failed", "message": f"manager did not finish within {max_turns} turns", "out_path": None})
 
 
 def main() -> int:
@@ -371,7 +463,10 @@ def main() -> int:
     ap.add_argument("input_file", nargs="?", default="input")
     ap.add_argument("--sentence")
     ap.add_argument("--outdir", default="out")
-    ap.add_argument("--max-turns", type=int, default=16)
+    ap.add_argument("--depth", choices=list(DEPTH), default="standard",
+                    help="Resource level: quick (headline only), standard, deep (chase viral/reaction side stories)")
+    ap.add_argument("--template", default="page.html.j2",
+                    help="Jinja template in templates/ (default: page.html.j2; alternate: page_featured.html.j2)")
     args = ap.parse_args()
 
     load_dotenv()
@@ -396,10 +491,14 @@ def main() -> int:
     for sent in sentences:
         print(f"\n=== {sent}")
         try:
-            outcome = run_agent(sent, outdir, args.max_turns)
+            outcome = run_agent(sent, outdir, args.depth, args.template)
         except GateError as e:
             failures += 1
             print(f"  REJECTED (pre-agent gate): {e}")
+            s = slug(sent)
+            write_report(Path("data/runs") / s, {"sentence": sent, "orchestrator": "agent",
+                                                 "status": "rejected", "message": str(e)})
+            render_error_page(sent, "rejected", str(e), s, outdir / f"{s}.html")
             continue
         except Exception as e:  # noqa: BLE001
             failures += 1

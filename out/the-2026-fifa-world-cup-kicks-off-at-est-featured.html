@@ -1,0 +1,409 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>2026 FIFA World Cup Is Underway: Mexico Opens With a 2-0 Win as History Is Made at the Azteca</title><style>
+  :root {
+    --bg: #f7f6f2;
+    --surface: #ffffff;
+    --surface-2: #f1f0eb;
+    --ink: #171717;
+    --muted: #5f5f5a;
+    --faint: #8d8b84;
+    --line: #dfddd4;
+    --serif: Georgia, "Times New Roman", serif;
+    --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    --shadow: 0 10px 32px rgba(29, 27, 22, .08);
+  }
+  .theme-tech { --accent: #3156d4; --accent-ink: #18368f; --accent-soft: #edf2ff; --accent-warm: #c85d2c; }
+  .theme-show { --accent: #a21caf; --accent-ink: #75107d; --accent-soft: #fbecff; --accent-warm: #cf6f18; }
+  .theme-sports { --accent: #087f5b; --accent-ink: #045d43; --accent-soft: #e8f7f1; --accent-warm: #b84f2b; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 16px;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: inherit; }
+  .topline {
+    border-bottom: 1px solid var(--line);
+    background: rgba(255, 255, 255, .74);
+  }
+  .topline-inner {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 10px 24px;
+    display: flex;
+    justify-content: space-between;
+    gap: 18px;
+    color: var(--muted);
+    font-size: 12px;
+  }
+  .page {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 24px 72px;
+  }
+  .hero {
+    padding: 34px 0 28px;
+    display: grid;
+    grid-template-columns: minmax(0, 1.55fr) minmax(300px, .85fr);
+    gap: 30px;
+    align-items: stretch;
+  }
+  .label {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--accent-ink);
+    background: var(--accent-soft);
+    border: 1px solid rgba(0, 0, 0, .04);
+    border-radius: 999px;
+    padding: 4px 10px;
+    font-size: 11px;
+    font-weight: 750;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+  }
+  h1 {
+    font-family: var(--serif);
+    font-size: clamp(35px, 6vw, 62px);
+    line-height: 1.01;
+    letter-spacing: 0;
+    margin: 18px 0 16px;
+    max-width: 820px;
+  }
+  .dek {
+    max-width: 760px;
+    margin: 0;
+    color: var(--muted);
+    font-size: clamp(18px, 2vw, 22px);
+    line-height: 1.45;
+  }
+  .summary {
+    max-width: 780px;
+    margin: 22px 0 0;
+    font-size: 17px;
+    color: #30302c;
+  }
+  .hero-card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    box-shadow: var(--shadow);
+    min-height: 100%;
+  }
+  .hero-img {
+    margin: 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .hero-img img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+  }
+  .hero-img figcaption {
+    padding: 8px 12px 10px;
+    color: var(--faint);
+    font-size: 11px;
+    line-height: 1.35;
+  }
+  .scoreboard {
+    padding: 16px;
+  }
+  .score-title {
+    color: var(--faint);
+    font-size: 11px;
+    font-weight: 750;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  .score-item {
+    padding: 12px 0;
+    border-top: 1px solid var(--line);
+  }
+  .score-item:first-of-type { border-top: 0; padding-top: 0; }
+  .score-item b {
+    display: block;
+    color: var(--accent-ink);
+    font-size: 12px;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+    margin-bottom: 3px;
+  }
+  .score-item span { display: block; font-size: 15px; line-height: 1.42; }
+  .lede-strip {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1px;
+    background: var(--line);
+    border: 1px solid var(--line);
+    margin: 8px 0 24px;
+  }
+  .lede-fact {
+    background: var(--surface);
+    padding: 18px;
+    min-height: 128px;
+  }
+  .lede-fact .kicker {
+    color: var(--accent-ink);
+    font-size: 11px;
+    font-weight: 760;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+  .lede-fact p {
+    margin: 0;
+    font-family: var(--serif);
+    font-size: 20px;
+    line-height: 1.24;
+  }
+  section {
+    margin-top: 42px;
+  }
+  .section-head {
+    display: flex;
+    align-items: baseline;
+    gap: 14px;
+    border-bottom: 2px solid var(--ink);
+    margin-bottom: 18px;
+  }
+  h2 {
+    margin: 0;
+    font-size: 17px;
+    line-height: 1.2;
+  }
+  .section-note {
+    color: var(--faint);
+    font-size: 12px;
+    margin-left: auto;
+  }
+  .fact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 12px;
+  }
+  .fact {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    padding: 15px 16px;
+  }
+  .fact .label {
+    border: 0;
+    background: transparent;
+    padding: 0;
+    border-radius: 0;
+    color: var(--accent-ink);
+    font-size: 11px;
+    margin-bottom: 7px;
+  }
+  .fact .value { color: #292925; font-size: 15px; }
+  .timeline {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 10px;
+  }
+  .timeline li {
+    display: grid;
+    grid-template-columns: 108px minmax(0, 1fr);
+    gap: 16px;
+    background: var(--surface-2);
+    border-left: 4px solid var(--line);
+    padding: 13px 16px 13px 12px;
+  }
+  .timeline li.upcoming {
+    background: var(--accent-soft);
+    border-left-color: var(--accent);
+  }
+  .tl-date {
+    color: var(--accent-ink);
+    font-size: 12px;
+    font-weight: 760;
+    text-transform: uppercase;
+  }
+  .tl-label { font-weight: 720; }
+  .tl-desc { margin: 3px 0 0; color: var(--muted); font-size: 14px; }
+  .entity-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    gap: 10px;
+  }
+  .entity {
+    border-top: 3px solid var(--accent);
+    background: var(--surface);
+    padding: 12px 13px;
+  }
+  .entity b { display: block; font-size: 15px; margin-bottom: 4px; }
+  .entity span { display: block; color: var(--muted); font-size: 12.5px; line-height: 1.35; }
+  .category-block {
+    display: grid;
+    grid-template-columns: minmax(220px, .45fr) minmax(0, 1fr);
+    gap: 16px;
+  }
+  .category-intro {
+    background: var(--ink);
+    color: #fff;
+    padding: 18px;
+  }
+  .category-intro h3 { margin: 0 0 8px; font-size: 19px; }
+  .category-intro p { margin: 0; color: rgba(255,255,255,.75); font-size: 14px; }
+  .detail-panel {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    padding: 16px;
+  }
+  .kv {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 9px 14px;
+    margin: 0;
+  }
+  .kv dt {
+    color: var(--faint);
+    font-size: 12px;
+    font-weight: 720;
+    text-transform: uppercase;
+  }
+  .kv dd { margin: 0; font-size: 14.5px; }
+  .chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    margin-top: 12px;
+  }
+  .chip {
+    background: var(--accent-soft);
+    color: var(--accent-ink);
+    border: 1px solid rgba(0,0,0,.04);
+    border-radius: 999px;
+    padding: 4px 10px;
+    font-size: 12px;
+    font-weight: 650;
+  }
+  .matches {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+  }
+  .matches th {
+    color: var(--faint);
+    font-size: 11px;
+    text-align: left;
+    text-transform: uppercase;
+    padding: 8px;
+    border-bottom: 1px solid var(--line);
+  }
+  .matches td {
+    padding: 10px 8px;
+    border-bottom: 1px solid var(--line);
+    vertical-align: top;
+  }
+  .reaction-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 12px;
+  }
+  .reaction {
+    margin: 0;
+    background: #fff8ef;
+    border: 1px solid #ead9c5;
+    border-top: 4px solid var(--accent-warm);
+    padding: 15px 16px;
+  }
+  .reaction p { margin: 0; font-size: 15px; }
+  .reaction cite {
+    display: block;
+    margin-top: 10px;
+    color: var(--muted);
+    font-style: normal;
+    font-size: 12.5px;
+  }
+  .fact-board-late {
+    margin-top: 54px;
+  }
+  .context-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.1fr) minmax(260px, .9fr);
+    gap: 16px;
+  }
+  .why {
+    background: var(--accent-soft);
+    border-left: 5px solid var(--accent);
+    padding: 20px;
+    font-size: 17px;
+  }
+  .next {
+    margin: 0;
+    padding: 16px 18px 16px 36px;
+    background: var(--surface);
+    border: 1px solid var(--line);
+  }
+  .next li { margin-bottom: 9px; }
+  .source-method {
+    margin-bottom: 16px;
+    padding: 12px 14px;
+    background: var(--surface-2);
+    border: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 13px;
+  }
+  .sources {
+    columns: 2;
+    column-gap: 30px;
+    margin: 0;
+    padding-left: 22px;
+    font-size: 13px;
+  }
+  .sources li {
+    break-inside: avoid;
+    margin: 0 0 10px;
+    padding-left: 3px;
+  }
+  .sources a { color: var(--accent-ink); text-decoration: none; }
+  .src-meta {
+    display: block;
+    color: var(--faint);
+    font-size: 12px;
+  }
+  .freshness {
+    margin-top: 16px;
+    color: var(--faint);
+    font-size: 12px;
+  }
+  .cite {
+    vertical-align: super;
+    line-height: 0;
+    margin-left: 2px;
+  }
+  .cite a {
+    color: var(--accent-ink);
+    font-size: 9px;
+    font-weight: 760;
+    text-decoration: none;
+    opacity: .62;
+  }
+  .cite a:hover { opacity: 1; text-decoration: underline; }
+  footer {
+    margin-top: 44px;
+    padding-top: 16px;
+    border-top: 1px solid var(--line);
+    color: var(--faint);
+    font-size: 12px;
+  }
+  @media (max-width: 820px) {
+    .hero, .category-block, .context-grid { grid-template-columns: 1fr; }
+    .lede-strip { grid-template-columns: 1fr; }
+    .sources { columns: 1; }
+  }
+  @media (max-width: 560px) {
+    .page { padding: 0 16px 54px; }
+    .topline-inner { padding: 9px 16px; flex-direction: column; gap: 2px; }
+    .hero { padding-top: 24px; }
+    .timeline li { grid-template-columns: 1fr; gap: 4px; }
+    .kv { grid-template-columns: 1fr; gap: 2px; }
+  }
+</style></head><body class="theme-sports"><div class="topline"><div class="topline-inner"><span>Topic page generated Jun 12, 2026</span><span>6 fetched sources cited</span></div></div><main class="page"><header class="hero"><div><span class="label">Sports tracker</span><h1>2026 FIFA World Cup Is Underway: Mexico Opens With a 2-0 Win as History Is Made at the Azteca</h1><p class="dek">The largest World Cup in history — 48 teams, 104 matches, three host nations — kicked off June 11 in Mexico City with a drama-filled opener full of goals, red cards, and a star-studded ceremony.</p><p class="summary">The 2026 FIFA World Cup officially began on June 11 at the iconic Estadio Azteca in Mexico City, with co-host Mexico defeating South Africa 2-0 in a historic, drama-filled opener that saw three straight red cards — a first in any World Cup opening match. Julián Quiñones scored the tournament&#39;s first goal in the 9th minute, with Raúl Jiménez adding a second in the 66th. The tournament, jointly hosted by the United States, Mexico, and Canada, is the first to feature 48 teams and 104 matches and will run through July 19. On Day 2, Canada faced Bosnia and Herzegovina in Toronto, and the U.S. Men&#39;s National Team played Paraguay in Los Angeles.</p></div><aside class="hero-card" aria-label="Most important signals"><div class="scoreboard"><div class="score-title">Lead signals</div><div class="score-item"><b>Opening result</b><span>Mexico 2–0 South Africa at Estadio Azteca (Quiñones 9&#39;, Jiménez 66&#39;)<sup class="cite"><a href="#src-1" aria-label="Source 1">1</a>,<a href="#src-2" aria-label="Source 2">2</a></sup></span></div><div class="score-item"><b>Red cards in opener</b><span>Three straight red cards issued — Sithole and Zwane (South Africa), Montes (Mexico) — a first in any World Cup opening match<sup class="cite"><a href="#src-2" aria-label="Source 2">2</a></sup></span></div><div class="score-item"><b>Tournament scale</b><span>48 teams divided into 12 groups; 104 matches across 16 host cities in the US, Mexico, and Canada<sup class="cite"><a href="#src-2" aria-label="Source 2">2</a>,<a href="#src-3" aria-label="Source 3">3</a>,<a href="#src-6" aria-label="Source 6">6</a></sup></span></div></div></aside></header><div class="lede-strip" aria-label="Lead facts"><article class="lede-fact"><div class="kicker">Historic venue</div><p>Estadio Azteca became the first stadium to host opening matches at three FIFA World Cups (1970, 1986, 2026)<sup class="cite"><a href="#src-2" aria-label="Source 2">2</a>,<a href="#src-5" aria-label="Source 5">5</a></sup></p></article><article class="lede-fact"><div class="kicker">Defending champion</div><p>Argentina, led by Lionel Messi, enters as defending champion and FIFA&#39;s top-ranked team<sup class="cite"><a href="#src-3" aria-label="Source 3">3</a>,<a href="#src-6" aria-label="Source 6">6</a></sup></p></article><article class="lede-fact"><div class="kicker">World Cup final</div><p>Final scheduled for July 19 at MetLife Stadium in East Rutherford, New Jersey<sup class="cite"><a href="#src-2" aria-label="Source 2">2</a>,<a href="#src-3" aria-label="Source 3">3</a>,<a href="#src-4" aria-label="Source 4">4</a></sup></p></article></div><section><div class="section-head"><h2>Timeline</h2><span class="section-note">Past and upcoming moments</span></div><ol class="timeline"><li class="past"><div class="tl-date">Jan 1, 2018</div><div><div class="tl-label">United 2026 bid (US, Mexico, Canada) wins hosting rights at the 68th FIFA Congress in Moscow<sup class="cite"><a href="#src-6" aria-label="Source 6">6</a></sup></div></div></li><li class="past"><div class="tl-date">Jun 11, 2026</div><div><div class="tl-label">Tournament opens at Estadio Azteca; Mexico beats South Africa 2-0 in the inaugural match; South Korea defeats Czech Republic 2-1 in Guadalajara<sup class="cite"><a href="#src-1" aria-label="Source 1">1</a>,<a href="#src-2" aria-label="Source 2">2</a></sup></div></div></li><li class="past"><div class="tl-date">Jun 12, 2026</div><div><div class="tl-label">Day 2: Canada vs. Bosnia and Herzegovina in Toronto; USA vs. Paraguay in Los Angeles (SoFi Stadium)<sup class="cite"><a href="#src-1" aria-label="Source 1">1</a>,<a href="#src-3" aria-label="Source 3">3</a>,<a href="#src-4" aria-label="Source 4">4</a></sup></div></div></li><li class="upcoming"><div class="tl-date">Jun 24, 2026 / Upcoming</div><div><div class="tl-label">Czech Republic vs. Mexico at Estadio Azteca (Group A)<sup class="cite"><a href="#src-5" aria-label="Source 5">5</a></sup></div></div></li><li class="upcoming"><div class="tl-date">Jul 4, 2026 / Upcoming</div><div><div class="tl-label">Round of 32 begins<sup class="cite"><a href="#src-3" aria-label="Source 3">3</a></sup></div></div></li><li class="upcoming"><div class="tl-date">Jul 19, 2026 / Upcoming</div><div><div class="tl-label">World Cup Final at MetLife Stadium, East Rutherford, New Jersey<sup class="cite"><a href="#src-2" aria-label="Source 2">2</a>,<a href="#src-3" aria-label="Source 3">3</a>,<a href="#src-4" aria-label="Source 4">4</a></sup></div></div></li></ol></section><section><div class="section-head"><h2>People and stakes</h2><span class="section-note">Entities the page is tracking</span></div><div class="entity-grid"><article class="entity"><b>Estadio Azteca (Mexico City Stadium)</b><span>Host venue of the opening match; first stadium to host three World Cup opening games - 80,824-capacity stadium in the Coyoacán district of Mexico City, renovated ahead of 2026 at a cost of ~2 billion Mexican pesos.</span></article><article class="entity"><b>Mexico</b><span>Co-host nation and opening match winner - Defeated South Africa 2-0 on June 11 for their first-ever victory on the opening day of a World Cup.</span></article><article class="entity"><b>South Africa</b><span>Opening match opponent; returning to the World Cup for the first time since hosting in 2010</span></article><article class="entity"><b>Argentina</b><span>Defending champion and FIFA&#39;s top-ranked team entering the tournament - Won their third World Cup title in 2022 in Qatar, led by Lionel Messi.</span></article><article class="entity"><b>Julián Quiñones</b><span>Scorer of the tournament&#39;s first goal (9th minute, Mexico vs. South Africa)</span></article><article class="entity"><b>Raúl Jiménez</b><span>Scorer of Mexico&#39;s second goal (66th minute); 35-year-old striker in his fourth World Cup</span></article><article class="entity"><b>Shakira</b><span>Headline performer at the opening ceremony; performed official tournament song &#39;Dai Dai&#39; with Burna Boy</span></article><article class="entity"><b>Gilberto Mora</b><span>Youngest player at the 2026 World Cup; 17-year-old Mexican attacking midfielder</span></article><article class="entity"><b>FIFA</b><span>Tournament organiser</span></article><article class="entity"><b>MetLife Stadium (New York New Jersey Stadium)</b><span>Venue for the World Cup Final on July 19, 2026</span></article></div></section><section><div class="section-head"><h2>Tournament details</h2><span class="section-note">Category-specific schema block</span></div><div class="category-block"><div class="category-intro"><h3>Format and scoreboard</h3><p>Sports pages emphasize structure, match state, results, and what comes next.</p></div><div class="detail-panel"><dl class="kv"><dt>Format</dt><dd>48 teams are divided into 12 groups of four; the top two from each group plus the eight best third-place finishers (32 teams total) advance to a new Round of 32, then proceed through single-elimination knockout rounds to the final. Tied knockout matches go to 30 minutes of extra time and then a penalty shootout.</dd><dt>So far</dt><dd>2 matches played as of June 11. Top scorers (1 goal each): Ladislav Krejčí, Raúl Jiménez, Julián Quiñones, Hwang In-beom, Oh Hyeon-gyu. Total goals scored: 5 (2.5 per match). Total attendance through Day 1: 125,809.</dd><dt>How to watch</dt><dd>Matches are broadcast on FOX, FOX Sports app, Peacock, and other streaming services (US). Matches at Estadio Azteca broadcast on UK TV at 18:00/21:00/00:00/03:00 BST.</dd></dl><table class="matches"><thead><tr><th>Date</th><th>Match</th><th>Venue</th><th>Result</th></tr></thead><tbody><tr><td>Jun 11, 2026</td><td>Mexico vs. South Africa</td><td>Estadio Azteca, Mexico City</td><td>Mexico 2-0 South Africa</td></tr><tr><td>Jun 11, 2026</td><td>South Korea vs. Czech Republic</td><td>Guadalajara, Mexico</td><td>South Korea 2-1 Czech Republic</td></tr><tr><td>Jun 12, 2026</td><td>Canada vs. Bosnia and Herzegovina</td><td>Toronto Stadium, Toronto</td><td>-</td></tr><tr><td>Jun 12, 2026</td><td>USA vs. Paraguay</td><td>SoFi Stadium, Los Angeles</td><td>-</td></tr><tr><td>Jul 19, 2026</td><td>World Cup Final</td><td>MetLife Stadium, East Rutherford, New Jersey</td><td>-</td></tr></tbody></table></div></div></section><section><div class="section-head"><h2>Context and next moves</h2><span class="section-note">Reader value beyond the headline</span></div><div class="context-grid"><div class="why">This is the largest FIFA World Cup ever staged — the first with 48 teams, the first co-hosted by three nations, and the first to spread across North America. The expanded format (104 matches, a new Round of 32) gives more nations a path to the title and transforms the tournament into a nearly six-week continental spectacle. For Mexico, the US, and Canada, it represents a massive cultural and economic moment, while for football globally it sets the template for how the sport&#39;s biggest event will look for decades to come.</div><ol class="next"><li>USA Men&#39;s National Team (USMNT) plays its first match against Paraguay on June 12 at SoFi Stadium in Los Angeles.</li><li>Canada&#39;s home opener vs. Bosnia and Herzegovina in Toronto on June 12 — the first World Cup match ever played by Canada on home soil.</li><li>Mexico&#39;s second group stage match: Czech Republic vs. Mexico at Estadio Azteca on June 24.</li><li>Watch for whether any of the five Day-1 scorers (Quiñones, Jiménez, Krejčí, Hwang In-beom, Oh Hyeon-gyu) build on their early tournament tallies.</li><li>Round of 32 begins July 4–7, cutting the field from 32 to 16.</li><li>World Cup Final halftime show on July 19 will feature Shakira, Madonna, and BTS co-headlining.</li></ol></div></section><section class="fact-board-late"><div class="section-head"><h2>Full fact board</h2><span class="section-note">Complete source-linked facts</span></div><div class="fact-grid"><article class="fact"><div class="label">Opening result</div><div class="value">Mexico 2–0 South Africa at Estadio Azteca (Quiñones 9&#39;, Jiménez 66&#39;)<sup class="cite"><a href="#src-1" aria-label="Source 1">1</a>,<a href="#src-2" aria-label="Source 2">2</a></sup></div></article><article class="fact"><div class="label">Red cards in opener</div><div class="value">Three straight red cards issued — Sithole and Zwane (South Africa), Montes (Mexico) — a first in any World Cup opening match<sup class="cite"><a href="#src-2" aria-label="Source 2">2</a></sup></div></article><article class="fact"><div class="label">Tournament scale</div><div class="value">48 teams divided into 12 groups; 104 matches across 16 host cities in the US, Mexico, and Canada<sup class="cite"><a href="#src-2" aria-label="Source 2">2</a>,<a href="#src-3" aria-label="Source 3">3</a>,<a href="#src-6" aria-label="Source 6">6</a></sup></div></article><article class="fact"><div class="label">Historic venue</div><div class="value">Estadio Azteca became the first stadium to host opening matches at three FIFA World Cups (1970, 1986, 2026)<sup class="cite"><a href="#src-2" aria-label="Source 2">2</a>,<a href="#src-5" aria-label="Source 5">5</a></sup></div></article><article class="fact"><div class="label">Defending champion</div><div class="value">Argentina, led by Lionel Messi, enters as defending champion and FIFA&#39;s top-ranked team<sup class="cite"><a href="#src-3" aria-label="Source 3">3</a>,<a href="#src-6" aria-label="Source 6">6</a></sup></div></article><article class="fact"><div class="label">World Cup final</div><div class="value">Final scheduled for July 19 at MetLife Stadium in East Rutherford, New Jersey<sup class="cite"><a href="#src-2" aria-label="Source 2">2</a>,<a href="#src-3" aria-label="Source 3">3</a>,<a href="#src-4" aria-label="Source 4">4</a></sup></div></article><article class="fact"><div class="label">Youngest player</div><div class="value">17-year-old Mexican midfielder Gilberto Mora is the youngest player at the tournament<sup class="cite"><a href="#src-1" aria-label="Source 1">1</a></sup></div></article><article class="fact"><div class="label">Opening ceremony performers</div><div class="value">Shakira, J Balvin, Alejandro Fernández, Tyla, Burna Boy, Andrea Bocelli and EJAE performed at the Azteca ceremony<sup class="cite"><a href="#src-1" aria-label="Source 1">1</a>,<a href="#src-2" aria-label="Source 2">2</a>,<a href="#src-4" aria-label="Source 4">4</a></sup></div></article></div></section><section><div class="section-head"><h2>Sources</h2><span class="section-note">Live web, fetched pages, extracted text</span></div><div class="source-method">Sourcing method: the pipeline queries Brave Search, fetches candidate URLs, extracts article text with trafilatura, clips the evidence pack, and asks the model to cite source IDs from that pack. This is source-linked retrieval, not a vector-database RAG index.</div><ol class="sources"><li id="src-1"><a href="https://www.today.com/news/sports/live-blog/world-cup-2026-opening-ceremony-mexico-shakira-live-updates-rcna347915" target="_blank" rel="noopener">FIFA World Cup 2026 Opener Recap: Shakira, Tyla and Alejandro Fernández Perform, Mexico Wins Against South Africa</a><span class="src-meta">today.com / Jun 11, 2026</span></li><li id="src-2"><a href="https://www.newindianexpress.com/amp/story/live/2026/Jun/11/fifa-world-cup-2026-kicks-off-with-spectacular-opening-ceremony-at-estadio-azteca" target="_blank" rel="noopener">FIFA World Cup 2026: Mexico kick off World Cup with dramatic victory; South Korea rally to beat Czechia</a><span class="src-meta">newindianexpress.com / Jun 11, 2026</span></li><li id="src-3"><a href="https://abcnews.com/GMA/Culture/fifa-world-cup-2026-schedule-group-stage/story?id=133715983" target="_blank" rel="noopener">World Cup 2026: Schedule, groups, host cities and more</a><span class="src-meta">abcnews.com / Jun 11, 2026</span></li><li id="src-4"><a href="https://www.aljazeera.com/sports/2026/6/9/world-cup-opening-ceremony-whos-performing-when-it-starts-how-to-watch" target="_blank" rel="noopener">World Cup opening ceremony: Who&#39;s performing, when it starts, how to watch</a><span class="src-meta">aljazeera.com / Jun 9, 2026</span></li><li id="src-5"><a href="https://stadiumdb.com/tournaments/world_cup/2026/estadio_azteca" target="_blank" rel="noopener">World Cup 2026: Mexico City Stadium</a><span class="src-meta">stadiumdb.com / Jun 14, 2018</span></li><li id="src-6"><a href="https://en.wikipedia.org/wiki/2026_FIFA_World_Cup" target="_blank" rel="noopener">2026 FIFA World Cup - Wikipedia</a><span class="src-meta">wikipedia.org / Jul 30, 2012</span></li></ol><div class="freshness">Evidence gathered as of June 12, 2026 at 06:40 UTC; only the first two matches of the tournament (June 11) are reflected — scores, standings, and group-stage results will change rapidly as the competition continues.</div></section><footer>Generated from: "The 2026 FIFA World Cup kicks off at Estadio Azteca on June 11, 2026." / schema v1.0</footer></main></body></html>

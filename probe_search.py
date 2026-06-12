@@ -59,7 +59,12 @@ def call_brave(query: str, key: str, max_results: int):
     raw = r.json()
     results = (raw.get("web") or {}).get("results", [])[:max_results]
     norm = [
-        {"title": x.get("title"), "url": x.get("url"), "snippet": x.get("description")}
+        {
+            "title": x.get("title"),
+            "url": x.get("url"),
+            "snippet": x.get("description"),
+            "thumbnail": (x.get("thumbnail") or {}).get("src"),
+        }
         for x in results
     ]
     return raw, norm

@@ -29,7 +29,7 @@ import os
 
 from fetch_content import fetch_and_extract
 from probe_search import call_brave, slug
-from render import render_page
+from render import render_error_page, render_page, write_report
 from schemas import Document, EvidencePack, GateError, validate_evidence, validate_intake
 from synthesize import SYNTH_MODEL, plan_intake, synthesize_page
 
@@ -64,7 +64,7 @@ def freshness_key(rec: dict) -> tuple:
 def gather_evidence(sentence: str, queries: list[str], key: str, max_docs: int) -> list[dict]:
     """Deterministic retrieval: candidate URLs from all queries (headline
     first), walk down fetching until max_docs successful extractions."""
-    candidates: list[tuple[str, str]] = []  # (title, url)
+    candidates: list[tuple[str, str, str | None]] = []  # (title, url, thumbnail)
     seen: set[str] = set()
     for q in [sentence] + queries:
         try:
@@ -77,16 +77,16 @@ def gather_evidence(sentence: str, queries: list[str], key: str, max_docs: int) 
             url = hit.get("url")
             if url and url not in seen:
                 seen.add(url)
-                candidates.append((hit.get("title"), url))
+                candidates.append((hit.get("title"), url, hit.get("thumbnail")))
                 n_new += 1
         print(f"  [search] {n_new} new urls <- {q[:70]}")
         time.sleep(BRAVE_DELAY)
 
     docs, n_ok = [], 0
     seen_text: set[str] = set()  # same article via amp/mirror URLs
-    for rank, (title, url) in enumerate(candidates, 1):
+    for rank, (title, url, thumb) in enumerate(candidates, 1):
         rec = fetch_and_extract(url)
-        rec["brave_title"], rec["rank"] = title, rank
+        rec["brave_title"], rec["rank"], rec["thumbnail_url"] = title, rank, thumb
         if rec["error"] is None and rec["char_len"] >= 300:
             fingerprint = rec["text"][:500]
             if fingerprint in seen_text:
@@ -104,14 +104,15 @@ def gather_evidence(sentence: str, queries: list[str], key: str, max_docs: int) 
     return docs
 
 
-def build_pack(sentence: str, category: str, canonical: str, raw_docs: list[dict]) -> EvidencePack:
+def build_pack(sentence: str, category: str, canonical: str, raw_docs: list[dict],
+               total_budget: int = TOTAL_CHAR_BUDGET) -> EvidencePack:
     """Freshness-sort, clip to budgets, assign source_ids."""
     ordered = sorted(raw_docs, key=freshness_key)
     documents, used = [], 0
     for rec in ordered:
-        if used >= TOTAL_CHAR_BUDGET:
+        if used >= total_budget:
             break
-        text = clip_text(rec["text"], min(PER_DOC_CHAR_CAP, TOTAL_CHAR_BUDGET - used))
+        text = clip_text(rec["text"], min(PER_DOC_CHAR_CAP, total_budget - used))
         used += len(text)
         documents.append(
             Document(
@@ -121,6 +122,7 @@ def build_pack(sentence: str, category: str, canonical: str, raw_docs: list[dict
                 sitename=rec.get("sitename"),
                 author=rec.get("author"),
                 date=rec.get("date"),
+                thumbnail_url=rec.get("thumbnail_url"),
                 text=text,
                 char_len=len(text),
             )
@@ -134,7 +136,8 @@ def build_pack(sentence: str, category: str, canonical: str, raw_docs: list[dict
     )
 
 
-def run_one(sentence: str, key: str, model: str, max_docs: int, outdir: Path) -> Path:
+def run_one(sentence: str, key: str, model: str, max_docs: int, outdir: Path,
+            template_name: str = "page.html.j2") -> Path:
     sentence = validate_intake(sentence)
     s = slug(sentence)
     rundir = Path("data/runs") / s
@@ -161,8 +164,15 @@ def run_one(sentence: str, key: str, model: str, max_docs: int, outdir: Path) ->
     print(f"  [synth] ok: {page.headline!r} | {len(page.key_facts)} facts, {len(page.timeline)} timeline items")
 
     out_path = outdir / f"{s}.html"
-    render_page(page, out_path)
+    render_page(page, out_path, template_name=template_name)
     print(f"  [render] -> {out_path}")
+    write_report(rundir, {
+        "sentence": sentence, "orchestrator": "deterministic", "status": "success",
+        "finished_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+        "headline": page.headline, "n_documents": len(pack.documents),
+        "template": template_name,
+        "out_path": str(out_path),
+    })
     return out_path
 
 
@@ -173,6 +183,8 @@ def main() -> int:
     ap.add_argument("--model", default=SYNTH_MODEL)
     ap.add_argument("--max-docs", type=int, default=6)
     ap.add_argument("--outdir", default="out")
+    ap.add_argument("--template", default="page.html.j2",
+                    help="Jinja template in templates/ (default: page.html.j2; alternate: page_featured.html.j2)")
     args = ap.parse_args()
 
     load_dotenv()
@@ -200,13 +212,16 @@ def main() -> int:
     for sent in sentences:
         print(f"\n=== {sent}")
         try:
-            run_one(sent, key, args.model, args.max_docs, outdir)
-        except GateError as e:
+            run_one(sent, key, args.model, args.max_docs, outdir, args.template)
+        except (GateError, Exception) as e:  # noqa: BLE001
             failures += 1
-            print(f"  REJECTED: {e}")
-        except Exception as e:  # noqa: BLE001
-            failures += 1
-            print(f"  FAILED: {type(e).__name__}: {e}")
+            status = "rejected" if isinstance(e, GateError) else "failed"
+            print(f"  {status.upper()}: {e}")
+            s = slug(sent)
+            write_report(Path("data/runs") / s, {"sentence": sent, "orchestrator": "deterministic",
+                                                 "status": status, "message": str(e)})
+            render_error_page(sent, status, str(e), s, outdir / f"{s}.html")
+            print(f"  [error-page] -> {outdir / (s + '.html')}")
     return 1 if failures else 0
 
 

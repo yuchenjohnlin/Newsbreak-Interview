@@ -25,15 +25,23 @@ The shared core (every event type gets these):
 **How the shape adapts**: three fixed categories, each with a typed `extras`
 block and its own visual treatment (accent color, section layout):
 
+- **Reactions & fallout** — expert takes, fan/public reactions, controversies
+  and incidents. Originally this lived only in the tech category; testing on a
+  viral sports event (see §5) showed that *every* hot event has a reaction
+  layer, so it was promoted to the shared core.
+- **Hero image** — search-result thumbnails flow through the evidence pack and
+  the synthesis model picks one lead image; a chosen URL not in the candidate
+  set is dropped deterministically (no invented image URLs).
+
 | Category | Extended fields | Why |
 |---|---|---|
-| `tech` | product/company, rollout status, benchmarks table, expert reactions | Tech launches are low-conflict but opinion-rich; readers want "what do I get, when, and is it actually better" |
+| `tech` | product/company, rollout status, benchmarks table | Tech launches are low-conflict but data-rich; readers want "what do I get, when, and is it actually better" |
 | `show` | venue, dates, lineup chips, results, how-to-watch | Cultural events are logistics + outcome: who's performing, who won, how do I tune in |
 | `sports` | format/rules summary, key-matches table, standings, how-to-watch | Tournaments have structure (groups, fixtures, scores) that belongs in a table, not prose |
 
 **Intentionally left out**: live updates / auto-refresh (one-shot generator;
-re-running regenerates), images and media (licensing + fetch complexity, weak
-ROI for the bar being measured), user comments/social embeds, more than three
+re-running regenerates), original image sourcing beyond search thumbnails
+(licensing + fetch complexity), user comments/social embeds, more than three
 categories (each new category must earn its template, not get a generic
 fallback).
 
@@ -82,7 +90,22 @@ Two rules keep the agentic mode disciplined:
   ids. The data path stays validated end-to-end, and the loop stays cheap.
 - **Gates don't move.** The same pydantic contracts and validation gates sit
   under both orchestrators; the agent decides *what to do next*, never *what
-  counts as valid*. A bounded turn budget (`--max-turns`) caps cost.
+  counts as valid*.
+
+**Resource levels** (`--depth quick|standard|deep`): event coverage isn't
+uniform — a viral event spawns secondary stories (fan incidents, celebrity
+reactions, controversies) that a routine one doesn't. Depth scales the agent's
+turn budget, target document count, and evidence character budget together,
+and `deep` adds explicit guidance to chase reaction/incident coverage (pairing
+key names with incident words — generic "reactions" queries miss specific
+incidents).
+
+**Run interface**: every run — both orchestrators, success or not — writes a
+machine-readable `data/runs/{slug}/report.json` (status, message, doc/tool
+counts, duration, output path). Rejections and failures additionally render a
+styled error-state HTML page in `out/` stating the input, the reason, and
+where the debug trail lives, so a bad input produces a legible artifact for
+both end users and engineers, not just an exit code.
 
 Observed in testing: the deterministic run and the agent run produced
 equally-cited pages for the same event, but the agent chose a different,
@@ -195,6 +218,21 @@ fresh. The fix is a boundary correction: **the intake LLM judges only whether
 the input is structurally a usable event description; whether the event is
 real is decided by the evidence gate** — if live search can't corroborate it
 with ≥3 usable documents, the run fails on evidence, not on a stale prior.
+
+**A debugging case study the artifacts made possible.** While testing deep
+mode on a viral NBA Finals game, the agent's finish summary claimed the page
+covered a fan incident (eggs thrown at a star player; 15 arrests) — but the
+rendered page didn't mention it. The per-stage artifacts located the loss
+precisely across three runs: (1) the incident never surfaced — generic
+"reactions" queries miss specific incidents, fixed with name+incident-word
+query guidance; (2) the incident was fetched and in the evidence pack but the
+synthesizer dropped it — the sports schema had no typed home for reactions,
+fixed by promoting `reactions` to the shared core; (3) the manager's summary
+overstated page contents — fixed by having the synthesize tool report the
+page's actual section labels and instructing the manager to summarize only
+those. Each fix was a boundary correction, not a patch — and none would have
+been findable without `evidence.json` / `page.json` / `agent_log.json` to diff
+against each other.
 
 **Known limitations, acknowledged not defended**: a claim wrong-but-present in
 multiple sources passes through (no independent fact-check layer); citation

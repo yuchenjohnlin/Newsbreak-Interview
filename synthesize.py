@@ -121,7 +121,14 @@ Rules:
 - Write tight, factual news copy. No hype, no filler.
 - timeline: 3-6 of the most load-bearing moments, oldest first, including upcoming
   ones where the evidence gives scheduled dates.
+- reactions: if the evidence covers public/fan reactions, controversies or incidents
+  around the event, include them — they are part of the story of a hot event, not
+  optional color. Attribute each to its source.
 - sources: list every document you actually cited (id, url, title, sitename, date).
+- hero_image: if candidate thumbnail URLs are listed in the evidence, you may pick ONE
+  as the lead image — prefer the most central/most-cited source's image. The url must
+  be copied EXACTLY from a candidate; never invent or alter an image URL. Omit the
+  field if no candidate fits the story.
 - freshness_note: one sentence stating when the evidence was gathered and what may
   have changed since."""
 
@@ -136,9 +143,10 @@ def _format_evidence(pack: EvidencePack) -> str:
         f"--- {len(pack.documents)} evidence documents ---",
     ]
     for d in pack.documents:
+        thumb = f"\ncandidate thumbnail: {d.thumbnail_url}" if d.thumbnail_url else ""
         parts.append(
             f"\n[source_id={d.source_id}] {d.title or '(untitled)'}\n"
-            f"site: {d.sitename or '?'} | published: {d.date or 'unknown'} | url: {d.url}\n"
+            f"site: {d.sitename or '?'} | published: {d.date or 'unknown'} | url: {d.url}{thumb}\n"
             f"{d.text}"
         )
     return "\n".join(parts)
@@ -183,7 +191,14 @@ def synthesize_page(pack: EvidencePack, model: str = SYNTH_MODEL) -> tuple[Topic
         raw["generated_at"] = datetime.now(timezone.utc).isoformat(timespec="seconds")
         raw["category"] = pack.category
         try:
-            return TopicPage.model_validate(raw), raw
+            page = TopicPage.model_validate(raw)
+            # Deterministic salvage: a hero image whose URL isn't one of the
+            # provided candidates is an invention — drop it, don't retry.
+            allowed = {d.thumbnail_url for d in pack.documents if d.thumbnail_url}
+            if page.hero_image and page.hero_image.url not in allowed:
+                print(f"  [synth] dropped invented hero image url: {page.hero_image.url[:80]}")
+                page.hero_image = None
+            return page, raw
         except ValidationError as e:
             last_err = e
             print(f"  [synth] attempt {attempt} failed validation ({e.error_count()} errors)")

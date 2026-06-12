@@ -1,0 +1,13 @@
+[
+  {
+    "turn": 1,
+    "tool": "finish",
+    "input": {
+      "status": "rejected",
+      "message": "The input \"purple monkey dishwasher quantum vibes happening everywhere tomorrow maybe\" is incoherent gibberish and does not constitute a usable event description. It contains no identifiable event, subject, location, or meaningful claim that could be researched or corroborated. No topic page can be built from this input."
+    },
+    "result": {
+      "ok": true
+    }
+  }
+]

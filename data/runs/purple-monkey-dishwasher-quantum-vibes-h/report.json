@@ -1,0 +1,13 @@
+{
+  "sentence": "purple monkey dishwasher quantum vibes happening everywhere tomorrow maybe",
+  "orchestrator": "agent",
+  "depth": "standard",
+  "finished_at": "2026-06-12T08:05:48+00:00",
+  "duration_s": 5.3,
+  "n_docs_fetched": 0,
+  "n_tool_calls": 1,
+  "status": "rejected",
+  "message": "The input \"purple monkey dishwasher quantum vibes happening everywhere tomorrow maybe\" is incoherent gibberish and does not constitute a usable event description. It contains no identifiable event, subject, location, or meaningful claim that could be researched or corroborated. No topic page can be built from this input.",
+  "out_path": null,
+  "turns": 1
+}

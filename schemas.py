@@ -40,6 +40,7 @@ class Document(BaseModel):
     sitename: Optional[str] = None
     author: Optional[str] = None
     date: Optional[str] = None  # publish date as extracted; unreliable for Wikipedia
+    thumbnail_url: Optional[str] = None  # from the search API's result thumbnail
     text: str
     char_len: int
 
@@ -103,6 +104,12 @@ class Entity(BaseModel):
     description: Optional[str] = None
 
 
+class HeroImage(BaseModel):
+    url: str = Field(description="MUST be exactly one of the candidate thumbnail URLs listed in the evidence. Never invent or modify an image URL.")
+    caption: Optional[str] = Field(None, description="Short factual caption.")
+    credit_source_id: Optional[int] = Field(None, description="source_id of the document this image came from.")
+
+
 class Reaction(BaseModel):
     source: str = Field(description="Who said it (outlet or person).")
     take: str = Field(description="Their view or notable quote, paraphrased.")
@@ -115,7 +122,6 @@ class TechExtras(BaseModel):
     company: str
     rollout_status: str = Field(description="Who gets it, when, and on what plans/platforms.")
     benchmarks_or_specs: list[KeyFact] = Field(default_factory=list)
-    reactions: list[Reaction] = Field(default_factory=list, description="Notable takes on what this means going forward.")
 
 
 class ShowExtras(BaseModel):
@@ -152,10 +158,17 @@ class TopicPage(BaseModel):
     category: Category
     headline: str = Field(description="Page headline; punchy but factual.")
     dek: str = Field(description="One-sentence standfirst under the headline.")
+    hero_image: Optional[HeroImage] = Field(
+        None, description="Lead image, chosen from the candidate thumbnails in the evidence — prefer the image of the most central/most-cited source. Omit if no candidate fits."
+    )
     summary: str = Field(description="2-4 sentence overview of where the event stands right now.")
     key_facts: list[KeyFact] = Field(min_length=3)
     timeline: list[TimelineItem] = Field(min_length=2)
     entities: list[Entity] = Field(default_factory=list)
+    reactions: list[Reaction] = Field(
+        default_factory=list,
+        description="Reactions & fallout around the event: expert takes, public/fan reactions, controversies and incidents (including viral moments), notable quotes. Include incidents the evidence reports even if unflattering.",
+    )
     why_it_matters: str = Field(description="The bigger picture: why a reader should care, 2-3 sentences.")
     whats_next: list[str] = Field(default_factory=list, description="Concrete upcoming things to watch for.")
     extras: Extras
@@ -185,11 +198,13 @@ class TopicPage(BaseModel):
             check(f.source_ids, f"key_fact {f.label!r}")
         for t in self.timeline:
             check(t.source_ids, f"timeline {t.label!r}")
+        if self.hero_image and self.hero_image.credit_source_id is not None:
+            check([self.hero_image.credit_source_id], "hero_image credit")
+        for r in self.reactions:
+            check(r.source_ids, f"reaction from {r.source!r}")
         if isinstance(self.extras, TechExtras):
             for f in self.extras.benchmarks_or_specs:
                 check(f.source_ids, f"benchmark {f.label!r}")
-            for r in self.extras.reactions:
-                check(r.source_ids, f"reaction from {r.source!r}")
         if bad:
             raise ValueError("; ".join(bad))
         return self

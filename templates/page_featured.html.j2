@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ page.headline }}</title>
+<style>
+  :root {
+    --bg: #f7f6f2;
+    --surface: #ffffff;
+    --surface-2: #f1f0eb;
+    --ink: #171717;
+    --muted: #5f5f5a;
+    --faint: #8d8b84;
+    --line: #dfddd4;
+    --serif: Georgia, "Times New Roman", serif;
+    --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    --shadow: 0 10px 32px rgba(29, 27, 22, .08);
+  }
+  .theme-tech { --accent: #3156d4; --accent-ink: #18368f; --accent-soft: #edf2ff; --accent-warm: #c85d2c; }
+  .theme-show { --accent: #a21caf; --accent-ink: #75107d; --accent-soft: #fbecff; --accent-warm: #cf6f18; }
+  .theme-sports { --accent: #087f5b; --accent-ink: #045d43; --accent-soft: #e8f7f1; --accent-warm: #b84f2b; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 16px;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: inherit; }
+  .topline {
+    border-bottom: 1px solid var(--line);
+    background: rgba(255, 255, 255, .74);
+  }
+  .topline-inner {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 10px 24px;
+    display: flex;
+    justify-content: space-between;
+    gap: 18px;
+    color: var(--muted);
+    font-size: 12px;
+  }
+  .page {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 24px 72px;
+  }
+  .hero {
+    padding: 34px 0 28px;
+    display: grid;
+    grid-template-columns: minmax(0, 1.55fr) minmax(300px, .85fr);
+    gap: 30px;
+    align-items: stretch;
+  }
+  .label {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--accent-ink);
+    background: var(--accent-soft);
+    border: 1px solid rgba(0, 0, 0, .04);
+    border-radius: 999px;
+    padding: 4px 10px;
+    font-size: 11px;
+    font-weight: 750;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+  }
+  h1 {
+    font-family: var(--serif);
+    font-size: clamp(35px, 6vw, 62px);
+    line-height: 1.01;
+    letter-spacing: 0;
+    margin: 18px 0 16px;
+    max-width: 820px;
+  }
+  .dek {
+    max-width: 760px;
+    margin: 0;
+    color: var(--muted);
+    font-size: clamp(18px, 2vw, 22px);
+    line-height: 1.45;
+  }
+  .summary {
+    max-width: 780px;
+    margin: 22px 0 0;
+    font-size: 17px;
+    color: #30302c;
+  }
+  .hero-card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    box-shadow: var(--shadow);
+    min-height: 100%;
+  }
+  .hero-img {
+    margin: 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .hero-img img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+  }
+  .hero-img figcaption {
+    padding: 8px 12px 10px;
+    color: var(--faint);
+    font-size: 11px;
+    line-height: 1.35;
+  }
+  .scoreboard {
+    padding: 16px;
+  }
+  .score-title {
+    color: var(--faint);
+    font-size: 11px;
+    font-weight: 750;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  .score-item {
+    padding: 12px 0;
+    border-top: 1px solid var(--line);
+  }
+  .score-item:first-of-type { border-top: 0; padding-top: 0; }
+  .score-item b {
+    display: block;
+    color: var(--accent-ink);
+    font-size: 12px;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+    margin-bottom: 3px;
+  }
+  .score-item span { display: block; font-size: 15px; line-height: 1.42; }
+  .lede-strip {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1px;
+    background: var(--line);
+    border: 1px solid var(--line);
+    margin: 8px 0 24px;
+  }
+  .lede-fact {
+    background: var(--surface);
+    padding: 18px;
+    min-height: 128px;
+  }
+  .lede-fact .kicker {
+    color: var(--accent-ink);
+    font-size: 11px;
+    font-weight: 760;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+  .lede-fact p {
+    margin: 0;
+    font-family: var(--serif);
+    font-size: 20px;
+    line-height: 1.24;
+  }
+  section {
+    margin-top: 42px;
+  }
+  .section-head {
+    display: flex;
+    align-items: baseline;
+    gap: 14px;
+    border-bottom: 2px solid var(--ink);
+    margin-bottom: 18px;
+  }
+  h2 {
+    margin: 0;
+    font-size: 17px;
+    line-height: 1.2;
+  }
+  .section-note {
+    color: var(--faint);
+    font-size: 12px;
+    margin-left: auto;
+  }
+  .fact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 12px;
+  }
+  .fact {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    padding: 15px 16px;
+  }
+  .fact .label {
+    border: 0;
+    background: transparent;
+    padding: 0;
+    border-radius: 0;
+    color: var(--accent-ink);
+    font-size: 11px;
+    margin-bottom: 7px;
+  }
+  .fact .value { color: #292925; font-size: 15px; }
+  .timeline {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 10px;
+  }
+  .timeline li {
+    display: grid;
+    grid-template-columns: 108px minmax(0, 1fr);
+    gap: 16px;
+    background: var(--surface-2);
+    border-left: 4px solid var(--line);
+    padding: 13px 16px 13px 12px;
+  }
+  .timeline li.upcoming {
+    background: var(--accent-soft);
+    border-left-color: var(--accent);
+  }
+  .tl-date {
+    color: var(--accent-ink);
+    font-size: 12px;
+    font-weight: 760;
+    text-transform: uppercase;
+  }
+  .tl-label { font-weight: 720; }
+  .tl-desc { margin: 3px 0 0; color: var(--muted); font-size: 14px; }
+  .entity-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    gap: 10px;
+  }
+  .entity {
+    border-top: 3px solid var(--accent);
+    background: var(--surface);
+    padding: 12px 13px;
+  }
+  .entity b { display: block; font-size: 15px; margin-bottom: 4px; }
+  .entity span { display: block; color: var(--muted); font-size: 12.5px; line-height: 1.35; }
+  .category-block {
+    display: grid;
+    grid-template-columns: minmax(220px, .45fr) minmax(0, 1fr);
+    gap: 16px;
+  }
+  .category-intro {
+    background: var(--ink);
+    color: #fff;
+    padding: 18px;
+  }
+  .category-intro h3 { margin: 0 0 8px; font-size: 19px; }
+  .category-intro p { margin: 0; color: rgba(255,255,255,.75); font-size: 14px; }
+  .detail-panel {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    padding: 16px;
+  }
+  .kv {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 9px 14px;
+    margin: 0;
+  }
+  .kv dt {
+    color: var(--faint);
+    font-size: 12px;
+    font-weight: 720;
+    text-transform: uppercase;
+  }
+  .kv dd { margin: 0; font-size: 14.5px; }
+  .chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    margin-top: 12px;
+  }
+  .chip {
+    background: var(--accent-soft);
+    color: var(--accent-ink);
+    border: 1px solid rgba(0,0,0,.04);
+    border-radius: 999px;
+    padding: 4px 10px;
+    font-size: 12px;
+    font-weight: 650;
+  }
+  .matches {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+  }
+  .matches th {
+    color: var(--faint);
+    font-size: 11px;
+    text-align: left;
+    text-transform: uppercase;
+    padding: 8px;
+    border-bottom: 1px solid var(--line);
+  }
+  .matches td {
+    padding: 10px 8px;
+    border-bottom: 1px solid var(--line);
+    vertical-align: top;
+  }
+  .reaction-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 12px;
+  }
+  .reaction {
+    margin: 0;
+    background: #fff8ef;
+    border: 1px solid #ead9c5;
+    border-top: 4px solid var(--accent-warm);
+    padding: 15px 16px;
+  }
+  .reaction p { margin: 0; font-size: 15px; }
+  .reaction cite {
+    display: block;
+    margin-top: 10px;
+    color: var(--muted);
+    font-style: normal;
+    font-size: 12.5px;
+  }
+  .fact-board-late {
+    margin-top: 54px;
+  }
+  .context-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.1fr) minmax(260px, .9fr);
+    gap: 16px;
+  }
+  .why {
+    background: var(--accent-soft);
+    border-left: 5px solid var(--accent);
+    padding: 20px;
+    font-size: 17px;
+  }
+  .next {
+    margin: 0;
+    padding: 16px 18px 16px 36px;
+    background: var(--surface);
+    border: 1px solid var(--line);
+  }
+  .next li { margin-bottom: 9px; }
+  .source-method {
+    margin-bottom: 16px;
+    padding: 12px 14px;
+    background: var(--surface-2);
+    border: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 13px;
+  }
+  .sources {
+    columns: 2;
+    column-gap: 30px;
+    margin: 0;
+    padding-left: 22px;
+    font-size: 13px;
+  }
+  .sources li {
+    break-inside: avoid;
+    margin: 0 0 10px;
+    padding-left: 3px;
+  }
+  .sources a { color: var(--accent-ink); text-decoration: none; }
+  .src-meta {
+    display: block;
+    color: var(--faint);
+    font-size: 12px;
+  }
+  .freshness {
+    margin-top: 16px;
+    color: var(--faint);
+    font-size: 12px;
+  }
+  .cite {
+    vertical-align: super;
+    line-height: 0;
+    margin-left: 2px;
+  }
+  .cite a {
+    color: var(--accent-ink);
+    font-size: 9px;
+    font-weight: 760;
+    text-decoration: none;
+    opacity: .62;
+  }
+  .cite a:hover { opacity: 1; text-decoration: underline; }
+  footer {
+    margin-top: 44px;
+    padding-top: 16px;
+    border-top: 1px solid var(--line);
+    color: var(--faint);
+    font-size: 12px;
+  }
+  @media (max-width: 820px) {
+    .hero, .category-block, .context-grid { grid-template-columns: 1fr; }
+    .lede-strip { grid-template-columns: 1fr; }
+    .sources { columns: 1; }
+  }
+  @media (max-width: 560px) {
+    .page { padding: 0 16px 54px; }
+    .topline-inner { padding: 9px 16px; flex-direction: column; gap: 2px; }
+    .hero { padding-top: 24px; }
+    .timeline li { grid-template-columns: 1fr; gap: 4px; }
+    .kv { grid-template-columns: 1fr; gap: 2px; }
+  }
+</style>
+</head>
+{% macro cite(ids) %}
+{%- if ids -%}
+<sup class="cite">{% for i in ids %}<a href="#src-{{ i }}" aria-label="Source {{ i }}">{{ i }}</a>{% if not loop.last %},{% endif %}{% endfor %}</sup>
+{%- endif -%}
+{% endmacro %}
+<body class="theme-{{ page.category }}">
+<div class="topline">
+  <div class="topline-inner">
+    <span>Topic page generated {{ page.generated_at | fmt_date }}</span>
+    <span>{{ page.sources | length }} fetched sources cited</span>
+  </div>
+</div>
+
+<main class="page">
+  <header class="hero">
+    <div>
+      <span class="label">
+        {% if page.category == "tech" %}Tech signal
+        {% elif page.category == "show" %}Culture tracker
+        {% else %}Sports tracker{% endif %}
+      </span>
+      <h1>{{ page.headline }}</h1>
+      <p class="dek">{{ page.dek }}</p>
+      <p class="summary">{{ page.summary }}</p>
+    </div>
+    <aside class="hero-card" aria-label="Most important signals">
+      {% if page.hero_image %}
+      <figure class="hero-img">
+        <img src="{{ page.hero_image.url }}" alt="{{ page.hero_image.caption or page.headline }}"
+             loading="lazy" onerror="this.parentElement.style.display='none'">
+        {% if page.hero_image.caption %}
+        <figcaption>{{ page.hero_image.caption }}{% if page.hero_image.credit_source_id %}{{ cite([page.hero_image.credit_source_id]) }}{% endif %}</figcaption>
+        {% endif %}
+      </figure>
+      {% endif %}
+      <div class="scoreboard">
+        <div class="score-title">Lead signals</div>
+        {% for f in page.key_facts[:3] %}
+        <div class="score-item">
+          <b>{{ f.label }}</b>
+          <span>{{ f.value }}{{ cite(f.source_ids) }}</span>
+        </div>
+        {% endfor %}
+      </div>
+    </aside>
+  </header>
+
+  <div class="lede-strip" aria-label="Lead facts">
+    {% for f in page.key_facts[3:6] %}
+    <article class="lede-fact">
+      <div class="kicker">{{ f.label }}</div>
+      <p>{{ f.value }}{{ cite(f.source_ids) }}</p>
+    </article>
+    {% endfor %}
+  </div>
+
+  {% if page.reactions %}
+  <section>
+    <div class="section-head">
+      <h2>Reaction layer</h2>
+      <span class="section-note">What made the story travel</span>
+    </div>
+    <div class="reaction-grid">
+      {% for r in page.reactions[:6] %}
+      <blockquote class="reaction">
+        <p>{{ r.take }}{{ cite(r.source_ids) }}</p>
+        <cite>{{ r.source }}</cite>
+      </blockquote>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+  <section>
+    <div class="section-head">
+      <h2>Timeline</h2>
+      <span class="section-note">Past and upcoming moments</span>
+    </div>
+    <ol class="timeline">
+      {% for t in page.timeline %}
+      <li class="{{ t.status }}">
+        <div class="tl-date">{{ t.date | fmt_date }}{% if t.status == "upcoming" %} / Upcoming{% endif %}</div>
+        <div>
+          <div class="tl-label">{{ t.label }}{{ cite(t.source_ids) }}</div>
+          {% if t.description %}<p class="tl-desc">{{ t.description }}</p>{% endif %}
+        </div>
+      </li>
+      {% endfor %}
+    </ol>
+  </section>
+
+  {% if page.entities %}
+  <section>
+    <div class="section-head">
+      <h2>People and stakes</h2>
+      <span class="section-note">Entities the page is tracking</span>
+    </div>
+    <div class="entity-grid">
+      {% for e in page.entities %}
+      <article class="entity">
+        <b>{{ e.name }}</b>
+        <span>{{ e.role }}{% if e.description %} - {{ e.description }}{% endif %}</span>
+      </article>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+  {% set x = page.extras %}
+  <section>
+    <div class="section-head">
+      {% if page.category == "tech" %}<h2>Rollout details</h2>
+      {% elif page.category == "show" %}<h2>Event details</h2>
+      {% else %}<h2>Tournament details</h2>{% endif %}
+      <span class="section-note">Category-specific schema block</span>
+    </div>
+    <div class="category-block">
+      <div class="category-intro">
+        {% if page.category == "tech" %}
+        <h3>Availability and proof points</h3>
+        <p>Tech pages emphasize rollout status, ownership, and measurable specs.</p>
+        {% elif page.category == "show" %}
+        <h3>Logistics and outcome</h3>
+        <p>Culture pages emphasize venue, dates, participants, results, and viewing context.</p>
+        {% else %}
+        <h3>Format and scoreboard</h3>
+        <p>Sports pages emphasize structure, match state, results, and what comes next.</p>
+        {% endif %}
+      </div>
+      <div class="detail-panel">
+        {% if page.category == "tech" %}
+        <dl class="kv">
+          <dt>Product</dt><dd>{{ x.product }}</dd>
+          <dt>Company</dt><dd>{{ x.company }}</dd>
+          <dt>Availability</dt><dd>{{ x.rollout_status }}</dd>
+          {% for b in x.benchmarks_or_specs %}
+          <dt>{{ b.label }}</dt><dd>{{ b.value }}{{ cite(b.source_ids) }}</dd>
+          {% endfor %}
+        </dl>
+        {% elif page.category == "show" %}
+        <dl class="kv">
+          <dt>Venue</dt><dd>{{ x.venue }}</dd>
+          <dt>Dates</dt><dd>{{ x.dates }}</dd>
+          {% if x.results %}<dt>Result</dt><dd>{{ x.results }}</dd>{% endif %}
+          {% if x.how_to_watch %}<dt>How to watch</dt><dd>{{ x.how_to_watch }}</dd>{% endif %}
+        </dl>
+        {% if x.lineup_or_participants %}
+        <div class="chips">
+          {% for p in x.lineup_or_participants %}<span class="chip">{{ p }}</span>{% endfor %}
+        </div>
+        {% endif %}
+        {% else %}
+        <dl class="kv">
+          <dt>Format</dt><dd>{{ x.format_summary }}</dd>
+          {% if x.standings_or_results %}<dt>So far</dt><dd>{{ x.standings_or_results }}</dd>{% endif %}
+          {% if x.how_to_watch %}<dt>How to watch</dt><dd>{{ x.how_to_watch }}</dd>{% endif %}
+        </dl>
+        {% if x.key_matches %}
+        <table class="matches">
+          <thead><tr><th>Date</th><th>Match</th><th>Venue</th><th>Result</th></tr></thead>
+          <tbody>
+            {% for m in x.key_matches %}
+            <tr>
+              <td>{{ m.date | fmt_date }}</td>
+              <td>{{ m.teams }}</td>
+              <td>{{ m.venue or "-" }}</td>
+              <td>{{ m.result or "-" }}</td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+        {% endif %}
+        {% endif %}
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <h2>Context and next moves</h2>
+      <span class="section-note">Reader value beyond the headline</span>
+    </div>
+    <div class="context-grid">
+      <div class="why">{{ page.why_it_matters }}</div>
+      {% if page.whats_next %}
+      <ol class="next">
+        {% for n in page.whats_next %}<li>{{ n }}</li>{% endfor %}
+      </ol>
+      {% endif %}
+    </div>
+  </section>
+
+  <section class="fact-board-late">
+    <div class="section-head">
+      <h2>Full fact board</h2>
+      <span class="section-note">Complete source-linked facts</span>
+    </div>
+    <div class="fact-grid">
+      {% for f in page.key_facts %}
+      <article class="fact">
+        <div class="label">{{ f.label }}</div>
+        <div class="value">{{ f.value }}{{ cite(f.source_ids) }}</div>
+      </article>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <h2>Sources</h2>
+      <span class="section-note">Live web, fetched pages, extracted text</span>
+    </div>
+    <div class="source-method">
+      Sourcing method: the pipeline queries Brave Search, fetches candidate URLs,
+      extracts article text with trafilatura, clips the evidence pack, and asks the
+      model to cite source IDs from that pack. This is source-linked retrieval, not
+      a vector-database RAG index.
+    </div>
+    <ol class="sources">
+      {% for s in page.sources %}
+      <li id="src-{{ s.id }}">
+        <a href="{{ s.url }}" target="_blank" rel="noopener">{{ s.title or s.url }}</a>
+        <span class="src-meta">{{ s.sitename or (s.url | domain) }}{% if s.date %} / {{ s.date | fmt_date }}{% endif %}</span>
+      </li>
+      {% endfor %}
+    </ol>
+    {% if page.freshness_note %}
+    <div class="freshness">{{ page.freshness_note }}</div>
+    {% endif %}
+  </section>
+
+  <footer>
+    Generated from: "{{ page.input_sentence }}" / schema v{{ page.schema_version }}
+  </footer>
+</main>
+</body>
+</html>
