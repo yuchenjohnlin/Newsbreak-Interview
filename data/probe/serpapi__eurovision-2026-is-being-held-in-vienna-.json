@@ -1,0 +1,443 @@
+{
+  "search_metadata": {
+    "id": "6a2b5f49124815953b073115",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/ksc9rKfGM6YOKEVAhfWcWw/6a2b5f49124815953b073115.json",
+    "pixel_position_endpoint": "https://serpapi.com/searches/ksc9rKfGM6YOKEVAhfWcWw/6a2b5f49124815953b073115.json_with_pixel_position",
+    "created_at": "2026-06-12 01:22:17 UTC",
+    "processed_at": "2026-06-12 01:22:17 UTC",
+    "google_url": "https://www.google.com/search?q=Eurovision+2026+is+being+held+in+Vienna+from+May+12+to+May+16.&oq=Eurovision+2026+is+being+held+in+Vienna+from+May+12+to+May+16.&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/ksc9rKfGM6YOKEVAhfWcWw/6a2b5f49124815953b073115.html",
+    "total_time_taken": 5.19
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "Eurovision 2026 is being held in Vienna from May 12 to May 16.",
+    "google_domain": "google.com",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "Eurovision 2026 is being held in Vienna from May 12 to May 16.",
+    "total_results": 178,
+    "time_taken_displayed": 0.28,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "related_questions": [
+    {
+      "question": "Who is predicted to win Eurovision 2026?",
+      "type": "ai_overview",
+      "page_token": "QYPZPnicHdBbbqMwFABQzWb62cRNk9FEikZieIUBUxxfTP1TGbuJC-bRQHj9zV66qq6m1ZwlnH8f5q0uP38Muu_bbr9ajeN4f2mai3m9l021Et1cy5UUxuRClvvdzx36fZYH53a0_rwfrQTQLZrRFphElKG_vOSInBDivqZRiXes1umpnHCySWZlkwGMbgFMrZCFo4fgKalxxx1tZEFuCWzHOFN97GtLeBNhLBjyQp0gi6bXOr1x6orYU56kwTvYCuUUNoLx9ARBE1VYq0qH_MG9koUsuExTWG8RhrYUEC3Ud-2YBjGUzcyNAl7ihRbuY5ge-3whTzhrG-Z165yloWCGOFpBWuj5OQtCCcGYracrOCb5frChCCwxNW8JtCF1eE99jIjtEuX9Is_GGliFbLXgGfumE-vJYtQNILk7y-Gwufv_eXg5V_2-vTaXL0x3hT8",
+      "serpapi_ai_overview_link": "https://serpapi.com/search.json?engine=google_ai_overview&page_token=QYPZPnicHdBbbqMwFABQzWb62cRNk9FEikZieIUBUxxfTP1TGbuJC-bRQHj9zV66qq6m1ZwlnH8f5q0uP38Muu_bbr9ajeN4f2mai3m9l021Et1cy5UUxuRClvvdzx36fZYH53a0_rwfrQTQLZrRFphElKG_vOSInBDivqZRiXes1umpnHCySWZlkwGMbgFMrZCFo4fgKalxxx1tZEFuCWzHOFN97GtLeBNhLBjyQp0gi6bXOr1x6orYU56kwTvYCuUUNoLx9ARBE1VYq0qH_MG9koUsuExTWG8RhrYUEC3Ud-2YBjGUzcyNAl7ihRbuY5ge-3whTzhrG-Z165yloWCGOFpBWuj5OQtCCcGYracrOCb5frChCCwxNW8JtCF1eE99jIjtEuX9Is_GGliFbLXgGfumE-vJYtQNILk7y-Gwufv_eXg5V_2-vTaXL0x3hT8",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUVzR6TFhsVWJWRTVlbEZqWVVoMlV6bE1ZVkpUU2padmNraEdWWHB2T0dkME1WZHphbVZqWTBRNFNrUk1aRTl0YlZKdE1ISktVa3RxVm1KdmFEbGhaMlpWY3pSdllVSlhkVU5mU0ZZellXTkhiVWxYZEZjd1RtcHRNbE01VnpKc1VSSVhWRlk0Y21GeVMzRkNjRjlNYTFCSlVHcFpRMUl5UVdzYUlrRktTMHhHYlV4dlFucFdjV0ZUTkhoc1NYZE9WV3BRUTFkaU5qWmxMVGQ0UVhjIiwiZmN2IjoiMyIsImVpIjoiVFY4cmFyS3FCcF9Ma1BJUGpZQ1IyQWsiLCJxYyI6ImMtT3lUUzB0eWlfTExNN016MU13TWpBeVU4Z3NWa2hLemN4TFY4aEl6VWxSeU14VEtNdE16Y3RMVkVncnlzOVZ5RTJzVkRBMFVpakpoN0RNQkJocTc5M1d0QWNBIiwicXVlc3Rpb24iOiJXaG8gaXMgcHJlZGljdGVkIHRvIHdpbiBFdXJvdmlzaW9uIDIwMjY/IiwibGsiOiJHaWQzYUc4Z2FYTWdjSEpsWkdsamRHVmtJSFJ2SUhkcGJpQmxkWEp2ZG1semFXOXVJREl3TWpZIiwiYnMiOiJjNFhQUHd2Q01CQ0hZVnd6T1hlNnlWWlVrSUN1WGZRVGlIWnk2Si16T2RDY0pHbER2NzJtRGxhMHVELTh2enR4RkVtbUdNakMzV0JGcGNNS0hJTW5EZnZHY0V1V1dJTmN5MjBxNTFIc1J5eC1XbkVXeTB4UnFXQURKVGZhR1VJTHVVRW91Q3ZaT2RMMW9KX0tWYlR3X194N1F4eEV2R053Q3NPNFJtT0JMOE43YTNSd1k0MWRLcE5vVm4xUl9FRkRORk5kZUc5UUtqQk1LN3hXOEh6elJLaDEza2Y5aS1JWWJYczZuVHdBIiwiaWQiOiJmY19UVjhyYXJLcUJwX0xrUElQallDUjJBa18yIn0=",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUVzR6TFhsVWJWRTVlbEZqWVVoMlV6bE1ZVkpUU2padmNraEdWWHB2T0dkME1WZHphbVZqWTBRNFNrUk1aRTl0YlZKdE1ISktVa3RxVm1KdmFEbGhaMlpWY3pSdllVSlhkVU5mU0ZZellXTkhiVWxYZEZjd1RtcHRNbE01VnpKc1VSSVhWRlk0Y21GeVMzRkNjRjlNYTFCSlVHcFpRMUl5UVdzYUlrRktTMHhHYlV4dlFucFdjV0ZUTkhoc1NYZE9WV3BRUTFkaU5qWmxMVGQ0UVhjIiwiZmN2IjoiMyIsImVpIjoiVFY4cmFyS3FCcF9Ma1BJUGpZQ1IyQWsiLCJxYyI6ImMtT3lUUzB0eWlfTExNN016MU13TWpBeVU4Z3NWa2hLemN4TFY4aEl6VWxSeU14VEtNdE16Y3RMVkVncnlzOVZ5RTJzVkRBMFVpakpoN0RNQkJocTc5M1d0QWNBIiwicXVlc3Rpb24iOiJXaG8gaXMgcHJlZGljdGVkIHRvIHdpbiBFdXJvdmlzaW9uIDIwMjY%2FIiwibGsiOiJHaWQzYUc4Z2FYTWdjSEpsWkdsamRHVmtJSFJ2SUhkcGJpQmxkWEp2ZG1semFXOXVJREl3TWpZIiwiYnMiOiJjNFhQUHd2Q01CQ0hZVnd6T1hlNnlWWlVrSUN1WGZRVGlIWnk2Si16T2RDY0pHbER2NzJtRGxhMHVELTh2enR4RkVtbUdNakMzV0JGcGNNS0hJTW5EZnZHY0V1V1dJTmN5MjBxNTFIc1J5eC1XbkVXeTB4UnFXQURKVGZhR1VJTHVVRW91Q3ZaT2RMMW9KX0tWYlR3X194N1F4eEV2R053Q3NPNFJtT0JMOE43YTNSd1k0MWRLcE5vVm4xUl9FRkRORk5kZUc5UUtqQk1LN3hXOEh6elJLaDEza2Y5aS1JWWJYczZuVHdBIiwiaWQiOiJmY19UVjhyYXJLcUJwX0xrUElQallDUjJBa18yIn0%3D"
+    },
+    {
+      "question": "Which 5 countries are boycotting Eurovision?",
+      "type": "ai_overview",
+      "page_token": "llV5_nicHdBfboIwHADg7DI-KoXhoolZRFAgylKgLfRlkYJW-fFHRQu-7S471U6zZd8Rvq9vONXlz8tDdl17m08mSqnxsWmOUIxFU032t6EWE7EHyPainE_fpuj9IBbO3bNWF8_CBN13AzJJJSNOqU-oZWXg6AET2jbZqRxmaWTTCzbaONKQH6xLI3RDJphSYU1tWqeGWOc91k31QfymqIBjRJ8FpVW0UUPO-hWrPJWW0tnRsCbAneRJZUFQH8PSSPXcLADuzOYDN4INKVseMP8qGNIYzE4cSS19yj4rAzdjrZ4lYHLGe-GG9x1YegT-ma8tjvW8i0C6xQaVjM4sR-aEnuWQJv5WEF8lWn8lDuC_B5ucfWvfNydM2m3s8C6KocOamYpEXgsaluQceKEtQ-ouDYK81wx5Osajg3gsjNH_5-LzUHXz9tocfwHY4YQE",
+      "serpapi_ai_overview_link": "https://serpapi.com/search.json?engine=google_ai_overview&page_token=llV5_nicHdBfboIwHADg7DI-KoXhoolZRFAgylKgLfRlkYJW-fFHRQu-7S471U6zZd8Rvq9vONXlz8tDdl17m08mSqnxsWmOUIxFU032t6EWE7EHyPainE_fpuj9IBbO3bNWF8_CBN13AzJJJSNOqU-oZWXg6AET2jbZqRxmaWTTCzbaONKQH6xLI3RDJphSYU1tWqeGWOc91k31QfymqIBjRJ8FpVW0UUPO-hWrPJWW0tnRsCbAneRJZUFQH8PSSPXcLADuzOYDN4INKVseMP8qGNIYzE4cSS19yj4rAzdjrZ4lYHLGe-GG9x1YegT-ma8tjvW8i0C6xQaVjM4sR-aEnuWQJv5WEF8lWn8lDuC_B5ucfWvfNydM2m3s8C6KocOamYpEXgsaluQceKEtQ-ouDYK81wx5Osajg3gsjNH_5-LzUHXz9tocfwHY4YQE",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUVzR6TFhsVWJWRTVlbEZqWVVoMlV6bE1ZVkpUU2padmNraEdWWHB2T0dkME1WZHphbVZqWTBRNFNrUk1aRTl0YlZKdE1ISktVa3RxVm1KdmFEbGhaMlpWY3pSdllVSlhkVU5mU0ZZellXTkhiVWxYZEZjd1RtcHRNbE01VnpKc1VSSVhWRlk0Y21GeVMzRkNjRjlNYTFCSlVHcFpRMUl5UVdzYUlrRktTMHhHYlV4dlFucFdjV0ZUTkhoc1NYZE9WV3BRUTFkaU5qWmxMVGQ0UVhjIiwiZmN2IjoiMyIsImVpIjoiVFY4cmFyS3FCcF9Ma1BJUGpZQ1IyQWsiLCJxYyI6ImMtT3lUUzB0eWlfTExNN016MU13TWpBeVU4Z3NWa2hLemN4TFY4aEl6VWxSeU14VEtNdE16Y3RMVkVncnlzOVZ5RTJzVkRBMFVpakpoN0RNQkJocTc5M1d0QWNBIiwicXVlc3Rpb24iOiJXaGljaCA1IGNvdW50cmllcyBhcmUgYm95Y290dGluZyBFdXJvdmlzaW9uPyIsImxrIjoiR2l0M2FHbGphQ0ExSUdOdmRXNTBjbWxsY3lCaGNtVWdZbTk1WTI5MGRHbHVaeUJsZFhKdmRtbHphVzl1IiwiYnMiOiJjNFhQUHd2Q01CQ0hZVnd6T1hlNnlWWlVrSUN1WGZRVGlIWnk2Si16T2RDY0pHbER2NzJtRGxhMHVELTh2enR4RkVtbUdNakMzV0JGcGNNS0hJTW5EZnZHY0V1V1dJTmN5MjBxNTFIc1J5eC1XbkVXeTB4UnFXQURKVGZhR1VJTHVVRW91Q3ZaT2RMMW9KX0tWYlR3X194N1F4eEV2R053Q3NPNFJtT0JMOE43YTNSd1k0MWRLcE5vVm4xUl9FRkRORk5kZUc5UUtqQk1LN3hXOEh6elJLaDEza2Y5aS1JWWJYczZuVHdBIiwiaWQiOiJmY19UVjhyYXJLcUJwX0xrUElQallDUjJBa18yIn0=",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUVzR6TFhsVWJWRTVlbEZqWVVoMlV6bE1ZVkpUU2padmNraEdWWHB2T0dkME1WZHphbVZqWTBRNFNrUk1aRTl0YlZKdE1ISktVa3RxVm1KdmFEbGhaMlpWY3pSdllVSlhkVU5mU0ZZellXTkhiVWxYZEZjd1RtcHRNbE01VnpKc1VSSVhWRlk0Y21GeVMzRkNjRjlNYTFCSlVHcFpRMUl5UVdzYUlrRktTMHhHYlV4dlFucFdjV0ZUTkhoc1NYZE9WV3BRUTFkaU5qWmxMVGQ0UVhjIiwiZmN2IjoiMyIsImVpIjoiVFY4cmFyS3FCcF9Ma1BJUGpZQ1IyQWsiLCJxYyI6ImMtT3lUUzB0eWlfTExNN016MU13TWpBeVU4Z3NWa2hLemN4TFY4aEl6VWxSeU14VEtNdE16Y3RMVkVncnlzOVZ5RTJzVkRBMFVpakpoN0RNQkJocTc5M1d0QWNBIiwicXVlc3Rpb24iOiJXaGljaCA1IGNvdW50cmllcyBhcmUgYm95Y290dGluZyBFdXJvdmlzaW9uPyIsImxrIjoiR2l0M2FHbGphQ0ExSUdOdmRXNTBjbWxsY3lCaGNtVWdZbTk1WTI5MGRHbHVaeUJsZFhKdmRtbHphVzl1IiwiYnMiOiJjNFhQUHd2Q01CQ0hZVnd6T1hlNnlWWlVrSUN1WGZRVGlIWnk2Si16T2RDY0pHbER2NzJtRGxhMHVELTh2enR4RkVtbUdNakMzV0JGcGNNS0hJTW5EZnZHY0V1V1dJTmN5MjBxNTFIc1J5eC1XbkVXeTB4UnFXQURKVGZhR1VJTHVVRW91Q3ZaT2RMMW9KX0tWYlR3X194N1F4eEV2R053Q3NPNFJtT0JMOE43YTNSd1k0MWRLcE5vVm4xUl9FRkRORk5kZUc5UUtqQk1LN3hXOEh6elJLaDEza2Y5aS1JWWJYczZuVHdBIiwiaWQiOiJmY19UVjhyYXJLcUJwX0xrUElQallDUjJBa18yIn0%3D"
+    },
+    {
+      "question": "Do the winners of Eurovision get money?",
+      "type": "ai_overview",
+      "page_token": "fikSYXicHdBbbqMwFABQzWb62dh5jRIpGikFp9CAhLGdxD8jcyEYuDyS0gL5m73MqmY1reYs4fz5i0VT_fvxafu-e9_OZsMwPOdtm2P2DG09M-9TAzMwiImBarv-uaa_rrBzP7z9y83bR5J-BBNdyRNqkKyHuqLJfDwp1-tPApbcYUNKhsEwdYIF0uxsSULGG7yqt0TCIiQDgcPKKGe_kAfex0xPyoF5pHxfoxUpwTBz2DVhrNRN_kgaq7NqFaSSvVxKrNNauaEIOS99Tz2s4TIUgcI7p8EYOGgNVqOR_E0hrmPcTGLeLi8ES06RaNo-QHhLUfMC5KYLXVWkDSuyV79xbSpVaafL2T-C9IczGe_Sxej7wZGlvzdjW0SyOwpX93GT06DSR1WGt-QQWlOlHZ-v7lJ161huYkO0kNHTFT53i6f_n7vf17rfdvc2_wL0wITe",
+      "serpapi_ai_overview_link": "https://serpapi.com/search.json?engine=google_ai_overview&page_token=fikSYXicHdBbbqMwFABQzWb62dh5jRIpGikFp9CAhLGdxD8jcyEYuDyS0gL5m73MqmY1reYs4fz5i0VT_fvxafu-e9_OZsMwPOdtm2P2DG09M-9TAzMwiImBarv-uaa_rrBzP7z9y83bR5J-BBNdyRNqkKyHuqLJfDwp1-tPApbcYUNKhsEwdYIF0uxsSULGG7yqt0TCIiQDgcPKKGe_kAfex0xPyoF5pHxfoxUpwTBz2DVhrNRN_kgaq7NqFaSSvVxKrNNauaEIOS99Tz2s4TIUgcI7p8EYOGgNVqOR_E0hrmPcTGLeLi8ES06RaNo-QHhLUfMC5KYLXVWkDSuyV79xbSpVaafL2T-C9IczGe_Sxej7wZGlvzdjW0SyOwpX93GT06DSR1WGt-QQWlOlHZ-v7lJ161huYkO0kNHTFT53i6f_n7vf17rfdvc2_wL0wITe",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUVzR6TFhsVWJWRTVlbEZqWVVoMlV6bE1ZVkpUU2padmNraEdWWHB2T0dkME1WZHphbVZqWTBRNFNrUk1aRTl0YlZKdE1ISktVa3RxVm1KdmFEbGhaMlpWY3pSdllVSlhkVU5mU0ZZellXTkhiVWxYZEZjd1RtcHRNbE01VnpKc1VSSVhWRlk0Y21GeVMzRkNjRjlNYTFCSlVHcFpRMUl5UVdzYUlrRktTMHhHYlV4dlFucFdjV0ZUTkhoc1NYZE9WV3BRUTFkaU5qWmxMVGQ0UVhjIiwiZmN2IjoiMyIsImVpIjoiVFY4cmFyS3FCcF9Ma1BJUGpZQ1IyQWsiLCJxYyI6ImMtT3lUUzB0eWlfTExNN016MU13TWpBeVU4Z3NWa2hLemN4TFY4aEl6VWxSeU14VEtNdE16Y3RMVkVncnlzOVZ5RTJzVkRBMFVpakpoN0RNQkJocTc5M1d0QWNBIiwicXVlc3Rpb24iOiJEbyB0aGUgd2lubmVycyBvZiBFdXJvdmlzaW9uIGdldCBtb25leT8iLCJsayI6IkdpWmtieUIwYUdVZ2QybHVibVZ5Y3lCdlppQmxkWEp2ZG1semFXOXVJR2RsZENCdGIyNWxlUSIsImJzIjoiYzRYUFB3dkNNQkNIWVZ3ek9YZTZ5VlpVa0lDdVhmUVRpSFp5Nkotek9kQ2NKR2xEdjcybURsYTB1RC04dnp0eEZFbW1HTWpDM1dCRnBjTUtISU1uRGZ2R2NFdVdXSU5jeTIwcTUxSHNSeXgtV25FV3kweFJxV0FESlRmYUdVSUx1VUVvdUN2Wk9kTDFvSl9LVmJUd19feDdReHhFdkdOd0NzTzRSbU9CTDhON2EzUndZNDFkS3BOb1ZuMVJfRUZETkZOZGVHOVFLakJNSzd4VzhIenpSS2gxM2tmOWktSVliWHM2blR3QSIsImlkIjoiZmNfVFY4cmFyS3FCcF9Ma1BJUGpZQ1IyQWtfMiJ9",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUVzR6TFhsVWJWRTVlbEZqWVVoMlV6bE1ZVkpUU2padmNraEdWWHB2T0dkME1WZHphbVZqWTBRNFNrUk1aRTl0YlZKdE1ISktVa3RxVm1KdmFEbGhaMlpWY3pSdllVSlhkVU5mU0ZZellXTkhiVWxYZEZjd1RtcHRNbE01VnpKc1VSSVhWRlk0Y21GeVMzRkNjRjlNYTFCSlVHcFpRMUl5UVdzYUlrRktTMHhHYlV4dlFucFdjV0ZUTkhoc1NYZE9WV3BRUTFkaU5qWmxMVGQ0UVhjIiwiZmN2IjoiMyIsImVpIjoiVFY4cmFyS3FCcF9Ma1BJUGpZQ1IyQWsiLCJxYyI6ImMtT3lUUzB0eWlfTExNN016MU13TWpBeVU4Z3NWa2hLemN4TFY4aEl6VWxSeU14VEtNdE16Y3RMVkVncnlzOVZ5RTJzVkRBMFVpakpoN0RNQkJocTc5M1d0QWNBIiwicXVlc3Rpb24iOiJEbyB0aGUgd2lubmVycyBvZiBFdXJvdmlzaW9uIGdldCBtb25leT8iLCJsayI6IkdpWmtieUIwYUdVZ2QybHVibVZ5Y3lCdlppQmxkWEp2ZG1semFXOXVJR2RsZENCdGIyNWxlUSIsImJzIjoiYzRYUFB3dkNNQkNIWVZ3ek9YZTZ5VlpVa0lDdVhmUVRpSFp5Nkotek9kQ2NKR2xEdjcybURsYTB1RC04dnp0eEZFbW1HTWpDM1dCRnBjTUtISU1uRGZ2R2NFdVdXSU5jeTIwcTUxSHNSeXgtV25FV3kweFJxV0FESlRmYUdVSUx1VUVvdUN2Wk9kTDFvSl9LVmJUd19feDdReHhFdkdOd0NzTzRSbU9CTDhON2EzUndZNDFkS3BOb1ZuMVJfRUZETkZOZGVHOVFLakJNSzd4VzhIenpSS2gxM2tmOWktSVliWHM2blR3QSIsImlkIjoiZmNfVFY4cmFyS3FCcF9Ma1BJUGpZQ1IyQWtfMiJ9"
+    },
+    {
+      "question": "Why is Eurovision being held in Vienna?",
+      "type": "ai_overview",
+      "page_token": "DIuk1HicHdBfboIwAIDx7DI-iozAgolZRAFHRh2FtsjLguWftBSnnS172112qp1mZhf48sv3_cNPgv0-5J2U5-vSMJRS83YcW17P6TgY5XUS1KAl58eSsqXz5JjPDV35V-VtRuUlyPyMJ9NGuNrVOZMFCQ6pVW1JzyTkUVHjLkkYeCNoXKRBJahgU9LjEqPDYyWiWylam361E8zAcCCmTfKii30MK__sACZBJgpFid7uMbwCCxbAAo810U3s6-aVaKfAaxn3kQ9y7OFQp1kINOFFFBPXKYd7KxwtmL3YQASbpO9A3bcK8kDW6M4xIdnvoo4yqRPhNVkokxR7HwSBNGbBJTxFXspkDAczIuhuX9gCE9dMw44T7trHQWmy6xCw1gr7rjdr6G1lzf6Prd6bQS7Pl7H9A_gGenw",
+      "serpapi_ai_overview_link": "https://serpapi.com/search.json?engine=google_ai_overview&page_token=DIuk1HicHdBfboIwAIDx7DI-iozAgolZRAFHRh2FtsjLguWftBSnnS172112qp1mZhf48sv3_cNPgv0-5J2U5-vSMJRS83YcW17P6TgY5XUS1KAl58eSsqXz5JjPDV35V-VtRuUlyPyMJ9NGuNrVOZMFCQ6pVW1JzyTkUVHjLkkYeCNoXKRBJahgU9LjEqPDYyWiWylam361E8zAcCCmTfKii30MK__sACZBJgpFid7uMbwCCxbAAo810U3s6-aVaKfAaxn3kQ9y7OFQp1kINOFFFBPXKYd7KxwtmL3YQASbpO9A3bcK8kDW6M4xIdnvoo4yqRPhNVkokxR7HwSBNGbBJTxFXspkDAczIuhuX9gCE9dMw44T7trHQWmy6xCw1gr7rjdr6G1lzf6Prd6bQS7Pl7H9A_gGenw",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUVzR6TFhsVWJWRTVlbEZqWVVoMlV6bE1ZVkpUU2padmNraEdWWHB2T0dkME1WZHphbVZqWTBRNFNrUk1aRTl0YlZKdE1ISktVa3RxVm1KdmFEbGhaMlpWY3pSdllVSlhkVU5mU0ZZellXTkhiVWxYZEZjd1RtcHRNbE01VnpKc1VSSVhWRlk0Y21GeVMzRkNjRjlNYTFCSlVHcFpRMUl5UVdzYUlrRktTMHhHYlV4dlFucFdjV0ZUTkhoc1NYZE9WV3BRUTFkaU5qWmxMVGQ0UVhjIiwiZmN2IjoiMyIsImVpIjoiVFY4cmFyS3FCcF9Ma1BJUGpZQ1IyQWsiLCJxYyI6ImMtT3lUUzB0eWlfTExNN016MU13TWpBeVU4Z3NWa2hLemN4TFY4aEl6VWxSeU14VEtNdE16Y3RMVkVncnlzOVZ5RTJzVkRBMFVpakpoN0RNQkJocTc5M1d0QWNBIiwicXVlc3Rpb24iOiJXaHkgaXMgRXVyb3Zpc2lvbiBiZWluZyBoZWxkIGluIFZpZW5uYT8iLCJsayI6IkdpWjNhSGtnYVhNZ1pYVnliM1pwYzJsdmJpQmlaV2x1WnlCb1pXeGtJR2x1SUhacFpXNXVZUSIsImJzIjoiYzRYUFB3dkNNQkNIWVZ3ek9YZTZ5VlpVa0lDdVhmUVRpSFp5Nkotek9kQ2NKR2xEdjcybURsYTB1RC04dnp0eEZFbW1HTWpDM1dCRnBjTUtISU1uRGZ2R2NFdVdXSU5jeTIwcTUxSHNSeXgtV25FV3kweFJxV0FESlRmYUdVSUx1VUVvdUN2Wk9kTDFvSl9LVmJUd19feDdReHhFdkdOd0NzTzRSbU9CTDhON2EzUndZNDFkS3BOb1ZuMVJfRUZETkZOZGVHOVFLakJNSzd4VzhIenpSS2gxM2tmOWktSVliWHM2blR3QSIsImlkIjoiZmNfVFY4cmFyS3FCcF9Ma1BJUGpZQ1IyQWtfMiJ9",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUVzR6TFhsVWJWRTVlbEZqWVVoMlV6bE1ZVkpUU2padmNraEdWWHB2T0dkME1WZHphbVZqWTBRNFNrUk1aRTl0YlZKdE1ISktVa3RxVm1KdmFEbGhaMlpWY3pSdllVSlhkVU5mU0ZZellXTkhiVWxYZEZjd1RtcHRNbE01VnpKc1VSSVhWRlk0Y21GeVMzRkNjRjlNYTFCSlVHcFpRMUl5UVdzYUlrRktTMHhHYlV4dlFucFdjV0ZUTkhoc1NYZE9WV3BRUTFkaU5qWmxMVGQ0UVhjIiwiZmN2IjoiMyIsImVpIjoiVFY4cmFyS3FCcF9Ma1BJUGpZQ1IyQWsiLCJxYyI6ImMtT3lUUzB0eWlfTExNN016MU13TWpBeVU4Z3NWa2hLemN4TFY4aEl6VWxSeU14VEtNdE16Y3RMVkVncnlzOVZ5RTJzVkRBMFVpakpoN0RNQkJocTc5M1d0QWNBIiwicXVlc3Rpb24iOiJXaHkgaXMgRXVyb3Zpc2lvbiBiZWluZyBoZWxkIGluIFZpZW5uYT8iLCJsayI6IkdpWjNhSGtnYVhNZ1pYVnliM1pwYzJsdmJpQmlaV2x1WnlCb1pXeGtJR2x1SUhacFpXNXVZUSIsImJzIjoiYzRYUFB3dkNNQkNIWVZ3ek9YZTZ5VlpVa0lDdVhmUVRpSFp5Nkotek9kQ2NKR2xEdjcybURsYTB1RC04dnp0eEZFbW1HTWpDM1dCRnBjTUtISU1uRGZ2R2NFdVdXSU5jeTIwcTUxSHNSeXgtV25FV3kweFJxV0FESlRmYUdVSUx1VUVvdUN2Wk9kTDFvSl9LVmJUd19feDdReHhFdkdOd0NzTzRSbU9CTDhON2EzUndZNDFkS3BOb1ZuMVJfRUZETkZOZGVHOVFLakJNSzd4VzhIenpSS2gxM2tmOWktSVliWHM2blR3QSIsImlkIjoiZmNfVFY4cmFyS3FCcF9Ma1BJUGpZQ1IyQWtfMiJ9"
+    }
+  ],
+  "ai_overview": {
+    "page_token": "W0kp_XicxVVbcuI4FP2ffQw_ZPAjToJT5eqShAngJEQ8Etw_Lr-Q8UtgG0zy13uZVc0GZhsj2yQYAp2arpoaUUi60pXulXSOz48_w0Uc_PXb316WLdNbjsvzvEUoJaHbsmnEmelrbHNzGqaJ7X173SiXDTtV-Ia7UCbP7cRMtBVcGvfBU__J19FIBEGjXKIYlpm6Pttx66ecwbEq-P2yw4xW2nLjlmivAlmfSlmetkRekFtDzoyYA_gvi6oCWLSwDzBr-p8cEACjn2-By0UeAORjqF-r30tebMWcSNloZ3eDVRuWq-dvT3MA-HKkQ86tQQDWzYf3SCqrVdIHlf151fkxVMaCJzzOrdyNQlwZMK_N4JP-_f5BAHYjvgT0_e72x74fB8cYFRdZFgLbHR9MPHV6JsuyrADY0l4A8y8eEcGuC2jVv4MJUAHnEAY-nrMS1gjcwvbsspOkBSbRROZpdwvofC1MNTt4EadZBHyxC28cLQt1wtkW8wup6biO4Rn8t9IWROGKly9v2hclGez0gw1pnQ3jbH5_N_UQ7Eut-xYUalQo77IP6lgoLgyqp89V4ezwIXGtLm_yYJbscIsgxcxpD2LkT4tX3T9sG0ByghwFgo-pUMt03yGkSsLbJ1RDCusOKruevXQUTD3sMUhhSD_GdHzoW0-GsQOVNtFLuw5Ylh5B_QJYBKBgF39Yj8aSqu_N7gmi4mNSP2dVkxoVEBtSi6DoqagDRrPih6tDovf0NHz0mg8HmXeK7F7waRZ-Wbpfu6jvoD_CcB37vXUo8YOpLo8xGfltEo678urKEEYgyk9jnUbWv_j02_8zG3bCQHbCoJ1iw_bnbCiFAZ8Xht0D7oWhDHSODXjHhrowtMu5vTAcswHBUZ0N9nlhqLMBga_YAM-wAb0n-5kNcFzFOWADPsmGShjqbDgWht0XqrzYPRt-RRi6vyIMJTfcqjlUibVPzqqFOh7mj734ftZeG9HmO4HdSdc3J-Pu8gZ_qRbzKLuNTCe8MBbOLRQH2atzYbABeus6jZWirhO6WaQLGjdFXrxuLtKm5S5i0vTc0Gku4ubzwo1jszlPaNR8MF-bgtjMaNW7bjWiMKEKb15bl48P4VzvjR9D2jWWmzDqxGu08GejjWppGp_Ru7eZvAo60BM3-tCVhj4OUiee0MsrbxgNoTab0d6NswkHf_BLMOC3jkzG1otmxbAzEvW3l60N2rL9SJ5tKQAToT3wEM8n3x9WS5DgcG24kt6Dm-EWrccoL_NKFWjMxpqpy6CjNtiRU1cRGlFiK-zJJQIeMXghDBNIB5ghCCPK_jnAaiO1TcNNN4orXl_bpuW40ly2ZLndiEj2ulQkoZHGiSL8Ax4AHTs",
+    "serpapi_link": "https://serpapi.com/search.json?engine=google_ai_overview&page_token=W0kp_XicxVVbcuI4FP2ffQw_ZPAjToJT5eqShAngJEQ8Etw_Lr-Q8UtgG0zy13uZVc0GZhsj2yQYAp2arpoaUUi60pXulXSOz48_w0Uc_PXb316WLdNbjsvzvEUoJaHbsmnEmelrbHNzGqaJ7X173SiXDTtV-Ia7UCbP7cRMtBVcGvfBU__J19FIBEGjXKIYlpm6Pttx66ecwbEq-P2yw4xW2nLjlmivAlmfSlmetkRekFtDzoyYA_gvi6oCWLSwDzBr-p8cEACjn2-By0UeAORjqF-r30tebMWcSNloZ3eDVRuWq-dvT3MA-HKkQ86tQQDWzYf3SCqrVdIHlf151fkxVMaCJzzOrdyNQlwZMK_N4JP-_f5BAHYjvgT0_e72x74fB8cYFRdZFgLbHR9MPHV6JsuyrADY0l4A8y8eEcGuC2jVv4MJUAHnEAY-nrMS1gjcwvbsspOkBSbRROZpdwvofC1MNTt4EadZBHyxC28cLQt1wtkW8wup6biO4Rn8t9IWROGKly9v2hclGez0gw1pnQ3jbH5_N_UQ7Eut-xYUalQo77IP6lgoLgyqp89V4ezwIXGtLm_yYJbscIsgxcxpD2LkT4tX3T9sG0ByghwFgo-pUMt03yGkSsLbJ1RDCusOKruevXQUTD3sMUhhSD_GdHzoW0-GsQOVNtFLuw5Ylh5B_QJYBKBgF39Yj8aSqu_N7gmi4mNSP2dVkxoVEBtSi6DoqagDRrPih6tDovf0NHz0mg8HmXeK7F7waRZ-Wbpfu6jvoD_CcB37vXUo8YOpLo8xGfltEo678urKEEYgyk9jnUbWv_j02_8zG3bCQHbCoJ1iw_bnbCiFAZ8Xht0D7oWhDHSODXjHhrowtMu5vTAcswHBUZ0N9nlhqLMBga_YAM-wAb0n-5kNcFzFOWADPsmGShjqbDgWht0XqrzYPRt-RRi6vyIMJTfcqjlUibVPzqqFOh7mj734ftZeG9HmO4HdSdc3J-Pu8gZ_qRbzKLuNTCe8MBbOLRQH2atzYbABeus6jZWirhO6WaQLGjdFXrxuLtKm5S5i0vTc0Gku4ubzwo1jszlPaNR8MF-bgtjMaNW7bjWiMKEKb15bl48P4VzvjR9D2jWWmzDqxGu08GejjWppGp_Ru7eZvAo60BM3-tCVhj4OUiee0MsrbxgNoTab0d6NswkHf_BLMOC3jkzG1otmxbAzEvW3l60N2rL9SJ5tKQAToT3wEM8n3x9WS5DgcG24kt6Dm-EWrccoL_NKFWjMxpqpy6CjNtiRU1cRGlFiK-zJJQIeMXghDBNIB5ghCCPK_jnAaiO1TcNNN4orXl_bpuW40ly2ZLndiEj2ulQkoZHGiSL8Ax4AHTs"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Vienna 2026 - Eurovision",
+      "link": "https://www.eurovision.com/eurovision-song-contest/vienna-2026/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.eurovision.com/eurovision-song-contest/vienna-2026/&ved=2ahUKEwjyhLn3xICVAxWfJUQIHQ1ABJsQFnoECCEQAQ",
+      "displayed_link": "https://www.eurovision.com › eurovision-song-contest",
+      "favicon": "https://serpapi.com/searches/6a2b5f49124815953b073115/images/UnZ-lT8Hirm2jSaLUVJshiJm1riES2ySnJXSDGJcP2U.png",
+      "snippet": "Broadcaster ORF appointed a duo of presenters to guide viewers through all three Live Shows on 12 | 14 | 16 May: Victoria Swarovski and Michael Ostrowski.",
+      "snippet_highlighted_words": [
+        "12",
+        "16 May"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "Broadcaster ORF appointed a duo of presenters to guide viewers through all three Live Shows on 12 | 14 | 16 May: Victoria Swarovski and Michael Ostrowski.",
+          "source_info_link": "https://www.eurovision.com/eurovision-song-contest/vienna-2026/",
+          "icon": "https://serpapi.com/searches/6a2b5f49124815953b073115/images/UnZ-lT8Hirm2jSaLUVJshjx2mGq53G8aNMziBxB11Nwwg5DIjTsIu-4jBU7FwyIk.png"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "US"
+        ]
+      },
+      "about_page_link": "https://www.google.com/search?q=About+https://www.eurovision.com/eurovision-song-contest/vienna-2026/&tbm=ilp",
+      "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&q=About+https%3A%2F%2Fwww.eurovision.com%2Feurovision-song-contest%2Fvienna-2026%2F",
+      "source": "eurovision.com",
+      "read_more_link": "https://www.eurovision.com/eurovision-song-contest/vienna-2026/#:~:text=Broadcaster%20ORF%20appointed%20a%20duo,Victoria%20Swarovski%20and%20Michael%20Ostrowski."
+    },
+    {
+      "position": 2,
+      "title": "Eurovision Song Contest 2026",
+      "link": "https://en.wikipedia.org/wiki/Eurovision_Song_Contest_2026",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://en.wikipedia.org/wiki/Eurovision_Song_Contest_2026&ved=2ahUKEwjyhLn3xICVAxWfJUQIHQ1ABJsQFnoECCQQAQ",
+      "displayed_link": "https://en.wikipedia.org › wiki › Eurovision_Song_Con...",
+      "favicon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAAAAABXZoBIAAAAnklEQVR4AeTNIQiDQABG4b-u17X1aF6PK3YEO9iMJqPVau82y4FgMezS0oVLhqsHtrcqeqzDXv3CEz_6L4yTtZM3dnHmPTtjzXZAXKYVo4agkU2GI2Lloc6JDez1-flswMu1EQZ3xlE7lK8eKDkjtwE-crBMV-wesKmCiisGGepZIfQJpMj9SNb2MYWrChjVkULuCyCfRvsdmBieyQQAsoDk_9ryhFMAAAAASUVORK5CYII.png",
+      "snippet": "It consisted of two semi-finals on 12 and 14 May and a final on 16 May 2026, held at Wiener Stadthalle in Vienna, Austria, and presented by Victoria Swarovski ...",
+      "snippet_highlighted_words": [
+        "two semi-finals on 12 and 14 May and a final on 16 May 2026"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "It consisted of two semi-finals on 12 and 14 May and a final on 16 May 2026, held at Wiener Stadthalle in Vienna, Austria, and presented by Victoria Swarovski ...",
+          "source_info_link": "https://en.wikipedia.org/wiki/Eurovision_Song_Contest_2026",
+          "icon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAAAAABXZoBIAAAAnklEQVR4AeTNIQiDQABG4b-u17X1aF6PK3YEO9iMJqPVau82y4FgMezS0oVLhqsHtrcqeqzDXv3CEz_6L4yTtZM3dnHmPTtjzXZAXKYVo4agkU2GI2Lloc6JDez1-flswMu1EQZ3xlE7lK8eKDkjtwE-crBMV-wesKmCiisGGepZIfQJpMj9SNb2MYWrChjVkULuCyCfRvsdmBieyQQAsoDk_9ryhFMAAAAASUVORK5CYII.png"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "US"
+        ]
+      },
+      "about_page_link": "https://www.google.com/search?q=About+https://en.wikipedia.org/wiki/Eurovision_Song_Contest_2026&tbm=ilp",
+      "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&q=About+https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FEurovision_Song_Contest_2026",
+      "source": "Wikipedia",
+      "read_more_link": "https://en.wikipedia.org/wiki/Eurovision_Song_Contest_2026#:~:text=It%20consisted%20of%20two%20semi%2Dfinals,and%20presented%20by%20Victoria%20Swarovski"
+    },
+    {
+      "position": 3,
+      "title": "Eurovision Song Contest on Instagram: \"The 35 ...",
+      "link": "https://www.instagram.com/p/DSSBqHsAjYm/?hl=en",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.instagram.com/p/DSSBqHsAjYm/%3Fhl%3Den&ved=2ahUKEwjyhLn3xICVAxWfJUQIHQ1ABJsQFnoECEMQAQ",
+      "displayed_link": "48.9K+ likes · 5 months ago",
+      "favicon": "https://serpapi.com/searches/6a2b5f49124815953b073115/images/UnZ-lT8Hirm2jSaLUVJshkH7YAtzGImd4BOH1h4TDb4.png",
+      "snippet": "The 35 participating broadcasters joining us for the 70th Eurovision Song Contest on 12 | 14 | 16 May 2026 in Vienna",
+      "snippet_highlighted_words": [
+        "Eurovision",
+        "12",
+        "16 May 2026",
+        "Vienna"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "The 35 participating broadcasters joining us for the 70th Eurovision Song Contest on 12 | 14 | 16 May 2026 in Vienna",
+          "source_info_link": "https://www.instagram.com/p/DSSBqHsAjYm/?hl=en",
+          "icon": "https://serpapi.com/searches/6a2b5f49124815953b073115/images/UnZ-lT8Hirm2jSaLUVJshtiDDoasL4Fm3TnbZaTf7t8eKKqUdx5cD5GdGe2cWUpS.png"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "US"
+        ]
+      },
+      "about_page_link": "https://www.google.com/search?q=About+https://www.instagram.com/p/DSSBqHsAjYm/?hl=en&tbm=ilp",
+      "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&q=About+https%3A%2F%2Fwww.instagram.com%2Fp%2FDSSBqHsAjYm%2F%3Fhl%3Den",
+      "source": "Instagram · eurovision",
+      "read_more_link": "https://www.instagram.com/p/DSSBqHsAjYm/?hl=en#:~:text=The%2035%20participating%20broadcasters%20joining,May%202026%20in%20Vienna%20%F0%9F%87%A6%F0%9F%87%B9"
+    },
+    {
+      "position": 4,
+      "title": "70th Eurovision Song Contest 2026 in Vienna - Wien",
+      "link": "https://www.wien.info/en/now-on/eurovision-song-contest/esc-2026-wien-966540",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.wien.info/en/now-on/eurovision-song-contest/esc-2026-wien-966540&ved=2ahUKEwjyhLn3xICVAxWfJUQIHQ1ABJsQFnoECD0QAQ",
+      "displayed_link": "https://www.wien.info › esc-2026-wien-966540",
+      "favicon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y-mAAAARVBMVEX____-___zur7zuLz79fbysrf78PH20NP0vcH1wsX44OL65-j1x8r0v8L2ys3zu7766uv319n42Nr9_Pzyq6_53uDvh46fkQLfAAAAxUlEQVR4AdWQh5HEIBAEe5DFyUv5Z3pm2boY_lsGWD_w31D40An6IYRhBKYuhJlGlJQyFH2owOwrQAX6BYJAFcYJFGksPWhFActiGmHbMSySasmwb0S1BEOzNT42Wv0ZCDh2SimeZqqK1sXhY0YlwrVD3G7Ld1r3WlCZvyK9pWOiroOcZhgfQRU_VsHUU85PhjpclVNOEAS2A-QtHe7s1f1imirnLD6XSf61dIIXN1XgKp1ObsoHIHc6ucYYd7N_NuvI3-QNYr8GOoEBlB4AAAAASUVORK5CYII.png",
+      "snippet": "The 70th anniversary of Eurovision will take place in 2026 at the Wiener Stadthalle. The Grand Final is on Saturday, May 16; the two semi-finals are on Tuesday, ...",
+      "snippet_highlighted_words": [
+        "Eurovision",
+        "2026",
+        "May 16"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "The 70th anniversary of Eurovision will take place in 2026 at the Wiener Stadthalle. The Grand Final is on Saturday, May 16; the two semi-finals are on Tuesday, ...",
+          "source_info_link": "https://www.wien.info/en/now-on/eurovision-song-contest/esc-2026-wien-966540",
+          "icon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y-mAAAARVBMVEX____-___zur7zuLz79fbysrf78PH20NP0vcH1wsX44OL65-j1x8r0v8L2ys3zu7766uv319n42Nr9_Pzyq6_53uDvh46fkQLfAAAAxUlEQVR4AdWQh5HEIBAEe5DFyUv5Z3pm2boY_lsGWD_w31D40An6IYRhBKYuhJlGlJQyFH2owOwrQAX6BYJAFcYJFGksPWhFActiGmHbMSySasmwb0S1BEOzNT42Wv0ZCDh2SimeZqqK1sXhY0YlwrVD3G7Ld1r3WlCZvyK9pWOiroOcZhgfQRU_VsHUU85PhjpclVNOEAS2A-QtHe7s1f1imirnLD6XSf61dIIXN1XgKp1ObsoHIHc6ucYYd7N_NuvI3-QNYr8GOoEBlB4AAAAASUVORK5CYII.png"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "US"
+        ]
+      },
+      "about_page_link": "https://www.google.com/search?q=About+https://www.wien.info/en/now-on/eurovision-song-contest/esc-2026-wien-966540&tbm=ilp",
+      "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&q=About+https%3A%2F%2Fwww.wien.info%2Fen%2Fnow-on%2Feurovision-song-contest%2Fesc-2026-wien-966540",
+      "source": "vienna.info",
+      "read_more_link": "https://www.wien.info/en/now-on/eurovision-song-contest/esc-2026-wien-966540#:~:text=Where%20is%20the%20largest%20official"
+    },
+    {
+      "position": 5,
+      "title": "When and where is Eurovision 2026 being held?",
+      "link": "https://www.britannica.com/question/When-and-where-is-Eurovision-2026-being-held",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.britannica.com/question/When-and-where-is-Eurovision-2026-being-held&ved=2ahUKEwjyhLn3xICVAxWfJUQIHQ1ABJsQFnoECD4QAQ",
+      "displayed_link": "https://www.britannica.com › question › When-and-wher...",
+      "favicon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAPFBMVEVHcEwKPmwLQGwLQGwLQGsAOWgcTXZEaIlXdpMyWn-Bma9uiKGVqbypuskALmLM1t_g5-y0w9Dy9fj___8H8PJTAAAABXRSTlMAILD_6JrywKcAAAGISURBVHgBhZPhjishCIVnawEQRBze_10vmTaZuO3N-kc5fJ4QlOP4ebT_rsdP5Z-bBLiFz59ju49IjBvyOG4DEOGuyl0QbovjzhN16UKdjOW2uAHQTtiIAckUvgBNVKyT6qjDNwBIfQa2GcD8DfC-xGa3tWQM_wTEkENphvBJ0gl-AxiGs-tYqtH6KR8OwDZFT6KzF8hwA--KZfA0CKbAHjzoUkHaAUVfQY_eTdSotrArDV3hAMrVi0AzpMQIT4YioYGNFDiaZ57csMCglAhMnkmAyGemVw24MnMOB4ppaoPHONl9zZIXFoAF1uoOqNLgajm4XeLZCnifczYofS5zAJwvrUMBr6hsVmugJb7yJeR4N8qtohE5HfhMBZ85RyHmbwDAKtRIdT6rQM3omWlwtxpWCTSjcQEYk-vC8nYDDbhsJbQA0pDIybA_FrjMJQWkKq6JDp8_ClRQM7URw9c_2aBBzzRvd3oH2tW04Zt0PDdgZM4NeO6j55F5bsDj1_CCO-zD--f4_wPoVR1v3hUTLgAAAABJRU5ErkJggg.png",
+      "date": "May 16, 2026",
+      "snippet": "The Eurovision Song Contest 2026 will be held in Vienna, Austria. The first and second semifinals will be aired live on May 12 and May 14.",
+      "snippet_highlighted_words": [
+        "Eurovision",
+        "2026",
+        "be held in Vienna",
+        "be",
+        "May 12",
+        "May"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "The Eurovision Song Contest 2026 will be held in Vienna, Austria. The first and second semifinals will be aired live on May 12 and May 14.",
+          "source_info_link": "https://www.britannica.com/question/When-and-where-is-Eurovision-2026-being-held",
+          "icon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAPFBMVEVHcEwKPmwLQGwLQGwLQGsAOWgcTXZEaIlXdpMyWn-Bma9uiKGVqbypuskALmLM1t_g5-y0w9Dy9fj___8H8PJTAAAABXRSTlMAILD_6JrywKcAAAGISURBVHgBhZPhjishCIVnawEQRBze_10vmTaZuO3N-kc5fJ4QlOP4ebT_rsdP5Z-bBLiFz59ju49IjBvyOG4DEOGuyl0QbovjzhN16UKdjOW2uAHQTtiIAckUvgBNVKyT6qjDNwBIfQa2GcD8DfC-xGa3tWQM_wTEkENphvBJ0gl-AxiGs-tYqtH6KR8OwDZFT6KzF8hwA--KZfA0CKbAHjzoUkHaAUVfQY_eTdSotrArDV3hAMrVi0AzpMQIT4YioYGNFDiaZ57csMCglAhMnkmAyGemVw24MnMOB4ppaoPHONl9zZIXFoAF1uoOqNLgajm4XeLZCnifczYofS5zAJwvrUMBr6hsVmugJb7yJeR4N8qtohE5HfhMBZ85RyHmbwDAKtRIdT6rQM3omWlwtxpWCTSjcQEYk-vC8nYDDbhsJbQA0pDIybA_FrjMJQWkKq6JDp8_ClRQM7URw9c_2aBBzzRvd3oH2tW04Zt0PDdgZM4NeO6j55F5bsDj1_CCO-zD--f4_wPoVR1v3hUTLgAAAABJRU5ErkJggg.png"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "US"
+        ]
+      },
+      "about_page_link": "https://www.google.com/search?q=About+https://www.britannica.com/question/When-and-where-is-Eurovision-2026-being-held&tbm=ilp",
+      "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&q=About+https%3A%2F%2Fwww.britannica.com%2Fquestion%2FWhen-and-where-is-Eurovision-2026-being-held",
+      "source": "Britannica",
+      "read_more_link": "https://www.britannica.com/question/When-and-where-is-Eurovision-2026-being-held#:~:text=The%20Eurovision%20Song%20Contest%202026,May%2012%20and%20May%2014."
+    },
+    {
+      "position": 6,
+      "title": "Eurovision 2026 Results: Voting & Points",
+      "link": "https://eurovisionworld.com/eurovision/2026",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://eurovisionworld.com/eurovision/2026&ved=2ahUKEwjyhLn3xICVAxWfJUQIHQ1ABJsQFnoECDwQAQ",
+      "displayed_link": "https://eurovisionworld.com › eurovision › 2026",
+      "favicon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y-mAAAAkFBMVEUAIk4AHEsAFUgADkUAEUYAE0cAIE0AAEFHV3R5gZOQlqV6gpRBT2wAADkAC0QAF0i8wMppdIr5-vvFyM-aoK1gbISKkqM1RGT____c3uNUX3hwe5Bpcoe9wstXYnqus73n6u7u8PM6SmkAGkoAAD8cMlifpLHHztcqO14AADSnrbkAACYAADwNKlTR1NoAADAdzi8MAAABgklEQVR4AWKgCgCwSR1YDoJA1I5SYwcxApEgcV1y_9tt7_vm9Wm_xUma5fF_nSIDZQUhwoQWv3ssgqe6aXDTNh1IfvZoP_Tj2HIYCc6bCXzvpXIuzwQsKu60NpxL-g3JMktk8OWkTCOMeG7j9bNpO5Bfpdu40UY3nOtGk08wlV-z0XAjxPOeUZVv-fwBKh_sKG8ve_tJ6AY-VHhvPzBlwwEb3gz4USwybO0zIm7e7xbXigTOF5bKO_TnC-RaXkxRvGGd-hWg5Rl94vssGikg11njVx2BpSkDN7Jamz4XOABNLDnsCp57bXBqUVqUQsNQChWCk0FL7QOIbGjlqTzpTcFU6H1Q2nWbezBBBBtZUdWic6JVYTg7g1uswy6qLQzNETHZTcit0i_IHb6_zvtQermn1YGSKGLZmqRsAgvFcCmhL49qALRIouTTln1SfUs7dXPu6LyiP7yWDsH9PreddPfuvqc_QpJ0DPauG25QQdVd4l8RKnKWpnmU0acBIVyO_gAASygneeD8p-YAAAAASUVORK5CYII.png",
+      "snippet": "Eurovision Song Contest 2026 result: Bulgaria won with the song \"Bangaranga\" by Dara with 516 points. Eurovision 2026 Result. Date: 16 May 2026. City: Vienna, ...",
+      "snippet_highlighted_words": [
+        "Eurovision 2026 Result"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "Eurovision Song Contest 2026 result: Bulgaria won with the song \"Bangaranga\" by Dara with 516 points. Eurovision 2026 Result. Date: 16 May 2026. City: Vienna, ...",
+          "source_info_link": "https://eurovisionworld.com/eurovision/2026",
+          "icon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y-mAAAAkFBMVEUAIk4AHEsAFUgADkUAEUYAE0cAIE0AAEFHV3R5gZOQlqV6gpRBT2wAADkAC0QAF0i8wMppdIr5-vvFyM-aoK1gbISKkqM1RGT____c3uNUX3hwe5Bpcoe9wstXYnqus73n6u7u8PM6SmkAGkoAAD8cMlifpLHHztcqO14AADSnrbkAACYAADwNKlTR1NoAADAdzi8MAAABgklEQVR4AWKgCgCwSR1YDoJA1I5SYwcxApEgcV1y_9tt7_vm9Wm_xUma5fF_nSIDZQUhwoQWv3ssgqe6aXDTNh1IfvZoP_Tj2HIYCc6bCXzvpXIuzwQsKu60NpxL-g3JMktk8OWkTCOMeG7j9bNpO5Bfpdu40UY3nOtGk08wlV-z0XAjxPOeUZVv-fwBKh_sKG8ve_tJ6AY-VHhvPzBlwwEb3gz4USwybO0zIm7e7xbXigTOF5bKO_TnC-RaXkxRvGGd-hWg5Rl94vssGikg11njVx2BpSkDN7Jamz4XOABNLDnsCp57bXBqUVqUQsNQChWCk0FL7QOIbGjlqTzpTcFU6H1Q2nWbezBBBBtZUdWic6JVYTg7g1uswy6qLQzNETHZTcit0i_IHb6_zvtQermn1YGSKGLZmqRsAgvFcCmhL49qALRIouTTln1SfUs7dXPu6LyiP7yWDsH9PreddPfuvqc_QpJ0DPauG25QQdVd4l8RKnKWpnmU0acBIVyO_gAASygneeD8p-YAAAAASUVORK5CYII.png"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "US"
+        ]
+      },
+      "about_page_link": "https://www.google.com/search?q=About+https://eurovisionworld.com/eurovision/2026&tbm=ilp",
+      "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&q=About+https%3A%2F%2Feurovisionworld.com%2Feurovision%2F2026",
+      "source": "Eurovisionworld",
+      "read_more_link": "https://eurovisionworld.com/eurovision/2026#:~:text=Eurovision%20Song%20Contest%202026%20result%3A,City%3A%20Vienna%2C%20Austria"
+    },
+    {
+      "position": 7,
+      "title": "Eurovision Song Contest 2026 Vienna, Austria - 16 May 2026 ...",
+      "link": "https://www.youtube.com/watch?v=V3gS50n2Xp8",
+      "displayed_link": "70+ views · 3 weeks ago",
+      "thumbnail": "https://serpapi.com/searches/6a2b5f49124815953b073115/images/UnZ-lT8Hirm2jSaLUVJshp9zb_uRYR0UncBLfTlHApQ.jpeg",
+      "favicon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8_9hAAAAhUlEQVR4AWNwL_ChCFPHgP8MxqxA7ArEKVBcCcUNIAznI-RdQXrABgAZpv8ZjP6Tg0F6QQbsosCAXSADHmGVVPIC0jKEDHgAMuAbmgRE445D___feYzXIJBeBigH04BVW_9DAcgwqEGYaik2gGIvUByIlEbjDooTEiwps5GRlNmolpkowgBVP9wMSzSKGAAAAABJRU5ErkJggg.png",
+      "snippet": "Eurovision Song Contest 2026 Vienna, Austria - 16 May 2026 - Jury Points & Public Voting Results · Comments.",
+      "duration": "1:13:21",
+      "about_this_result": {
+        "source": {
+          "description": "Eurovision Song Contest 2026 Vienna, Austria - 16 May 2026 - Jury Points & Public Voting Results · Comments.",
+          "source_info_link": "https://www.youtube.com/watch?v=V3gS50n2Xp8",
+          "icon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8_9hAAAAhUlEQVR4AWNwL_ChCFPHgP8MxqxA7ArEKVBcCcUNIAznI-RdQXrABgAZpv8ZjP6Tg0F6QQbsosCAXSADHmGVVPIC0jKEDHgAMuAbmgRE445D___feYzXIJBeBigH04BVW_9DAcgwqEGYaik2gGIvUByIlEbjDooTEiwps5GRlNmolpkowgBVP9wMSzSKGAAAAABJRU5ErkJggg.png"
+        }
+      },
+      "about_page_link": "https://www.google.com/search?q=About+https://www.youtube.com/watch?v=V3gS50n2Xp8&tbm=ilp",
+      "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&q=About+https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DV3gS50n2Xp8",
+      "source": "YouTube · Иван Върбев"
+    },
+    {
+      "position": 8,
+      "title": "Eurovision Song Contest 2026",
+      "link": "https://stadthalle.com/en-us/esc2026",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://stadthalle.com/en-us/esc2026&ved=2ahUKEwjyhLn3xICVAxWfJUQIHQ1ABJsQFnoECEAQAQ",
+      "displayed_link": "https://stadthalle.com › en-us › esc2026",
+      "favicon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y-mAAAATlBMVEVHcEwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAbGxtcXFzAwMDGxsafn59MTEyOjo6CgoJ3d3fn5-fV1dWoqKg2Nja0tLQx7kB0AAAADHRSTlMACQ01ar__JZTwUeGcPBtUAAAAzklEQVR4AX3TVYLDIABF0WAvjuv-NzqQestwf08EnV4RShmjlEw_EcYFrgRnXz4vK56ty_xum8BHYnuzHV_t26f1dRboJOZmZEG3hVRkax9XVpHjn3j9qsBxdOiAIBMFTqm0eYfTKnkCtKHT3qoQ0y0dg7Reu4asYvA4so_F1kr0-YAPFVlDmBj8kdN5fTLlw4Vo0JCilWPUypmaUynGjBZteHWWKEtNxnICdyQC97K5yrgnyGgRhss3XPjRlo02e3hMxgdsfDTHh3p4Hf4AIS0Tt5nuJY0AAAAASUVORK5CYII.png",
+      "snippet": "The 70th Eurovision Song Contest will take place from 11 to 16 May 2026 at the Wiener Stadthalle. ... Afternoon Preview: Tuesday, May 12, 3:00 PM Live Broadcast: ...",
+      "snippet_highlighted_words": [
+        "11 to 16 May 2026"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "The 70th Eurovision Song Contest will take place from 11 to 16 May 2026 at the Wiener Stadthalle. ... Afternoon Preview: Tuesday, May 12, 3:00 PM Live Broadcast: ...",
+          "source_info_link": "https://stadthalle.com/en-us/esc2026",
+          "icon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y-mAAAATlBMVEVHcEwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAbGxtcXFzAwMDGxsafn59MTEyOjo6CgoJ3d3fn5-fV1dWoqKg2Nja0tLQx7kB0AAAADHRSTlMACQ01ar__JZTwUeGcPBtUAAAAzklEQVR4AX3TVYLDIABF0WAvjuv-NzqQestwf08EnV4RShmjlEw_EcYFrgRnXz4vK56ty_xum8BHYnuzHV_t26f1dRboJOZmZEG3hVRkax9XVpHjn3j9qsBxdOiAIBMFTqm0eYfTKnkCtKHT3qoQ0y0dg7Reu4asYvA4so_F1kr0-YAPFVlDmBj8kdN5fTLlw4Vo0JCilWPUypmaUynGjBZteHWWKEtNxnICdyQC97K5yrgnyGgRhss3XPjRlo02e3hMxgdsfDTHh3p4Hf4AIS0Tt5nuJY0AAAAASUVORK5CYII.png"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "US"
+        ]
+      },
+      "about_page_link": "https://www.google.com/search?q=About+https://stadthalle.com/en-us/esc2026&tbm=ilp",
+      "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&q=About+https%3A%2F%2Fstadthalle.com%2Fen-us%2Fesc2026",
+      "source": "Wiener Stadthalle"
+    },
+    {
+      "position": 9,
+      "title": "Eurovision Song Contest 2026: When is the grand final and ...",
+      "link": "https://www.bbc.com/news/articles/cx2g7z375l9o",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.bbc.com/news/articles/cx2g7z375l9o&ved=2ahUKEwjyhLn3xICVAxWfJUQIHQ1ABJsQFnoECEIQAQ",
+      "displayed_link": "https://www.bbc.com › news › articles",
+      "favicon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcBAMAAACAI8KnAAAAG1BMVEX____7-_sAAAAjIyMYGBh0dHQ4ODgfHx9paWmS-I2mAAAAMUlEQVR4AWMYGoBR2diVrdg8IcTYSADEVVLSYFdSKmhSUoJxmZWUDDC56IrRjRoSAAAbNQxbcFxT3gAAAABJRU5ErkJggg.png",
+      "date": "May 15, 2026",
+      "snippet": "The grand final will be held in the Wiener Stadthalle in Vienna on Saturday 16 May. TV presenter Victoria Swarovski and actor Michael ...",
+      "snippet_highlighted_words": [
+        "The grand final will be held in the Wiener Stadthalle in Vienna on Saturday 16 May"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "The grand final will be held in the Wiener Stadthalle in Vienna on Saturday 16 May. TV presenter Victoria Swarovski and actor Michael ...",
+          "source_info_link": "https://www.bbc.com/news/articles/cx2g7z375l9o",
+          "icon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcBAMAAACAI8KnAAAAG1BMVEX____7-_sAAAAjIyMYGBh0dHQ4ODgfHx9paWmS-I2mAAAAMUlEQVR4AWMYGoBR2diVrdg8IcTYSADEVVLSYFdSKmhSUoJxmZWUDDC56IrRjRoSAAAbNQxbcFxT3gAAAABJRU5ErkJggg.png"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "US"
+        ]
+      },
+      "about_page_link": "https://www.google.com/search?q=About+https://www.bbc.com/news/articles/cx2g7z375l9o&tbm=ilp",
+      "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&q=About+https%3A%2F%2Fwww.bbc.com%2Fnews%2Farticles%2Fcx2g7z375l9o",
+      "source": "BBC",
+      "read_more_link": "https://www.bbc.com/news/articles/cx2g7z375l9o#:~:text=The%20grand%20final%20will%20be,actor%20Michael%20Ostrowski%20will%20host."
+    },
+    {
+      "position": 10,
+      "title": "Vienna will host Eurovision 2026 on May 12, 14, 16",
+      "link": "https://escxtra.com/2025/08/20/vienna-eurovision-2026-may-12-14-16/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://escxtra.com/2025/08/20/vienna-eurovision-2026-may-12-14-16/&ved=2ahUKEwjyhLn3xICVAxWfJUQIHQ1ABJsQFnoECEEQAQ",
+      "displayed_link": "https://escxtra.com › Eurovision › Vienna 2026",
+      "favicon": "https://serpapi.com/images/i/_9j_4AAQSkZJRgABAQAAAQABAAD_2wCEAAkGBwgHBgkIBwgKCgkNDQoPDQwMDRsUFRAWFB0iIhodHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys_RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Ny43Nzc3Nzc3Nzc3NzAuLTc3Nzc3Nzc3Nzc3KzQ3NzU3Nzc3LSs3NzcrK__AABEIABwAHAMBIgACEQEDEQH_xAAYAAADAQEAAAAAAAAAAAAAAAAABQYHBP_EACkQAAEDAwIFAwUAAAAAAAAAAAECAwQAERIGIQUTFDFhQVGRFiIzUoH_xAAWAQEBAQAAAAAAAAAAAAAAAAABAgD_xAAbEQADAAIDAAAAAAAAAAAAAAAAAREC0SFRof_aAAwDAQACEQMRAD8Aw61FP9IRGJvFnIUlpCkPxZyQ4sfgUlBUlz-FPwTTuFpKe_AZldDEEdyG1IacXIYSVhtI5irEglIKgVb39PcCFmnm8Op7dDOKQtFUvF9F6g4Z17s6AlKIiWXJC23WylCXFqQkgJV-yFCw7WNwKnsPFWAzhyJELn9MsI5zLrDhxBuhdshv2vbvTL6n410LUHqmxGajvRm0CO39jTgAWkHG--IJ879yaX4ijEURJ0w8n661PxBiSxM4kHW5CHG3wYzV3EqvsTjfbI29vSpnl-K6sRRiKTH_2Q.jpeg",
+      "date": "Aug 20, 2025",
+      "snippet": "The shows will take place on the week of May 11, with the first semi-final on May 12, the second one on May 14 and the Grand Final on May 16.",
+      "snippet_highlighted_words": [
+        "May",
+        "May 12",
+        "May",
+        "May 16"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "The shows will take place on the week of May 11, with the first semi-final on May 12, the second one on May 14 and the Grand Final on May 16.",
+          "source_info_link": "https://escxtra.com/2025/08/20/vienna-eurovision-2026-may-12-14-16/",
+          "icon": "https://serpapi.com/images/i/_9j_4AAQSkZJRgABAQAAAQABAAD_2wCEAAkGBwgHBgkIBwgKCgkNDQoPDQwMDRsUFRAWFB0iIhodHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys_RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Ny43Nzc3Nzc3Nzc3NzAuLTc3Nzc3Nzc3Nzc3KzQ3NzU3Nzc3LSs3NzcrK__AABEIABwAHAMBIgACEQEDEQH_xAAYAAADAQEAAAAAAAAAAAAAAAAABQYHBP_EACkQAAEDAwIFAwUAAAAAAAAAAAECAwQAERIGIQUTFDFhQVGRFiIzUoH_xAAWAQEBAQAAAAAAAAAAAAAAAAABAgD_xAAbEQADAAIDAAAAAAAAAAAAAAAAAREC0SFRof_aAAwDAQACEQMRAD8Aw61FP9IRGJvFnIUlpCkPxZyQ4sfgUlBUlz-FPwTTuFpKe_AZldDEEdyG1IacXIYSVhtI5irEglIKgVb39PcCFmnm8Op7dDOKQtFUvF9F6g4Z17s6AlKIiWXJC23WylCXFqQkgJV-yFCw7WNwKnsPFWAzhyJELn9MsI5zLrDhxBuhdshv2vbvTL6n410LUHqmxGajvRm0CO39jTgAWkHG--IJ879yaX4ijEURJ0w8n661PxBiSxM4kHW5CHG3wYzV3EqvsTjfbI29vSpnl-K6sRRiKTH_2Q.jpeg"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "US"
+        ]
+      },
+      "about_page_link": "https://www.google.com/search?q=About+https://escxtra.com/2025/08/20/vienna-eurovision-2026-may-12-14-16/&tbm=ilp",
+      "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&q=About+https%3A%2F%2Fescxtra.com%2F2025%2F08%2F20%2Fvienna-eurovision-2026-may-12-14-16%2F",
+      "source": "ESCXTRA.com -",
+      "read_more_link": "https://escxtra.com/2025/08/20/vienna-eurovision-2026-may-12-14-16/#:~:text=The%20shows%20will%20take%20place,Grand%20Final%20on%20May%2016."
+    }
+  ],
+  "related_searches": [
+    {
+      "block_position": 1,
+      "query": "Eurovision 2026 Final",
+      "link": "https://www.google.com/search?sca_esv=e266cabde4f9b998&q=Eurovision+2026+Final&sa=X&ved=2ahUKEwjyhLn3xICVAxWfJUQIHQ1ABJsQ1QJ6BAg7EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=Eurovision+2026+Final"
+    },
+    {
+      "block_position": 1,
+      "query": "Eurovision 2026 winner",
+      "link": "https://www.google.com/search?sca_esv=e266cabde4f9b998&q=Eurovision+2026+winner&sa=X&ved=2ahUKEwjyhLn3xICVAxWfJUQIHQ1ABJsQ1QJ6BAhXEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=Eurovision+2026+winner"
+    },
+    {
+      "block_position": 1,
+      "query": "Eurovision 2026 ranking",
+      "link": "https://www.google.com/search?sca_esv=e266cabde4f9b998&q=Eurovision+2026+ranking&sa=X&ved=2ahUKEwjyhLn3xICVAxWfJUQIHQ1ABJsQ1QJ6BAhWEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=Eurovision+2026+ranking"
+    },
+    {
+      "block_position": 1,
+      "query": "Eurovision 2026 odds",
+      "link": "https://www.google.com/search?sca_esv=e266cabde4f9b998&q=Eurovision+2026+odds&sa=X&ved=2ahUKEwjyhLn3xICVAxWfJUQIHQ1ABJsQ1QJ6BAhREAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=Eurovision+2026+odds"
+    },
+    {
+      "block_position": 1,
+      "query": "Eurovision 2026 results",
+      "link": "https://www.google.com/search?sca_esv=e266cabde4f9b998&q=Eurovision+2026+results&sa=X&ved=2ahUKEwjyhLn3xICVAxWfJUQIHQ1ABJsQ1QJ6BAhJEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=Eurovision+2026+results"
+    },
+    {
+      "block_position": 1,
+      "query": "Eurovision vienna 2026 tickets",
+      "link": "https://www.google.com/search?sca_esv=e266cabde4f9b998&q=Eurovision+vienna+2026+tickets&sa=X&ved=2ahUKEwjyhLn3xICVAxWfJUQIHQ1ABJsQ1QJ6BAhFEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=Eurovision+vienna+2026+tickets"
+    },
+    {
+      "block_position": 1,
+      "query": "Eurovision 2026 semi Final 1",
+      "link": "https://www.google.com/search?sca_esv=e266cabde4f9b998&q=Eurovision+2026+semi+Final+1&sa=X&ved=2ahUKEwjyhLn3xICVAxWfJUQIHQ1ABJsQ1QJ6BAhEEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=Eurovision+2026+semi+Final+1"
+    },
+    {
+      "block_position": 1,
+      "query": "Eurovision village vienna 2026",
+      "link": "https://www.google.com/search?sca_esv=e266cabde4f9b998&q=Eurovision+village+vienna+2026&sa=X&ved=2ahUKEwjyhLn3xICVAxWfJUQIHQ1ABJsQ1QJ6BAg_EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=Eurovision+village+vienna+2026"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=Eurovision+2026+is+being+held+in+Vienna+from+May+12+to+May+16.&sca_esv=e266cabde4f9b998&ei=TV8rarKqBp_LkPIPjYCR2Ak&start=10&sa=N&sstk=AU9db-AESCcYOuIQ2uXeTzA60x7iWzKBERnKRIwQUVMsEC8k3MClI9nzBhN_55qtOMbyh46_Ivu2FcEVyK3xbPRtToR9YyO8RD7wtQ&ved=2ahUKEwjyhLn3xICVAxWfJUQIHQ1ABJsQ8NMDegQIWBAW",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=Eurovision+2026+is+being+held+in+Vienna+from+May+12+to+May+16.&sca_esv=e266cabde4f9b998&ei=TV8rarKqBp_LkPIPjYCR2Ak&start=10&sa=N&sstk=AU9db-AESCcYOuIQ2uXeTzA60x7iWzKBERnKRIwQUVMsEC8k3MClI9nzBhN_55qtOMbyh46_Ivu2FcEVyK3xbPRtToR9YyO8RD7wtQ&ved=2ahUKEwjyhLn3xICVAxWfJUQIHQ1ABJsQ8tMDegQIWBAE",
+      "3": "https://www.google.com/search?q=Eurovision+2026+is+being+held+in+Vienna+from+May+12+to+May+16.&sca_esv=e266cabde4f9b998&ei=TV8rarKqBp_LkPIPjYCR2Ak&start=20&sa=N&sstk=AU9db-AESCcYOuIQ2uXeTzA60x7iWzKBERnKRIwQUVMsEC8k3MClI9nzBhN_55qtOMbyh46_Ivu2FcEVyK3xbPRtToR9YyO8RD7wtQ&ved=2ahUKEwjyhLn3xICVAxWfJUQIHQ1ABJsQ8tMDegQIWBAG",
+      "4": "https://www.google.com/search?q=Eurovision+2026+is+being+held+in+Vienna+from+May+12+to+May+16.&sca_esv=e266cabde4f9b998&ei=TV8rarKqBp_LkPIPjYCR2Ak&start=30&sa=N&sstk=AU9db-AESCcYOuIQ2uXeTzA60x7iWzKBERnKRIwQUVMsEC8k3MClI9nzBhN_55qtOMbyh46_Ivu2FcEVyK3xbPRtToR9YyO8RD7wtQ&ved=2ahUKEwjyhLn3xICVAxWfJUQIHQ1ABJsQ8tMDegQIWBAI",
+      "5": "https://www.google.com/search?q=Eurovision+2026+is+being+held+in+Vienna+from+May+12+to+May+16.&sca_esv=e266cabde4f9b998&ei=TV8rarKqBp_LkPIPjYCR2Ak&start=40&sa=N&sstk=AU9db-AESCcYOuIQ2uXeTzA60x7iWzKBERnKRIwQUVMsEC8k3MClI9nzBhN_55qtOMbyh46_Ivu2FcEVyK3xbPRtToR9YyO8RD7wtQ&ved=2ahUKEwjyhLn3xICVAxWfJUQIHQ1ABJsQ8tMDegQIWBAK",
+      "6": "https://www.google.com/search?q=Eurovision+2026+is+being+held+in+Vienna+from+May+12+to+May+16.&sca_esv=e266cabde4f9b998&ei=TV8rarKqBp_LkPIPjYCR2Ak&start=50&sa=N&sstk=AU9db-AESCcYOuIQ2uXeTzA60x7iWzKBERnKRIwQUVMsEC8k3MClI9nzBhN_55qtOMbyh46_Ivu2FcEVyK3xbPRtToR9YyO8RD7wtQ&ved=2ahUKEwjyhLn3xICVAxWfJUQIHQ1ABJsQ8tMDegQIWBAM",
+      "7": "https://www.google.com/search?q=Eurovision+2026+is+being+held+in+Vienna+from+May+12+to+May+16.&sca_esv=e266cabde4f9b998&ei=TV8rarKqBp_LkPIPjYCR2Ak&start=60&sa=N&sstk=AU9db-AESCcYOuIQ2uXeTzA60x7iWzKBERnKRIwQUVMsEC8k3MClI9nzBhN_55qtOMbyh46_Ivu2FcEVyK3xbPRtToR9YyO8RD7wtQ&ved=2ahUKEwjyhLn3xICVAxWfJUQIHQ1ABJsQ8tMDegQIWBAO",
+      "8": "https://www.google.com/search?q=Eurovision+2026+is+being+held+in+Vienna+from+May+12+to+May+16.&sca_esv=e266cabde4f9b998&ei=TV8rarKqBp_LkPIPjYCR2Ak&start=70&sa=N&sstk=AU9db-AESCcYOuIQ2uXeTzA60x7iWzKBERnKRIwQUVMsEC8k3MClI9nzBhN_55qtOMbyh46_Ivu2FcEVyK3xbPRtToR9YyO8RD7wtQ&ved=2ahUKEwjyhLn3xICVAxWfJUQIHQ1ABJsQ8tMDegQIWBAQ",
+      "9": "https://www.google.com/search?q=Eurovision+2026+is+being+held+in+Vienna+from+May+12+to+May+16.&sca_esv=e266cabde4f9b998&ei=TV8rarKqBp_LkPIPjYCR2Ak&start=80&sa=N&sstk=AU9db-AESCcYOuIQ2uXeTzA60x7iWzKBERnKRIwQUVMsEC8k3MClI9nzBhN_55qtOMbyh46_Ivu2FcEVyK3xbPRtToR9YyO8RD7wtQ&ved=2ahUKEwjyhLn3xICVAxWfJUQIHQ1ABJsQ8tMDegQIWBAS",
+      "10": "https://www.google.com/search?q=Eurovision+2026+is+being+held+in+Vienna+from+May+12+to+May+16.&sca_esv=e266cabde4f9b998&ei=TV8rarKqBp_LkPIPjYCR2Ak&start=90&sa=N&sstk=AU9db-AESCcYOuIQ2uXeTzA60x7iWzKBERnKRIwQUVMsEC8k3MClI9nzBhN_55qtOMbyh46_Ivu2FcEVyK3xbPRtToR9YyO8RD7wtQ&ved=2ahUKEwjyhLn3xICVAxWfJUQIHQ1ABJsQ8tMDegQIWBAU"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=Eurovision+2026+is+being+held+in+Vienna+from+May+12+to+May+16.&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=Eurovision+2026+is+being+held+in+Vienna+from+May+12+to+May+16.&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=Eurovision+2026+is+being+held+in+Vienna+from+May+12+to+May+16.&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=Eurovision+2026+is+being+held+in+Vienna+from+May+12+to+May+16.&start=20",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=Eurovision+2026+is+being+held+in+Vienna+from+May+12+to+May+16.&start=30",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=Eurovision+2026+is+being+held+in+Vienna+from+May+12+to+May+16.&start=40",
+      "6": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=Eurovision+2026+is+being+held+in+Vienna+from+May+12+to+May+16.&start=50",
+      "7": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=Eurovision+2026+is+being+held+in+Vienna+from+May+12+to+May+16.&start=60",
+      "8": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=Eurovision+2026+is+being+held+in+Vienna+from+May+12+to+May+16.&start=70",
+      "9": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=Eurovision+2026+is+being+held+in+Vienna+from+May+12+to+May+16.&start=80",
+      "10": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=Eurovision+2026+is+being+held+in+Vienna+from+May+12+to+May+16.&start=90"
+    }
+  }
+}

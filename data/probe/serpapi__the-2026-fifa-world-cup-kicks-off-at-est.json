@@ -1,0 +1,550 @@
+{
+  "search_metadata": {
+    "id": "6a2b5f4ffd9b904495960ec7",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/jVhWpYbkNe5CvkdY5QKkzg/6a2b5f4ffd9b904495960ec7.json",
+    "pixel_position_endpoint": "https://serpapi.com/searches/jVhWpYbkNe5CvkdY5QKkzg/6a2b5f4ffd9b904495960ec7.json_with_pixel_position",
+    "created_at": "2026-06-12 01:22:23 UTC",
+    "processed_at": "2026-06-12 01:22:23 UTC",
+    "google_url": "https://www.google.com/search?q=The+2026+FIFA+World+Cup+kicks+off+at+Estadio+Azteca+on+June+11%2C+2026.&oq=The+2026+FIFA+World+Cup+kicks+off+at+Estadio+Azteca+on+June+11%2C+2026.&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/jVhWpYbkNe5CvkdY5QKkzg/6a2b5f4ffd9b904495960ec7.html",
+    "total_time_taken": 0.8
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "The 2026 FIFA World Cup kicks off at Estadio Azteca on June 11, 2026.",
+    "google_domain": "google.com",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "The 2026 FIFA World Cup kicks off at Estadio Azteca on June 11, 2026.",
+    "total_results": 252,
+    "time_taken_displayed": 0.29,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "inline_videos": [
+    {
+      "position": 1,
+      "title": "FIFA World Cup Opening Ceremony LIVE: From Estadio ...",
+      "link": "https://www.youtube.com/watch?v=ALcO9bY-5u4",
+      "thumbnail": "https://serpapi.com/searches/6a2b5f4ffd9b904495960ec7/images/qYnqE9Qb5MtogyHhoL-8D6iK4ZvCnamDCMYhrKMuC1k.jpeg",
+      "channel": "CNBC-TV18",
+      "platform": "YouTube",
+      "date": "11 hours ago"
+    },
+    {
+      "position": 2,
+      "title": "Football World Cup kicks off surrounded by controversy",
+      "link": "https://www.dw.com/en/football-world-cup-kicks-off-surrounded-by-controversy/video-77511226",
+      "thumbnail": "https://serpapi.com/searches/6a2b5f4ffd9b904495960ec7/images/diISjVpBXsI6ur1ohNPXliJ1973__ngPcy4UQvMfvt0.jpeg",
+      "channel": "DW.com",
+      "duration": "2:40",
+      "platform": "DW.com",
+      "date": "7 hours ago"
+    },
+    {
+      "position": 3,
+      "title": "FIFA World Cup Opening LIVE: Mexico vs South Africa Match ...",
+      "link": "https://www.youtube.com/watch?v=NFWsIlM2aJE",
+      "thumbnail": "https://serpapi.com/searches/6a2b5f4ffd9b904495960ec7/images/57gY-4BhtFnQXYTlEfmubgkmTSHOdw7233xLBUIaF3E.jpeg",
+      "channel": "moneycontrol",
+      "platform": "YouTube"
+    },
+    {
+      "position": 4,
+      "title": "FIFA WORLD CUP 2026 Opening Match LIVE | Mexico Vs ...",
+      "link": "https://www.youtube.com/watch?v=GgPZ-Znzumk",
+      "thumbnail": "https://serpapi.com/searches/6a2b5f4ffd9b904495960ec7/images/qeUx-mQplKc1svO5xWKCeL0vW9YRfzJP4AmvQTh8WQo.jpeg",
+      "channel": "CNN-News18",
+      "platform": "YouTube"
+    }
+  ],
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "World Cup 2026 | Mexico City Stadium hosts opening match",
+      "link": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/estadio-azteca-mexico-city-host-opening-match-world-cup-2026",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/estadio-azteca-mexico-city-host-opening-match-world-cup-2026&ved=2ahUKEwiJxu74xICVAxWj1vACHYuZFacQFnoECD8QAQ",
+      "displayed_link": "https://www.fifa.com › canadamexicousa2026 › articles",
+      "favicon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y-mAAAAS1BMVEUyYpUvYJQiWpA3ZZetvM-puc0pXZI9apr____Y3-gbV488aZp_mLe_y9qhssmcrsYATorj6O_M1eGywNLR2eT7_P0ASogRU41yjrFhFSTFAAAAdElEQVR4AWKgEACKpQscAGEYgKLF3eb3vyjudI1gP0oeMHXcU3vz_OCQH-4wio8l6Q6zE-YhgSnYscCwhGwMHAzd-RkIBAyrOu1zcWzYEHdRnL-n0AE7itSCUso4D3GslNZ6M3yd_2NEocf9Pm5C4mqG8FQdKDgKD5D6XHUAAAAASUVORK5CYII.png",
+      "snippet": "Mexico will open the biggest-ever edition of the World Cup on 11 June 2026 with the first of 104 matches which will be staged. Azteca Stadium, Mexico, 29th ...",
+      "snippet_highlighted_words": [
+        "11 June 2026"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "Mexico will open the biggest-ever edition of the World Cup on 11 June 2026 with the first of 104 matches which will be staged. Azteca Stadium, Mexico, 29th  ...",
+          "source_info_link": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/estadio-azteca-mexico-city-host-opening-match-world-cup-2026",
+          "icon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y-mAAAAS1BMVEUyYpUvYJQiWpA3ZZetvM-puc0pXZI9apr____Y3-gbV488aZp_mLe_y9qhssmcrsYATorj6O_M1eGywNLR2eT7_P0ASogRU41yjrFhFSTFAAAAdElEQVR4AWKgEACKpQscAGEYgKLF3eb3vyjudI1gP0oeMHXcU3vz_OCQH-4wio8l6Q6zE-YhgSnYscCwhGwMHAzd-RkIBAyrOu1zcWzYEHdRnL-n0AE7itSCUso4D3GslNZ6M3yd_2NEocf9Pm5C4mqG8FQdKDgKD5D6XHUAAAAASUVORK5CYII.png"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "US"
+        ]
+      },
+      "about_page_link": "https://www.google.com/search?q=About+https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/estadio-azteca-mexico-city-host-opening-match-world-cup-2026&tbm=ilp",
+      "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&q=About+https%3A%2F%2Fwww.fifa.com%2Fen%2Ftournaments%2Fmens%2Fworldcup%2Fcanadamexicousa2026%2Farticles%2Festadio-azteca-mexico-city-host-opening-match-world-cup-2026",
+      "source": "FIFA"
+    },
+    {
+      "position": 2,
+      "title": "FIFA World Cup 26 Los Angeles™",
+      "link": "https://losangelesfwc26.com/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://losangelesfwc26.com/&ved=2ahUKEwiJxu74xICVAxWj1vACHYuZFacQFnoECD0QAQ",
+      "displayed_link": "https://losangelesfwc26.com",
+      "favicon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAdVBMVEX_UlL_TU3_S0v_SEj_eHj_gID_R0f_kZH_-_v_____Q0P_5OT_7-__paX_2Nj_6en_Ozv_09P_iYn_9PT_T0__YGD_hob_QkL_xcX_t7f_3t7_y8v_v7__mpr_zc3_MjL_sbH_qqr_Z2f_f3__cnL_W1v_l5eeKgJbAAABE0lEQVR4Aa2SBbbDIBBFE4jNpKWNu8v-l_ixKvyjvRHsnVGcn-I-cWwQ6vkajxLHIAgjeBKFgWHehw_8bzcYg-ByvapJjN8RMMYiuCGl90Q6MXzc0wwg5cHlBXAy_I6hBE6R82lV81kTWGNAMa1uAG1lZCmTDIkwBlHnp7lV0HPDZAABtQoYt4wqC0MAklxIrRZIkiTjmJRuXogxSYxu4FT2dRcSMnR1X05oNovJKCnKkRmFpDMIFhrUIJi_Y8AMBGvubiCI8N80KwZRl4b2Qq0VYrUqpVXQMoGYNdZKZl17GeMExNQaA9u7uUiOWARpbTdb2jmdz8F65Ur4oCRGlCe8MaBjQMiWajaSOzZconGdX_IH_gIUpwnr9qMAAAAASUVORK5CYII.png",
+      "snippet": "Los Angeles will officially host eight matches for FIFA World Cup 26™, featuring the highly coveted U.S. Men's National Team (USMNT) opening match on June ...",
+      "snippet_highlighted_words": [
+        "FIFA World Cup",
+        "June"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "Los Angeles will officially host eight matches for FIFA World Cup 26™, featuring the highly coveted U.S. Men's National Team (USMNT) opening match on June ...",
+          "source_info_link": "https://losangelesfwc26.com/",
+          "icon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAdVBMVEX_UlL_TU3_S0v_SEj_eHj_gID_R0f_kZH_-_v_____Q0P_5OT_7-__paX_2Nj_6en_Ozv_09P_iYn_9PT_T0__YGD_hob_QkL_xcX_t7f_3t7_y8v_v7__mpr_zc3_MjL_sbH_qqr_Z2f_f3__cnL_W1v_l5eeKgJbAAABE0lEQVR4Aa2SBbbDIBBFE4jNpKWNu8v-l_ixKvyjvRHsnVGcn-I-cWwQ6vkajxLHIAgjeBKFgWHehw_8bzcYg-ByvapJjN8RMMYiuCGl90Q6MXzc0wwg5cHlBXAy_I6hBE6R82lV81kTWGNAMa1uAG1lZCmTDIkwBlHnp7lV0HPDZAABtQoYt4wqC0MAklxIrRZIkiTjmJRuXogxSYxu4FT2dRcSMnR1X05oNovJKCnKkRmFpDMIFhrUIJi_Y8AMBGvubiCI8N80KwZRl4b2Qq0VYrUqpVXQMoGYNdZKZl17GeMExNQaA9u7uUiOWARpbTdb2jmdz8F65Ur4oCRGlCe8MaBjQMiWajaSOzZconGdX_IH_gIUpwnr9qMAAAAASUVORK5CYII.png"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "US"
+        ]
+      },
+      "about_page_link": "https://www.google.com/search?q=About+https://losangelesfwc26.com/&tbm=ilp",
+      "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&q=About+https%3A%2F%2Flosangelesfwc26.com%2F",
+      "source": "losangelesfwc26.com"
+    },
+    {
+      "position": 3,
+      "title": "Mexico's national team will open its 2026 World Cup ...",
+      "link": "https://www.facebook.com/dallasmorningnews/posts/mexicos-national-team-will-open-its-2026-world-cup-campaign-on-june-11-at-2-pm-u/1470874905081343/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.facebook.com/dallasmorningnews/posts/mexicos-national-team-will-open-its-2026-world-cup-campaign-on-june-11-at-2-pm-u/1470874905081343/&ved=2ahUKEwiJxu74xICVAxWj1vACHYuZFacQFnoECEMQAQ",
+      "displayed_link": "120+ reactions · 9 hours ago",
+      "favicon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y-mAAAAV1BMVEVHcEwHZv_O1v8HaP8Haf8IZ_8IaP8IZv8IZ_8IaP_r7_8IZ_8IZ_8AW_____-fsf8HZv____8AYP8AWf8AZP-Vqf_V3P8IZ_9wlP9jiv-tvP-Lpf82c_8XNRKaAAAAEHRSTlMAM_2GGN1h9exC-8LBwcGFy8UXywAAAPNJREFUKJFlk-kSgyAMhDnUQe2BQQtU3_85yxEi0P3l-E1gkyyMFXG5KmvVKjnrNSlNUlODhlE3GoebzVZ3sjMx-reDiYLwiXSgOrCHWJaPcIHafDLdB27L-sbSMfkk5rca6uiZejBLC1XoncxcSM7T7-kPZ7K78TIAmWnJHgTPyD7mbna9r4Sjh4phk7sxqVLEIeCxFiG1mISGLB67-xrmUqvQENRwMcWQ_D9WmNIKxwk4_01uvXMXGuJlfGFZR66iGahq8H99TtXKejjWy-4gLhtj0sG5CVgD74DlaNawjmYKNRxlAF2o03N4v0JOxLN6Dj8GhSiE70_PKAAAAABJRU5ErkJggg.png",
+      "snippet": "Mexico's national team will open its 2026 World Cup campaign on June 11 at 2 p.m. (U.S. Central time), taking on South Africa at the iconic ...",
+      "snippet_highlighted_words": [
+        "2026 World Cup",
+        "June 11"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "Mexico's national team will open its 2026 World Cup campaign on June 11 at 2 p.m. (U.S. Central time), taking on South Africa at the iconic ...",
+          "source_info_link": "https://www.facebook.com/dallasmorningnews/posts/mexicos-national-team-will-open-its-2026-world-cup-campaign-on-june-11-at-2-pm-u/1470874905081343/",
+          "icon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y-mAAAAV1BMVEVHcEwHZv_O1v8HaP8Haf8IZ_8IaP8IZv8IZ_8IaP_r7_8IZ_8IZ_8AW_____-fsf8HZv____8AYP8AWf8AZP-Vqf_V3P8IZ_9wlP9jiv-tvP-Lpf82c_8XNRKaAAAAEHRSTlMAM_2GGN1h9exC-8LBwcGFy8UXywAAAPNJREFUKJFlk-kSgyAMhDnUQe2BQQtU3_85yxEi0P3l-E1gkyyMFXG5KmvVKjnrNSlNUlODhlE3GoebzVZ3sjMx-reDiYLwiXSgOrCHWJaPcIHafDLdB27L-sbSMfkk5rca6uiZejBLC1XoncxcSM7T7-kPZ7K78TIAmWnJHgTPyD7mbna9r4Sjh4phk7sxqVLEIeCxFiG1mISGLB67-xrmUqvQENRwMcWQ_D9WmNIKxwk4_01uvXMXGuJlfGFZR66iGahq8H99TtXKejjWy-4gLhtj0sG5CVgD74DlaNawjmYKNRxlAF2o03N4v0JOxLN6Dj8GhSiE70_PKAAAAABJRU5ErkJggg.png"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "US"
+        ]
+      },
+      "about_page_link": "https://www.google.com/search?q=About+https://www.facebook.com/dallasmorningnews/posts/mexicos-national-team-will-open-its-2026-world-cup-campaign-on-june-11-at-2-pm-u/1470874905081343/&tbm=ilp",
+      "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&q=About+https%3A%2F%2Fwww.facebook.com%2Fdallasmorningnews%2Fposts%2Fmexicos-national-team-will-open-its-2026-world-cup-campaign-on-june-11-at-2-pm-u%2F1470874905081343%2F",
+      "source": "Facebook · The Dallas Morning News"
+    },
+    {
+      "position": 4,
+      "title": "Mexico vs South Africa in World Cup 2026: Kick-off time ...",
+      "link": "https://www.espn.com/soccer/story/_/id/49007230/world-cup-2026-mexico-vs-south-africa-kickoff-how-watch-stats-team-news-fifa-opener",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.espn.com/soccer/story/_/id/49007230/world-cup-2026-mexico-vs-south-africa-kickoff-how-watch-stats-team-news-fifa-opener&ved=2ahUKEwiJxu74xICVAxWj1vACHYuZFacQFnoECEEQAQ",
+      "displayed_link": "https://www.espn.com › soccer › story › world-cup-202...",
+      "favicon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y-mAAAAWlBMVEXsHCTsGyPsDxrsFR7uQUf82tz70tTtKjHxYWb____96OnsBBTzf4P71NXrAA_2pKf5wML3r7L3q67ydHfrAADwUVbtLzb_9_fvSE384uP6y830gobyeHzwWFzD1SbZAAAAj0lEQVR4AcXSNQKEQAAEQdx93f7_zHOZiQjptGA9u7KcYssLrCQtqxprWtSi67EhQxwnwnlEXFbCbcmgYtqPf7soEHNJjWTZNjdz82pu5lqVuBNtaE5LaMmMfiFv033yvM3w2vq4jK-Kl_E2nYjvUkm40ZzrgjsZZ8JppG0OhF2B2DY1VtGceVlg-fkjuaY7LXoMIxMy1FEAAAAASUVORK5CYII.png",
+      "date": "3 days ago",
+      "snippet": "Date, kick-off time: Thursday, June 11, 8:00 p.m. BST (3:00 pm EDT; 12.30 am IST and 5:00 am AEST, Friday) ; Venue: Estadio Azteca, Mexico City",
+      "snippet_highlighted_words": [
+        "off",
+        "June 11",
+        "Estadio Azteca"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "Date, kick-off time: Thursday, June 11, 8:00 p.m. BST (3:00 pm EDT; 12.30 am IST and 5:00 am AEST, Friday) ; Venue: Estadio Azteca, Mexico City",
+          "source_info_link": "https://www.espn.com/soccer/story/_/id/49007230/world-cup-2026-mexico-vs-south-africa-kickoff-how-watch-stats-team-news-fifa-opener",
+          "icon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y-mAAAAWlBMVEXsHCTsGyPsDxrsFR7uQUf82tz70tTtKjHxYWb____96OnsBBTzf4P71NXrAA_2pKf5wML3r7L3q67ydHfrAADwUVbtLzb_9_fvSE384uP6y830gobyeHzwWFzD1SbZAAAAj0lEQVR4AcXSNQKEQAAEQdx93f7_zHOZiQjptGA9u7KcYssLrCQtqxprWtSi67EhQxwnwnlEXFbCbcmgYtqPf7soEHNJjWTZNjdz82pu5lqVuBNtaE5LaMmMfiFv033yvM3w2vq4jK-Kl_E2nYjvUkm40ZzrgjsZZ8JppG0OhF2B2DY1VtGceVlg-fkjuaY7LXoMIxMy1FEAAAAASUVORK5CYII.png"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "US"
+        ]
+      },
+      "about_page_link": "https://www.google.com/search?q=About+https://www.espn.com/soccer/story/_/id/49007230/world-cup-2026-mexico-vs-south-africa-kickoff-how-watch-stats-team-news-fifa-opener&tbm=ilp",
+      "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&q=About+https%3A%2F%2Fwww.espn.com%2Fsoccer%2Fstory%2F_%2Fid%2F49007230%2Fworld-cup-2026-mexico-vs-south-africa-kickoff-how-watch-stats-team-news-fifa-opener",
+      "source": "ESPN",
+      "read_more_link": "https://www.espn.com/soccer/story/_/id/49007230/world-cup-2026-mexico-vs-south-africa-kickoff-how-watch-stats-team-news-fifa-opener#:~:text=Date%2C%20kick%2Doff%20time%3A%20Thursday%2C%20June,and%205%3A00%20am%20AEST%2C%20Friday)&text=Venue%3A%20Estadio%20Azteca%2C%20Mexico%20City"
+    },
+    {
+      "position": 5,
+      "title": "2026 World Cup Schedule – USA, Canada and Mexico",
+      "link": "https://www.roadtrips.com/world-cup/2026-world-cup-packages/schedule/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.roadtrips.com/world-cup/2026-world-cup-packages/schedule/&ved=2ahUKEwiJxu74xICVAxWj1vACHYuZFacQFnoECD4QAQ",
+      "displayed_link": "https://www.roadtrips.com › 2026 World Cup",
+      "favicon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAVFBMVEUAN2gMQG8QRHHAztr____b4-qQqL3W3-cJPm1oiabJ1d9Rd5h8mLGnusuwwdCgtMcCOWkxXYXs8PR0kq3m6_C3x9QiUnyCnbU7ZYuXrcEnVn83YonRZ5VbAAAAh0lEQVR4AeTSMRKCQAADwBMXVEBUVAD__1D5AJmxNk2arTIpv-ZQbTkEcATqpsqA0zkDLrug7boe110wbDVwjKD5D3DL4P4Y05JG8NwH4FVl8J7KLhhm6vSo24QlgdKyRtAznhP4oEugnBgimFEl8MAlgVLTRtBgSmBBn8B9pE6grPhOGsQAAIfiBxv_4xE6AAAAAElFTkSuQmCC.png",
+      "snippet": "June 11, 2026; Kickoff: 3:00 PM local; Venue: Estadio Azteca; City: Mexico City, Mexico; Group: A. Match 28 — Mexico vs Korea Republic. Date: June 18, 2026",
+      "snippet_highlighted_words": [
+        "June 11, 2026; Kickoff: 3:00 PM local"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "June 11, 2026; Kickoff: 3:00 PM local; Venue: Estadio Azteca; City: Mexico City, Mexico; Group: A. Match 28 — Mexico vs Korea Republic. Date: June 18, 2026",
+          "source_info_link": "https://www.roadtrips.com/world-cup/2026-world-cup-packages/schedule/",
+          "icon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAVFBMVEUAN2gMQG8QRHHAztr____b4-qQqL3W3-cJPm1oiabJ1d9Rd5h8mLGnusuwwdCgtMcCOWkxXYXs8PR0kq3m6_C3x9QiUnyCnbU7ZYuXrcEnVn83YonRZ5VbAAAAh0lEQVR4AeTSMRKCQAADwBMXVEBUVAD__1D5AJmxNk2arTIpv-ZQbTkEcATqpsqA0zkDLrug7boe110wbDVwjKD5D3DL4P4Y05JG8NwH4FVl8J7KLhhm6vSo24QlgdKyRtAznhP4oEugnBgimFEl8MAlgVLTRtBgSmBBn8B9pE6grPhOGsQAAIfiBxv_4xE6AAAAAElFTkSuQmCC.png"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "US"
+        ]
+      },
+      "about_page_link": "https://www.google.com/search?q=About+https://www.roadtrips.com/world-cup/2026-world-cup-packages/schedule/&tbm=ilp",
+      "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&q=About+https%3A%2F%2Fwww.roadtrips.com%2Fworld-cup%2F2026-world-cup-packages%2Fschedule%2F",
+      "source": "Roadtrips",
+      "read_more_link": "https://www.roadtrips.com/world-cup/2026-world-cup-packages/schedule/#:~:text=Date%3A%20June%2011%2C%202026,Date%3A%20June%2018%2C%202026"
+    },
+    {
+      "position": 6,
+      "title": "2026 FIFA World Cup: Complete Guide to the Tournament",
+      "link": "https://www.britannica.com/event/2026-FIFA-World-Cup",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.britannica.com/event/2026-FIFA-World-Cup&ved=2ahUKEwiJxu74xICVAxWj1vACHYuZFacQFnoECEAQAQ",
+      "displayed_link": "https://www.britannica.com › Sports & Recreation › Soccer",
+      "favicon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAPFBMVEVHcEwKPmwLQGwLQGwLQGsAOWgcTXZEaIlXdpMyWn-Bma9uiKGVqbypuskALmLM1t_g5-y0w9Dy9fj___8H8PJTAAAABXRSTlMAILD_6JrywKcAAAGISURBVHgBhZPhjishCIVnawEQRBze_10vmTaZuO3N-kc5fJ4QlOP4ebT_rsdP5Z-bBLiFz59ju49IjBvyOG4DEOGuyl0QbovjzhN16UKdjOW2uAHQTtiIAckUvgBNVKyT6qjDNwBIfQa2GcD8DfC-xGa3tWQM_wTEkENphvBJ0gl-AxiGs-tYqtH6KR8OwDZFT6KzF8hwA--KZfA0CKbAHjzoUkHaAUVfQY_eTdSotrArDV3hAMrVi0AzpMQIT4YioYGNFDiaZ57csMCglAhMnkmAyGemVw24MnMOB4ppaoPHONl9zZIXFoAF1uoOqNLgajm4XeLZCnifczYofS5zAJwvrUMBr6hsVmugJb7yJeR4N8qtohE5HfhMBZ85RyHmbwDAKtRIdT6rQM3omWlwtxpWCTSjcQEYk-vC8nYDDbhsJbQA0pDIybA_FrjMJQWkKq6JDp8_ClRQM7URw9c_2aBBzzRvd3oH2tW04Zt0PDdgZM4NeO6j55F5bsDj1_CCO-zD--f4_wPoVR1v3hUTLgAAAABJRU5ErkJggg.png",
+      "date": "7 days ago",
+      "snippet": "The opening match of the tournament between Mexico and South Africa will be played on June 11 in the Mexico City Stadium. The group stage ...",
+      "snippet_highlighted_words": [
+        "June 11 in the Mexico City Stadium"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "The opening match of the tournament between Mexico and South Africa will be played on June 11 in the Mexico City Stadium. The group stage ...",
+          "source_info_link": "https://www.britannica.com/event/2026-FIFA-World-Cup",
+          "icon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAPFBMVEVHcEwKPmwLQGwLQGwLQGsAOWgcTXZEaIlXdpMyWn-Bma9uiKGVqbypuskALmLM1t_g5-y0w9Dy9fj___8H8PJTAAAABXRSTlMAILD_6JrywKcAAAGISURBVHgBhZPhjishCIVnawEQRBze_10vmTaZuO3N-kc5fJ4QlOP4ebT_rsdP5Z-bBLiFz59ju49IjBvyOG4DEOGuyl0QbovjzhN16UKdjOW2uAHQTtiIAckUvgBNVKyT6qjDNwBIfQa2GcD8DfC-xGa3tWQM_wTEkENphvBJ0gl-AxiGs-tYqtH6KR8OwDZFT6KzF8hwA--KZfA0CKbAHjzoUkHaAUVfQY_eTdSotrArDV3hAMrVi0AzpMQIT4YioYGNFDiaZ57csMCglAhMnkmAyGemVw24MnMOB4ppaoPHONl9zZIXFoAF1uoOqNLgajm4XeLZCnifczYofS5zAJwvrUMBr6hsVmugJb7yJeR4N8qtohE5HfhMBZ85RyHmbwDAKtRIdT6rQM3omWlwtxpWCTSjcQEYk-vC8nYDDbhsJbQA0pDIybA_FrjMJQWkKq6JDp8_ClRQM7URw9c_2aBBzzRvd3oH2tW04Zt0PDdgZM4NeO6j55F5bsDj1_CCO-zD--f4_wPoVR1v3hUTLgAAAABJRU5ErkJggg.png"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "US"
+        ]
+      },
+      "about_page_link": "https://www.google.com/search?q=About+https://www.britannica.com/event/2026-FIFA-World-Cup&tbm=ilp",
+      "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&q=About+https%3A%2F%2Fwww.britannica.com%2Fevent%2F2026-FIFA-World-Cup",
+      "source": "Britannica",
+      "read_more_link": "https://www.britannica.com/event/2026-FIFA-World-Cup#:~:text=The%20opening%20match%20of%20the,three%20members%20of%20its%20group."
+    },
+    {
+      "position": 7,
+      "title": "2026 World Cup schedule: Teams, group stage, match ...",
+      "link": "https://sports.yahoo.com/soccer/article/2026-world-cup-schedule-teams-group-stage-match-dates-fixtures-how-to-watch-050724300.html",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://sports.yahoo.com/soccer/article/2026-world-cup-schedule-teams-group-stage-match-dates-fixtures-how-to-watch-050724300.html&ved=2ahUKEwiJxu74xICVAxWj1vACHYuZFacQFnoECEIQAQ",
+      "displayed_link": "https://sports.yahoo.com › soccer › article › 2026-worl...",
+      "favicon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y-mAAAAkFBMVEX___-rhf95I_99Lv9wAP_9_P-yi__u5P9mAP96KP_Jp__8-v93Hf-dYv-2kf-8nf-KR__v5v-le_-gbP_8-P_Gqf_Pr__NuP_k1v_EoP_Js__AmP_axf_59f_eyv_07f_Hov_t3__VvP_Vu__l1f_gzv-WWv-sgP-UU_-lc_94If-JRP-eZ_-BNf-OTf-GPv-YJkFcAAABE0lEQVR4AYzOhWKDMBQF0AsJdIHgrsGp9___bpnRzHtwngLQdEIofvZw0DB3PwYNQHpiFmCrQc45hePuANuD5LvBFgyjOJFBJ41hZ69BJ9uK89ergGSXkCp8VctQI9lAi69E3iaWlLS5wBd50fXpMNRj2nfFBNUMo-0NvDL62YAa1pxBYCOGZVW3oZyTfWi6rntYCOd0ULfhhDCmHyWdMUa4gGLPyInIBF3e_PPlCpXJb6nH2EHz2T6tqAZVfE2Fxk-jRWgZREuMr9ZLhoRFwA4_a_Abcd8xEPiicLcVaI8NF5dQZyuhMyH9jc_ZHnfVEvnBcvAOe6tYwjasetwJmpenvZlqw34vzreWqIsFFzyPjgAAa_YUzAFpU20AAAAASUVORK5CYII.png",
+      "date": "8 hours ago",
+      "snippet": "Thursday, June 11, 3 p.m. (Fox): Mexico vs. South Africa, Estadio Azteca (Mexico City) ; Friday, June 12, 3 p.m. (Fox): Canada vs. Bosnia and ...",
+      "snippet_highlighted_words": [
+        "Thursday, June 11, 3 p.m. (Fox): Mexico vs. South Africa, Estadio Azteca"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "Thursday, June 11, 3 p.m. (Fox): Mexico vs. South Africa, Estadio Azteca (Mexico City) ; Friday, June 12, 3 p.m. (Fox): Canada vs. Bosnia and ...",
+          "source_info_link": "https://sports.yahoo.com/soccer/article/2026-world-cup-schedule-teams-group-stage-match-dates-fixtures-how-to-watch-050724300.html",
+          "icon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y-mAAAAkFBMVEX___-rhf95I_99Lv9wAP_9_P-yi__u5P9mAP96KP_Jp__8-v93Hf-dYv-2kf-8nf-KR__v5v-le_-gbP_8-P_Gqf_Pr__NuP_k1v_EoP_Js__AmP_axf_59f_eyv_07f_Hov_t3__VvP_Vu__l1f_gzv-WWv-sgP-UU_-lc_94If-JRP-eZ_-BNf-OTf-GPv-YJkFcAAABE0lEQVR4AYzOhWKDMBQF0AsJdIHgrsGp9___bpnRzHtwngLQdEIofvZw0DB3PwYNQHpiFmCrQc45hePuANuD5LvBFgyjOJFBJ41hZ69BJ9uK89ergGSXkCp8VctQI9lAi69E3iaWlLS5wBd50fXpMNRj2nfFBNUMo-0NvDL62YAa1pxBYCOGZVW3oZyTfWi6rntYCOd0ULfhhDCmHyWdMUa4gGLPyInIBF3e_PPlCpXJb6nH2EHz2T6tqAZVfE2Fxk-jRWgZREuMr9ZLhoRFwA4_a_Abcd8xEPiicLcVaI8NF5dQZyuhMyH9jc_ZHnfVEvnBcvAOe6tYwjasetwJmpenvZlqw34vzreWqIsFFzyPjgAAa_YUzAFpU20AAAAASUVORK5CYII.png"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "US"
+        ]
+      },
+      "about_page_link": "https://www.google.com/search?q=About+https://sports.yahoo.com/soccer/article/2026-world-cup-schedule-teams-group-stage-match-dates-fixtures-how-to-watch-050724300.html&tbm=ilp",
+      "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&q=About+https%3A%2F%2Fsports.yahoo.com%2Fsoccer%2Farticle%2F2026-world-cup-schedule-teams-group-stage-match-dates-fixtures-how-to-watch-050724300.html",
+      "source": "Yahoo Sports",
+      "read_more_link": "https://sports.yahoo.com/soccer/article/2026-world-cup-schedule-teams-group-stage-match-dates-fixtures-how-to-watch-050724300.html#:~:text=Thursday%2C%20June%2011%2C%203%20p.m.,Africa%2C%20Estadio%20Azteca%20(Mexico%20City)&text=Friday%2C%20June%2012%2C%203%20p.m.,and%20Herzegovina%20BMO%20Field%20(Toronto)"
+    }
+  ],
+  "perspectives": [
+    {
+      "author": "fifa",
+      "source": "Instagram",
+      "extensions": [
+        "102.5K+ likes "
+      ],
+      "thumbnails": [
+        "https://serpapi.com/searches/6a2b5f4ffd9b904495960ec7/images/YZJVUD-Vw9WepHxdBDGZdlkwxjZTZuovsyELRC_ltjQ.jpeg"
+      ],
+      "title": "Kicking off @FIFAWorldCup 2026: Mexico vs South Africa 🇲🇽🇿🇦 Did you know? This fixture is a repeat of the 2010 tournament’s opening match 🙌",
+      "link": "https://www.instagram.com/p/DZcTtXqFp4A/",
+      "date": "1 hour ago"
+    },
+    {
+      "author": "steph.marco.daily",
+      "source": "Instagram",
+      "duration": "0:11",
+      "extensions": [
+        "1.7K+ likes "
+      ],
+      "thumbnails": [
+        "https://serpapi.com/images/i/R0lGODlhAQABAIAAAP_______yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw.gif"
+      ],
+      "title": "📍 Mexico — Today is the day the 2026 World Cup starts with the first match set in Mexico!! Mexico 🇲🇽 vs South Africa 🇿🇦 Only 3 hours until kick off, where will you be watching from?! #mexico #worldcup2026 #worldcup #fifa #fifa2026",
+      "link": "https://www.instagram.com/reel/DZc5tWAOwgD/",
+      "date": "6 hours ago"
+    },
+    {
+      "author": "caf_online",
+      "source": "Instagram",
+      "extensions": [
+        "16.6K+ likes "
+      ],
+      "thumbnails": [
+        "https://serpapi.com/searches/6a2b5f4ffd9b904495960ec7/images/i4yRzXnZgGQ2rJ2Xi_oT_WnHfgq7LdW7blqgMEAhEUE.jpeg"
+      ],
+      "title": "16 years to the day. The return leg. 🇲🇽🇿🇦 We say Mexico vs South Africa. You say #FIFAWorldCup opener!",
+      "link": "https://www.instagram.com/p/DZb-lcAsdy5/",
+      "date": "6 hours ago"
+    },
+    {
+      "author": "WestHam",
+      "source": "Facebook",
+      "extensions": [
+        "3.1K+ reactions "
+      ],
+      "thumbnails": [
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGVtg4EPBkr_Hy6VGe3kmPl8cA83zXyWu7VJcWb1dJBfb4lMZjripX7GROLg&usqp=CAI&s"
+      ],
+      "title": "Edson's Mexico are set to kick off the FIFA World Cup 2026 🙌",
+      "link": "https://www.facebook.com/WestHam/posts/edsons-mexico-are-set-to-kick-off-the-fifa-world-cup-2026-/1575850870571350/",
+      "date": "3 hours ago"
+    },
+    {
+      "author": "61578530467507",
+      "source": "Facebook",
+      "thumbnails": [
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB7NEfrGoYxxqwDQKt95DaLGY_YfD1PEOzefQfGeoWkJx31USL1vit70NtiQ&usqp=CAI&s"
+      ],
+      "title": "In the opening match of the 2026 FIFA World Cup, co-hosts Mexico secured a 2–0 victory over South Africa at the Estadio Azteca in a highly undisciplined encounter that set a tournament record with three straight red cards. According to match coverage by ES",
+      "link": "https://www.facebook.com/61578530467507/posts/in-the-opening-match-of-the-2026-fifa-world-cup-co-hosts-mexico-secured-a-20-vic/122175188900951015/",
+      "date": "9 minutes ago"
+    },
+    {
+      "author": "bafanabafanaOfficial",
+      "source": "Facebook",
+      "extensions": [
+        "10.1K+ reactions "
+      ],
+      "thumbnails": [
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8rd9xnGgQ-vLCW1LGVcoa5o5KIC4SpqbG_B4GPdwf9OqDbZ8s2mqafbt19Q&usqp=CAI&s"
+      ],
+      "title": "The stage is set.. 🇿🇦⚽️ We are about to witness history tonight at the Estadio Azteca in Mexico City. Get ready Mzansi for the much anticipated 2026 FIFA World Cup opener of a lifetime! ⚽ Mexico vs Bafana Bafana 📅 Thursday, 11 June 2026 ​🏟️ Estadio Azt",
+      "link": "https://www.facebook.com/bafanabafanaOfficial/posts/the-stage-is-set-%EF%B8%8Fwe-are-about-to-witness-history-tonight-at-the-estadio-azteca-/122182822778818950/",
+      "date": "7 hours ago"
+    },
+    {
+      "author": "cgtnamerica",
+      "source": "Instagram",
+      "duration": "2:14",
+      "extensions": [
+        "5 likes "
+      ],
+      "thumbnails": [
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQltcu8mS0TVg11aYImmrLsYDsmTqNJpCH09AarjLCPnvnEoYeDpUDvOa8Xrh0&usqp=CAI&s=10"
+      ],
+      "title": "Mexico City kicked off the World Cup on Thursday, June 11, with an opening ceremony and soccer match between Mexico and South Africa. The events took place in the largest stadium in Latin America, the Azteca Stadium. Franc Contreras was outside the stadium to ask fans how they’re feeling about the tournament.",
+      "link": "https://www.instagram.com/reel/DZdwOKSskHF/",
+      "date": "1 hour ago"
+    },
+    {
+      "author": "MimiMefoInfo",
+      "source": "Facebook",
+      "extensions": [
+        "230+ reactions "
+      ],
+      "thumbnails": [
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRy20b3dvTeVmjYOlbzIG41gzjC425_Uqi-pDJ84aPPAaFINsLQiefulfZl2w&usqp=CAI&s"
+      ],
+      "title": "2026 World Cup: Mexico vs South Africa, the Opening Clash This Thursday at the Azteca The wait is over. The football world finally comes alive. This Thursday, June 11, 2026, at 8:00 PM (Cameroon time), Mexico City's Estadio Azteca will host the opening mat",
+      "link": "https://www.facebook.com/MimiMefoInfo/posts/2026-world-cup-mexico-vs-south-africa-the-opening-clash-this-thursday-at-the-azt/1570677577748341/",
+      "date": "8 hours ago"
+    },
+    {
+      "author": "61561646907428",
+      "source": "Facebook",
+      "thumbnails": [
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ2wdYHKDizq-8tCQm8tUjTGv4wt9nRyOS9Fg8N8oGreQnfIu7jplwUrwiYw&usqp=CAI&s"
+      ],
+      "title": "🚨 Mexico will begin their 2026 World Cup campaign against South Africa on June 11, a date that has historically been kind to El Tri. 🇲🇽 The tournament opener will mark the sixth time Mexico have played a World Cup match on June 11, and they are unbeaten",
+      "link": "https://www.facebook.com/61561646907428/posts/-mexico-will-begin-their-2026-world-cup-campaign-against-south-africa-on-june-11/122187089060388230/",
+      "date": "7 hours ago"
+    },
+    {
+      "author": "MexicanFoodOfficial",
+      "source": "Facebook",
+      "extensions": [
+        "650+ reactions "
+      ],
+      "thumbnails": [
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrUxwcujSlPpdRgHvyfaRYUd8chA6ARY9yMfhIQm1zVhUyVDR0puDIVd_amQ&usqp=CAI&s"
+      ],
+      "title": "For years, Mexico waited for the FIFA World Cup to return home. Generations dreamed of hearing the opening whistle inside a packed Estadio Azteca once again. And when that moment finally arrived, it was Julián Quiñones who wrote the first chapter. With mi",
+      "link": "https://www.facebook.com/MexicanFoodOfficial/posts/for-years-mexico-waited-for-the-fifa-world-cup-to-return-home-generations-dreame/1594231762702788/",
+      "date": "6 hours ago"
+    },
+    {
+      "author": "sporf",
+      "source": "Facebook",
+      "extensions": [
+        "110+ reactions "
+      ],
+      "thumbnails": [
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSqtxs8ktDPgvm_JVnab7ztK7szxaWmsXDIA-toSV3OjxwSQWmEYfL5OYkoA&usqp=CAI&s"
+      ],
+      "title": "From Pelé to Maradona, history has been made on this pitch. 🏆 Now, the Estadio Azteca hosts the first match of the 2026 World Cup. 🇲🇽 Mexico vs South Africa 🇿🇦",
+      "link": "https://www.facebook.com/sporf/posts/from-pel%C3%A9-to-maradona-history-has-been-made-on-this-pitch-now-the-estadio-azteca/1561143789006942/",
+      "date": "7 hours ago"
+    },
+    {
+      "author": "nonextquestion",
+      "source": "Instagram",
+      "extensions": [
+        "2.9K+ likes "
+      ],
+      "thumbnails": [
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwlcDfUSi5RdFIWssTPng-J7xRO9-5d2k510F-oQ7J803LE7eZ1S4RGvq7nA&usqp=CAI&s"
+      ],
+      "title": "The opening match of the FIFA World Cup 2026 (Mexico vs South Africa) is being played at the iconic Estadio Azteca in Mexico City, one of the most historic stadiums in football history. The historic stadium is famous for hosting two of football’s greatest legends as World Cup champions. Pelé lifted the trophy there with Brazil in 1970, while Diego Maradona led Argentina to victory at the same venue in 1986. #mexico #southafrica #WorldCup2026 #nonextquestion",
+      "link": "https://www.instagram.com/p/DZb_dTYkTDK/",
+      "date": "18 hours ago"
+    }
+  ],
+  "top_stories": [
+    {
+      "title": "World Cup opening ceremony in Mexico features Shakira, followed by a home team victory",
+      "link": "https://www.cbsnews.com/news/world-cup-opening-ceremony-mexico-shakira/",
+      "source": "CBS News",
+      "source_logo": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAARVBMVEX___8hISEAAAASEhIfHx8gICCjo6MICAiAgIChoaGurq7Nzc21tbV5eXl2dnaFhYXz8_OXl5fp6ekyMjJJSUkvLy8VFRW_1GjAAAAAeElEQVQYlWWP2w7DIAxDjQOhtIXe9_-fugVaaRV-QNEhThw4k5cYxdcS9lAG1UF4g8CEKmWogBNuTTRABeacNM_W4-AFuy_2n90O8ZBl5dEcB9dFEMeTWwMbzzH2wCzXv8V_nqEl1KFtbUnpWdsH-0XXd_TuuPf5X0N7BEhK7acFAAAAAElFTkSuQmCC.png",
+      "date": "7 hours ago",
+      "thumbnail": "https://serpapi.com/searches/6a2b5f4ffd9b904495960ec7/images/gSSzLBMgeiHsSN1aaTiCLxyPPa7ZdUWFmzNoN6GhE1k.jpeg"
+    },
+    {
+      "title": "2026 World Cup live updates: Mexico wins opener as group stage action begins in Mexico City",
+      "link": "https://sports.yahoo.com/soccer/live/2026-world-cup-schedule-scores-live-updates-group-stage-mexico-vs-south-africa-south-korea-czechia-150000738.html",
+      "source": "Yahoo Sports",
+      "source_logo": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAaVBMVEVgAdL___9VANBXANBOAM6siebTu_L_-__WvfNsEdaNV96HVtvAreuph-WjfuN_SdnFrO3w5vuieuPJse61l-j47_1sANacc-FGAM3byPTezPWYbeCAOtqER9uPXd5uINbr3vmAQdrj0_erJ5jnAAAAcUlEQVQYlZWO2w6CMBBEezqtgCJyqwre-f-PVNKgwoOJk8zDbHZnjzH_yDo7z6skjRNptDJYa8ybfCsV-a6kcnEXjF6GWvG2ofU0RRKmzoxQsfeH41TvOuhPcH4_vMD1Fu4fggfBmS8qO-C1YJ7n33oCo3oDRFg7A60AAAAASUVORK5CYII.png",
+      "date": "2 hours ago",
+      "thumbnail": "https://serpapi.com/searches/6a2b5f4ffd9b904495960ec7/images/sM15zoGiEjMfsjiqvRuoWKDdavAbfeLw6zCMGssmnW4.jpeg"
+    },
+    {
+      "title": "Who Performed at the World Cup 2026 Opening Ceremony Day 1? Shakira, Tyla, Alejandro Fernández and Full Lineup",
+      "link": "https://www.today.com/news/sports/live-blog/world-cup-2026-opening-ceremony-mexico-shakira-live-updates-rcna347915",
+      "source": "TODAY.com",
+      "source_logo": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8_9hAAABJUlEQVQ4je3SO0ucYRAF4OdbLxu8gREE2UITtFBSicRGK2HrFdFawc5KsbIT_A1WFpJKQrwgWKSVLVOIQhBWG0VBNGoQl1UxX5oRBX-B4DQvw8ycc-bMy5uP5GWSDg-SplCLNrRG6QKnuJOQrBdfA6SFgafBIUygHy1RvsIvLOMnKslG8RkghpswhylkcYDjAMihE49Ywjwuk42iJIZrsIBZlLCJBnSgCie4Rh49WIzeSnUw5IO5hBWMohu3-IdGHGE18kls43t1yB2Pdw0j-IRvYVwGzQE6hh_oCp-2MmjHV-yjHl-iKYtpzOBzKMvFdX6jF10ZfMQ9dmLvw2joi73_xN7n2A2SPZTRkqSFgbpALcdVsrgJ2S__yV98CA8eAujMe_gPjvlGnyA9ryAAAAAASUVORK5CYII.png",
+      "date": "3 hours ago",
+      "thumbnail": "https://serpapi.com/searches/6a2b5f4ffd9b904495960ec7/images/renebGbp4ehJPOz63317sHM9s-q-j20GbnZMIgT80Cg.jpeg"
+    },
+    {
+      "title": "World Cup 2026 today: Updates and news as Mexico City prepared for tournament opener - as it happened on June 10",
+      "link": "https://www.espn.com/soccer/story/_/id/49026257/world-cup-2026-today-blog-11-06-2026-live-updates-news-fixtures-schedule-results-england-costa-rica",
+      "source": "ESPN",
+      "source_logo": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAP1BMVEXsHCT____rABD1mp3sABXsERv2nqDrAATsAADycXT2pKbsFyD-8fLxZmr4vr_709Tzf4LuMzrwWV783d75yMk0RKcZAAAAXUlEQVQYlY2OyxaAIAhEhSRfaVr9_7dmMbZoU3fHheGMMb8QVmTMeZ4u5gDjCimRVfgVoloVSeyNpPEDB9TUpDYEfspGtPsOI2JrXy6dw6ngiESBkIBe-Wn6av7BCT_DAm77a9_OAAAAAElFTkSuQmCC.png",
+      "date": "9 hours ago",
+      "thumbnail": "https://serpapi.com/searches/6a2b5f4ffd9b904495960ec7/images/5sj6lMauUR376d0_3NRqd4Gks6TT8DIROtr3h62qu1w.jpeg"
+    },
+    {
+      "title": "2026 FIFA World Cup Kicks Off Thursday with Mexico vs. South Africa",
+      "link": "https://www.philadelphiaunion.com/news/2026-fifa-world-cup-kicks-off-thursday-with-mexico-vs-south-africa",
+      "source": "Philadelphia Union",
+      "source_logo": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAgVBMVEUEHCwAFCgAFSkAGytaW1NdXlUACyU_REQAESdsa15ycGJTVU-gmH1WV1DIu5ctNjvSxJ2ZkXnby6J-iY4RIi9OUU16d2cdKjRnZVh0bldbV0Y5QEEpg9ZiYliPlI4tTWw4VG9FSUeMiHMAABcAACC1q4yso4anoo5sZ1YZY6MqLy7BWRxPAAAAoUlEQVQYlW2P6xJDMBSEJXI7SElCRINWb8r7P2AJo9OZ7r_9Zs7Z3Sj6K4yEQPiwMSPEJpSwePelrV1zdt6WG2FApWlbk3bAwr1MfNZfrr2SqVz_oC7NJFhnZUY7tALHTzDckgFOnAZA80Ixbu-qyHfglX48X0IrHwAmvtZj8x51nRO8xXJhpskIvsUuxaDy8-wrKOOjOl10VA_jFn3H_egD4tkJLAu8MVQAAAAASUVORK5CYII.png",
+      "date": "1 day ago",
+      "thumbnail": "https://serpapi.com/searches/6a2b5f4ffd9b904495960ec7/images/zC4tk2BzS4gvgWr7EtleCanwzYsMMQpRfxwI-N4REY0.jpeg"
+    }
+  ],
+  "top_stories_link": "https://www.google.com/search?sca_esv=e266cabde4f9b998&udm=7&q=The+2026+FIFA+World+Cup+kicks+off+at+Estadio+Azteca+on+June+11,+2026.&sa=X&ved=2ahUKEwiJxu74xICVAxWj1vACHYuZFacQ8ccDKAJ6BAgaEAQ",
+  "top_stories_serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=The+2026+FIFA+World+Cup+kicks+off+at+Estadio+Azteca+on+June+11%2C+2026.",
+  "related_searches": [
+    {
+      "block_position": 1,
+      "query": "World Cup 2026 opening ceremony date and time",
+      "link": "https://www.google.com/search?sca_esv=e266cabde4f9b998&q=World+Cup+2026+opening+ceremony+date+and+time&sa=X&ved=2ahUKEwiJxu74xICVAxWj1vACHYuZFacQ1QJ6BAg2EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=World+Cup+2026+opening+ceremony+date+and+time"
+    },
+    {
+      "block_position": 1,
+      "query": "World Cup 2026 opening ceremony performers",
+      "link": "https://www.google.com/search?sca_esv=e266cabde4f9b998&q=World+Cup+2026+opening+ceremony+performers&sa=X&ved=2ahUKEwiJxu74xICVAxWj1vACHYuZFacQ1QJ6BAhEEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=World+Cup+2026+opening+ceremony+performers"
+    },
+    {
+      "block_position": 1,
+      "query": "Azteca Stadium World Cup 2026",
+      "link": "https://www.google.com/search?sca_esv=e266cabde4f9b998&q=Azteca+Stadium+World+Cup+2026&sa=X&ved=2ahUKEwiJxu74xICVAxWj1vACHYuZFacQ1QJ6BAg8EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=Azteca+Stadium+World+Cup+2026"
+    },
+    {
+      "block_position": 1,
+      "query": "World Cup opening match 2026",
+      "link": "https://www.google.com/search?sca_esv=e266cabde4f9b998&q=World+Cup+opening+match+2026&sa=X&ved=2ahUKEwiJxu74xICVAxWj1vACHYuZFacQ1QJ6BAg7EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=World+Cup+opening+match+2026"
+    },
+    {
+      "block_position": 1,
+      "query": "FIFA World Cup 2026 first match Stadium",
+      "link": "https://www.google.com/search?sca_esv=e266cabde4f9b998&q=FIFA+World+Cup+2026+first+match+Stadium&sa=X&ved=2ahUKEwiJxu74xICVAxWj1vACHYuZFacQ1QJ6BAg6EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=FIFA+World+Cup+2026+first+match+Stadium"
+    },
+    {
+      "block_position": 1,
+      "query": "Opening ceremony World Cup 2026 time",
+      "link": "https://www.google.com/search?sca_esv=e266cabde4f9b998&q=Opening+ceremony+World+Cup+2026+time&sa=X&ved=2ahUKEwiJxu74xICVAxWj1vACHYuZFacQ1QJ6BAg5EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=Opening+ceremony+World+Cup+2026+time"
+    },
+    {
+      "block_position": 1,
+      "query": "SoFi Stadium World Cup 2026 schedule",
+      "link": "https://www.google.com/search?sca_esv=e266cabde4f9b998&q=SoFi+Stadium+World+Cup+2026+schedule&sa=X&ved=2ahUKEwiJxu74xICVAxWj1vACHYuZFacQ1QJ6BAg4EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=SoFi+Stadium+World+Cup+2026+schedule"
+    },
+    {
+      "block_position": 1,
+      "query": "World Cup opening ceremony time",
+      "link": "https://www.google.com/search?sca_esv=e266cabde4f9b998&q=World+Cup+opening+ceremony+time&sa=X&ved=2ahUKEwiJxu74xICVAxWj1vACHYuZFacQ1QJ6BAg3EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=World+Cup+opening+ceremony+time"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=The+2026+FIFA+World+Cup+kicks+off+at+Estadio+Azteca+on+June+11,+2026.&sca_esv=e266cabde4f9b998&ei=UF8raoneBKOtw8cPi7PWuAo&start=10&sa=N&sstk=AU9db-D9mQlXMGYKl57_TOjaTqDkCvakxU5rEPWLKZYHefk7Eq5qLPdIQz3eKmLEFCPnY_NJGdA4-ZtUsOp2AlFMDNGsi-bY_NYrIA&ved=2ahUKEwiJxu74xICVAxWj1vACHYuZFacQ8NMDegQIRhAW",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=The+2026+FIFA+World+Cup+kicks+off+at+Estadio+Azteca+on+June+11,+2026.&sca_esv=e266cabde4f9b998&ei=UF8raoneBKOtw8cPi7PWuAo&start=10&sa=N&sstk=AU9db-D9mQlXMGYKl57_TOjaTqDkCvakxU5rEPWLKZYHefk7Eq5qLPdIQz3eKmLEFCPnY_NJGdA4-ZtUsOp2AlFMDNGsi-bY_NYrIA&ved=2ahUKEwiJxu74xICVAxWj1vACHYuZFacQ8tMDegQIRhAE",
+      "3": "https://www.google.com/search?q=The+2026+FIFA+World+Cup+kicks+off+at+Estadio+Azteca+on+June+11,+2026.&sca_esv=e266cabde4f9b998&ei=UF8raoneBKOtw8cPi7PWuAo&start=20&sa=N&sstk=AU9db-D9mQlXMGYKl57_TOjaTqDkCvakxU5rEPWLKZYHefk7Eq5qLPdIQz3eKmLEFCPnY_NJGdA4-ZtUsOp2AlFMDNGsi-bY_NYrIA&ved=2ahUKEwiJxu74xICVAxWj1vACHYuZFacQ8tMDegQIRhAG",
+      "4": "https://www.google.com/search?q=The+2026+FIFA+World+Cup+kicks+off+at+Estadio+Azteca+on+June+11,+2026.&sca_esv=e266cabde4f9b998&ei=UF8raoneBKOtw8cPi7PWuAo&start=30&sa=N&sstk=AU9db-D9mQlXMGYKl57_TOjaTqDkCvakxU5rEPWLKZYHefk7Eq5qLPdIQz3eKmLEFCPnY_NJGdA4-ZtUsOp2AlFMDNGsi-bY_NYrIA&ved=2ahUKEwiJxu74xICVAxWj1vACHYuZFacQ8tMDegQIRhAI",
+      "5": "https://www.google.com/search?q=The+2026+FIFA+World+Cup+kicks+off+at+Estadio+Azteca+on+June+11,+2026.&sca_esv=e266cabde4f9b998&ei=UF8raoneBKOtw8cPi7PWuAo&start=40&sa=N&sstk=AU9db-D9mQlXMGYKl57_TOjaTqDkCvakxU5rEPWLKZYHefk7Eq5qLPdIQz3eKmLEFCPnY_NJGdA4-ZtUsOp2AlFMDNGsi-bY_NYrIA&ved=2ahUKEwiJxu74xICVAxWj1vACHYuZFacQ8tMDegQIRhAK",
+      "6": "https://www.google.com/search?q=The+2026+FIFA+World+Cup+kicks+off+at+Estadio+Azteca+on+June+11,+2026.&sca_esv=e266cabde4f9b998&ei=UF8raoneBKOtw8cPi7PWuAo&start=50&sa=N&sstk=AU9db-D9mQlXMGYKl57_TOjaTqDkCvakxU5rEPWLKZYHefk7Eq5qLPdIQz3eKmLEFCPnY_NJGdA4-ZtUsOp2AlFMDNGsi-bY_NYrIA&ved=2ahUKEwiJxu74xICVAxWj1vACHYuZFacQ8tMDegQIRhAM",
+      "7": "https://www.google.com/search?q=The+2026+FIFA+World+Cup+kicks+off+at+Estadio+Azteca+on+June+11,+2026.&sca_esv=e266cabde4f9b998&ei=UF8raoneBKOtw8cPi7PWuAo&start=60&sa=N&sstk=AU9db-D9mQlXMGYKl57_TOjaTqDkCvakxU5rEPWLKZYHefk7Eq5qLPdIQz3eKmLEFCPnY_NJGdA4-ZtUsOp2AlFMDNGsi-bY_NYrIA&ved=2ahUKEwiJxu74xICVAxWj1vACHYuZFacQ8tMDegQIRhAO",
+      "8": "https://www.google.com/search?q=The+2026+FIFA+World+Cup+kicks+off+at+Estadio+Azteca+on+June+11,+2026.&sca_esv=e266cabde4f9b998&ei=UF8raoneBKOtw8cPi7PWuAo&start=70&sa=N&sstk=AU9db-D9mQlXMGYKl57_TOjaTqDkCvakxU5rEPWLKZYHefk7Eq5qLPdIQz3eKmLEFCPnY_NJGdA4-ZtUsOp2AlFMDNGsi-bY_NYrIA&ved=2ahUKEwiJxu74xICVAxWj1vACHYuZFacQ8tMDegQIRhAQ",
+      "9": "https://www.google.com/search?q=The+2026+FIFA+World+Cup+kicks+off+at+Estadio+Azteca+on+June+11,+2026.&sca_esv=e266cabde4f9b998&ei=UF8raoneBKOtw8cPi7PWuAo&start=80&sa=N&sstk=AU9db-D9mQlXMGYKl57_TOjaTqDkCvakxU5rEPWLKZYHefk7Eq5qLPdIQz3eKmLEFCPnY_NJGdA4-ZtUsOp2AlFMDNGsi-bY_NYrIA&ved=2ahUKEwiJxu74xICVAxWj1vACHYuZFacQ8tMDegQIRhAS",
+      "10": "https://www.google.com/search?q=The+2026+FIFA+World+Cup+kicks+off+at+Estadio+Azteca+on+June+11,+2026.&sca_esv=e266cabde4f9b998&ei=UF8raoneBKOtw8cPi7PWuAo&start=90&sa=N&sstk=AU9db-D9mQlXMGYKl57_TOjaTqDkCvakxU5rEPWLKZYHefk7Eq5qLPdIQz3eKmLEFCPnY_NJGdA4-ZtUsOp2AlFMDNGsi-bY_NYrIA&ved=2ahUKEwiJxu74xICVAxWj1vACHYuZFacQ8tMDegQIRhAU"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=The+2026+FIFA+World+Cup+kicks+off+at+Estadio+Azteca+on+June+11%2C+2026.&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=The+2026+FIFA+World+Cup+kicks+off+at+Estadio+Azteca+on+June+11%2C+2026.&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=The+2026+FIFA+World+Cup+kicks+off+at+Estadio+Azteca+on+June+11%2C+2026.&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=The+2026+FIFA+World+Cup+kicks+off+at+Estadio+Azteca+on+June+11%2C+2026.&start=20",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=The+2026+FIFA+World+Cup+kicks+off+at+Estadio+Azteca+on+June+11%2C+2026.&start=30",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=The+2026+FIFA+World+Cup+kicks+off+at+Estadio+Azteca+on+June+11%2C+2026.&start=40",
+      "6": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=The+2026+FIFA+World+Cup+kicks+off+at+Estadio+Azteca+on+June+11%2C+2026.&start=50",
+      "7": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=The+2026+FIFA+World+Cup+kicks+off+at+Estadio+Azteca+on+June+11%2C+2026.&start=60",
+      "8": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=The+2026+FIFA+World+Cup+kicks+off+at+Estadio+Azteca+on+June+11%2C+2026.&start=70",
+      "9": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=The+2026+FIFA+World+Cup+kicks+off+at+Estadio+Azteca+on+June+11%2C+2026.&start=80",
+      "10": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=The+2026+FIFA+World+Cup+kicks+off+at+Estadio+Azteca+on+June+11%2C+2026.&start=90"
+    }
+  }
+}

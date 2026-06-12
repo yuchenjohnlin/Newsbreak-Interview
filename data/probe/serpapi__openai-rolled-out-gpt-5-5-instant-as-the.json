@@ -1,0 +1,524 @@
+{
+  "search_metadata": {
+    "id": "6a2b5f45b7942f7d0a1f1bb8",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/Hv2V4SlAidkVzg4PGxINaQ/6a2b5f45b7942f7d0a1f1bb8.json",
+    "pixel_position_endpoint": "https://serpapi.com/searches/Hv2V4SlAidkVzg4PGxINaQ/6a2b5f45b7942f7d0a1f1bb8.json_with_pixel_position",
+    "created_at": "2026-06-12 01:22:13 UTC",
+    "processed_at": "2026-06-12 01:22:13 UTC",
+    "google_url": "https://www.google.com/search?q=OpenAI+rolled+out+GPT-5.5+Instant+as+the+default+model+in+ChatGPT+in+May+2026.&oq=OpenAI+rolled+out+GPT-5.5+Instant+as+the+default+model+in+ChatGPT+in+May+2026.&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/Hv2V4SlAidkVzg4PGxINaQ/6a2b5f45b7942f7d0a1f1bb8.html",
+    "total_time_taken": 3.82
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "OpenAI rolled out GPT-5.5 Instant as the default model in ChatGPT in May 2026.",
+    "google_domain": "google.com",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "OpenAI rolled out GPT-5.5 Instant as the default model in ChatGPT in May 2026.",
+    "total_results": 101,
+    "time_taken_displayed": 0.26,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "inline_videos": [
+    {
+      "position": 1,
+      "title": "GPT-5.5 Instant: ChatGPT's Newest Model",
+      "link": "https://www.youtube.com/watch?v=WrzjjM2DSxU&vl=en-US",
+      "thumbnail": "https://serpapi.com/searches/6a2b5f45b7942f7d0a1f1bb8/images/BVcGQ-mHLzAEPLZr_ydaCP6lxK9rjWjl5XinLUbiVSg.jpeg",
+      "channel": "Thoughts Brewing, LLC",
+      "duration": "8:53",
+      "platform": "YouTube",
+      "date": "3 weeks ago",
+      "snippet": "GPT-5.5 Instant is now available to all ChatGPT users, offering smarter, more accurate answers and a new memory sourcing feature.",
+      "short_clip": "https://encrypted-vtbn0.gstatic.com/video?q=tbn:ANd9GcS5pS5Zs8i38Wt89tZq-Hu1jkV65wBppJUX0g"
+    },
+    {
+      "position": 2,
+      "title": "ChatGPT Just Changed Its Default Model: GPT-5.5 Instant ...",
+      "link": "https://www.youtube.com/watch?v=ozRhJFLYRyg",
+      "thumbnail": "https://serpapi.com/searches/6a2b5f45b7942f7d0a1f1bb8/images/tRr3N5rW-YxCqgkxb4JNwk_Zf5ELAXZMYsFDyKsevm0.jpeg",
+      "channel": "TechWealth Hub",
+      "duration": "5:44",
+      "platform": "YouTube",
+      "date": "1 month ago",
+      "short_clip": "https://encrypted-vtbn0.gstatic.com/video?q=tbn:ANd9GcQqB3efxytf8_9LR586MbhIHvXHeXaXs6GpjQ",
+      "key_moments": [
+        {
+          "time": "00:00",
+          "title": "GPT-5.5 Instant is rolling out",
+          "link": "https://www.youtube.com/watch?v=ozRhJFLYRyg&t=0",
+          "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZPQ25SG0xln8z5XU7JCM68KWaJ2pX6uMZ5y0LKBkW2A&s"
+        },
+        {
+          "time": "00:36",
+          "title": "Not a new button. A new daily driver.",
+          "link": "https://www.youtube.com/watch?v=ozRhJFLYRyg&t=36",
+          "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB75xg1x-by5p1G14fIcczHS0LUe0cN4MbrEasSTgBEw&s"
+        },
+        {
+          "time": "01:13",
+          "title": "Accuracy is the real headline",
+          "link": "https://www.youtube.com/watch?v=ozRhJFLYRyg&t=73",
+          "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAYMLhK4Hpw8UHh8b9gCkI8wHsyPJmpmodeeTvUFzOGw&s"
+        },
+        {
+          "time": "02:01",
+          "title": "The model catches the second mistake",
+          "link": "https://www.youtube.com/watch?v=ozRhJFLYRyg&t=121",
+          "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-wgDT2QO4oyrJPmQXDG6isIgP6rmpzP5vU2t6yM3u_w&s"
+        },
+        {
+          "time": "02:38",
+          "title": "Shorter without becoming cold",
+          "link": "https://www.youtube.com/watch?v=ozRhJFLYRyg&t=158",
+          "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtURdOIejtPM6SEB1RLeGybDV3B9Ryvfl7MXeaCUdCsQ&s"
+        },
+        {
+          "time": "03:21",
+          "title": "Memory gets sources",
+          "link": "https://www.youtube.com/watch?v=ozRhJFLYRyg&t=201",
+          "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_EOG4JvHoOpnv56DlzLOfL2qnCK-ZpFcrmSelLWdj-w&s"
+        },
+        {
+          "time": "03:57",
+          "title": "Default in ChatGPT. chat-latest in the API.",
+          "link": "https://www.youtube.com/watch?v=ozRhJFLYRyg&t=237",
+          "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOzZy-cZ266lj5mwid-dMwGxEeOQToPVX0ZsU0ajFeGg&s"
+        },
+        {
+          "time": "04:35",
+          "title": "Better does not mean perfect",
+          "link": "https://www.youtube.com/watch?v=ozRhJFLYRyg&t=275",
+          "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_2_1ZINEDmY2C0zEqVaha8F-9l7Lz25r3pAj84W8h0A&s"
+        },
+        {
+          "time": "05:12",
+          "title": "Use it faster. Verify it harder.",
+          "link": "https://www.youtube.com/watch?v=ozRhJFLYRyg&t=312",
+          "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUJDWOXWdy-GxmePUKx2VDRMp3UNSM4HmgVDHRh9LLag&s"
+        }
+      ]
+    },
+    {
+      "position": 3,
+      "title": "GPT-5.6 Explained: 1.5 MILLION Tokens?!",
+      "link": "https://www.youtube.com/watch?v=aQGdtRmg6zs",
+      "thumbnail": "https://serpapi.com/searches/6a2b5f45b7942f7d0a1f1bb8/images/bxpSFRgmtGnb9d-yMyJi4ikbHk8d4rx6mERy59jKPrg.jpeg",
+      "channel": "BitBiasedAI",
+      "duration": "13:36",
+      "platform": "YouTube",
+      "date": "1 week ago",
+      "snippet": "GPT-5.6 is unannounced & speculative. GPT 5.5 is a capable agentic model. Expect longer context & more autonomy from future models.",
+      "short_clip": "https://encrypted-vtbn0.gstatic.com/video?q=tbn:ANd9GcQwC59n2BrQhk_8HRRCcjAR7tYxb9O8wmSVnA"
+    }
+  ],
+  "ai_overview": {
+    "page_token": "hIrctnicxVXdcqJIFL7ci3mO5caEv2AiqaKmultQ1EQ76hhzQyFgI4IoPxJzt--yT7VPsw2YiEYnNVO1tW3Z3ac53edw-vv4_vrbX6yW_3z7w02SdXzPcVmWsSQMie-wVhhwZrxbWdw89OPIcr_HYRpZzsJWLDcKA4fZbZUbxooVnnEWylBrRGY43zYNM6s_hoNFZ-YtwJQpjlCMmRk7Ho3w6sWcwdFu-edNkxpszDorVrQ2S3k6lpIsZkVekNk-ZwbUAfyXTVUBzEeoA0wH_ZMDAuDp50fgYpMLAPlY0iv9e8vyo6gTKYbuxdNgOfrF7vnbYA4AX6w0yaU9CMCq-fAeSaW9SnRQ2p93XV5DRSx4xuPSzv0qxKUBs8oTfNZf148C0Ip4EpgeTrc-zv14cYxRXsiiEdhoemDkquMLWRZtA8Br2F7C7ItLRFBzQFjOWzACKuBsQsHHc7OIDgK3sFyrmERxjkk0kvlQewXhPBXGXWs5EcdJADxRg3d2N_GnhLNm1M8PTduxDdfgvxe2IAp1Xr65a1wVZLDiDzbEVTYMk3mvNXYR1CW2x0KhQoWiljqoYiEvGFTPv1eJs-OLxJW-qOTRU7LHLYIhpk4HECNvnN_q4WIbAJIz5MgRfEqFSqaHCSFlEu4hoQpS6LRT2tXspZNg6vGMQgrD8GNtio99q8lQdqDCJtPCrgKWpkeQngOLALTcx-9Xo9GkqmfTOkGUf0yq71n2pEIFRJfUPCga5P2S0iz_4fIl0Xt6XXxymw9HmTfz7Cb4PAu_bNrXLuo76E8wXMV-O_UlvjOeykNMnrwG8YeavKkbwhMIsvNYD4PZL3z6rf-ZDXthIHth6J5jw-vP2VAIA74sDPsLPAhDEegSG_CeDVVhaBTPDsJwygYEn6pssC4LQ5UNCHzFBniBDeg92c9sgMMyzhEb8Fk2lMJQZcOpMOy_UEVhD2z4HWHQfkcYCm445XCsEqlHLqqFOuxnj-1V77mRGsH2hUBtpHnmaKit7_CXajEPkvvAtP0rY2HfQ7GT7Owrgy6E947NbJT-2lkBvRaFvu_YtTBNaq3B6LrO1mv6Kk7MVVIz41riOjXbmZupn9SC0Hb82mJVQ66ZUN98-mDuaiIv3rJM4Eehwpu3L3Op0ey8pLt4KFy3YqzzaKang0zdzgyhs0zja3k9WRk3_aVn_nh1152mtOl3AmMDZXE30XZ-ukLbxkNfG2-idO4-S-1t0tN27Tc7eB6L46fNzRr0pSHa-i19O4iM3WD0YyI308f-TO6R1LCzttridScKusvkLSvyihWj1UPGZvGwqPMMLUHsKAITRJZCISAR8IjBhFCMoCnAFFEYhfSfAawysWUaTrxVHPH21jJntiPN5ZksN5iAJLu1IvNMvIoU4V8wJSmd",
+    "serpapi_link": "https://serpapi.com/search.json?engine=google_ai_overview&page_token=hIrctnicxVXdcqJIFL7ci3mO5caEv2AiqaKmultQ1EQ76hhzQyFgI4IoPxJzt--yT7VPsw2YiEYnNVO1tW3Z3ac53edw-vv4_vrbX6yW_3z7w02SdXzPcVmWsSQMie-wVhhwZrxbWdw89OPIcr_HYRpZzsJWLDcKA4fZbZUbxooVnnEWylBrRGY43zYNM6s_hoNFZ-YtwJQpjlCMmRk7Ho3w6sWcwdFu-edNkxpszDorVrQ2S3k6lpIsZkVekNk-ZwbUAfyXTVUBzEeoA0wH_ZMDAuDp50fgYpMLAPlY0iv9e8vyo6gTKYbuxdNgOfrF7vnbYA4AX6w0yaU9CMCq-fAeSaW9SnRQ2p93XV5DRSx4xuPSzv0qxKUBs8oTfNZf148C0Ip4EpgeTrc-zv14cYxRXsiiEdhoemDkquMLWRZtA8Br2F7C7ItLRFBzQFjOWzACKuBsQsHHc7OIDgK3sFyrmERxjkk0kvlQewXhPBXGXWs5EcdJADxRg3d2N_GnhLNm1M8PTduxDdfgvxe2IAp1Xr65a1wVZLDiDzbEVTYMk3mvNXYR1CW2x0KhQoWiljqoYiEvGFTPv1eJs-OLxJW-qOTRU7LHLYIhpk4HECNvnN_q4WIbAJIz5MgRfEqFSqaHCSFlEu4hoQpS6LRT2tXspZNg6vGMQgrD8GNtio99q8lQdqDCJtPCrgKWpkeQngOLALTcx-9Xo9GkqmfTOkGUf0yq71n2pEIFRJfUPCga5P2S0iz_4fIl0Xt6XXxymw9HmTfz7Cb4PAu_bNrXLuo76E8wXMV-O_UlvjOeykNMnrwG8YeavKkbwhMIsvNYD4PZL3z6rf-ZDXthIHth6J5jw-vP2VAIA74sDPsLPAhDEegSG_CeDVVhaBTPDsJwygYEn6pssC4LQ5UNCHzFBniBDeg92c9sgMMyzhEb8Fk2lMJQZcOpMOy_UEVhD2z4HWHQfkcYCm445XCsEqlHLqqFOuxnj-1V77mRGsH2hUBtpHnmaKit7_CXajEPkvvAtP0rY2HfQ7GT7Owrgy6E947NbJT-2lkBvRaFvu_YtTBNaq3B6LrO1mv6Kk7MVVIz41riOjXbmZupn9SC0Hb82mJVQ66ZUN98-mDuaiIv3rJM4Eehwpu3L3Op0ey8pLt4KFy3YqzzaKang0zdzgyhs0zja3k9WRk3_aVn_nh1152mtOl3AmMDZXE30XZ-ukLbxkNfG2-idO4-S-1t0tN27Tc7eB6L46fNzRr0pSHa-i19O4iM3WD0YyI308f-TO6R1LCzttridScKusvkLSvyihWj1UPGZvGwqPMMLUHsKAITRJZCISAR8IjBhFCMoCnAFFEYhfSfAawysWUaTrxVHPH21jJntiPN5ZksN5iAJLu1IvNMvIoU4V8wJSmd"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "GPT-5.5 Instant: smarter, clearer, and more personalized",
+      "link": "https://openai.com/index/gpt-5-5-instant/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://openai.com/index/gpt-5-5-instant/&ved=2ahUKEwiHs5H1xICVAxV2GFkFHQjLGGEQFnoECB0QAQ",
+      "displayed_link": "https://openai.com › index › gpt-5-5-instant",
+      "favicon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAAAAABXZoBIAAABEElEQVR4AbTJIWyDQACG0d-rWsxENQ6Jwi0YFLIWRTKFxecc6pIzJzF4QTKDT23lSby5BPUt6ZJe2i1ze_aJP_x_-ly5_z2PU7ne1rIYm4_tR9YDsNeaFqP3l9wFx6AJgPLylLN6rrpEcBaiQko6dR_YDq4659po55SL8D1ujI0MLGpbl_K84nr8SWbSCBj5lNrvWewQCy1wU0gZsDV-ABi603nHtI9sJ0KW9d_paCxBjwy6wawyQiwdg2VPiZeBY5S10j3XjJRNoxWMqn20DB4tKeeWTUWhDfqJsX9rSRl0gLUQe20McpCSSwWAUxdBgaek0rQ6lQEwFS_JZ1cNebWFrVaElInLlNmv0TNpYgIAMy6KDbFgKo8AAAAASUVORK5CYII.png",
+      "date": "May 5, 2026",
+      "snippet": "GPT-5.5 Instant updates ChatGPT's default model with smarter, more accurate answers, reduced hallucinations, and improved personalization ...",
+      "snippet_highlighted_words": [
+        "GPT-5.5 Instant updates ChatGPT's default model"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "GPT-5.5 Instant updates ChatGPT's default model with smarter, more accurate answers, reduced hallucinations, and improved personalization ...",
+          "source_info_link": "https://openai.com/index/gpt-5-5-instant/",
+          "icon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAAAAABXZoBIAAABEElEQVR4AbTJIWyDQACG0d-rWsxENQ6Jwi0YFLIWRTKFxecc6pIzJzF4QTKDT23lSby5BPUt6ZJe2i1ze_aJP_x_-ly5_z2PU7ne1rIYm4_tR9YDsNeaFqP3l9wFx6AJgPLylLN6rrpEcBaiQko6dR_YDq4659po55SL8D1ujI0MLGpbl_K84nr8SWbSCBj5lNrvWewQCy1wU0gZsDV-ABi603nHtI9sJ0KW9d_paCxBjwy6wawyQiwdg2VPiZeBY5S10j3XjJRNoxWMqn20DB4tKeeWTUWhDfqJsX9rSRl0gLUQe20McpCSSwWAUxdBgaek0rQ6lQEwFS_JZ1cNebWFrVaElInLlNmv0TNpYgIAMy6KDbFgKo8AAAAASUVORK5CYII.png"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "US"
+        ]
+      },
+      "about_page_link": "https://www.google.com/search?q=About+https://openai.com/index/gpt-5-5-instant/&tbm=ilp",
+      "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&q=About+https%3A%2F%2Fopenai.com%2Findex%2Fgpt-5-5-instant%2F",
+      "source": "OpenAI"
+    },
+    {
+      "position": 2,
+      "title": "Model Release Notes | OpenAI Help Center",
+      "link": "https://help.openai.com/en/articles/9624314-model-release-notes",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://help.openai.com/en/articles/9624314-model-release-notes&ved=2ahUKEwiHs5H1xICVAxV2GFkFHQjLGGEQFnoECCMQAQ",
+      "displayed_link": "https://help.openai.com › articles › 9624314-model-rele...",
+      "favicon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y-mAAAAUVBMVEVHcEwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABOTk6AgIBdXV339_f____s7Oxubm40NDQkJCSRkZHExMTe3t4VFRWkpKTR0dGtra1OpcXjAAAAC3RSTlMAM4fD7P1h_xfgPwLrRxoAAAEgSURBVHgBZJFHAsMgDATd133pmPz_oQGRnjkyqqh50Xb9MI5D37XNL9OAF8P0peYFXyzz2634Y_1123782fmhTipSm8NCqJVrP0MHwDMTovSVOSGEC9gUdyAmolBmrjs4lrQL0AYIXjbKuyMTz5PQBEwgLxxEoW06qZmQpcKNXmpX2TU9gI2wWZIhlaY7q-ylpQswRWpAU22AejQdi1RZxlwW5Z0elgbAKNLQwjNVqZGNciJlE69kSSkrMjgp26NAOmBnCKySmwzUVbnzPOB5k7IxhbpKW-WBi0wWkVmeZ6yf8GgaAHtAfgF0kE1eH1-ysMuSV4AwvU4WEzNJTmDELZ_HjofRpOK5fR77PuQkxMvDDUsm-BIYvqRJOFHjzQ4A0ZAZyRHfd7MAAAAASUVORK5CYII.png",
+      "snippet": "GPT-5.5 Instant Update (May 28, 2026). We're updating GPT-5.5 Instant in ChatGPT and the API to improve response style and quality.",
+      "snippet_highlighted_words": [
+        "GPT",
+        "5.5 Instant",
+        "May",
+        "2026",
+        "GPT",
+        "5.5 Instant",
+        "ChatGPT"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "GPT-5.5 Instant Update (May 28, 2026). We're updating GPT-5.5 Instant in ChatGPT and the API to improve response style and quality.",
+          "source_info_link": "https://help.openai.com/en/articles/9624314-model-release-notes",
+          "icon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y-mAAAAUVBMVEVHcEwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABOTk6AgIBdXV339_f____s7Oxubm40NDQkJCSRkZHExMTe3t4VFRWkpKTR0dGtra1OpcXjAAAAC3RSTlMAM4fD7P1h_xfgPwLrRxoAAAEgSURBVHgBZJFHAsMgDATd133pmPz_oQGRnjkyqqh50Xb9MI5D37XNL9OAF8P0peYFXyzz2634Y_1123782fmhTipSm8NCqJVrP0MHwDMTovSVOSGEC9gUdyAmolBmrjs4lrQL0AYIXjbKuyMTz5PQBEwgLxxEoW06qZmQpcKNXmpX2TU9gI2wWZIhlaY7q-ylpQswRWpAU22AejQdi1RZxlwW5Z0elgbAKNLQwjNVqZGNciJlE69kSSkrMjgp26NAOmBnCKySmwzUVbnzPOB5k7IxhbpKW-WBi0wWkVmeZ6yf8GgaAHtAfgF0kE1eH1-ysMuSV4AwvU4WEzNJTmDELZ_HjofRpOK5fR77PuQkxMvDDUsm-BIYvqRJOFHjzQ4A0ZAZyRHfd7MAAAAASUVORK5CYII.png"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "US"
+        ]
+      },
+      "about_page_link": "https://www.google.com/search?q=About+https://help.openai.com/en/articles/9624314-model-release-notes&tbm=ilp",
+      "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&q=About+https%3A%2F%2Fhelp.openai.com%2Fen%2Farticles%2F9624314-model-release-notes",
+      "source": "OpenAI Help Center",
+      "read_more_link": "https://help.openai.com/en/articles/9624314-model-release-notes#:~:text=GPT%2D5.5%20Instant%20Update%20(May%2028%2C,improve%20response%20style%20and%20quality."
+    },
+    {
+      "position": 3,
+      "title": "Introducing GPT-5.5",
+      "link": "https://openai.com/index/introducing-gpt-5-5/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://openai.com/index/introducing-gpt-5-5/&ved=2ahUKEwiHs5H1xICVAxV2GFkFHQjLGGEQFnoECCAQAQ",
+      "displayed_link": "https://openai.com › index › introducing-gpt-5-5",
+      "favicon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAAAAABXZoBIAAABEElEQVR4AbTJIWyDQACG0d-rWsxENQ6Jwi0YFLIWRTKFxecc6pIzJzF4QTKDT23lSby5BPUt6ZJe2i1ze_aJP_x_-ly5_z2PU7ne1rIYm4_tR9YDsNeaFqP3l9wFx6AJgPLylLN6rrpEcBaiQko6dR_YDq4659po55SL8D1ujI0MLGpbl_K84nr8SWbSCBj5lNrvWewQCy1wU0gZsDV-ABi603nHtI9sJ0KW9d_paCxBjwy6wawyQiwdg2VPiZeBY5S10j3XjJRNoxWMqn20DB4tKeeWTUWhDfqJsX9rSRl0gLUQe20McpCSSwWAUxdBgaek0rQ6lQEwFS_JZ1cNebWFrVaElInLlNmv0TNpYgIAMy6KDbFgKo8AAAAASUVORK5CYII.png",
+      "date": "Apr 23, 2026",
+      "snippet": "Update on April 24, 2026: GPT‑5.5 and GPT‑5.5 Pro are now available in the API. The system card has also been updated to describe the ...",
+      "snippet_highlighted_words": [
+        "2026",
+        "GPT",
+        "5.5",
+        "GPT",
+        "5.5"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "Update on April 24, 2026: GPT‑5.5 and GPT‑5.5 Pro are now available in the API. The system card has also been updated to describe the ...",
+          "source_info_link": "https://openai.com/index/introducing-gpt-5-5/",
+          "icon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAAAAABXZoBIAAABEElEQVR4AbTJIWyDQACG0d-rWsxENQ6Jwi0YFLIWRTKFxecc6pIzJzF4QTKDT23lSby5BPUt6ZJe2i1ze_aJP_x_-ly5_z2PU7ne1rIYm4_tR9YDsNeaFqP3l9wFx6AJgPLylLN6rrpEcBaiQko6dR_YDq4659po55SL8D1ujI0MLGpbl_K84nr8SWbSCBj5lNrvWewQCy1wU0gZsDV-ABi603nHtI9sJ0KW9d_paCxBjwy6wawyQiwdg2VPiZeBY5S10j3XjJRNoxWMqn20DB4tKeeWTUWhDfqJsX9rSRl0gLUQe20McpCSSwWAUxdBgaek0rQ6lQEwFS_JZ1cNebWFrVaElInLlNmv0TNpYgIAMy6KDbFgKo8AAAAASUVORK5CYII.png"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "US"
+        ]
+      },
+      "about_page_link": "https://www.google.com/search?q=About+https://openai.com/index/introducing-gpt-5-5/&tbm=ilp",
+      "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&q=About+https%3A%2F%2Fopenai.com%2Findex%2Fintroducing-gpt-5-5%2F",
+      "source": "OpenAI",
+      "read_more_link": "https://openai.com/index/introducing-gpt-5-5/#:~:text=Update%20on%20April%2024%2C%202026%3A,the%20additional%20safeguards%20that%20apply."
+    },
+    {
+      "position": 4,
+      "title": "GPT-5.5 Instant Is Now ChatGPT's Default Model: What ...",
+      "link": "https://www.reddit.com/r/CompareClaw/comments/1t91do4/gpt55_instant_is_now_chatgpts_default_model_what/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.reddit.com/r/CompareClaw/comments/1t91do4/gpt55_instant_is_now_chatgpts_default_model_what/&ved=2ahUKEwiHs5H1xICVAxV2GFkFHQjLGGEQFnoECCEQAQ",
+      "displayed_link": "1 month ago",
+      "favicon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y-mAAAAhFBMVEVHcEz_RQD_RQD_RQD_RQD_RQD_RQD_RQD_RQD_PQD_NgD-XS32dlf5vK3____64dusLADUz9H-jXLOPAoSHiFrLBm3uLn3_f7jVS_b6e77pJDJo6H718__RQDw9ffs5-jm8fPIXlHqKwD5-PjolIP_VgP_SQLQ2uAyODvQ4ekABAhqcHK4ptuCAAAAHnRSTlMAPobB7P9mHdb__________________________8J6YdtgAAABWUlEQVR4AWySYZNDMBCGWyw2SI9TGnWqILT____dm6Enc-MZH8Qz2V3Je_rj7Lgekec659N_fIgPnn-yCULaYaYwsCqShYhiQXQ-dJxIedltQDZfqZQyY6K1st3vO78WsiyNDI3zySK_caJUygTMzN7eTnxdBXMcb3-0TsMC30RUJfciqSIs8JCZycHwWV1n2UVuXDKzxsDOySWu5AGVoB_TUh5imhJFpQTNfav7uDcSlBERJLUN9LOLewn6LnpCNS0EyvKg-vLRjVRLUIuxe8hSDYyyLqatyr68jdO6cxpvWGIeDOQQujagNs7YuumbJmYiZz0E3aJvMc95Ps8F-rV6PQQ0JY4XpVqVv0Cu2lYps9HbDp6HRS9Kv1-vt1Z4HeDI_1yZiFMNFIzWqYkChftl8zSkegE6HSYmENgxYYQHRGzUHiLHyh3ModvZo7nHxA71ofwdSnYAAPpVIo4RUPiIAAAAAElFTkSuQmCC.png",
+      "snippet": "OpenAI says GPT-5.5 Instant began rolling out on May 5, 2026: in ChatGPT as the new default model. in the API as chat-latest. The post also says ...",
+      "snippet_highlighted_words": [
+        "GPT-5.5 Instant began rolling out on May 5, 2026"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "OpenAI says GPT-5.5 Instant began rolling out on May 5, 2026: in ChatGPT as the new default model. in the API as chat-latest. The post also says ...",
+          "source_info_link": "https://www.reddit.com/r/CompareClaw/comments/1t91do4/gpt55_instant_is_now_chatgpts_default_model_what/",
+          "icon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y-mAAAAhFBMVEVHcEz_RQD_RQD_RQD_RQD_RQD_RQD_RQD_RQD_PQD_NgD-XS32dlf5vK3____64dusLADUz9H-jXLOPAoSHiFrLBm3uLn3_f7jVS_b6e77pJDJo6H718__RQDw9ffs5-jm8fPIXlHqKwD5-PjolIP_VgP_SQLQ2uAyODvQ4ekABAhqcHK4ptuCAAAAHnRSTlMAPobB7P9mHdb__________________________8J6YdtgAAABWUlEQVR4AWySYZNDMBCGWyw2SI9TGnWqILT____dm6Enc-MZH8Qz2V3Je_rj7Lgekec659N_fIgPnn-yCULaYaYwsCqShYhiQXQ-dJxIedltQDZfqZQyY6K1st3vO78WsiyNDI3zySK_caJUygTMzN7eTnxdBXMcb3-0TsMC30RUJfciqSIs8JCZycHwWV1n2UVuXDKzxsDOySWu5AGVoB_TUh5imhJFpQTNfav7uDcSlBERJLUN9LOLewn6LnpCNS0EyvKg-vLRjVRLUIuxe8hSDYyyLqatyr68jdO6cxpvWGIeDOQQujagNs7YuumbJmYiZz0E3aJvMc95Ps8F-rV6PQQ0JY4XpVqVv0Cu2lYps9HbDp6HRS9Kv1-vt1Z4HeDI_1yZiFMNFIzWqYkChftl8zSkegE6HSYmENgxYYQHRGzUHiLHyh3ModvZo7nHxA71ofwdSnYAAPpVIo4RUPiIAAAAAElFTkSuQmCC.png"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "US"
+        ]
+      },
+      "about_page_link": "https://www.google.com/search?q=About+https://www.reddit.com/r/CompareClaw/comments/1t91do4/gpt55_instant_is_now_chatgpts_default_model_what/&tbm=ilp",
+      "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&q=About+https%3A%2F%2Fwww.reddit.com%2Fr%2FCompareClaw%2Fcomments%2F1t91do4%2Fgpt55_instant_is_now_chatgpts_default_model_what%2F",
+      "source": "Reddit · r/CompareClaw",
+      "read_more_link": "https://www.reddit.com/r/CompareClaw/comments/1t91do4/gpt55_instant_is_now_chatgpts_default_model_what/#:~:text=OpenAI%20says%20GPT%2D5.5%20Instant%20began,model%20configuration%20settings%20before%20retirement."
+    },
+    {
+      "position": 5,
+      "title": "What Is GPT 5.5 Instant? OpenAI's Smarter, More Concise ...",
+      "link": "https://www.mindstudio.ai/blog/what-is-gpt-5-5-instant-openai-default-model-2",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.mindstudio.ai/blog/what-is-gpt-5-5-instant-openai-default-model-2&ved=2ahUKEwiHs5H1xICVAxV2GFkFHQjLGGEQFnoECCQQAQ",
+      "displayed_link": "https://www.mindstudio.ai › blog › what-is-gpt-5-5-insta...",
+      "favicon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAAAAABWESUoAAABDElEQVR4Ab2TIZCDMBBFn4zJDK6utgZViTtXU1OJn8HjBfJcTS0Cj4m3mFMoZB0Wic0eizkYuGBu7psn_ktmsrNBpM3jyO4kivNWBF9HGLsbg609bYT9NdiOHBsIORcTEkyMDSc6EuyfCgA_2ArcXnWGJXm5zOwKg4i_YZsJOVuBUryXjk_FsBVIBm1aZvSwEZz4qUme2kv-dKwFjGjT2V7xZpQTa6HRYnxU8z1pJdJgFgLpqMIXXtFfepExZSmU88lzob3PZpQrQa-WhmLx1LXwGET6D5jgE5JOpL8vBDUqd0fH7eZxV7X2qzkAG2j-Y2Gio6W9htf-SkFIoKA7BQzOb8TZwOd1cvj9vwFtGM-p-4XllAAAAABJRU5ErkJggg.png",
+      "date": "May 11, 2026",
+      "snippet": "GPT 5.5 Instant is OpenAI's new default model for all ChatGPT plans. Learn what changed, how it differs from GPT 5.3, and when to use it.",
+      "snippet_highlighted_words": [
+        "GPT 5.5 Instant is OpenAI's new default model for all ChatGPT plans"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "GPT 5.5 Instant is OpenAI's new default model for all ChatGPT plans. Learn what changed, how it differs from GPT 5.3, and when to use it.",
+          "source_info_link": "https://www.mindstudio.ai/blog/what-is-gpt-5-5-instant-openai-default-model-2",
+          "icon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAAAAABWESUoAAABDElEQVR4Ab2TIZCDMBBFn4zJDK6utgZViTtXU1OJn8HjBfJcTS0Cj4m3mFMoZB0Wic0eizkYuGBu7psn_ktmsrNBpM3jyO4kivNWBF9HGLsbg609bYT9NdiOHBsIORcTEkyMDSc6EuyfCgA_2ArcXnWGJXm5zOwKg4i_YZsJOVuBUryXjk_FsBVIBm1aZvSwEZz4qUme2kv-dKwFjGjT2V7xZpQTa6HRYnxU8z1pJdJgFgLpqMIXXtFfepExZSmU88lzob3PZpQrQa-WhmLx1LXwGET6D5jgE5JOpL8vBDUqd0fH7eZxV7X2qzkAG2j-Y2Gio6W9htf-SkFIoKA7BQzOb8TZwOd1cvj9vwFtGM-p-4XllAAAAABJRU5ErkJggg.png"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "US"
+        ]
+      },
+      "about_page_link": "https://www.google.com/search?q=About+https://www.mindstudio.ai/blog/what-is-gpt-5-5-instant-openai-default-model-2&tbm=ilp",
+      "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&q=About+https%3A%2F%2Fwww.mindstudio.ai%2Fblog%2Fwhat-is-gpt-5-5-instant-openai-default-model-2",
+      "source": "MindStudio"
+    },
+    {
+      "position": 6,
+      "title": "OpenAI rolls out ChatGPT 5.5 Instant as the new default ...",
+      "link": "https://mashable.com/article/openai-chatgpt-55-instant-out-now",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://mashable.com/article/openai-chatgpt-55-instant-out-now&ved=2ahUKEwiHs5H1xICVAxV2GFkFHQjLGGEQFnoECB8QAQ",
+      "displayed_link": "https://mashable.com › Tech",
+      "favicon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y-mAAAAkFBMVEVMT95LTt5MT9xMTt5GR9xeX9_Dxe4_Q9xMTuA_Qdx2duD___jc3fY8P9xIS96Xl-X___3Z2fVgYt5mauG3t-7___z___87P97h4_fHyO1xdOP7_fzi4vEoLNu3uurAwvOlp-j39vp6e-HR0PLs7faCheRpbeBVWt2NjeSfouiAgOM5N96tr-nMzfCZm-fu7_cz-j2hAAABI0lEQVR4AWKgHDDik2MC1EoXCQ6DUABAsTaGxd2hLve_3fyO1rKcCPZwoGyxAmartbNArucHXGBXIhdyUt6jK5TWoZBRTCDD4hj_EkUiSXUWirzIyhw5KtMI_xoLwW7Is7RirM5q_NvUW2dgn6izpu20_kPq9EDfmKZDkOoavcOs04Fej5n7ioJnVaEDAmO-xalKB-89zqPvRYwY82ZM7OUSinGegz0hiMTSdSW9RXeoAT0rLNnE28mxbIrdXwRtVmYXJvvmMPrN0HGE77DcGL9QXblrYmPD5HjXbTrsmspMfDjNk6kald9NKLWn2UKhPZ8uhX_1747d6aY5GYrD9dCo_qzMlv0ZIQ7Zsq23ZYRAtHq4By5BrutihOGhGPIU_e_zAVrCHNQfIf7RAAAAAElFTkSuQmCC.png",
+      "snippet": "The company announced in a blog post on Tuesday that ChatGPT 5.5 Instant has begun rolling out to all users as the new default model for the popular AI chatbot.",
+      "snippet_highlighted_words": [
+        "ChatGPT 5.5 Instant"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "The company announced in a blog post on Tuesday that ChatGPT 5.5 Instant has begun rolling out to all users as the new default model for the popular AI chatbot.",
+          "source_info_link": "https://mashable.com/article/openai-chatgpt-55-instant-out-now",
+          "icon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y-mAAAAkFBMVEVMT95LTt5MT9xMTt5GR9xeX9_Dxe4_Q9xMTuA_Qdx2duD___jc3fY8P9xIS96Xl-X___3Z2fVgYt5mauG3t-7___z___87P97h4_fHyO1xdOP7_fzi4vEoLNu3uurAwvOlp-j39vp6e-HR0PLs7faCheRpbeBVWt2NjeSfouiAgOM5N96tr-nMzfCZm-fu7_cz-j2hAAABI0lEQVR4AWKgHDDik2MC1EoXCQ6DUABAsTaGxd2hLve_3fyO1rKcCPZwoGyxAmartbNArucHXGBXIhdyUt6jK5TWoZBRTCDD4hj_EkUiSXUWirzIyhw5KtMI_xoLwW7Is7RirM5q_NvUW2dgn6izpu20_kPq9EDfmKZDkOoavcOs04Fej5n7ioJnVaEDAmO-xalKB-89zqPvRYwY82ZM7OUSinGegz0hiMTSdSW9RXeoAT0rLNnE28mxbIrdXwRtVmYXJvvmMPrN0HGE77DcGL9QXblrYmPD5HjXbTrsmspMfDjNk6kald9NKLWn2UKhPZ8uhX_1747d6aY5GYrD9dCo_qzMlv0ZIQ7Zsq23ZYRAtHq4By5BrutihOGhGPIU_e_zAVrCHNQfIf7RAAAAAElFTkSuQmCC.png"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "US"
+        ]
+      },
+      "about_page_link": "https://www.google.com/search?q=About+https://mashable.com/article/openai-chatgpt-55-instant-out-now&tbm=ilp",
+      "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&q=About+https%3A%2F%2Fmashable.com%2Farticle%2Fopenai-chatgpt-55-instant-out-now",
+      "source": "Mashable",
+      "read_more_link": "https://mashable.com/article/openai-chatgpt-55-instant-out-now#:~:text=The%20company%20announced%20in%20a,for%20the%20popular%20AI%20chatbot."
+    },
+    {
+      "position": 7,
+      "title": "OpenAI Starts Rolling Out New GPT-5.5 Instant Model and ...",
+      "link": "https://www.thurrott.com/a-i/335724/openai-starts-rolling-out-new-gpt-5-5-instant-model-and-memory-sources-to-chatgpt-users",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.thurrott.com/a-i/335724/openai-starts-rolling-out-new-gpt-5-5-instant-model-and-memory-sources-to-chatgpt-users&ved=2ahUKEwiHs5H1xICVAxV2GFkFHQjLGGEQFnoECB4QAQ",
+      "displayed_link": "https://www.thurrott.com › Blog",
+      "favicon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAP1BMVEVHcEyVkzN9vQB_uwBfW1t_ugD_uQH5uQ8ApfJcXFsApPH_uQBbXFvmGQXtDAKJTEi1S2OikQEAq_m4s2q4smrut5nOAAAACnRSTlMAy7H_tbP8UE_8v96DpAAAAEpJREFUOI3tyskVgCAMBcCIAkEQN_qv1Uv45MCjAZnzUIAzHyLfK1BI1b9DUgF02JoLFmMravgBph7eYYZR8OUVxfdDhBnGwQkdPj8bF2lY4HieAAAAAElFTkSuQmCC.png",
+      "date": "May 6, 2026",
+      "snippet": "ChatGPT now uses a new GPT-5.5 Instant model by default, which provides shorter, more factually reliable answers. OpenAI is also rolling out ...",
+      "snippet_highlighted_words": [
+        "ChatGPT now uses a new GPT-5.5 Instant model by default"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "ChatGPT now uses a new GPT-5.5 Instant model by default, which provides shorter, more factually reliable answers. OpenAI is also rolling out ...",
+          "source_info_link": "https://www.thurrott.com/a-i/335724/openai-starts-rolling-out-new-gpt-5-5-instant-model-and-memory-sources-to-chatgpt-users",
+          "icon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAP1BMVEVHcEyVkzN9vQB_uwBfW1t_ugD_uQH5uQ8ApfJcXFsApPH_uQBbXFvmGQXtDAKJTEi1S2OikQEAq_m4s2q4smrut5nOAAAACnRSTlMAy7H_tbP8UE_8v96DpAAAAEpJREFUOI3tyskVgCAMBcCIAkEQN_qv1Uv45MCjAZnzUIAzHyLfK1BI1b9DUgF02JoLFmMravgBph7eYYZR8OUVxfdDhBnGwQkdPj8bF2lY4HieAAAAAElFTkSuQmCC.png"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "US"
+        ]
+      },
+      "about_page_link": "https://www.google.com/search?q=About+https://www.thurrott.com/a-i/335724/openai-starts-rolling-out-new-gpt-5-5-instant-model-and-memory-sources-to-chatgpt-users&tbm=ilp",
+      "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&q=About+https%3A%2F%2Fwww.thurrott.com%2Fa-i%2F335724%2Fopenai-starts-rolling-out-new-gpt-5-5-instant-model-and-memory-sources-to-chatgpt-users",
+      "source": "Thurrott.com"
+    }
+  ],
+  "perspectives": [
+    {
+      "author": "Luis Sousa",
+      "source": "Substack",
+      "thumbnails": [
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7D70E9syLPJF2oT8lN93_u9Y6XATkKytHZCTFr16HGGnfEEaelwcB8Bo3Fw&usqp=CAI&s"
+      ],
+      "title": "☕🤖 GPT-5.5 Instant Just Became ChatGPT’s New Default",
+      "link": "https://theaibreak.substack.com/p/gpt-55-instant-just-became-chatgpts",
+      "date": "1 month ago"
+    },
+    {
+      "author": "alliekmiller",
+      "source": "Instagram",
+      "duration": "1:48",
+      "extensions": [
+        "1.1K+ likes "
+      ],
+      "thumbnails": [
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ52hz_0kQ8p87VooUsJQPRufVvq7iYcyg7wLURBT-Mumbo9VuZCilWSqUC1DU&usqp=CAI&s=10"
+      ],
+      "title": "GPT-5.5 from OpenAI was released a bit over a week ago and I want to share what I noticed during early access. This model was made for people building AI agents, which is why half of testers called it the biggest leap of the year and the other half didn’t see any difference. And today @openai also released GPT-5.5 Instant as the new default for everyone, designed to feel “tighter and more to-the-point without losing substance” for everyday conversations. We’re at a point where we should all be using different models for different tasks, which means knowing when to reach for GPT-5.5 vs Claude Opus 4.7 vs Codex vs an open source model is becoming a real skill on its own. 👉 If you’re non-technical and want to learn how to start building with AI, follow and comment FASTTRACK and I’ll send you my free 5-day email course.",
+      "link": "https://www.instagram.com/reel/DX-Bpp0RCaR/?hl=en",
+      "date": "1 month ago",
+      "video": "https://encrypted-vtbn0.gstatic.com/video?q=tbn:ANd9GcS8UXnqEaZo7Q0h3nT6upgTuGo8OOkXCbLDMQ"
+    },
+    {
+      "author": "Yew Jin, Jin Kang",
+      "source": "LinkedIn",
+      "thumbnails": [
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvF6C-Je3cT7Bbg_5wcLGfHrvrVUiOv2msVgaFYP_x43-YROlDWXNMb1Xwfw&usqp=CAI&s"
+      ],
+      "title": "OpenAI has released GPT-5.5 Instant as the new default model for ChatGPT, replacing GPT-5.3 Instant. The company says the model delivers major factual accuracy improvements, with 52.5% fewer hallucinations on high-stakes prompts covering medicine, la",
+      "link": "https://www.linkedin.com/posts/kangyewjin_openai-has-released-gpt-55-instant-as-the-activity-7457755364051034112-IRI-",
+      "date": "1 month ago"
+    },
+    {
+      "author": "The Mainstream",
+      "source": "LinkedIn",
+      "extensions": [
+        "1 reaction "
+      ],
+      "title": "OpenAI has officially launched GPT-5.5 Instant as the new default model for ChatGPT, introducing major improvements in reasoning, personalization, accuracy and response quality for everyday user interactions. . . Click here to read the full story: https://lnkd.in/",
+      "link": "https://www.linkedin.com/posts/themainstream_themainstream-openai-chatgpt-activity-7457780004463218689-o6Ip",
+      "date": "1 month ago"
+    },
+    {
+      "author": "NGenious Solutions, Inc",
+      "source": "LinkedIn",
+      "extensions": [
+        "2 reactions "
+      ],
+      "thumbnails": [
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmG1SG9XDbO9amnMWIYirgMDUxEdyc2ULTO5MAleM2k0jFJ_NXqGAI3IlYCw&usqp=CAI&s"
+      ],
+      "title": "OpenAI has released GPT-5.5 Instant, now set as the default model in ChatGPT. The update brings improved accuracy, faster responses, and more reliable performance for everyday use. Stay updated with the latest tech news, download the IIC Snips app: And",
+      "link": "https://www.linkedin.com/posts/indiait360_openai-chatgpt-ai-activity-7457713794258038784-Wsdj",
+      "date": "1 month ago"
+    },
+    {
+      "author": "OpenClaw Community",
+      "source": "Facebook",
+      "extensions": [
+        "5 reactions "
+      ],
+      "thumbnails": [
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGuHziOsP6JI7WYGEdwNeESBocd8j11pMPr9yysznbCs4L8H529737r_iXNA&usqp=CAI&s"
+      ],
+      "title": "OpenAI cooks: GPT-5.5 Instant is now rolling out as ChatGPT’s new default model. It’s better at the stuff people actually notice: fewer made-up answers, stronger image analysis, cleaner writing, better STEM help, and more reliable answers in high-stakes areas",
+      "link": "https://www.facebook.com/groups/1577315533418837/posts/1660418735108516/",
+      "date": "1 month ago"
+    }
+  ],
+  "related_searches": [
+    {
+      "block_position": 1,
+      "query": "GPT-5.5 release date",
+      "link": "https://www.google.com/search?sca_esv=e266cabde4f9b998&q=GPT-5.5+release+date&sa=X&ved=2ahUKEwiHs5H1xICVAxV2GFkFHQjLGGEQ1QJ6BAhFEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=GPT-5.5+release+date"
+    },
+    {
+      "block_position": 1,
+      "query": "GPT-5.5 Codex",
+      "link": "https://www.google.com/search?sca_esv=e266cabde4f9b998&q=GPT-5.5+Codex&sa=X&ved=2ahUKEwiHs5H1xICVAxV2GFkFHQjLGGEQ1QJ6BAhLEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=GPT-5.5+Codex"
+    },
+    {
+      "block_position": 1,
+      "query": "GPT-5.5 pricing",
+      "link": "https://www.google.com/search?sca_esv=e266cabde4f9b998&q=GPT-5.5+pricing&sa=X&ved=2ahUKEwiHs5H1xICVAxV2GFkFHQjLGGEQ1QJ6BAhJEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=GPT-5.5+pricing"
+    },
+    {
+      "block_position": 1,
+      "query": "Gpt 5.5 instant api",
+      "link": "https://www.google.com/search?sca_esv=e266cabde4f9b998&q=Gpt+5.5+instant+api&sa=X&ved=2ahUKEwiHs5H1xICVAxV2GFkFHQjLGGEQ1QJ6BAhKEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=Gpt+5.5+instant+api"
+    },
+    {
+      "block_position": 1,
+      "query": "ChatGPT 5.5 download",
+      "link": "https://www.google.com/search?sca_esv=e266cabde4f9b998&q=ChatGPT+5.5+download&sa=X&ved=2ahUKEwiHs5H1xICVAxV2GFkFHQjLGGEQ1QJ6BAhIEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=ChatGPT+5.5+download"
+    },
+    {
+      "block_position": 1,
+      "query": "GPT-5.5 model card",
+      "link": "https://www.google.com/search?sca_esv=e266cabde4f9b998&q=GPT-5.5+model+card&sa=X&ved=2ahUKEwiHs5H1xICVAxV2GFkFHQjLGGEQ1QJ6BAhHEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=GPT-5.5+model+card"
+    },
+    {
+      "block_position": 1,
+      "query": "GPT-5.5 free",
+      "link": "https://www.google.com/search?sca_esv=e266cabde4f9b998&q=GPT-5.5+free&sa=X&ved=2ahUKEwiHs5H1xICVAxV2GFkFHQjLGGEQ1QJ6BAhGEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=GPT-5.5+free"
+    },
+    {
+      "block_position": 1,
+      "query": "ChatGPT 5.5 thinking",
+      "link": "https://www.google.com/search?sca_esv=e266cabde4f9b998&q=ChatGPT+5.5+thinking&sa=X&ved=2ahUKEwiHs5H1xICVAxV2GFkFHQjLGGEQ1QJ6BAhEEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=ChatGPT+5.5+thinking"
+    }
+  ],
+  "discussions_and_forums": [
+    {
+      "title": "GPT-5.5 Instant is rolling out as the new default. I tested it for 24 hours ...",
+      "link": "https://www.reddit.com/r/gpt5/comments/1t517du/gpt55_instant_is_rolling_out_as_the_new_default_i/",
+      "date": "1 month ago",
+      "extensions": [
+        "r/gpt5",
+        "80+ comments"
+      ],
+      "source": "Reddit",
+      "answers": [
+        {
+          "link": "https://www.reddit.com/r/gpt5/comments/1t517du/gpt55_instant_is_rolling_out_as_the_new_default_i/"
+        }
+      ]
+    },
+    {
+      "title": "OpenAI Has Replaced ChatGPT's Default Engine With GPT-5.5 Instant, ...",
+      "link": "https://www.reddit.com/r/InterstellarKinetics/comments/1t4rib5/breaking_openai_has_replaced_chatgpts_default/",
+      "date": "1 month ago",
+      "extensions": [
+        "r/InterstellarKinetics",
+        "4 comments"
+      ],
+      "source": "Reddit",
+      "answers": [
+        {
+          "link": "https://www.reddit.com/r/InterstellarKinetics/comments/1t4rib5/breaking_openai_has_replaced_chatgpts_default/"
+        }
+      ]
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=OpenAI+rolled+out+GPT-5.5+Instant+as+the+default+model+in+ChatGPT+in+May+2026.&sca_esv=e266cabde4f9b998&ei=SF8raofvD_aw5NoPiJbjiAY&start=10&sa=N&sstk=AU9db-BgbYMe97hZ7Xf3D1K8ZW9mLNcp36n6-v2OG2zQG75Y_y2x1dwCeTK-rQNt029EZZ6V-im-kHlAdBWVtrbdpS-p3ef0sOIPxw&ved=2ahUKEwiHs5H1xICVAxV2GFkFHQjLGGEQ8NMDegQIQhAW",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=OpenAI+rolled+out+GPT-5.5+Instant+as+the+default+model+in+ChatGPT+in+May+2026.&sca_esv=e266cabde4f9b998&ei=SF8raofvD_aw5NoPiJbjiAY&start=10&sa=N&sstk=AU9db-BgbYMe97hZ7Xf3D1K8ZW9mLNcp36n6-v2OG2zQG75Y_y2x1dwCeTK-rQNt029EZZ6V-im-kHlAdBWVtrbdpS-p3ef0sOIPxw&ved=2ahUKEwiHs5H1xICVAxV2GFkFHQjLGGEQ8tMDegQIQhAE",
+      "3": "https://www.google.com/search?q=OpenAI+rolled+out+GPT-5.5+Instant+as+the+default+model+in+ChatGPT+in+May+2026.&sca_esv=e266cabde4f9b998&ei=SF8raofvD_aw5NoPiJbjiAY&start=20&sa=N&sstk=AU9db-BgbYMe97hZ7Xf3D1K8ZW9mLNcp36n6-v2OG2zQG75Y_y2x1dwCeTK-rQNt029EZZ6V-im-kHlAdBWVtrbdpS-p3ef0sOIPxw&ved=2ahUKEwiHs5H1xICVAxV2GFkFHQjLGGEQ8tMDegQIQhAG",
+      "4": "https://www.google.com/search?q=OpenAI+rolled+out+GPT-5.5+Instant+as+the+default+model+in+ChatGPT+in+May+2026.&sca_esv=e266cabde4f9b998&ei=SF8raofvD_aw5NoPiJbjiAY&start=30&sa=N&sstk=AU9db-BgbYMe97hZ7Xf3D1K8ZW9mLNcp36n6-v2OG2zQG75Y_y2x1dwCeTK-rQNt029EZZ6V-im-kHlAdBWVtrbdpS-p3ef0sOIPxw&ved=2ahUKEwiHs5H1xICVAxV2GFkFHQjLGGEQ8tMDegQIQhAI",
+      "5": "https://www.google.com/search?q=OpenAI+rolled+out+GPT-5.5+Instant+as+the+default+model+in+ChatGPT+in+May+2026.&sca_esv=e266cabde4f9b998&ei=SF8raofvD_aw5NoPiJbjiAY&start=40&sa=N&sstk=AU9db-BgbYMe97hZ7Xf3D1K8ZW9mLNcp36n6-v2OG2zQG75Y_y2x1dwCeTK-rQNt029EZZ6V-im-kHlAdBWVtrbdpS-p3ef0sOIPxw&ved=2ahUKEwiHs5H1xICVAxV2GFkFHQjLGGEQ8tMDegQIQhAK",
+      "6": "https://www.google.com/search?q=OpenAI+rolled+out+GPT-5.5+Instant+as+the+default+model+in+ChatGPT+in+May+2026.&sca_esv=e266cabde4f9b998&ei=SF8raofvD_aw5NoPiJbjiAY&start=50&sa=N&sstk=AU9db-BgbYMe97hZ7Xf3D1K8ZW9mLNcp36n6-v2OG2zQG75Y_y2x1dwCeTK-rQNt029EZZ6V-im-kHlAdBWVtrbdpS-p3ef0sOIPxw&ved=2ahUKEwiHs5H1xICVAxV2GFkFHQjLGGEQ8tMDegQIQhAM",
+      "7": "https://www.google.com/search?q=OpenAI+rolled+out+GPT-5.5+Instant+as+the+default+model+in+ChatGPT+in+May+2026.&sca_esv=e266cabde4f9b998&ei=SF8raofvD_aw5NoPiJbjiAY&start=60&sa=N&sstk=AU9db-BgbYMe97hZ7Xf3D1K8ZW9mLNcp36n6-v2OG2zQG75Y_y2x1dwCeTK-rQNt029EZZ6V-im-kHlAdBWVtrbdpS-p3ef0sOIPxw&ved=2ahUKEwiHs5H1xICVAxV2GFkFHQjLGGEQ8tMDegQIQhAO",
+      "8": "https://www.google.com/search?q=OpenAI+rolled+out+GPT-5.5+Instant+as+the+default+model+in+ChatGPT+in+May+2026.&sca_esv=e266cabde4f9b998&ei=SF8raofvD_aw5NoPiJbjiAY&start=70&sa=N&sstk=AU9db-BgbYMe97hZ7Xf3D1K8ZW9mLNcp36n6-v2OG2zQG75Y_y2x1dwCeTK-rQNt029EZZ6V-im-kHlAdBWVtrbdpS-p3ef0sOIPxw&ved=2ahUKEwiHs5H1xICVAxV2GFkFHQjLGGEQ8tMDegQIQhAQ",
+      "9": "https://www.google.com/search?q=OpenAI+rolled+out+GPT-5.5+Instant+as+the+default+model+in+ChatGPT+in+May+2026.&sca_esv=e266cabde4f9b998&ei=SF8raofvD_aw5NoPiJbjiAY&start=80&sa=N&sstk=AU9db-BgbYMe97hZ7Xf3D1K8ZW9mLNcp36n6-v2OG2zQG75Y_y2x1dwCeTK-rQNt029EZZ6V-im-kHlAdBWVtrbdpS-p3ef0sOIPxw&ved=2ahUKEwiHs5H1xICVAxV2GFkFHQjLGGEQ8tMDegQIQhAS",
+      "10": "https://www.google.com/search?q=OpenAI+rolled+out+GPT-5.5+Instant+as+the+default+model+in+ChatGPT+in+May+2026.&sca_esv=e266cabde4f9b998&ei=SF8raofvD_aw5NoPiJbjiAY&start=90&sa=N&sstk=AU9db-BgbYMe97hZ7Xf3D1K8ZW9mLNcp36n6-v2OG2zQG75Y_y2x1dwCeTK-rQNt029EZZ6V-im-kHlAdBWVtrbdpS-p3ef0sOIPxw&ved=2ahUKEwiHs5H1xICVAxV2GFkFHQjLGGEQ8tMDegQIQhAU"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=OpenAI+rolled+out+GPT-5.5+Instant+as+the+default+model+in+ChatGPT+in+May+2026.&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=OpenAI+rolled+out+GPT-5.5+Instant+as+the+default+model+in+ChatGPT+in+May+2026.&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=OpenAI+rolled+out+GPT-5.5+Instant+as+the+default+model+in+ChatGPT+in+May+2026.&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=OpenAI+rolled+out+GPT-5.5+Instant+as+the+default+model+in+ChatGPT+in+May+2026.&start=20",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=OpenAI+rolled+out+GPT-5.5+Instant+as+the+default+model+in+ChatGPT+in+May+2026.&start=30",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=OpenAI+rolled+out+GPT-5.5+Instant+as+the+default+model+in+ChatGPT+in+May+2026.&start=40",
+      "6": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=OpenAI+rolled+out+GPT-5.5+Instant+as+the+default+model+in+ChatGPT+in+May+2026.&start=50",
+      "7": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=OpenAI+rolled+out+GPT-5.5+Instant+as+the+default+model+in+ChatGPT+in+May+2026.&start=60",
+      "8": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=OpenAI+rolled+out+GPT-5.5+Instant+as+the+default+model+in+ChatGPT+in+May+2026.&start=70",
+      "9": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=OpenAI+rolled+out+GPT-5.5+Instant+as+the+default+model+in+ChatGPT+in+May+2026.&start=80",
+      "10": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=OpenAI+rolled+out+GPT-5.5+Instant+as+the+default+model+in+ChatGPT+in+May+2026.&start=90"
+    }
+  }
+}

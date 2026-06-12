@@ -1,0 +1,401 @@
+{
+  "type": "search",
+  "query": {
+    "original": "OpenAI rolled out GPT-5.5 Instant as the default model in ChatGPT in May 2026.",
+    "show_strict_warning": false,
+    "is_navigational": false,
+    "is_news_breaking": false,
+    "spellcheck_off": false,
+    "country": "us",
+    "bad_results": false,
+    "should_fallback": false,
+    "postal_code": "",
+    "city": "",
+    "header_country": "",
+    "more_results_available": true,
+    "state": ""
+  },
+  "mixed": {
+    "type": "mixed",
+    "main": [
+      {
+        "type": "web",
+        "index": 0,
+        "all": false
+      },
+      {
+        "type": "web",
+        "index": 1,
+        "all": false
+      },
+      {
+        "type": "web",
+        "index": 2,
+        "all": false
+      },
+      {
+        "type": "web",
+        "index": 3,
+        "all": false
+      },
+      {
+        "type": "web",
+        "index": 4,
+        "all": false
+      },
+      {
+        "type": "web",
+        "index": 5,
+        "all": false
+      },
+      {
+        "type": "web",
+        "index": 6,
+        "all": false
+      },
+      {
+        "type": "web",
+        "index": 7,
+        "all": false
+      },
+      {
+        "type": "web",
+        "index": 8,
+        "all": false
+      },
+      {
+        "type": "web",
+        "index": 9,
+        "all": false
+      },
+      {
+        "type": "web",
+        "index": 10,
+        "all": false
+      },
+      {
+        "type": "web",
+        "index": 11,
+        "all": false
+      },
+      {
+        "type": "web",
+        "index": 12,
+        "all": false
+      },
+      {
+        "type": "web",
+        "index": 13,
+        "all": false
+      },
+      {
+        "type": "web",
+        "index": 14,
+        "all": false
+      },
+      {
+        "type": "web",
+        "index": 15,
+        "all": false
+      },
+      {
+        "type": "web",
+        "index": 16,
+        "all": false
+      },
+      {
+        "type": "web",
+        "index": 17,
+        "all": false
+      },
+      {
+        "type": "web",
+        "index": 18,
+        "all": false
+      },
+      {
+        "type": "web",
+        "index": 19,
+        "all": false
+      }
+    ],
+    "top": [],
+    "side": []
+  },
+  "web": {
+    "type": "search",
+    "results": [
+      {
+        "title": "OpenAI releases GPT-5.5 Instant, a new default model for ChatGPT | TechCrunch",
+        "url": "https://techcrunch.com/2026/05/05/openai-releases-gpt-5-5-instant-a-new-default-model-for-chatgpt/",
+        "is_source_local": false,
+        "is_source_both": false,
+        "description": "<strong>On Tuesday, OpenAI released a new foundation model called GPT-5.5 Instant, which will replace GPT-5.3 Instant as the default ChatGPT model</strong>.",
+        "page_age": "2026-05-05T17:51:04",
+        "profile": {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/05/05/openai-releases-gpt-5-5-instant-a-new-default-model-for-chatgpt/",
+          "long_name": "techcrunch.com",
+          "img": "https://imgs.search.brave.com/OujtLAczRHiUDKH3q-naM-q6ltbtdJYDZHyz36Snkg4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZGI5Njk0Yzlk/YWM3ZWMwZjg1MTM1/NmIyMWEyNzBjZDZj/ZDQyNmFlNGU0NDRi/MDgyYjQwOGU0Y2Qy/ZWMwNWQ2ZC90ZWNo/Y3J1bmNoLmNvbS8"
+        },
+        "language": "en",
+        "family_friendly": true,
+        "type": "search_result",
+        "subtype": "article",
+        "is_live": false,
+        "meta_url": {
+          "scheme": "https",
+          "netloc": "techcrunch.com",
+          "hostname": "techcrunch.com",
+          "favicon": "https://imgs.search.brave.com/OujtLAczRHiUDKH3q-naM-q6ltbtdJYDZHyz36Snkg4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZGI5Njk0Yzlk/YWM3ZWMwZjg1MTM1/NmIyMWEyNzBjZDZj/ZDQyNmFlNGU0NDRi/MDgyYjQwOGU0Y2Qy/ZWMwNWQ2ZC90ZWNo/Y3J1bmNoLmNvbS8",
+          "path": "  › home  › openai releases gpt-5.5 instant, a new default model for chatgpt"
+        },
+        "thumbnail": {
+          "src": "https://imgs.search.brave.com/yWhB7MKq0bteVZHhaCh5spSSyBdyi3KpgXIMDyQoRYg/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly90ZWNo/Y3J1bmNoLmNvbS93/cC1jb250ZW50L3Vw/bG9hZHMvMjAyNi8w/NS9NZW1vcnktdXBk/YXRlLmpwZWc",
+          "original": "https://techcrunch.com/wp-content/uploads/2026/05/Memory-update.jpeg",
+          "logo": false
+        },
+        "age": "May 5, 2026",
+        "article": {
+          "author": [
+            {
+              "type": "person",
+              "name": "Ivan Mehta",
+              "url": "https://techcrunch.com/author/ivan-mehta/",
+              "thumbnail": {
+                "src": "https://imgs.search.brave.com/cqy-Nc9ggK55akwLzrl76Vwo0zq6u7fhlZkc0F5BK8o/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9zZWN1/cmUuZ3JhdmF0YXIu/Y29tL2F2YXRhci83/OTkzN2Q0MjVhNTYx/NzJlNGZkYjE2YzA5/MzI3ZGFlODk4NTBm/ZDQwZTUxM2MyNWYx/OTYwNjE5ZTdiYjUx/NGJlP3M9OTYmZD1p/ZGVudGljb24mcj1n",
+                "original": "https://secure.gravatar.com/avatar/79937d425a56172e4fdb16c09327dae89850fd40e513c25f1960619e7bb514be?s=96&d=identicon&r=g"
+              }
+            }
+          ],
+          "date": "May 05, 2026",
+          "publisher": {
+            "type": "organization",
+            "name": "TechCrunch",
+            "url": "https://techcrunch.com/",
+            "thumbnail": {
+              "src": "https://imgs.search.brave.com/tIc6sR2Rl49bcxphaL3B-kuLQyo6lD9p90Ft57Z4Boc/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly90ZWNo/Y3J1bmNoLmNvbS93/cC1jb250ZW50L3Vw/bG9hZHMvMjAxOC8w/NC90Yy1sb2dvLTIw/MTgtc3F1YXJlLXJl/dmVyc2UyeC5wbmc_/cmVzaXplPTEyMDAs/MTIwMA",
+              "original": "https://techcrunch.com/wp-content/uploads/2018/04/tc-logo-2018-square-reverse2x.png?resize=1200,1200"
+            }
+          }
+        },
+        "extra_snippets": [
+          "Users who signed petitions to stop OpenAI from retiring it described the model as their “best friend” or “a mirror.” Despite the outcry, GPT-4o was deprecated in February 2026. ... When you purchase through links in our articles, we may earn a small commission.",
+          "GPT-5.5 Instant can use its search tool to refer back to past conversations, files, and Gmail to give you more personalized answers. This feature will be available to Plus and Pro users on the web, with plans to roll it out to mobile soon. OpenAI said that it plans to extend access to this feature to Free, Go Business, and enterprise users in the coming weeks. With this update, ChatGPT will also show memory sources across all models to help you understand where it generated the answers from.",
+          "On Tuesday, OpenAI released a new foundation model called GPT-5.5 Instant, which will replace GPT-5.3 Instant as the default ChatGPT model.",
+          "For developers, the GPT-5.5 model will be available through API as “chat-latest,” with 5.3 available as an option for paid users for only three months. The company has faced rebuttal from previous model withdrawal moves. When OpenAI withdrew its GPT-4o model, there was significant backlash from users who related to the model’s “personality.” GPT-4o affirmed users’ choices frequently and that made them feel a connection to that particular model."
+        ]
+      },
+      {
+        "title": "GPT-5.5 Instant: smarter, clearer, and more personalized | OpenAI",
+        "url": "https://openai.com/index/gpt-5-5-instant/",
+        "is_source_local": false,
+        "is_source_both": false,
+        "description": "We’ll continue improving this view to make it more comprehensive over time. <strong>GPT‑5.5 Instant is rolling out starting today to all ChatGPT users, replacing GPT‑5.3 Instant as the default model</strong>, and in the API as chat-latest.",
+        "page_age": "2026-05-05T00:00:00",
+        "profile": {
+          "name": "OpenAI",
+          "url": "https://openai.com/index/gpt-5-5-instant/",
+          "long_name": "openai.com",
+          "img": "https://imgs.search.brave.com/a162Y0hLEPHL4G7WHg0Nw0DxUOn2TknT_UI4sVOwS_E/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWE0ODk4ZGY3/Mzk1Y2EwMjAxZjJk/YmEzZWM1MzcyNTZm/MTI0YWEyOWQ3NjVk/MDgxNTMwMGQxNWMx/ZWVmZWMzZC9vcGVu/YWkuY29tLw"
+        },
+        "language": "en",
+        "family_friendly": true,
+        "type": "search_result",
+        "subtype": "generic",
+        "is_live": false,
+        "meta_url": {
+          "scheme": "https",
+          "netloc": "openai.com",
+          "hostname": "openai.com",
+          "favicon": "https://imgs.search.brave.com/a162Y0hLEPHL4G7WHg0Nw0DxUOn2TknT_UI4sVOwS_E/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWE0ODk4ZGY3/Mzk1Y2EwMjAxZjJk/YmEzZWM1MzcyNTZm/MTI0YWEyOWQ3NjVk/MDgxNTMwMGQxNWMx/ZWVmZWMzZC9vcGVu/YWkuY29tLw",
+          "path": "› index  › gpt-5-5-instant"
+        },
+        "thumbnail": {
+          "src": "https://imgs.search.brave.com/aasMznxNHjbHtF-6IWLdYdAQvEmo5T4Gbb-SJ42MgqU/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY3RmYXNzZXRz/Lm5ldC9rZnR6d2R5/YXV3dDkvMzYwa01Y/MDBXSG5BNVQwT1Y1/NWRFZi83MmFlZGZj/MWM4ZDA5Y2JjODY2/MmFjZDhhZjJlMmFm/Yy8yMDI1MDgyMi5q/cGc_dz0xNjAwJmFt/cDtoPTkwMCZhbXA7/Zml0PWZpbGw",
+          "original": "https://images.ctfassets.net/kftzwdyauwt9/360kMX00WHnA5T0OV55dEf/72aedfc1c8d09cbc8662acd8af2e2afc/20250822.jpg?w=1600&amp;h=900&amp;fit=fill",
+          "logo": false
+        },
+        "age": "May 5, 2026",
+        "extra_snippets": [
+          "Update on June 9, 2026: Personalization improvements are now rolling out to ChatGPT Go & Free.",
+          "For example, it may show you some of the most relevant past chats in sources instead of all the past chats it searched and referenced. We’ll continue improving this view to make it more comprehensive over time. GPT‑5.5 Instant is rolling out starting today to all ChatGPT users, replacing GPT‑5.3 Instant as the default model, and in the API as chat-latest.",
+          "Enhanced personalization from past chats, files, and connected Gmail is rolling out to Plus and Pro users on the web and coming soon to mobile with plans to expand to Free, Go, Business, and Enterprise in the coming weeks. Memory sources are rolling out across all ChatGPT consumer plans on the web and soon on mobile. Availability of specific personalization sources may vary by region.",
+          "The response in GPT 5.5 Instant is able to better reference past chats and relevant connected data to provide more refined, highly personalized suggestions including what the user would most likely enjoy. While the response in 5.3 Instant takes into account the user being based in San Francisco, it provides higher level suggestions for places to try. We’re also introducing memory sources across all ChatGPT models, which give you visibility over what context was used to personalize responses with new controls."
+        ]
+      },
+      {
+        "title": "r/CompareClaw on Reddit: GPT-5.5 Instant Is Now ChatGPT’s Default Model: What Changed on May 5, 2026",
+        "url": "https://www.reddit.com/r/CompareClaw/comments/1t91do4/gpt55_instant_is_now_chatgpts_default_model_what/",
+        "is_source_local": false,
+        "is_source_both": false,
+        "description": "<strong>OpenAI says GPT-5.5 Instant began rolling out on May 5, 2026</strong>: ... The post also says GPT-5.3 Instant remains available to paid users for three months through model configuration settings before retirement.",
+        "page_age": "2026-05-10T08:38:35",
+        "profile": {
+          "name": "Reddit",
+          "url": "https://www.reddit.com/r/CompareClaw/comments/1t91do4/gpt55_instant_is_now_chatgpts_default_model_what/",
+          "long_name": "reddit.com",
+          "img": "https://imgs.search.brave.com/U-eHNCapRHVNWWCVPPMTIvOofZULh0_A_FQKe8xTE4I/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvN2ZiNTU0M2Nj/MTFhZjRiYWViZDlk/MjJiMjBjMzFjMDRk/Y2IzYWI0MGI0MjVk/OGY5NzQzOGQ5NzQ5/NWJhMWI0NC93d3cu/cmVkZGl0LmNvbS8"
+        },
+        "language": "en",
+        "family_friendly": true,
+        "type": "search_result",
+        "subtype": "article",
+        "is_live": false,
+        "meta_url": {
+          "scheme": "https",
+          "netloc": "reddit.com",
+          "hostname": "www.reddit.com",
+          "favicon": "https://imgs.search.brave.com/U-eHNCapRHVNWWCVPPMTIvOofZULh0_A_FQKe8xTE4I/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvN2ZiNTU0M2Nj/MTFhZjRiYWViZDlk/MjJiMjBjMzFjMDRk/Y2IzYWI0MGI0MjVk/OGY5NzQzOGQ5NzQ5/NWJhMWI0NC93d3cu/cmVkZGl0LmNvbS8",
+          "path": "  › r/compareclaw  › gpt-5.5 instant is now chatgpt’s default model: what changed on may 5, 2026"
+        },
+        "thumbnail": {
+          "src": "https://imgs.search.brave.com/ZX61pHVn7AloxoioQ3R5GmiJOIOBeLXOUJfr-Fvips4/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9leHRl/cm5hbC1wcmV2aWV3/LnJlZGQuaXQvZ3B0/LTUtNS1pbnN0YW50/LWlzLW5vdy1jaGF0/Z3B0cy1kZWZhdWx0/LW1vZGVsLXdoYXQt/Y2hhbmdlZC12MC1Q/M3N6aW5DamRwazhL/QVFYRkdIUXRLSzh6/V19VODc5bVo4RHVa/R1QxOGhnLnBuZz9h/dXRvPXdlYnAmcz0y/ZDFmMzg3N2Y0M2I1/MDdlNWM4MTdjZGE0/OTlhYWUyMmU2N2Vh/Zjk3",
+          "original": "https://external-preview.redd.it/gpt-5-5-instant-is-now-chatgpts-default-model-what-changed-v0-P3szinCjdpk8KAQXFGHQtKK8zW_U879mZ8DuZGT18hg.png?auto=webp&s=2d1f3877f43b507e5c817cda499aae22e67eaf97",
+          "logo": false
+        },
+        "age": "May 10, 2026",
+        "article": {
+          "author": [
+            {
+              "type": "person",
+              "name": "Impressive-Split-906",
+              "url": "https://www.reddit.com/user/Impressive-Split-906/"
+            }
+          ],
+          "date": "May 10, 2026",
+          "publisher": {
+            "type": "organization",
+            "name": "Reddit",
+            "url": "https://www.reddit.com",
+            "thumbnail": {
+              "src": "https://imgs.search.brave.com/vwRCTZCyS3UsCGj7HsYLzWpcOMhAEqq9hhxBK8tt7Dw/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/cmVkZGl0c3RhdGlj/LmNvbS9zaHJlZGRp/dC9hc3NldHMvZmF2/aWNvbi82NHg2NC5w/bmc",
+              "original": "https://www.redditstatic.com/shreddit/assets/favicon/64x64.png"
+            }
+          }
+        },
+        "extra_snippets": [
+          "Posted by u/Impressive-Split-906 - 1 vote and 0 comments",
+          "OpenAI says GPT-5.5 Instant began rolling out on May 5, 2026: ... The post also says GPT-5.3 Instant remains available to paid users for three months through model configuration settings before retirement. For personalization, OpenAI says enhanced use of past chats, files, and connected Gmail is rolling out first to Plus and Pro users on the web, with expansion planned for Free, Go, Business, and Enterprise in the following weeks. Memory sources are rolling out across all ChatGPT consumer plans on the web, with mobile support coming later.",
+          "BREAKING - OpenAI \"GPT-5.5 Instant is starting to roll out in ChatGPT. It’s a big upgrade, giving you smarter, clearer, and more personalized answers in a warmer, more natural tone. And it's also more concise, which we heard you wanted. We think you'll love chatting with it.\" ➡️ Finally! ... The GPT 5.5 Thinking Model has completely become corporate crap. Even the 5.5 Instant is better than the Thinking Model. ... GPT-5 is a disaster. ... Reddit, Inc. © 2026.",
+          "One of the strongest factual claims in the release is about hallucination reduction. OpenAI says GPT-5.5 Instant produced 52.5% fewer hallucinated claims than GPT-5.3 Instant on internal high-stakes prompts in areas like medicine, law, and finance."
+        ]
+      },
+      {
+        "title": "OpenAI updates ChatGPT Instant with GPT 5.5",
+        "url": "https://www.axios.com/2026/05/05/openai-chatgpt-update-default-model",
+        "is_source_local": false,
+        "is_source_both": false,
+        "description": "Driving the news: <strong>OpenAI updated ChatGPT&#x27;s default model to respond with more accuracy, more personalization and fewer gratuitous emoji</strong>, the company said Tuesday. GPT-5.5 Instant is rolling out to all ChatGPT users and to the API.",
+        "page_age": "2026-05-05T17:06:25",
+        "profile": {
+          "name": "Axios",
+          "url": "https://www.axios.com/2026/05/05/openai-chatgpt-update-default-model",
+          "long_name": "axios.com",
+          "img": "https://imgs.search.brave.com/36Qcnqeww33w_XW2TE8H562NGeN_xx12UkMckmcwb90/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNDRhMTdhMDcy/YWUwZGExMjA2ZGVi/NTVmYTQ3YmNhN2E1/NDdiODg2ZDBiYzNk/Y2RkYzFkNWQ4MmI4/OWY4MDIxMi93d3cu/YXhpb3MuY29tLw"
+        },
+        "language": "en",
+        "family_friendly": true,
+        "type": "search_result",
+        "subtype": "article",
+        "is_live": false,
+        "meta_url": {
+          "scheme": "https",
+          "netloc": "axios.com",
+          "hostname": "www.axios.com",
+          "favicon": "https://imgs.search.brave.com/36Qcnqeww33w_XW2TE8H562NGeN_xx12UkMckmcwb90/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNDRhMTdhMDcy/YWUwZGExMjA2ZGVi/NTVmYTQ3YmNhN2E1/NDdiODg2ZDBiYzNk/Y2RkYzFkNWQ4MmI4/OWY4MDIxMi93d3cu/YXhpb3MuY29tLw",
+          "path": "› 2026  › 05  › 05  › openai-chatgpt-update-default-model"
+        },
+        "thumbnail": {
+          "src": "https://imgs.search.brave.com/j7Yacu5W2EowhlUsxIr77ng3k-E3NWGjUeoEyfhbjdk/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuYXhpb3MuY29t/LzNKX05rOEdEbFZO/MExPQkpyTFJVQV9U/ZnYxND0vMjAyNi8w/NS8wNS8xNzc4MDAw/NDEzMjg1LnBuZw",
+          "original": "https://images.axios.com/3J_Nk8GDlVN0LOBJrLRUA_Tfv14=/2026/05/05/1778000413285.png",
+          "logo": false
+        },
+        "age": "May 5, 2026",
+        "article": {
+          "author": [
+            {
+              "type": "person",
+              "name": "Megan Morrone",
+              "url": "https://www.axios.com/authors/mmorrone"
+            }
+          ],
+          "date": "May 05, 2026",
+          "publisher": {
+            "type": "organization",
+            "name": "Axios",
+            "url": "https://www.axios.com",
+            "thumbnail": {
+              "src": "https://imgs.search.brave.com/gKgcgzoZD0p58BPU1exkzRgb1FwTLIPHquRKePKf2ss/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9hc3Nl/dHMuYXhpb3MuY29t/LzIwM2U5ZjkzMmNj/OTc4MzZhYzJmZjRj/NmM5ODI2NzZjLnBu/Zw",
+              "original": "https://assets.axios.com/203e9f932cc97836ac2ff4c6c982676c.png"
+            }
+          },
+          "isAccessibleForFree": false
+        },
+        "extra_snippets": [
+          "Driving the news: OpenAI updated ChatGPT's default model to respond with more accuracy, more personalization and fewer gratuitous emoji, the company said Tuesday. GPT-5.5 Instant is rolling out to all ChatGPT users and to the API.",
+          "The company is also adding \"memory sources,\" a control that shows users some of the context ChatGPT used to personalize an answer, such as saved memories or past chats. OpenAI says users can delete or correct outdated memory and use temporary chats that do not use or update memory. Yes, but: The increased memory serves as a reminder that prompts may be stored by AI services, depending on the service and settings.",
+          "OpenAI is making the default ChatGPT more accurate and more personal — changes that could increase people's reliance on it, while also increasing its access to their lives.",
+          "Users may trust answers more even when the model is still capable of getting things wrong. What we're watching: Whether OpenAI's new memory-source controls are enough to reassure users who want more personalized answers without feeling watched."
+        ]
+      },
+      {
+        "title": "OpenAI Makes GPT-5.5 Instant ChatGPT’s Default Model",
+        "url": "https://winbuzzer.com/2026/05/06/openai-releases-gpt-55-instant-a-new-default-model-xcxwbn/",
+        "is_source_local": false,
+        "is_source_both": false,
+        "description": "OpenAI has rolled out GPT-5.5 Instant as ChatGPT’s default model on May 5, <strong>replacing GPT-5.3 Instant for everyday use</strong>. OpenAI described the update as smarter, clearer, and more personalized.",
+        "page_age": "2026-05-06T13:02:01",
+        "profile": {
+          "name": "WinBuzzer",
+          "url": "https://winbuzzer.com/2026/05/06/openai-releases-gpt-55-instant-a-new-default-model-xcxwbn/",
+          "long_name": "winbuzzer.com",
+          "img": "https://imgs.search.brave.com/s1eUa3hkXqgdV-Qnt1aQxUKPdFZwdbSnNlFcPbgyFHk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvODQ0ZGFkMGU3/ZjgxYjdjOWI3ZTRh/YzQxNmY4MzljZTky/NzA2Y2E5M2NmMGJh/MTM5YmZiNmVkNDc5/MGQyZTZiZC93aW5i/dXp6ZXIuY29tLw"
+        },
+        "language": "en",
+        "family_friendly": true,
+        "type": "search_result",
+        "subtype": "article",
+        "is_live": false,
+        "meta_url": {
+          "scheme": "https",
+          "netloc": "winbuzzer.com",
+          "hostname": "winbuzzer.com",
+          "favicon": "https://imgs.search.brave.com/s1eUa3hkXqgdV-Qnt1aQxUKPdFZwdbSnNlFcPbgyFHk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvODQ0ZGFkMGU3/ZjgxYjdjOWI3ZTRh/YzQxNmY4MzljZTky/NzA2Y2E5M2NmMGJh/MTM5YmZiNmVkNDc5/MGQyZTZiZC93aW5i/dXp6ZXIuY29tLw",
+          "path": "  › home  › openai makes gpt-5.5 instant chatgpt’s default model"
+        },
+        "thumbnail": {
+          "src": "https://imgs.search.brave.com/ibwKgifoK1gMY3trJLBmCP563hEiTzT6iDABo95ZALU/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93aW5i/dXp6ZXIuY29tL3dw/LWNvbnRlbnQvdXBs/b2Fkcy8yMDIzLzA4/L29wZW5haS1sb2dv/LmpwZw",
+          "original": "https://winbuzzer.com/wp-content/uploads/2023/08/openai-logo.jpg",
+          "logo": true
+        },
+        "age": "May 6, 2026",
+        "article": {
+          "author": [
+            {
+              "type": "person",
+              "name": "Markus Kasanmascheff"
+            }
+          ],
+          "date": "May 06, 2026",
+          "publisher": {
+            "type": "organization",
+            "name": "WinBuzzer",
+            "url": "https://winbuzzer.com/",
+            "thumbnail": {
+              "src": "https://imgs.search.brave.com/d-CUpRmC9UNK9xjKGYyUXF530p-fXizLyBvDx2Ht8TM/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93aW5i/dXp6ZXIuY29tL3dw/LWNvbnRlbnQvdXBs/b2Fkcy8yMDE3LzA0/L3dpbmJ1enplcl9s/b2dvX3NxdWFyZV90/cmFuc3BhcmVudC0x/NDRweC5wbmc",
+              "original": "https://winbuzzer.com/wp-content/uploads/2017/04/winbuzzer_logo_square_transparent-144px.png"
+            }
+          }
+        },
+        "extra_snippets": [
+          "OpenAI has rolled out GPT-5.5 Instant as ChatGPT's default model, adding memory-source controls, personalization tools, and a three-month API overlap. ... Default Switch: OpenAI said GPT-5.5 Instant became ChatGPT’s default model on May 5, 2026.",
+          "GPT-5.3 Instant rolled out on March 3, and the broader GPT-5.5 family arrived in April before Instant now moved into ChatGPT’s default slot. OpenAI was already using staged swaps to manage model changes in early 2026.",
+          "OpenAI has rolled out GPT-5.5 Instant as ChatGPT’s default model on May 5, replacing GPT-5.3 Instant for everyday use. OpenAI described the update as smarter, clearer, and more personalized.",
+          "OpenAI says the release puts added weight on context management inside ChatGPT. That makes the launch a product-behavior change, not just a benchmark update. Users will feel the shift in the default chat window, where response tone, memory use, and retrieval choices matter more than a benchmark chart. OpenAI also said GPT-5.5 Instant reduced inaccurate claims by 37.3 percent in conversations users had previously flagged for factual errors. The earlier flagship GPT-5 rollout used a similar lower-hallucination pitch."
+        ]
+      }
+    ],
+    "family_friendly": true
+  }
+}

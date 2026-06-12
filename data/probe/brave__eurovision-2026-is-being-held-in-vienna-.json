@@ -1,0 +1,585 @@
+{
+  "type": "search",
+  "query": {
+    "original": "Eurovision 2026 is being held in Vienna from May 12 to May 16.",
+    "show_strict_warning": false,
+    "is_navigational": false,
+    "is_news_breaking": false,
+    "spellcheck_off": false,
+    "country": "us",
+    "bad_results": false,
+    "should_fallback": false,
+    "postal_code": "",
+    "city": "",
+    "header_country": "",
+    "more_results_available": true,
+    "state": ""
+  },
+  "infobox": {
+    "type": "graph",
+    "results": [
+      {
+        "title": "Eurovision Song Contest 2026",
+        "url": "https://en.wikipedia.org/wiki/Eurovision_Song_Contest_2026",
+        "is_source_local": false,
+        "is_source_both": false,
+        "description": "70th edition of the Eurovision Song Contest",
+        "family_friendly": true,
+        "type": "infobox",
+        "position": 0,
+        "category": "event",
+        "long_desc": "The Eurovision Song Contest 2026 was the 70th edition of the Eurovision Song Contest. It consisted of two semi-finals on 12 and 14 May and a final on 16 May 2026, held at Wiener Stadthalle in Vienna, Austria, and presented by Victoria Swarovski and Michael Ostrowski, with Emily Busvine acting ...",
+        "attributes": [
+          [
+            "Eurovision Song Contest 2026",
+            "United by Music"
+          ],
+          [
+            "<span><strong>Dates and venue</strong></span>",
+            null
+          ],
+          [
+            "Semi-final 1",
+            "12 May 2026"
+          ],
+          [
+            "Semi-final 2",
+            "14 May 2026"
+          ],
+          [
+            "Final",
+            "16 May 2026"
+          ],
+          [
+            "Venue",
+            "<a href='https://en.wikipedia.org/wiki/Wiener_Stadthalle'>Wiener Stadthalle</a><br>Vienna, Austria"
+          ],
+          [
+            "<span><strong>Organisation</strong></span>",
+            null
+          ],
+          [
+            "Organiser",
+            "<a href='https://en.wikipedia.org/wiki/European_Broadcasting_Union'>European Broadcasting Union</a> (EBU)"
+          ],
+          [
+            "ESC director",
+            "<a href='https://en.wikipedia.org/wiki/Martin_Green_(producer)'>Martin Green</a>"
+          ],
+          [
+            "ESC executive producer",
+            "Gert Kark"
+          ],
+          [
+            "<span><strong>Production</strong></span>",
+            null
+          ],
+          [
+            "Host broadcaster",
+            "<a href='https://en.wikipedia.org/wiki/%C3%96sterreichischer_Rundfunk'>Österreichischer Rundfunk</a> (ORF)"
+          ],
+          [
+            "Director",
+            "Michael Kögler<br>Robin Hofwander"
+          ],
+          [
+            "Executive producer",
+            "Michael Krön"
+          ],
+          [
+            "Presenters",
+            "<a href='https://en.wikipedia.org/wiki/Victoria_Swarovski'>Victoria Swarovski</a><br><a href='https://en.wikipedia.org/wiki/Michael_Ostrowski'>Michael Ostrowski</a><br>Emily Busvine (green room)"
+          ],
+          [
+            "<span><strong>Participants</strong></span>",
+            null
+          ],
+          [
+            "Number of entries",
+            "35"
+          ],
+          [
+            "Number of finalists",
+            "25"
+          ],
+          [
+            "Returning countries",
+            "<a href='https://en.wikipedia.org/wiki/Bulgaria_in_the_Eurovision_Song_Contest'>Bulgaria</a><br><a href='https://en.wikipedia.org/wiki/Moldova_in_the_Eurovision_Song_Contest'>Moldova</a><br><a href='https://en.wikipedia.org/wiki/Romania_in_the_Eurovision_Song_Contest'>Romania</a>"
+          ],
+          [
+            "<span><strong>Vote</strong></span>",
+            null
+          ],
+          [
+            "Voting system",
+            "Each country awards two sets of 12, 10, 8–1 points to ten songs.<br>Online votes from viewers in non-participating countries are aggregated and awarded as one set of points."
+          ],
+          [
+            "Winning song",
+            "<a href='https://en.wikipedia.org/wiki/Bulgaria_in_the_Eurovision_Song_Contest_2026'>Bulgaria</a><br>\"<a href='https://en.wikipedia.org/wiki/Bangaranga'>Bangaranga</a>\""
+          ]
+        ],
+        "profiles": [
+          {
+            "name": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Eurovision_Song_Contest_2026",
+            "long_name": "en.wikipedia.org",
+            "img": "https://imgs.search.brave.com/m6XxME4ek8DGIUcEPCqjRoDjf2e54EwL9pQzyzogLYk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjQwNGZhZWY0/ZTQ1YWUzYzQ3MDUw/MmMzMGY3NTQ0ZjNj/NDUwMDk5ZTI3MWRk/NWYyNTM4N2UwOTE0/NTI3ZDQzNy9lbi53/aWtpcGVkaWEub3Jn/Lw"
+          },
+          {
+            "name": "IMDb",
+            "url": "https://www.imdb.com/title/tt36981483/",
+            "long_name": "Internet Movie Database",
+            "img": "https://imgs.search.brave.com/No36XuxNtq37lFRbGJS8Y6vyNeayCsgXMGcjqEuMp9c/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmU3MjU1MmUz/MDhkYjY0OGFlYzY3/ZDVlMmQ4NWZjZDhh/NzZhOGZlZjNjNGE5/M2M0OWI1Y2M2ZjQy/MWE5ZDc3OC93d3cu/aW1kYi5jb20v"
+          },
+          {
+            "name": "Wikidata",
+            "url": "http://www.wikidata.org/entity/Q125933843",
+            "long_name": "wikidata.org",
+            "img": "https://imgs.search.brave.com/8vIq-V97PH8S0N-pyaeHgq_gFHOA8hXjBunynHio-Uw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYzdkMGIyYTky/OTJjN2RjNDEyNWYx/MGQxNjAzNmZlNDk4/ZTRmNDczNjk0ZTZl/N2IxZjI0NTVkMGE3/YTBiYjEzYi93d3cu/d2lraWRhdGEub3Jn/Lw"
+          },
+          {
+            "name": "Yle",
+            "url": "https://yle.fi/t/18-369643/fi",
+            "long_name": "yle.fi",
+            "img": "https://imgs.search.brave.com/UYEZHHuvSmwpdQrpGMd47EJRhMbHOyjBfVeGcTQ15l4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjBjNDA0ODc0/NzVmODdhMGZiODg2/OWY4MzEwMThjMDky/MjdiMGY1MmZjY2E4/NzBhNTRlOTdhYzk5/YTEzMmZjMy95bGUu/Zmkv"
+          },
+          {
+            "name": "Yle Areena",
+            "url": "https://areena.yle.fi/1-77061676",
+            "long_name": "areena.yle.fi",
+            "img": "https://imgs.search.brave.com/tkocuPWjigVJE-J1Sf-n9A7NS9X0nHlpxUlIUPbLHHE/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvM2E1NTUzYzIy/NmExYTUzZDUyMDZj/MDM1ZGMwZDE4YzU1/OGY4NDc1ODljYWU5/ZWRlYTI3NzlkNGQ0/MjgyN2I3OS9hcmVl/bmEueWxlLmZpLw"
+          },
+          {
+            "name": "Eska",
+            "url": "https://www.eska.pl/tag/wd,tg-neBL-niAn-mHcg",
+            "long_name": "eska.pl",
+            "img": "https://imgs.search.brave.com/yk7XA4EvL3zYcJwuc3bAMczbyNto3JwNctIlni0UQYQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvODBjMjRjMjUz/OGU3ZDZmZTFjODdh/YTY3YjAzOWFkZGEw/Y2Y1MGYxYTRhN2Zk/NWZhZjgzYzRlN2Yx/YjcxYzE1Yy93d3cu/ZXNrYS5wbC8"
+          },
+          {
+            "name": "Anarasaavis",
+            "url": "https://www.anarasaavis.fi/coovdasaanih/euroviisuh-2026",
+            "long_name": "anarasaavis.fi",
+            "img": "https://imgs.search.brave.com/-g1UyOGtgtDywzCM-uPZlEKyaNrVh-K5_43-lp1H5Hk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMjYxNmFiZGYw/MDg0YzZkOTk1YWIw/NGY2Y2U0YWRlMmQ5/NzBhZWVmZmJlOTk5/YzYzMmE2Y2M1YmIx/M2Y2Y2QwNC93d3cu/YW5hcmFzYWF2aXMu/Zmkv"
+          },
+          {
+            "name": "MusicBrainz",
+            "url": "https://musicbrainz.org/event/bfd26ef8-70a8-4a1c-b669-efb204cb7171",
+            "long_name": "musicbrainz.org",
+            "img": "https://imgs.search.brave.com/mb7TGm_ty6Ab51AtI-f2WaM3lqP0NlDQxEy5q6k3DB8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzNmMjAyYjYy/NDE5NGEwMjQyZGJh/N2UxNzc3MWIzNDg3/OGQ2ODFjODQyNTc3/YzgwYTU0NGYwMjc2/NzU2MTg4NC9tdXNp/Y2JyYWluei5vcmcv"
+          },
+          {
+            "name": "Fandom",
+            "url": "https://community.fandom.com/wiki/w:c:eurosong-contest%3AEurovision_Song_Contest_2026",
+            "long_name": "community.fandom.com",
+            "img": "https://imgs.search.brave.com/jtaODHfOgauJ716EXpK9PQ10dobciXj5LIbzpVVaJ2Q/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZWZmOWZmMDRh/OGU5YjQ1MzAyNTMx/MmRmYTIzNjI3Njlj/Y2U5NmZhNjkzMDll/MzViZWM1NTA1YjBi/NTYyNTY3MS9jb21t/dW5pdHkuZmFuZG9t/LmNvbS8"
+          }
+        ],
+        "website_url": "https://www.eurovision.com/eurovision-song-contest/vienna-2026/",
+        "ratings": [],
+        "providers": [
+          {
+            "type": "external",
+            "name": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Eurovision_Song_Contest_2026",
+            "img": "https://imgs.search.brave.com/m6XxME4ek8DGIUcEPCqjRoDjf2e54EwL9pQzyzogLYk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjQwNGZhZWY0/ZTQ1YWUzYzQ3MDUw/MmMzMGY3NTQ0ZjNj/NDUwMDk5ZTI3MWRk/NWYyNTM4N2UwOTE0/NTI3ZDQzNy9lbi53/aWtpcGVkaWEub3Jn/Lw"
+          }
+        ],
+        "images": [
+          {
+            "src": "https://imgs.search.brave.com/eX48aSoOGi4fhR7R4NJSOtnC4dYTZAEDsfOzOTI5cGk/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy90/aHVtYi85LzlmL0V1/cm92aXNpb25fMjAy/Nl9oZWFydF8tX0F1/c3RyaWEuc3ZnLzI1/MHB4LUV1cm92aXNp/b25fMjAyNl9oZWFy/dF8tX0F1c3RyaWEu/c3ZnLnBuZz91dG1f/c291cmNlPXd3dy53/aWtpZGF0YS5vcmcm/YW1wO3V0bV9jYW1w/YWlnbj1pbmRleCZh/bXA7dXRtX2NvbnRl/bnQ9dGh1bWJuYWls",
+            "alt": "Eurovision 2026 heart - Austria",
+            "original": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Eurovision_2026_heart_-_Austria.svg/250px-Eurovision_2026_heart_-_Austria.svg.png?utm_source=www.wikidata.org&amp;utm_campaign=index&amp;utm_content=thumbnail",
+            "logo": true
+          },
+          {
+            "src": "https://imgs.search.brave.com/wBpcTbAS4powbs9pDo2PHd099GvV9A8KxHd92rQXGiw/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvZW4vdGh1bWIv/Ni82MC9FdXJvdmlz/aW9uX1NvbmdfQ29u/dGVzdF8yMDI2X2xv/Z28ucG5nLzUxMnB4/LUV1cm92aXNpb25f/U29uZ19Db250ZXN0/XzIwMjZfbG9nby5w/bmc",
+            "alt": "Generic logo of Eurovision Song Contest introduced for 2026 alongside 70th anniversary branding package",
+            "original": "https://upload.wikimedia.org/wikipedia/en/thumb/6/60/Eurovision_Song_Contest_2026_logo.png/512px-Eurovision_Song_Contest_2026_logo.png",
+            "logo": true
+          },
+          {
+            "src": "https://imgs.search.brave.com/xhHxft2L6fq30AVF1m-T5SvXgB8eSGqqvnfyf3UvHHI/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy90/aHVtYi9hL2EwL0VT/Q18yMDI2X01hcC5z/dmcvNTEycHgtRVND/XzIwMjZfTWFwLnN2/Zy5wbmc",
+            "alt": "A coloured map of the countries of Europe}}}",
+            "original": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/ESC_2026_Map.svg/512px-ESC_2026_Map.svg.png",
+            "logo": true
+          },
+          {
+            "src": "https://imgs.search.brave.com/UxzxPbbmIZfZxyhRGemReYI9Pjmcp6ySzB5DwMWewQs/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL00v/TVY1Qk1HWTJOemd6/TWpBdE5EazNNQzAw/WVRkbExXSXpZVEF0/WXpnNVpHTmtaR05t/TlRFMlhrRXlYa0Zx/Y0djQC5qcGc",
+            "alt": "Eurovision Song Contest Vienna 2026 (2026)",
+            "original": "https://m.media-amazon.com/images/M/MV5BMGY2NzgzMjAtNDk3MC00YTdlLWIzYTAtYzg5ZGNkZGNmNTE2XkEyXkFqcGc@.jpg",
+            "logo": false
+          },
+          {
+            "src": "https://imgs.search.brave.com/x1hMN02Cio88Rd5dWx_Z6jfVwu4p73BZovmciu7yUo4/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL00v/TVY1Qk5UVmxNakJt/WXprdE56Z3hPQzAw/TkdOaUxUZ3dZalV0/TWpObVpUQTVOREJt/WTJKa1hrRXlYa0Zx/Y0djQC5qcGc",
+            "alt": "Eurovision Song Contest Rotterdam 2021",
+            "original": "https://m.media-amazon.com/images/M/MV5BNTVlMjBmYzktNzgxOC00NGNiLTgwYjUtMjNmZTA5NDBmY2JkXkEyXkFqcGc@.jpg",
+            "logo": false
+          }
+        ],
+        "subtype": "generic",
+        "found_in_urls": [
+          "https://en.wikipedia.org/wiki/Eurovision_Song_Contest_2026"
+        ]
+      }
+    ]
+  },
+  "mixed": {
+    "type": "mixed",
+    "main": [
+      {
+        "type": "infobox",
+        "index": 0,
+        "all": false
+      },
+      {
+        "type": "web",
+        "index": 0,
+        "all": false
+      },
+      {
+        "type": "web",
+        "index": 1,
+        "all": false
+      },
+      {
+        "type": "web",
+        "index": 2,
+        "all": false
+      },
+      {
+        "type": "web",
+        "index": 3,
+        "all": false
+      },
+      {
+        "type": "web",
+        "index": 4,
+        "all": false
+      },
+      {
+        "type": "web",
+        "index": 5,
+        "all": false
+      },
+      {
+        "type": "web",
+        "index": 6,
+        "all": false
+      },
+      {
+        "type": "web",
+        "index": 7,
+        "all": false
+      },
+      {
+        "type": "web",
+        "index": 8,
+        "all": false
+      },
+      {
+        "type": "web",
+        "index": 9,
+        "all": false
+      },
+      {
+        "type": "web",
+        "index": 10,
+        "all": false
+      },
+      {
+        "type": "web",
+        "index": 11,
+        "all": false
+      },
+      {
+        "type": "web",
+        "index": 12,
+        "all": false
+      },
+      {
+        "type": "web",
+        "index": 13,
+        "all": false
+      },
+      {
+        "type": "web",
+        "index": 14,
+        "all": false
+      },
+      {
+        "type": "web",
+        "index": 15,
+        "all": false
+      },
+      {
+        "type": "web",
+        "index": 16,
+        "all": false
+      },
+      {
+        "type": "web",
+        "index": 17,
+        "all": false
+      },
+      {
+        "type": "web",
+        "index": 18,
+        "all": false
+      },
+      {
+        "type": "web",
+        "index": 19,
+        "all": false
+      }
+    ],
+    "top": [],
+    "side": []
+  },
+  "web": {
+    "type": "search",
+    "results": [
+      {
+        "title": "Eurovision Song Contest 2026 - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Eurovision_Song_Contest_2026",
+        "is_source_local": false,
+        "is_source_both": false,
+        "description": "The Eurovision Song Contest 2026 was the 70th edition of the Eurovision Song Contest. It consisted of <strong>two semi-finals on 12 and 14 May and a final on 16 May 2026</strong>, held at Wiener Stadthalle in Vienna, Austria, and presented by Victoria Swarovski and Michael Ostrowski, with Emily Busvine acting ...",
+        "page_age": "2026-06-11T19:44:53",
+        "profile": {
+          "name": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Eurovision_Song_Contest_2026",
+          "long_name": "en.wikipedia.org",
+          "img": "https://imgs.search.brave.com/m6XxME4ek8DGIUcEPCqjRoDjf2e54EwL9pQzyzogLYk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjQwNGZhZWY0/ZTQ1YWUzYzQ3MDUw/MmMzMGY3NTQ0ZjNj/NDUwMDk5ZTI3MWRk/NWYyNTM4N2UwOTE0/NTI3ZDQzNy9lbi53/aWtpcGVkaWEub3Jn/Lw"
+        },
+        "language": "en",
+        "family_friendly": true,
+        "type": "search_result",
+        "subtype": "generic",
+        "is_live": false,
+        "deep_results": {
+          "buttons": [
+            {
+              "type": "button_result",
+              "title": "Location",
+              "url": "https://en.wikipedia.org/wiki/Eurovision_Song_Contest_2026#Location"
+            },
+            {
+              "type": "button_result",
+              "title": "Participants",
+              "url": "https://en.wikipedia.org/wiki/Eurovision_Song_Contest_2026#Participants"
+            },
+            {
+              "type": "button_result",
+              "title": "Production and format",
+              "url": "https://en.wikipedia.org/wiki/Eurovision_Song_Contest_2026#Production_and_format"
+            },
+            {
+              "type": "button_result",
+              "title": "Contest overview",
+              "url": "https://en.wikipedia.org/wiki/Eurovision_Song_Contest_2026#Contest_overview"
+            },
+            {
+              "type": "button_result",
+              "title": "Detailed voting results",
+              "url": "https://en.wikipedia.org/wiki/Eurovision_Song_Contest_2026#Detailed_voting_results"
+            },
+            {
+              "type": "button_result",
+              "title": "Broadcasts",
+              "url": "https://en.wikipedia.org/wiki/Eurovision_Song_Contest_2026#Broadcasts"
+            },
+            {
+              "type": "button_result",
+              "title": "Other awards",
+              "url": "https://en.wikipedia.org/wiki/Eurovision_Song_Contest_2026#Other_awards"
+            },
+            {
+              "type": "button_result",
+              "title": "Official album",
+              "url": "https://en.wikipedia.org/wiki/Eurovision_Song_Contest_2026#Official_album"
+            }
+          ]
+        },
+        "meta_url": {
+          "scheme": "https",
+          "netloc": "en.wikipedia.org",
+          "hostname": "en.wikipedia.org",
+          "favicon": "https://imgs.search.brave.com/m6XxME4ek8DGIUcEPCqjRoDjf2e54EwL9pQzyzogLYk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjQwNGZhZWY0/ZTQ1YWUzYzQ3MDUw/MmMzMGY3NTQ0ZjNj/NDUwMDk5ZTI3MWRk/NWYyNTM4N2UwOTE0/NTI3ZDQzNy9lbi53/aWtpcGVkaWEub3Jn/Lw",
+          "path": "› wiki  › Eurovision_Song_Contest_2026"
+        },
+        "age": "6 hours ago",
+        "extra_snippets": [
+          "The Eurovision Song Contest 2026 was the 70th edition of the Eurovision Song Contest. It consisted of two semi-finals on 12 and 14 May and a final on 16 May 2026, held at Wiener Stadthalle in Vienna, Austria, and presented by Victoria Swarovski and Michael Ostrowski, with Emily Busvine acting as the green room host.",
+          "The winners were revealed shortly before the Eurovision final on 16 May. OGAE, an organisation of over forty Eurovision Song Contest fan clubs across Europe and beyond, conducts an annual voting poll first held in 2002 as the Marcel Bezençon Fan Award. After all votes were cast, the top-ranked entry in the 2026 poll was Finland's \"Liekinheitin\" performed by Linda Lampenius and Pete Parkkonen; the top five results are shown below. Eurovision Song Contest: Vienna 2026 is the official compilation album of the contest, featuring all 35 entries.",
+          "The \"Turquoise Carpet\" event was held on 10 May 2026 at the Burgtheater, with the contestants and their delegations walking across the Eurovision Village at Rathausplatz to be presented before accredited press and fans, before ending at the Vienna City Hall, where the opening ceremony followed.",
+          "The ceremony was hosted by Alexandra Wachter and Cesár Sampson, and was preceded by the passing of a \"friendship gift\" from Conradin Cramer, the president of the Basel-Stadt government representing the previous host city Basel, to Michael Ludwig, the mayor and governor of Vienna. The first semi-final took place on 12 May 2026 at 21:00 CEST.",
+          "The interval acts included former participants Erika Vikman (Finland 2025), Lordi (Finland 2006), Max Mutzke (Germany 2004), Alexander Rybak (Norway 2009 and 2018), Kristian Kostov (Bulgaria 2017), Verka Serduchka (Ukraine 2007), Miriana Conte (Malta 2025), and Ruslana (Ukraine 2004) performing a medley of past entries to celebrate the contest's seventieth anniversary; Parov Stelar performing his new single \"Black Lilies\" with vocals by Elena Karafizi and Lee Anduze; and Cesár Sampson (Austria 2018) performing \"Vienna\". \"Bangaranga\" was the only entry of the 2026 contest to enter the Billboard Global 200 and Billboard Global Excl. US, at numbers 90 and 38, respectively, on the charts dated 30 May 2026. ... The 12-point score from each country's national jury was revealed by the spokespersons in the following order:"
+        ]
+      },
+      {
+        "title": "Vienna 2026 - Eurovision",
+        "url": "https://www.eurovision.com/eurovision-song-contest/vienna-2026/",
+        "is_source_local": false,
+        "is_source_both": false,
+        "description": "Broadcaster ORF appointed a duo of presenters to guide viewers through all three Live Shows on <strong>12 | 14 | 16 May: Victoria Swarovski and Michael Ostrowski</strong>. For Vienna 2026, a selection of new rules was implemented for the Contest, including the ...",
+        "page_age": "2026-06-05T20:39:03",
+        "profile": {
+          "name": "Eurovision",
+          "url": "https://www.eurovision.com/eurovision-song-contest/vienna-2026/",
+          "long_name": "eurovision.com",
+          "img": "https://imgs.search.brave.com/nRbpsGXbzuy9tjSZEZI1CQnbzO3EEIcKAh4bRXMPyWg/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDQxODI0ZWRl/YTM2ODdhYTMyZjAz/ODQ0Yjc1NzRmYzQz/YjUxMDkyMTM0Njgy/N2MyN2Y5ODhmODlk/MTI0NzFjMi93d3cu/ZXVyb3Zpc2lvbi5j/b20v"
+        },
+        "language": "en",
+        "family_friendly": true,
+        "type": "search_result",
+        "subtype": "generic",
+        "is_live": false,
+        "meta_url": {
+          "scheme": "https",
+          "netloc": "eurovision.com",
+          "hostname": "www.eurovision.com",
+          "favicon": "https://imgs.search.brave.com/nRbpsGXbzuy9tjSZEZI1CQnbzO3EEIcKAh4bRXMPyWg/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDQxODI0ZWRl/YTM2ODdhYTMyZjAz/ODQ0Yjc1NzRmYzQz/YjUxMDkyMTM0Njgy/N2MyN2Y5ODhmODlk/MTI0NzFjMi93d3cu/ZXVyb3Zpc2lvbi5j/b20v",
+          "path": "› eurovision-song-contest  › vienna-2026"
+        },
+        "thumbnail": {
+          "src": "https://imgs.search.brave.com/KDLo5OOHd38nrjl7-WOMwWRIe9M8WokaPjRCXMnuiC0/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9zdG9y/YWdlLmdvb2dsZWFw/aXMuY29tL2V1cm92/aXNpb24tY29tLmFw/cHNwb3QuY29tL3Jl/bmRpdGlvbnMvcHVi/bGljL2Ntcy9uZXd3/ZWJzaXRlX2xvZ29w/bmcvTmV3V2Vic2l0/ZV9sb2dvLWZvcm1h/dCUzRGpwZWctd2lk/dGglM0QxMjAwLmpw/ZWc",
+          "original": "https://storage.googleapis.com/eurovision-com.appspot.com/renditions/public/cms/newwebsite_logopng/NewWebsite_logo-format%3Djpeg-width%3D1200.jpeg",
+          "logo": true
+        },
+        "age": "1 week ago"
+      },
+      {
+        "title": "Eurovision Song Contest 2026: Vienna",
+        "url": "https://eurovisionworld.com/eurovision/2026/event",
+        "is_source_local": false,
+        "is_source_both": false,
+        "description": "Related storyEurovision 2026 will ... Burggasse-Stadthalle Metro: U3, station: Schweglerstraße · <strong>The Austrian capital will host the contest at the Wiener Stadthalle</strong>....",
+        "page_age": "2026-05-05T20:36:04",
+        "profile": {
+          "name": "Eurovisionworld",
+          "url": "https://eurovisionworld.com/eurovision/2026/event",
+          "long_name": "eurovisionworld.com",
+          "img": "https://imgs.search.brave.com/yGuVr1lHXs28lqlPGm51xYN_mvrafETTfTZqGXa4t_M/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZGRiNzQ5NmZh/N2ViYWM0MTFhNjIz/NjBlYTRlMzBjNzFl/ZmMzNTA0MDZiZmE3/ZjlmOGVjYTBjZGUz/OGU2MmJlYi9ldXJv/dmlzaW9ud29ybGQu/Y29tLw"
+        },
+        "language": "en",
+        "family_friendly": true,
+        "type": "search_result",
+        "subtype": "generic",
+        "is_live": false,
+        "meta_url": {
+          "scheme": "https",
+          "netloc": "eurovisionworld.com",
+          "hostname": "eurovisionworld.com",
+          "favicon": "https://imgs.search.brave.com/yGuVr1lHXs28lqlPGm51xYN_mvrafETTfTZqGXa4t_M/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZGRiNzQ5NmZh/N2ViYWM0MTFhNjIz/NjBlYTRlMzBjNzFl/ZmMzNTA0MDZiZmE3/ZjlmOGVjYTBjZGUz/OGU2MmJlYi9ldXJv/dmlzaW9ud29ybGQu/Y29tLw",
+          "path": "› eurovision  › 2026  › event"
+        },
+        "thumbnail": {
+          "src": "https://imgs.search.brave.com/NujgyqMJBMtR8o6glfE1LFb2LJKbsNbPu8NtZAqhgIs/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9waXgu/ZXVyb3Zpc2lvbndv/cmxkLmNvbS9nL3kv/ZXVyb3Zpc2lvbi0y/MDI2LXZpZW5uYS5q/cGc",
+          "original": "https://pix.eurovisionworld.com/g/y/eurovision-2026-vienna.jpg",
+          "logo": false
+        },
+        "age": "May 5, 2026",
+        "extra_snippets": [
+          "Related storyEurovision 2026 will be held in Vienna – Final on 16 May · Roland Rainer Platz 1, 1150 Wien Metro: U6, station: Burggasse-Stadthalle Metro: U3, station: Schweglerstraße · The Austrian capital will host the contest at the Wiener Stadthalle. ... Wiener Stadthalle is the largest indoor arena in Austria, located right in the heart of Vienna. With a seating capacity of up to 16,000, it is perfectly suited for hosting a large-scale event like the Eurovision Song Contest.",
+          "EuroClub is the venue for special parties, official after-parties, and performances by the participants. There will also be public screenings of the three live Eurovision shows on 12, 14 and 16 May. EuroClub 2026 will take place at the Prater Dome from 11 to 16 May.",
+          "Eurovision Village is the official festival area during Eurovision Song Contest 2026, and will be at the Vienna Town Hall Square (Rathausplatz). The square will be open from Sunday 10 to Sunday 17 May for everybody. Each day from 14:00 until midnight, or until the Live Shows conclude.",
+          "Vienna 2026Songs & VideosFinalSemi 1Semi 2National SelectionsOddsCalendarTicketsNews ... The Eurovision week will feature three shows: Semi-final 1 on Tuesday, Semi-final 2 on Thursday, and the Grand Final on Saturday:"
+        ]
+      },
+      {
+        "title": "2026 Eurovision Song Contest in Vienna: What Visitors Need to Know",
+        "url": "https://www.viennasightseeing.at/en/service/more-vienna/2026-eurovision-song-contest-in-vienna-what-visitors-need-to-know",
+        "is_source_local": false,
+        "is_source_both": false,
+        "description": "Following JJ’s victory with “Wasted Love,” <strong>the 70th Eurovision Song Contest will take place from May 12 to 16, 2026, at the Wiener Stadthalle</strong>. The two semifinals will be held on May 12 and 14, with the final taking place on May 16, 2026.",
+        "profile": {
+          "name": "Vienna Sightseeing",
+          "url": "https://www.viennasightseeing.at/en/service/more-vienna/2026-eurovision-song-contest-in-vienna-what-visitors-need-to-know",
+          "long_name": "viennasightseeing.at",
+          "img": "https://imgs.search.brave.com/XN_yslVBJgEF1OWVH_BTBXfYCvmwcvl0vgfni5DG9_M/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZWU4MzkwNjJj/NmMxNjUxYWE1NWQw/MzQyZmE1Y2Q1NjBi/ZjI0MjdlNGIxZjY5/NjJlMThjYTVmMzZk/OGI1YjNjMC93d3cu/dmllbm5hc2lnaHRz/ZWVpbmcuYXQv"
+        },
+        "language": "en",
+        "family_friendly": true,
+        "type": "search_result",
+        "subtype": "generic",
+        "is_live": false,
+        "meta_url": {
+          "scheme": "https",
+          "netloc": "viennasightseeing.at",
+          "hostname": "www.viennasightseeing.at",
+          "favicon": "https://imgs.search.brave.com/XN_yslVBJgEF1OWVH_BTBXfYCvmwcvl0vgfni5DG9_M/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZWU4MzkwNjJj/NmMxNjUxYWE1NWQw/MzQyZmE1Y2Q1NjBi/ZjI0MjdlNGIxZjY5/NjJlMThjYTVmMzZk/OGI1YjNjMC93d3cu/dmllbm5hc2lnaHRz/ZWVpbmcuYXQv",
+          "path": "  › service  › more vienna  › 2026 eurovision song contest in vienna: what visitors need to know"
+        },
+        "thumbnail": {
+          "src": "https://imgs.search.brave.com/kWkToDVZCEOwd_uyViLKU8bDVAOBwMlxothyMednSis/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/dmllbm5hc2lnaHRz/ZWVpbmcuYXQvdHlw/bzNjb25mL2V4dC9z/aWdodHNlZWluZ19i/YXNlX3ZpZW5uYS9S/ZXNvdXJjZXMvUHVi/bGljL0ltYWdlcy9v/Z19pbWFnZXMvVlNU/X09HX0ltYWdlXzYw/MHgzMTUuanBn",
+          "original": "https://www.viennasightseeing.at/typo3conf/ext/sightseeing_base_vienna/Resources/Public/Images/og_images/VST_OG_Image_600x315.jpg",
+          "logo": false
+        },
+        "extra_snippets": [
+          "The Eurovision Village, featuring public viewing, will take place from May 10 to 17, 2026, at Vienna’s Rathausplatz. The Opening Ceremony with the Turquoise Carpet is scheduled for May 10. The Euro Club will take place from May 11 to 16, 2026, at the Praterdome.",
+          "The 2026 Eurovision Song Contest will once again put Vienna on the international music scene.",
+          "This makes the 2026 ESC in Vienna not just a TV show, but a multi-day music event with programming throughout the city."
+        ]
+      },
+      {
+        "title": "70th Eurovision Song Contest 2026 in Vienna - vienna.info",
+        "url": "https://www.wien.info/en/now-on/eurovision-song-contest/esc-2026-wien-966540",
+        "is_source_local": false,
+        "is_source_both": false,
+        "description": "... After 1967 and 2015, JJ’s sensational 2025 victory is bringing the Eurovision Song Contest back to Austria again this year. <strong>On May 16, 2026, Europe will crown its Song of the Year at the Wiener Stadthalle in true, colorful ESC style</strong>. ... ...",
+        "page_age": "2026-05-10T19:40:04",
+        "profile": {
+          "name": "Vienna.info",
+          "url": "https://www.wien.info/en/now-on/eurovision-song-contest/esc-2026-wien-966540",
+          "long_name": "wien.info",
+          "img": "https://imgs.search.brave.com/xs7NgNbDDJFfkK7HTFkY9GAP1mCcstwnIuDQgE0JPpM/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmFjZTI2ZWVm/MzlkN2IwMzAzYWMz/YThjZmVlZTNiNGZh/MTA5MzBlNDE5NWUx/YTdkOTU3OWFmYmFh/ZWVhMDY0NC93d3cu/d2llbi5pbmZvLw"
+        },
+        "language": "en",
+        "family_friendly": true,
+        "type": "search_result",
+        "subtype": "article",
+        "is_live": false,
+        "meta_url": {
+          "scheme": "https",
+          "netloc": "wien.info",
+          "hostname": "www.wien.info",
+          "favicon": "https://imgs.search.brave.com/xs7NgNbDDJFfkK7HTFkY9GAP1mCcstwnIuDQgE0JPpM/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmFjZTI2ZWVm/MzlkN2IwMzAzYWMz/YThjZmVlZTNiNGZh/MTA5MzBlNDE5NWUx/YTdkOTU3OWFmYmFh/ZWVhMDY0NC93d3cu/d2llbi5pbmZvLw",
+          "path": "  › eurovision song contest 2026"
+        },
+        "thumbnail": {
+          "src": "https://imgs.search.brave.com/Ll4M7OntszfXLMKru86kpn8ZmX3ZJrjGlkHxaAH0x38/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/d2llbi5pbmZvL3Jl/c291cmNlL2ltYWdl/Lzk2NDI2OC9WaWRl/by1IZWFkZXIvMTky/MC8xMDgwL2UyYmI0/MWJjY2YwZTgxZDBj/YjRiNjE1MzFiNzdl/MzYyL0JFQkI4NUE0/NUQzRTI2MDdFMDM0/MTU5QzZDQzdCMzNB/L2V1cm92aXNpb24t/c29uZy1jb250ZXN0/LTIwMTUtZXNjLXdp/ZW5lci1zdGFkdGhh/bGxlLndlYnA",
+          "original": "https://www.wien.info/resource/image/964268/Video-Header/1920/1080/e2bb41bccf0e81d0cb4b61531b77e362/BEBB85A45D3E2607E034159C6CC7B33A/eurovision-song-contest-2015-esc-wiener-stadthalle.webp",
+          "logo": false
+        },
+        "age": "May 10, 2026",
+        "article": {
+          "author": [
+            {
+              "type": "person",
+              "name": "Wiener Tourismusverband",
+              "url": "https://wien.info/"
+            }
+          ],
+          "date": "Aug 20, 2025",
+          "publisher": {
+            "type": "organization",
+            "name": "Wiener Tourismusverband",
+            "url": "https://wien.info/",
+            "thumbnail": {
+              "src": "https://imgs.search.brave.com/3Yr6DPEeNBtL4AKK6YF03_dlUCGzwr128LLXtI5j6ro/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/d2llbi5pbmZvL2Fz/c2V0cy9pbWFnZS9s/b2dvcy9Mb2dvX2Rl/X21pdC1DbGFpbS5z/dmc",
+              "original": "https://www.wien.info/assets/image/logos/Logo_de_mit-Claim.svg"
+            }
+          }
+        },
+        "extra_snippets": [
+          "The Grand Final is on Saturday, May 16; the two semi-finals are on Tuesday, May 12 and Thursday, May 14. Where is the largest official public screening for the Eurovision Song Contest 2026? Vienna’s Rathausplatz will be transformed into the most beautiful fan zone in the world during the Eurovision Song Contest. How many times has the Eurovision Song Contest already been held in Austria?",
+          "70 years of the Eurovision Song Contest in Austria ✓ Facts, info, and FAQs ✓ All of Vienna celebrates the ESC ▷All the info about the world’s biggest music competition!",
+          "The world’s largest music competition will take place in Vienna for the third time in 2026 as it celebrates its 70th anniversary. The most important information about the Eurovision Song Contest! ... After 1967 and 2015, JJ’s sensational 2025 victory is bringing the Eurovision Song Contest back to Austria again this year. On May 16, 2026, Europe will crown its Song of the Year at the Wiener Stadthalle in true, colorful ESC style. ... Semifinal 1: Tuesday, May 12, 2026, 9:00 p.m.",
+          "Final: Saturday, May 16, 2026, 9:00 p.m. (CEST) ... JJ secured the victory for Austria in 2025. – · The Wiener Stadthalle will once again serve as the venue for the Eurovision Song Contest. – · The largest official public screening will take place in front of Vienna City Hall. – · JJ secured the victory for Austria in 2025. – · The Wiener Stadthalle will once again serve as the venue for the Eurovision Song Contest."
+        ]
+      }
+    ],
+    "family_friendly": true
+  }
+}
