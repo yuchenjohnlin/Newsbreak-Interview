@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bulgaria Wins Eurovision 2026 in Vienna with Record-Breaking Margin</title>
+<style>
+  :root {
+    --bg: #faf9f7;
+    --surface: #ffffff;
+    --ink: #1a1a1a;
+    --ink-soft: #555;
+    --ink-faint: #8a8a8a;
+    --line: #e8e5e0;
+    --serif: "Iowan Old Style", Georgia, "Times New Roman", serif;
+    --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    --radius: 12px;
+    --shadow: 0 1px 3px rgba(0,0,0,.05), 0 4px 16px rgba(0,0,0,.04);
+  }
+  .theme-tech   { --accent: #4f46e5; --accent-soft: #eef2ff; --accent-ink: #3730a3; }
+  .theme-show   { --accent: #c026d3; --accent-soft: #fdf4ff; --accent-ink: #86198f; }
+  .theme-sports { --accent: #059669; --accent-soft: #ecfdf5; --accent-ink: #065f46; }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #141414; --surface: #1e1e1e; --ink: #ececec; --ink-soft: #b0b0b0;
+      --ink-faint: #7c7c7c; --line: #2c2c2c;
+      --shadow: 0 1px 3px rgba(0,0,0,.4);
+    }
+    .theme-tech   { --accent: #818cf8; --accent-soft: #23244a; --accent-ink: #c7d2fe; }
+    .theme-show   { --accent: #e879f9; --accent-soft: #3a1f40; --accent-ink: #f5d0fe; }
+    .theme-sports { --accent: #34d399; --accent-soft: #15332a; --accent-ink: #a7f3d0; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font-family: var(--sans); font-size: 16px; line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  .accent-bar { height: 5px; background: linear-gradient(90deg, var(--accent), color-mix(in srgb, var(--accent) 55%, transparent)); }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 24px 64px; }
+
+  /* hero */
+  header.hero { padding: 44px 0 28px; border-bottom: 1px solid var(--line); }
+  .badge {
+    display: inline-block; font-size: 12px; font-weight: 700; letter-spacing: .08em;
+    text-transform: uppercase; color: var(--accent-ink); background: var(--accent-soft);
+    padding: 4px 12px; border-radius: 999px; margin-bottom: 16px;
+  }
+  h1 {
+    font-family: var(--serif); font-size: clamp(30px, 5.5vw, 44px);
+    line-height: 1.12; letter-spacing: -0.01em; margin: 0 0 14px;
+  }
+  .dek { font-size: 19px; color: var(--ink-soft); margin: 0 0 18px; line-height: 1.5; }
+  .meta-row { display: flex; flex-wrap: wrap; gap: 8px 18px; font-size: 13px; color: var(--ink-faint); }
+
+  /* sections */
+  section { margin-top: 40px; }
+  h2 {
+    font-size: 13px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase;
+    color: var(--ink-faint); margin: 0 0 16px; display: flex; align-items: center; gap: 10px;
+  }
+  h2::after { content: ""; flex: 1; height: 1px; background: var(--line); }
+  .summary { font-size: 18px; line-height: 1.65; margin: 0; }
+
+  /* key facts */
+  .facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 14px; }
+  .fact {
+    background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
+    padding: 16px 18px; box-shadow: var(--shadow);
+  }
+  .fact .label { font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: .06em; color: var(--accent-ink); margin-bottom: 6px; }
+  .fact .value { font-size: 15px; line-height: 1.5; }
+
+  /* timeline */
+  .timeline { list-style: none; margin: 0; padding: 0 0 0 6px; position: relative; }
+  .timeline::before { content: ""; position: absolute; left: 11px; top: 8px; bottom: 8px; width: 2px; background: var(--line); }
+  .timeline li { position: relative; padding: 0 0 26px 38px; }
+  .timeline li:last-child { padding-bottom: 4px; }
+  .tl-dot {
+    position: absolute; left: 4px; top: 5px; width: 14px; height: 14px; border-radius: 50%;
+    background: var(--accent); border: 3px solid var(--bg); box-shadow: 0 0 0 1px var(--accent);
+  }
+  .tl-dot.upcoming { background: var(--bg); }
+  .tl-date { font-size: 13px; font-weight: 600; color: var(--accent-ink); }
+  .tl-pill {
+    font-size: 10.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .07em;
+    color: var(--accent-ink); background: var(--accent-soft); border-radius: 999px;
+    padding: 2px 8px; margin-left: 8px; vertical-align: 1px;
+  }
+  .tl-label { font-weight: 650; margin: 2px 0; }
+  .tl-desc { font-size: 14.5px; color: var(--ink-soft); margin: 0; }
+
+  /* entities */
+  .entities { display: flex; flex-wrap: wrap; gap: 10px; }
+  .entity {
+    background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
+    padding: 10px 14px; font-size: 14px; box-shadow: var(--shadow);
+  }
+  .entity b { display: block; font-size: 14.5px; }
+  .entity .role { color: var(--accent-ink); font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: .05em; }
+  .entity .desc { color: var(--ink-soft); font-size: 13px; max-width: 380px; }
+
+  /* extras card */
+  .panel {
+    background: var(--surface); border: 1px solid var(--line); border-left: 4px solid var(--accent);
+    border-radius: var(--radius); padding: 20px 22px; box-shadow: var(--shadow);
+  }
+  .panel + .panel { margin-top: 14px; }
+  .panel h3 { margin: 0 0 10px; font-size: 16px; }
+  .kv { display: grid; grid-template-columns: 150px 1fr; gap: 8px 16px; font-size: 14.5px; }
+  .kv dt { color: var(--ink-faint); font-weight: 600; }
+  .kv dd { margin: 0; }
+  table.matches { width: 100%; border-collapse: collapse; font-size: 14.5px; }
+  table.matches th { text-align: left; font-size: 12px; text-transform: uppercase; letter-spacing: .06em; color: var(--ink-faint); padding: 6px 10px; border-bottom: 1px solid var(--line); }
+  table.matches td { padding: 9px 10px; border-bottom: 1px solid var(--line); }
+  table.matches tr:last-child td { border-bottom: 0; }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 6px; }
+  .chip { background: var(--accent-soft); color: var(--accent-ink); border-radius: 999px; padding: 3px 12px; font-size: 13px; font-weight: 600; }
+  blockquote.reaction { margin: 0 0 12px; padding: 0 0 0 14px; border-left: 3px solid var(--line); }
+  blockquote.reaction p { margin: 0; font-size: 15px; }
+  blockquote.reaction cite { font-size: 13px; color: var(--ink-faint); font-style: normal; }
+
+  /* why it matters / what's next */
+  .matters { font-size: 16.5px; line-height: 1.65; background: var(--accent-soft); border-radius: var(--radius); padding: 20px 24px; margin: 0; color: var(--ink); }
+  ul.next { margin: 0; padding-left: 22px; }
+  ul.next li { margin-bottom: 8px; }
+
+  /* sources */
+  ol.sources { margin: 0; padding-left: 24px; font-size: 14px; }
+  ol.sources li { margin-bottom: 9px; }
+  ol.sources a { color: var(--accent-ink); text-decoration: none; }
+  ol.sources a:hover { text-decoration: underline; }
+  .src-meta { color: var(--ink-faint); font-size: 13px; }
+  sup.cite { font-size: 11px; }
+  sup.cite a { color: var(--accent-ink); text-decoration: none; font-weight: 600; }
+
+  footer {
+    margin-top: 56px; padding-top: 18px; border-top: 1px solid var(--line);
+    font-size: 12.5px; color: var(--ink-faint); line-height: 1.7;
+  }
+  .freshness { margin-top: 28px; font-size: 13px; color: var(--ink-faint); background: var(--surface); border: 1px dashed var(--line); border-radius: 8px; padding: 10px 14px; }
+
+  @media (max-width: 560px) {
+    .kv { grid-template-columns: 1fr; gap: 2px 0; }
+    .kv dt { margin-top: 8px; }
+    header.hero { padding-top: 30px; }
+  }
+</style>
+</head>
+<body class="theme-show">
+<div class="accent-bar"></div>
+<div class="wrap">
+
+  <header class="hero">
+    <span class="badge">
+Culture · Live event
+    </span>
+    <h1>Bulgaria Wins Eurovision 2026 in Vienna with Record-Breaking Margin</h1>
+    <p class="dek">DARA&#39;s &#34;Bangaranga&#34; triumphed at the 70th Eurovision Song Contest, held at the Wiener Stadthalle, giving Bulgaria its first-ever victory by the largest winning margin in the contest&#39;s history.</p>
+    <div class="meta-row">
+      <span>Topic page · generated Jun 12, 2026</span>
+      <span>6 sources</span>
+    </div>
+  </header>
+
+  <section>
+    <p class="summary">The 70th Eurovision Song Contest took place in Vienna, Austria, from May 12–16, 2026, at the Wiener Stadthalle — the city&#39;s third time hosting the event. Bulgaria&#39;s DARA won the Grand Final on May 16 with &#34;Bangaranga,&#34; topping both the jury vote and televote by a record 173-point margin over the second-place entry. The contest featured 35 participating countries, with five nations (Iceland, Ireland, the Netherlands, Slovenia, and Spain) boycotting over Israel&#39;s inclusion. Romania finished third, equaling its best-ever placement, while Australia and Italy rounded out the top five.</p>
+  </section>
+
+  <section>
+    <h2>Key facts</h2>
+    <div class="facts">
+      <div class="fact">
+        <div class="label">Winner</div>
+        <div class="value">Bulgaria — DARA with &#34;Bangaranga&#34;, the country&#39;s first-ever Eurovision victory<sup class="cite"><a href="#src-2">[2]</a><a href="#src-6">[6]</a></sup></div>
+      </div>
+      <div class="fact">
+        <div class="label">Winning margin</div>
+        <div class="value">Record 173-point lead over second place, surpassing Alexander Rybak&#39;s 169-point margin from Moscow 2009<sup class="cite"><a href="#src-2">[2]</a><a href="#src-6">[6]</a></sup></div>
+      </div>
+      <div class="fact">
+        <div class="label">Venue</div>
+        <div class="value">Wiener Stadthalle, Vienna — capacity 16,152, hosting Eurovision for the second time after 2015<sup class="cite"><a href="#src-3">[3]</a><a href="#src-6">[6]</a></sup></div>
+      </div>
+      <div class="fact">
+        <div class="label">Hosts</div>
+        <div class="value">Victoria Swarovski and Michael Ostrowski; Emily Busvine in the green room<sup class="cite"><a href="#src-1">[1]</a><a href="#src-6">[6]</a></sup></div>
+      </div>
+      <div class="fact">
+        <div class="label">Participants</div>
+        <div class="value">35 countries — the fewest since 2003 — with 5 boycotting over Israel&#39;s inclusion<sup class="cite"><a href="#src-2">[2]</a><a href="#src-6">[6]</a></sup></div>
+      </div>
+      <div class="fact">
+        <div class="label">Top 5</div>
+        <div class="value">1. Bulgaria, 2. Israel, 3. Romania, 4. Australia, 5. Italy<sup class="cite"><a href="#src-6">[6]</a></sup></div>
+      </div>
+      <div class="fact">
+        <div class="label">Ticket sales</div>
+        <div class="value">All ~100,000 tickets across nine shows sold out in under an hour on January 13, 2026<sup class="cite"><a href="#src-4">[4]</a></sup></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Timeline</h2>
+    <ul class="timeline">
+      <li>
+        <span class="tl-dot"></span>
+        <span class="tl-date">May 17, 2025</span>
+        <div class="tl-label">JJ wins Eurovision 2025 for Austria<sup class="cite"><a href="#src-1">[1]</a><a href="#src-4">[4]</a><a href="#src-6">[6]</a></sup></div>
+<p class="tl-desc">Austrian-Filipino countertenor JJ (Johannes Pietsch) wins in Basel with &#34;Wasted Love,&#34; triggering Austria&#39;s right to host the 70th edition.</p>      </li>
+      <li>
+        <span class="tl-dot"></span>
+        <span class="tl-date">Aug 20, 2025</span>
+        <div class="tl-label">Vienna confirmed as host city<sup class="cite"><a href="#src-6">[6]</a></sup></div>
+<p class="tl-desc">The EBU and ORF announced Vienna as the host city after Vienna and Innsbruck were the only cities to submit bids.</p>      </li>
+      <li>
+        <span class="tl-dot"></span>
+        <span class="tl-date">Jan 13, 2026</span>
+        <div class="tl-label">Tickets sell out in under an hour<sup class="cite"><a href="#src-4">[4]</a></sup></div>
+<p class="tl-desc">All nine shows — roughly 100,000 tickets — sold out in record time on the first day of sale.</p>      </li>
+      <li>
+        <span class="tl-dot"></span>
+        <span class="tl-date">May 10, 2026</span>
+        <div class="tl-label">Opening Ceremony &amp; Turquoise Carpet<sup class="cite"><a href="#src-1">[1]</a><a href="#src-4">[4]</a><a href="#src-6">[6]</a></sup></div>
+<p class="tl-desc">The Turquoise Carpet event was held at the Burgtheater, followed by the opening ceremony at Vienna City Hall. JJ performed his 2025 winning song.</p>      </li>
+      <li>
+        <span class="tl-dot"></span>
+        <span class="tl-date">May 12, 2026</span>
+        <div class="tl-label">Semi-final 1<sup class="cite"><a href="#src-1">[1]</a><a href="#src-3">[3]</a><a href="#src-5">[5]</a><a href="#src-6">[6]</a></sup></div>
+<p class="tl-desc">First live show at the Wiener Stadthalle, 21:00 CEST.</p>      </li>
+      <li>
+        <span class="tl-dot"></span>
+        <span class="tl-date">May 16, 2026</span>
+        <div class="tl-label">Grand Final — Bulgaria wins<sup class="cite"><a href="#src-2">[2]</a><a href="#src-6">[6]</a></sup></div>
+<p class="tl-desc">DARA&#39;s &#34;Bangaranga&#34; wins both the jury vote and televote, giving Bulgaria its first Eurovision victory by a record margin.</p>      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Who's involved</h2>
+    <div class="entities">
+      <div class="entity">
+        <span class="role">Host city — third time hosting Eurovision, after 1967 and 2015</span>
+        <b>Vienna</b>
+      </div>
+      <div class="entity">
+        <span class="role">Host venue — largest indoor arena in Austria, capacity 16,152</span>
+        <b>Wiener Stadthalle</b>
+      </div>
+      <div class="entity">
+        <span class="role">Winner — performed &#34;Bangaranga&#34; to claim Bulgaria&#39;s first Eurovision victory</span>
+        <b>DARA (Bulgaria)</b>
+      </div>
+      <div class="entity">
+        <span class="role">2025 winner whose victory for Austria brought the contest to Vienna</span>
+        <b>JJ (Johannes Pietsch)</b>
+      </div>
+      <div class="entity">
+        <span class="role">Co-host of all three live shows</span>
+        <b>Victoria Swarovski</b>
+      </div>
+      <div class="entity">
+        <span class="role">Co-host of all three live shows</span>
+        <b>Michael Ostrowski</b>
+      </div>
+      <div class="entity">
+        <span class="role">Green room host</span>
+        <b>Emily Busvine</b>
+      </div>
+      <div class="entity">
+        <span class="role">Host broadcaster</span>
+        <b>ORF (Österreichischer Rundfunk)</b>
+      </div>
+      <div class="entity">
+        <span class="role">Organiser of the Eurovision Song Contest</span>
+        <b>European Broadcasting Union (EBU)</b>
+      </div>
+      <div class="entity">
+        <span class="role">Represented Australia, finishing 4th — country&#39;s best result since 2016</span>
+        <b>Delta Goodrem</b>
+      </div>
+      <div class="entity">
+        <span class="role">Represented Romania with &#34;Choke Me,&#34; finishing 3rd</span>
+        <b>Alexandra Căpitănescu</b>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>The event</h2>
+    <div class="panel">
+      <dl class="kv">
+        <dt>Venue</dt><dd>Wiener Stadthalle, Vienna, Austria</dd>
+        <dt>Dates</dt><dd>May 12–16, 2026</dd>
+<dt>Result</dt><dd>Bulgaria won with &#34;Bangaranga&#34; by DARA, topping both the jury vote and televote by a record 173-point margin. Top 5: Bulgaria, Israel, Romania, Australia, Italy.</dd><dt>How to watch</dt><dd>Broadcast live by participating national broadcasters. Public screenings were held at Eurovision Village (Rathausplatz, May 10–17) and EuroClub (Prater Dome, May 11–16).</dd>      </dl>
+      <h3 style="margin-top:16px">Lineup &amp; participants</h3>
+      <div class="chips">
+<span class="chip">Bulgaria — DARA: &#34;Bangaranga&#34; (Winner)</span><span class="chip">Israel (2nd place)</span><span class="chip">Romania — Alexandra Căpitănescu: &#34;Choke Me&#34; (3rd place)</span><span class="chip">Australia — Delta Goodrem (4th place)</span><span class="chip">Italy (5th place)</span><span class="chip">Denmark — Søren Torpegaard Lund (7th place)</span><span class="chip">Interval act: Alexander Rybak, Erika Vikman, Kristian Kostov, Lordi, Max Mutzke, Miriana Conte, Ruslana, Verka Seduchka</span>      </div>
+    </div>
+  </section>
+
+
+  <section>
+    <h2>Why it matters</h2>
+    <p class="matters">The 70th anniversary edition was a landmark moment for the contest, producing Bulgaria&#39;s first-ever winner and the highest winning margin in Eurovision history. Five countries staged the largest boycott since 1970 over Israel&#39;s participation, reflecting how the geopolitical tensions around the Gaza conflict have increasingly spilled into the contest. The record sell-out speed and Vienna&#39;s city-wide programming underline Eurovision&#39;s growing status as one of the world&#39;s biggest live entertainment events.</p>
+  </section>
+
+  <section>
+    <h2>What to watch next</h2>
+    <ul class="next">
+<li>Bulgaria, as the 2026 winner, earns the right to host — or delegate hosting of — Eurovision 2027.</li><li>ORF and BNT (Bulgarian National Television) will begin discussions on the 2027 host city and venue selection.</li><li>The five boycotting countries (Iceland, Ireland, Netherlands, Slovenia, Spain) will decide whether to return for Eurovision 2027.</li><li>EBU may revisit participation rules regarding Israel following the historic five-country boycott.</li>    </ul>
+  </section>
+
+  <section>
+    <h2>Sources</h2>
+    <ol class="sources">
+      <li id="src-1">
+        <a href="https://www.viennasightseeing.at/en/service/more-vienna/2026-eurovision-song-contest-in-vienna-what-visitors-need-to-know" target="_blank" rel="noopener">2026 Eurovision Song Contest in Vienna: What Visitors Need to Know</a>
+        <span class="src-meta">viennasightseeing.at · May 16, 2026</span>
+      </li>
+      <li id="src-2">
+        <a href="https://www.eurovision.com/eurovision-song-contest/vienna-2026/" target="_blank" rel="noopener">Eurofans need cookies! (Vienna 2026)</a>
+        <span class="src-meta">eurovision.com · May 12, 2026</span>
+      </li>
+      <li id="src-3">
+        <a href="https://eurovisionworld.com/eurovision/2026/event" target="_blank" rel="noopener">Eurovision Song Contest 2026: Vienna</a>
+        <span class="src-meta">eurovisionworld.com · May 5, 2026</span>
+      </li>
+      <li id="src-4">
+        <a href="https://www.timeout.com/vienna/things-to-do/eurovision-guide" target="_blank" rel="noopener">Eurovision in Vienna 2026: our complete guide</a>
+        <span class="src-meta">timeout.com · Apr 22, 2026</span>
+      </li>
+      <li id="src-5">
+        <a href="https://www.wien.info/en/now-on/eurovision-song-contest/esc-2026-wien-966540" target="_blank" rel="noopener">70th Eurovision Song Contest 2026 in Vienna</a>
+        <span class="src-meta">wien.info · Aug 20, 2025</span>
+      </li>
+      <li id="src-6">
+        <a href="https://en.wikipedia.org/wiki/Eurovision_Song_Contest_2026" target="_blank" rel="noopener">Eurovision Song Contest 2026 - Wikipedia</a>
+        <span class="src-meta">wikipedia.org · May 17, 2025</span>
+      </li>
+    </ol>
+    <div class="freshness">⏱ Evidence gathered on 2026-06-12; final results and top-5 placings are confirmed, but detailed points breakdowns and post-contest announcements (e.g., 2027 host selection) may have occurred since.</div>
+  </section>
+
+  <footer>
+    Generated from the input sentence “Eurovision 2026 is being held in Vienna from May 12 to May 16.” · Jun 12, 2026
+    · schema v1.0 · All claims cite the numbered sources above.
+  </footer>
+
+</div>
+</body>
+</html>

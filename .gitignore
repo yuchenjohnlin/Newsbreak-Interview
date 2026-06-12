@@ -3,8 +3,12 @@
 .env.local
 .env.*.local
 
-# regenerable API cache
+# regenerable API cache / intermediate fetch output
 data/cache/
+data/pages/
+
+# local Claude Code config
+.claude/
 
 # runtime junk
 __pycache__/

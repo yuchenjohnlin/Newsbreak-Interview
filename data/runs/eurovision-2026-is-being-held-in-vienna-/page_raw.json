@@ -1,0 +1,243 @@
+{
+  "input_sentence": "Eurovision 2026 is being held in Vienna from May 12 to May 16.",
+  "generated_at": "2026-06-12T06:44:58+00:00",
+  "category": "show",
+  "headline": "Bulgaria Wins Eurovision 2026 in Vienna with Record-Breaking Margin",
+  "dek": "DARA's \"Bangaranga\" triumphed at the 70th Eurovision Song Contest, held at the Wiener Stadthalle, giving Bulgaria its first-ever victory by the largest winning margin in the contest's history.",
+  "summary": "The 70th Eurovision Song Contest took place in Vienna, Austria, from May 12–16, 2026, at the Wiener Stadthalle — the city's third time hosting the event. Bulgaria's DARA won the Grand Final on May 16 with \"Bangaranga,\" topping both the jury vote and televote by a record 173-point margin over the second-place entry. The contest featured 35 participating countries, with five nations (Iceland, Ireland, the Netherlands, Slovenia, and Spain) boycotting over Israel's inclusion. Romania finished third, equaling its best-ever placement, while Australia and Italy rounded out the top five.",
+  "key_facts": [
+    {
+      "label": "Winner",
+      "value": "Bulgaria — DARA with \"Bangaranga\", the country's first-ever Eurovision victory",
+      "source_ids": [
+        2,
+        6
+      ]
+    },
+    {
+      "label": "Winning margin",
+      "value": "Record 173-point lead over second place, surpassing Alexander Rybak's 169-point margin from Moscow 2009",
+      "source_ids": [
+        2,
+        6
+      ]
+    },
+    {
+      "label": "Venue",
+      "value": "Wiener Stadthalle, Vienna — capacity 16,152, hosting Eurovision for the second time after 2015",
+      "source_ids": [
+        3,
+        6
+      ]
+    },
+    {
+      "label": "Hosts",
+      "value": "Victoria Swarovski and Michael Ostrowski; Emily Busvine in the green room",
+      "source_ids": [
+        1,
+        6
+      ]
+    },
+    {
+      "label": "Participants",
+      "value": "35 countries — the fewest since 2003 — with 5 boycotting over Israel's inclusion",
+      "source_ids": [
+        2,
+        6
+      ]
+    },
+    {
+      "label": "Top 5",
+      "value": "1. Bulgaria, 2. Israel, 3. Romania, 4. Australia, 5. Italy",
+      "source_ids": [
+        6
+      ]
+    },
+    {
+      "label": "Ticket sales",
+      "value": "All ~100,000 tickets across nine shows sold out in under an hour on January 13, 2026",
+      "source_ids": [
+        4
+      ]
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2025-05-17",
+      "label": "JJ wins Eurovision 2025 for Austria",
+      "status": "past",
+      "description": "Austrian-Filipino countertenor JJ (Johannes Pietsch) wins in Basel with \"Wasted Love,\" triggering Austria's right to host the 70th edition.",
+      "source_ids": [
+        1,
+        4,
+        6
+      ]
+    },
+    {
+      "date": "2025-08-20",
+      "label": "Vienna confirmed as host city",
+      "status": "past",
+      "description": "The EBU and ORF announced Vienna as the host city after Vienna and Innsbruck were the only cities to submit bids.",
+      "source_ids": [
+        6
+      ]
+    },
+    {
+      "date": "2026-01-13",
+      "label": "Tickets sell out in under an hour",
+      "status": "past",
+      "description": "All nine shows — roughly 100,000 tickets — sold out in record time on the first day of sale.",
+      "source_ids": [
+        4
+      ]
+    },
+    {
+      "date": "2026-05-10",
+      "label": "Opening Ceremony & Turquoise Carpet",
+      "status": "past",
+      "description": "The Turquoise Carpet event was held at the Burgtheater, followed by the opening ceremony at Vienna City Hall. JJ performed his 2025 winning song.",
+      "source_ids": [
+        1,
+        4,
+        6
+      ]
+    },
+    {
+      "date": "2026-05-12",
+      "label": "Semi-final 1",
+      "status": "past",
+      "description": "First live show at the Wiener Stadthalle, 21:00 CEST.",
+      "source_ids": [
+        1,
+        3,
+        5,
+        6
+      ]
+    },
+    {
+      "date": "2026-05-16",
+      "label": "Grand Final — Bulgaria wins",
+      "status": "past",
+      "description": "DARA's \"Bangaranga\" wins both the jury vote and televote, giving Bulgaria its first Eurovision victory by a record margin.",
+      "source_ids": [
+        2,
+        6
+      ]
+    }
+  ],
+  "why_it_matters": "The 70th anniversary edition was a landmark moment for the contest, producing Bulgaria's first-ever winner and the highest winning margin in Eurovision history. Five countries staged the largest boycott since 1970 over Israel's participation, reflecting how the geopolitical tensions around the Gaza conflict have increasingly spilled into the contest. The record sell-out speed and Vienna's city-wide programming underline Eurovision's growing status as one of the world's biggest live entertainment events.",
+  "extras": {
+    "kind": "show",
+    "venue": "Wiener Stadthalle, Vienna, Austria",
+    "dates": "May 12–16, 2026",
+    "lineup_or_participants": [
+      "Bulgaria — DARA: \"Bangaranga\" (Winner)",
+      "Israel (2nd place)",
+      "Romania — Alexandra Căpitănescu: \"Choke Me\" (3rd place)",
+      "Australia — Delta Goodrem (4th place)",
+      "Italy (5th place)",
+      "Denmark — Søren Torpegaard Lund (7th place)",
+      "Interval act: Alexander Rybak, Erika Vikman, Kristian Kostov, Lordi, Max Mutzke, Miriana Conte, Ruslana, Verka Seduchka"
+    ],
+    "results": "Bulgaria won with \"Bangaranga\" by DARA, topping both the jury vote and televote by a record 173-point margin. Top 5: Bulgaria, Israel, Romania, Australia, Italy.",
+    "how_to_watch": "Broadcast live by participating national broadcasters. Public screenings were held at Eurovision Village (Rathausplatz, May 10–17) and EuroClub (Prater Dome, May 11–16)."
+  },
+  "entities": [
+    {
+      "name": "Vienna",
+      "role": "Host city — third time hosting Eurovision, after 1967 and 2015"
+    },
+    {
+      "name": "Wiener Stadthalle",
+      "role": "Host venue — largest indoor arena in Austria, capacity 16,152"
+    },
+    {
+      "name": "DARA (Bulgaria)",
+      "role": "Winner — performed \"Bangaranga\" to claim Bulgaria's first Eurovision victory"
+    },
+    {
+      "name": "JJ (Johannes Pietsch)",
+      "role": "2025 winner whose victory for Austria brought the contest to Vienna"
+    },
+    {
+      "name": "Victoria Swarovski",
+      "role": "Co-host of all three live shows"
+    },
+    {
+      "name": "Michael Ostrowski",
+      "role": "Co-host of all three live shows"
+    },
+    {
+      "name": "Emily Busvine",
+      "role": "Green room host"
+    },
+    {
+      "name": "ORF (Österreichischer Rundfunk)",
+      "role": "Host broadcaster"
+    },
+    {
+      "name": "European Broadcasting Union (EBU)",
+      "role": "Organiser of the Eurovision Song Contest"
+    },
+    {
+      "name": "Delta Goodrem",
+      "role": "Represented Australia, finishing 4th — country's best result since 2016"
+    },
+    {
+      "name": "Alexandra Căpitănescu",
+      "role": "Represented Romania with \"Choke Me,\" finishing 3rd"
+    }
+  ],
+  "whats_next": [
+    "Bulgaria, as the 2026 winner, earns the right to host — or delegate hosting of — Eurovision 2027.",
+    "ORF and BNT (Bulgarian National Television) will begin discussions on the 2027 host city and venue selection.",
+    "The five boycotting countries (Iceland, Ireland, Netherlands, Slovenia, Spain) will decide whether to return for Eurovision 2027.",
+    "EBU may revisit participation rules regarding Israel following the historic five-country boycott."
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "url": "https://www.viennasightseeing.at/en/service/more-vienna/2026-eurovision-song-contest-in-vienna-what-visitors-need-to-know",
+      "title": "2026 Eurovision Song Contest in Vienna: What Visitors Need to Know",
+      "sitename": "viennasightseeing.at",
+      "date": "2026-05-16"
+    },
+    {
+      "id": 2,
+      "url": "https://www.eurovision.com/eurovision-song-contest/vienna-2026/",
+      "title": "Eurofans need cookies! (Vienna 2026)",
+      "sitename": "eurovision.com",
+      "date": "2026-05-12"
+    },
+    {
+      "id": 3,
+      "url": "https://eurovisionworld.com/eurovision/2026/event",
+      "title": "Eurovision Song Contest 2026: Vienna",
+      "sitename": "eurovisionworld.com",
+      "date": "2026-05-05"
+    },
+    {
+      "id": 4,
+      "url": "https://www.timeout.com/vienna/things-to-do/eurovision-guide",
+      "title": "Eurovision in Vienna 2026: our complete guide",
+      "sitename": "timeout.com",
+      "date": "2026-04-22"
+    },
+    {
+      "id": 5,
+      "url": "https://www.wien.info/en/now-on/eurovision-song-contest/esc-2026-wien-966540",
+      "title": "70th Eurovision Song Contest 2026 in Vienna",
+      "sitename": "wien.info",
+      "date": "2025-08-20"
+    },
+    {
+      "id": 6,
+      "url": "https://en.wikipedia.org/wiki/Eurovision_Song_Contest_2026",
+      "title": "Eurovision Song Contest 2026 - Wikipedia",
+      "sitename": "wikipedia.org",
+      "date": "2025-05-17"
+    }
+  ],
+  "freshness_note": "Evidence gathered on 2026-06-12; final results and top-5 placings are confirmed, but detailed points breakdowns and post-contest announcements (e.g., 2027 host selection) may have occurred since.",
+  "schema_version": "1.0"
+}

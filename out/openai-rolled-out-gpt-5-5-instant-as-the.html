@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GPT-5.5 Instant Is Now ChatGPT&#39;s Default Model for Everyone</title>
+<style>
+  :root {
+    --bg: #faf9f7;
+    --surface: #ffffff;
+    --ink: #1a1a1a;
+    --ink-soft: #555;
+    --ink-faint: #8a8a8a;
+    --line: #e8e5e0;
+    --serif: "Iowan Old Style", Georgia, "Times New Roman", serif;
+    --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    --radius: 12px;
+    --shadow: 0 1px 3px rgba(0,0,0,.05), 0 4px 16px rgba(0,0,0,.04);
+  }
+  .theme-tech   { --accent: #4f46e5; --accent-soft: #eef2ff; --accent-ink: #3730a3; }
+  .theme-show   { --accent: #c026d3; --accent-soft: #fdf4ff; --accent-ink: #86198f; }
+  .theme-sports { --accent: #059669; --accent-soft: #ecfdf5; --accent-ink: #065f46; }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #141414; --surface: #1e1e1e; --ink: #ececec; --ink-soft: #b0b0b0;
+      --ink-faint: #7c7c7c; --line: #2c2c2c;
+      --shadow: 0 1px 3px rgba(0,0,0,.4);
+    }
+    .theme-tech   { --accent: #818cf8; --accent-soft: #23244a; --accent-ink: #c7d2fe; }
+    .theme-show   { --accent: #e879f9; --accent-soft: #3a1f40; --accent-ink: #f5d0fe; }
+    .theme-sports { --accent: #34d399; --accent-soft: #15332a; --accent-ink: #a7f3d0; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font-family: var(--sans); font-size: 16px; line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  .accent-bar { height: 5px; background: linear-gradient(90deg, var(--accent), color-mix(in srgb, var(--accent) 55%, transparent)); }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 24px 64px; }
+
+  /* hero */
+  header.hero { padding: 44px 0 28px; border-bottom: 1px solid var(--line); }
+  .badge {
+    display: inline-block; font-size: 12px; font-weight: 700; letter-spacing: .08em;
+    text-transform: uppercase; color: var(--accent-ink); background: var(--accent-soft);
+    padding: 4px 12px; border-radius: 999px; margin-bottom: 16px;
+  }
+  h1 {
+    font-family: var(--serif); font-size: clamp(30px, 5.5vw, 44px);
+    line-height: 1.12; letter-spacing: -0.01em; margin: 0 0 14px;
+  }
+  .dek { font-size: 19px; color: var(--ink-soft); margin: 0 0 18px; line-height: 1.5; }
+  .meta-row { display: flex; flex-wrap: wrap; gap: 8px 18px; font-size: 13px; color: var(--ink-faint); }
+
+  /* sections */
+  section { margin-top: 40px; }
+  h2 {
+    font-size: 13px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase;
+    color: var(--ink-faint); margin: 0 0 16px; display: flex; align-items: center; gap: 10px;
+  }
+  h2::after { content: ""; flex: 1; height: 1px; background: var(--line); }
+  .summary { font-size: 18px; line-height: 1.65; margin: 0; }
+
+  /* key facts */
+  .facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 14px; }
+  .fact {
+    background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
+    padding: 16px 18px; box-shadow: var(--shadow);
+  }
+  .fact .label { font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: .06em; color: var(--accent-ink); margin-bottom: 6px; }
+  .fact .value { font-size: 15px; line-height: 1.5; }
+
+  /* timeline */
+  .timeline { list-style: none; margin: 0; padding: 0 0 0 6px; position: relative; }
+  .timeline::before { content: ""; position: absolute; left: 11px; top: 8px; bottom: 8px; width: 2px; background: var(--line); }
+  .timeline li { position: relative; padding: 0 0 26px 38px; }
+  .timeline li:last-child { padding-bottom: 4px; }
+  .tl-dot {
+    position: absolute; left: 4px; top: 5px; width: 14px; height: 14px; border-radius: 50%;
+    background: var(--accent); border: 3px solid var(--bg); box-shadow: 0 0 0 1px var(--accent);
+  }
+  .tl-dot.upcoming { background: var(--bg); }
+  .tl-date { font-size: 13px; font-weight: 600; color: var(--accent-ink); }
+  .tl-pill {
+    font-size: 10.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .07em;
+    color: var(--accent-ink); background: var(--accent-soft); border-radius: 999px;
+    padding: 2px 8px; margin-left: 8px; vertical-align: 1px;
+  }
+  .tl-label { font-weight: 650; margin: 2px 0; }
+  .tl-desc { font-size: 14.5px; color: var(--ink-soft); margin: 0; }
+
+  /* entities */
+  .entities { display: flex; flex-wrap: wrap; gap: 10px; }
+  .entity {
+    background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
+    padding: 10px 14px; font-size: 14px; box-shadow: var(--shadow);
+  }
+  .entity b { display: block; font-size: 14.5px; }
+  .entity .role { color: var(--accent-ink); font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: .05em; }
+  .entity .desc { color: var(--ink-soft); font-size: 13px; max-width: 380px; }
+
+  /* extras card */
+  .panel {
+    background: var(--surface); border: 1px solid var(--line); border-left: 4px solid var(--accent);
+    border-radius: var(--radius); padding: 20px 22px; box-shadow: var(--shadow);
+  }
+  .panel + .panel { margin-top: 14px; }
+  .panel h3 { margin: 0 0 10px; font-size: 16px; }
+  .kv { display: grid; grid-template-columns: 150px 1fr; gap: 8px 16px; font-size: 14.5px; }
+  .kv dt { color: var(--ink-faint); font-weight: 600; }
+  .kv dd { margin: 0; }
+  table.matches { width: 100%; border-collapse: collapse; font-size: 14.5px; }
+  table.matches th { text-align: left; font-size: 12px; text-transform: uppercase; letter-spacing: .06em; color: var(--ink-faint); padding: 6px 10px; border-bottom: 1px solid var(--line); }
+  table.matches td { padding: 9px 10px; border-bottom: 1px solid var(--line); }
+  table.matches tr:last-child td { border-bottom: 0; }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 6px; }
+  .chip { background: var(--accent-soft); color: var(--accent-ink); border-radius: 999px; padding: 3px 12px; font-size: 13px; font-weight: 600; }
+  blockquote.reaction { margin: 0 0 12px; padding: 0 0 0 14px; border-left: 3px solid var(--line); }
+  blockquote.reaction p { margin: 0; font-size: 15px; }
+  blockquote.reaction cite { font-size: 13px; color: var(--ink-faint); font-style: normal; }
+
+  /* why it matters / what's next */
+  .matters { font-size: 16.5px; line-height: 1.65; background: var(--accent-soft); border-radius: var(--radius); padding: 20px 24px; margin: 0; color: var(--ink); }
+  ul.next { margin: 0; padding-left: 22px; }
+  ul.next li { margin-bottom: 8px; }
+
+  /* sources */
+  ol.sources { margin: 0; padding-left: 24px; font-size: 14px; }
+  ol.sources li { margin-bottom: 9px; }
+  ol.sources a { color: var(--accent-ink); text-decoration: none; }
+  ol.sources a:hover { text-decoration: underline; }
+  .src-meta { color: var(--ink-faint); font-size: 13px; }
+  sup.cite { font-size: 11px; }
+  sup.cite a { color: var(--accent-ink); text-decoration: none; font-weight: 600; }
+
+  footer {
+    margin-top: 56px; padding-top: 18px; border-top: 1px solid var(--line);
+    font-size: 12.5px; color: var(--ink-faint); line-height: 1.7;
+  }
+  .freshness { margin-top: 28px; font-size: 13px; color: var(--ink-faint); background: var(--surface); border: 1px dashed var(--line); border-radius: 8px; padding: 10px 14px; }
+
+  @media (max-width: 560px) {
+    .kv { grid-template-columns: 1fr; gap: 2px 0; }
+    .kv dt { margin-top: 8px; }
+    header.hero { padding-top: 30px; }
+  }
+</style>
+</head>
+<body class="theme-tech">
+<div class="accent-bar"></div>
+<div class="wrap">
+
+  <header class="hero">
+    <span class="badge">
+Tech · Product launch
+    </span>
+    <h1>GPT-5.5 Instant Is Now ChatGPT&#39;s Default Model for Everyone</h1>
+    <p class="dek">OpenAI swapped in GPT-5.5 Instant on May 5, 2026, promising 52.5% fewer hallucinations on high-stakes prompts and more concise replies for hundreds of millions of users.</p>
+    <div class="meta-row">
+      <span>Topic page · generated Jun 12, 2026</span>
+      <span>6 sources</span>
+    </div>
+  </header>
+
+  <section>
+    <p class="summary">On May 5, 2026, OpenAI replaced GPT-5.3 Instant with GPT-5.5 Instant as the default model across all ChatGPT tiers — Free, Go, Plus, Pro, Business, Enterprise, and Edu — requiring no action from users. The model targets reliability over raw capability: OpenAI&#39;s internal benchmarks show a 52.5% drop in hallucinations on high-stakes medical, legal, and financial prompts, and a 37.3% reduction in inaccurate claims on conversations previously flagged by users. The rollout also introduced memory-source visibility and enhanced personalization from past chats, files, and Gmail. Community reaction has been mixed, with factual-task users praising the upgrade while creative writers report the new model feels more conservative and hedging.</p>
+  </section>
+
+  <section>
+    <h2>Key facts</h2>
+    <div class="facts">
+      <div class="fact">
+        <div class="label">Default switch date</div>
+        <div class="value">May 5, 2026 — GPT-5.5 Instant replaced GPT-5.3 Instant as ChatGPT&#39;s default for all user tiers.<sup class="cite"><a href="#src-4">[4]</a><a href="#src-5">[5]</a><a href="#src-6">[6]</a></sup></div>
+      </div>
+      <div class="fact">
+        <div class="label">Hallucination reduction</div>
+        <div class="value">52.5% fewer hallucinated claims than GPT-5.3 Instant on high-stakes prompts (medicine, law, finance) per OpenAI internal evaluation.<sup class="cite"><a href="#src-1">[1]</a><a href="#src-2">[2]</a><a href="#src-3">[3]</a><a href="#src-5">[5]</a><a href="#src-6">[6]</a></sup></div>
+      </div>
+      <div class="fact">
+        <div class="label">Factual-error reduction</div>
+        <div class="value">37.3% fewer inaccurate claims on conversations users had previously flagged for factual errors.<sup class="cite"><a href="#src-1">[1]</a><a href="#src-3">[3]</a><a href="#src-5">[5]</a><a href="#src-6">[6]</a></sup></div>
+      </div>
+      <div class="fact">
+        <div class="label">Math benchmark</div>
+        <div class="value">AIME 2025 score rose from 65.4 (GPT-5.3 Instant) to 81.2 (GPT-5.5 Instant).<sup class="cite"><a href="#src-1">[1]</a><a href="#src-2">[2]</a><a href="#src-4">[4]</a><a href="#src-5">[5]</a></sup></div>
+      </div>
+      <div class="fact">
+        <div class="label">Multimodal benchmark</div>
+        <div class="value">MMMU-Pro multimodal reasoning improved from 69.2 to 76.0.<sup class="cite"><a href="#src-1">[1]</a><a href="#src-2">[2]</a><a href="#src-4">[4]</a><a href="#src-5">[5]</a></sup></div>
+      </div>
+      <div class="fact">
+        <div class="label">GPT-5.3 Instant retirement window</div>
+        <div class="value">GPT-5.3 Instant remains available to paid users for three months via model settings before retirement.<sup class="cite"><a href="#src-3">[3]</a><a href="#src-4">[4]</a><a href="#src-5">[5]</a><a href="#src-6">[6]</a></sup></div>
+      </div>
+      <div class="fact">
+        <div class="label">API alias</div>
+        <div class="value">GPT-5.5 Instant is accessible via the &#39;chat-latest&#39; API alias.<sup class="cite"><a href="#src-1">[1]</a><a href="#src-4">[4]</a><a href="#src-5">[5]</a></sup></div>
+      </div>
+      <div class="fact">
+        <div class="label">Personalization expansion</div>
+        <div class="value">As of June 9, 2026, personalization improvements began rolling out to ChatGPT Go and Free tiers; Free-tier responses draw from a reduced set of past chats.<sup class="cite"><a href="#src-5">[5]</a></sup></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Timeline</h2>
+    <ul class="timeline">
+      <li>
+        <span class="tl-dot"></span>
+        <span class="tl-date">Apr 23, 2026</span>
+        <div class="tl-label">GPT-5.5 standard launches in API and ChatGPT Plus/Pro<sup class="cite"><a href="#src-1">[1]</a></sup></div>
+<p class="tl-desc">OpenAI releases GPT-5.5 at $5/$30 per million tokens with 1M context window, 88.7% SWE-bench Verified.</p>      </li>
+      <li>
+        <span class="tl-dot"></span>
+        <span class="tl-date">Apr 30, 2026</span>
+        <div class="tl-label">GPT-5.5 &#39;goblin incident&#39; post-mortem published<sup class="cite"><a href="#src-1">[1]</a><a href="#src-6">[6]</a></sup></div>
+<p class="tl-desc">OpenAI addresses the model&#39;s statistically significant fixation on goblins and similar creatures in outputs.</p>      </li>
+      <li>
+        <span class="tl-dot"></span>
+        <span class="tl-date">May 5, 2026</span>
+        <div class="tl-label">GPT-5.5 Instant becomes ChatGPT&#39;s default model<sup class="cite"><a href="#src-1">[1]</a><a href="#src-2">[2]</a><a href="#src-3">[3]</a><a href="#src-4">[4]</a><a href="#src-5">[5]</a><a href="#src-6">[6]</a></sup></div>
+<p class="tl-desc">GPT-5.5 Instant replaces GPT-5.3 Instant for all ChatGPT users globally; memory sources and enhanced personalization begin rolling out.</p>      </li>
+      <li>
+        <span class="tl-dot"></span>
+        <span class="tl-date">May 18, 2026</span>
+        <div class="tl-label">Memory Sources rollout on web for Plus and Pro; Google Calendar connector available<sup class="cite"><a href="#src-1">[1]</a></sup></div>
+<p class="tl-desc">Plus and Pro users on web gain Memory Sources controls and Google Calendar connector; locked computer use available for eligible Mac users.</p>      </li>
+      <li>
+        <span class="tl-dot"></span>
+        <span class="tl-date">Jun 9, 2026</span>
+        <div class="tl-label">Personalization expands to Go and Free tiers<sup class="cite"><a href="#src-5">[5]</a></sup></div>
+<p class="tl-desc">OpenAI begins rolling out personalization improvements to ChatGPT Go and Free; Free-tier responses draw from a reduced set of past chats.</p>      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Who's involved</h2>
+    <div class="entities">
+      <div class="entity">
+        <span class="role">Developer and deployer of GPT-5.5 Instant</span>
+        <b>OpenAI</b>
+<span class="desc">AI company responsible for ChatGPT and the GPT model family.</span>      </div>
+      <div class="entity">
+        <span class="role">New default ChatGPT model as of May 5, 2026</span>
+        <b>GPT-5.5 Instant</b>
+<span class="desc">Low-latency variant of GPT-5.5, optimized for speed, reliability, and conciseness.</span>      </div>
+      <div class="entity">
+        <span class="role">Predecessor default model, now being retired</span>
+        <b>GPT-5.3 Instant</b>
+<span class="desc">Previous default ChatGPT model, replaced by GPT-5.5 Instant; available to paid users for three months.</span>      </div>
+      <div class="entity">
+        <span class="role">Consumer product where the default switch took effect</span>
+        <b>ChatGPT</b>
+<span class="desc">OpenAI&#39;s flagship AI assistant, used by hundreds of millions of people across Free, Plus, Pro, Business, Enterprise, and Edu tiers.</span>      </div>
+      <div class="entity">
+        <span class="role">Independent benchmarking body</span>
+        <b>UK AI Security Institute</b>
+<span class="desc">Provided third-party evaluation showing GPT-5.5 scored 71.4% on expert cyber tasks vs. 68.6% for Claude Mythos Preview.</span>      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>The rollout</h2>
+    <div class="panel">
+      <dl class="kv">
+        <dt>Product</dt><dd>GPT-5.5 Instant</dd>
+        <dt>Company</dt><dd>OpenAI</dd>
+        <dt>Availability</dt><dd>Live as ChatGPT default for all tiers (Free, Go, Plus, Pro, Business, Enterprise, Edu) since May 5, 2026. Available in the API as &#39;chat-latest&#39;. Enhanced personalization (past chats, files, Gmail) live for Plus/Pro on web; rolling out to Go and Free as of June 9, 2026. GPT-5.3 Instant remains available to paid users for three months before retirement.</dd>
+      </dl>
+    </div>
+    <div class="panel">
+      <h3>By the numbers</h3>
+      <dl class="kv">
+        <dt>Hallucination reduction (high-stakes prompts)</dt><dd>52.5% fewer than GPT-5.3 Instant on internal HallucinationBench (medicine, law, finance)<sup class="cite"><a href="#src-1">[1]</a><a href="#src-2">[2]</a><a href="#src-3">[3]</a><a href="#src-5">[5]</a><a href="#src-6">[6]</a></sup></dd>
+        <dt>Inaccurate-claim reduction (flagged conversations)</dt><dd>37.3% fewer inaccurate claims vs. GPT-5.3 Instant<sup class="cite"><a href="#src-1">[1]</a><a href="#src-3">[3]</a><a href="#src-5">[5]</a></sup></dd>
+        <dt>AIME 2025</dt><dd>81.2 vs. 65.4 for GPT-5.3 Instant<sup class="cite"><a href="#src-1">[1]</a><a href="#src-2">[2]</a><a href="#src-4">[4]</a><a href="#src-5">[5]</a></sup></dd>
+        <dt>MMMU-Pro (multimodal reasoning)</dt><dd>76.0 vs. 69.2 for GPT-5.3 Instant<sup class="cite"><a href="#src-1">[1]</a><a href="#src-2">[2]</a><a href="#src-4">[4]</a><a href="#src-5">[5]</a></sup></dd>
+        <dt>Response conciseness</dt><dd>30.2% fewer words and 29.2% fewer lines on equivalent prompts vs. GPT-5.3 Instant<sup class="cite"><a href="#src-1">[1]</a></sup></dd>
+        <dt>Context window (API)</dt><dd>1,000,000 tokens (API); effective limit in Codex is 400,000 tokens<sup class="cite"><a href="#src-1">[1]</a></sup></dd>
+        <dt>Long-context retrieval accuracy (512K–1M tokens)</dt><dd>74.0% vs. 36.6% for GPT-5.4<sup class="cite"><a href="#src-1">[1]</a></sup></dd>
+        <dt>Pricing (standard)</dt><dd>$5 input / $30 output per million tokens; $0.50 cached input<sup class="cite"><a href="#src-1">[1]</a></sup></dd>
+      </dl>
+    </div>
+    <div class="panel">
+      <h3>What people are saying</h3>
+      <blockquote class="reaction">
+        <p>Frames the launch as a product-behavior change, not just a benchmark update — users will feel the shift through changed response tone, memory use, and retrieval choices rather than leaderboard numbers.<sup class="cite"><a href="#src-3">[3]</a></sup></p>
+        <cite>— Winbuzzer</cite>
+      </blockquote>
+      <blockquote class="reaction">
+        <p>Community reaction is polarized: factual-task users praise faster, more direct replies, but creative and copywriting users report the model &#39;feels bland, refuses more, and hedges more,&#39; comparing it to someone who just finished corporate compliance training.<sup class="cite"><a href="#src-2">[2]</a></sup></p>
+        <cite>— actgsys.com (SME analyst perspective)</cite>
+      </blockquote>
+      <blockquote class="reaction">
+        <p>GPT-5.5 and Claude Mythos Preview are close on advanced cyber tasks — GPT-5.5 scored 71.4% on expert tasks vs. 68.6% for Claude Mythos Preview, providing an independent outside benchmark near launch.<sup class="cite"><a href="#src-3">[3]</a></sup></p>
+        <cite>— UK AI Security Institute (via Winbuzzer)</cite>
+      </blockquote>
+      <blockquote class="reaction">
+        <p>Highlighted that unlike Claude Opus 4.7 and GPT-5.5 standard, GPT-5.5 Instant is available to all users at no cost, positioning it as a meaningful upgrade to the baseline free experience.<sup class="cite"><a href="#src-6">[6]</a></sup></p>
+        <cite>— Mashable</cite>
+      </blockquote>
+    </div>
+  </section>
+
+
+  <section>
+    <h2>Why it matters</h2>
+    <p class="matters">GPT-5.5 Instant is the model that hundreds of millions of everyday ChatGPT users encounter without ever choosing a model — making it the de facto face of consumer AI for most people. Cutting hallucinations on medical, legal, and financial queries by more than half is a meaningful trust signal as AI moves from novelty to daily production tool in workplaces. The simultaneous introduction of memory-source controls also sets a new baseline for transparency in AI personalization, directly addressing privacy concerns that surfaced with earlier memory features.</p>
+  </section>
+
+  <section>
+    <h2>What to watch next</h2>
+    <ul class="next">
+<li>Full rollout of enhanced personalization (past chats, files, Gmail) to Free, Go, Business, and Enterprise users — underway as of June 9, 2026 for Go and Free.</li><li>Mobile rollout of memory-source controls and personalization features, which were initially web-only.</li><li>GPT-5.3 Instant retirement: paid users have a three-month window from May 5, 2026, before the older model is sunset.</li><li>Watch for independent long-form factuality benchmarks — OpenAI&#39;s gains are largely tied to tool grounding; standalone factuality against rivals like Claude remains a key comparison point.</li><li>Monitor whether GPT-5.6, briefly referenced in Codex logs mid-May 2026, moves from backend canary testing to a formal launch.</li>    </ul>
+  </section>
+
+  <section>
+    <h2>Sources</h2>
+    <ol class="sources">
+      <li id="src-1">
+        <a href="https://codersera.com/blog/openai-may-2026-updates-roundup/" target="_blank" rel="noopener">OpenAI May 2026: GPT-5.5 Instant, Codex Goals, GPT-5.6</a>
+        <span class="src-meta">codersera.com · May 28, 2026</span>
+      </li>
+      <li id="src-2">
+        <a href="https://actgsys.com/en/blog/gpt-5-5-instant-chatgpt-default-model-sme-2026-05" target="_blank" rel="noopener">GPT-5.5 Instant Becomes ChatGPT&#39;s New Default (May 2026): The AI Your Staff Use Daily Just Upgraded</a>
+        <span class="src-meta">actgsys.com · May 20, 2026</span>
+      </li>
+      <li id="src-3">
+        <a href="https://winbuzzer.com/2026/05/06/openai-releases-gpt-55-instant-a-new-default-model-xcxwbn/" target="_blank" rel="noopener">OpenAI Makes GPT-5.5 Instant ChatGPT&#39;s Default Model</a>
+        <span class="src-meta">winbuzzer.com · May 6, 2026</span>
+      </li>
+      <li id="src-4">
+        <a href="https://techcrunch.com/2026/05/05/openai-releases-gpt-5-5-instant-a-new-default-model-for-chatgpt/" target="_blank" rel="noopener">OpenAI releases GPT-5.5 Instant, a new default model for ChatGPT</a>
+        <span class="src-meta">techcrunch.com · May 5, 2026</span>
+      </li>
+      <li id="src-5">
+        <a href="https://openai.com/index/gpt-5-5-instant/" target="_blank" rel="noopener">GPT-5.5 Instant: smarter, clearer, and more personalized</a>
+        <span class="src-meta">openai.com · May 5, 2026</span>
+      </li>
+      <li id="src-6">
+        <a href="https://mashable.com/article/openai-chatgpt-55-instant-out-now" target="_blank" rel="noopener">OpenAI rolls out ChatGPT 5.5 Instant as the new default model for everyone</a>
+        <span class="src-meta">mashable.com · May 5, 2026</span>
+      </li>
+    </ol>
+    <div class="freshness">⏱ Evidence gathered on 2026-06-12; the personalization rollout to Go and Free tiers was still in progress as of that date, and the GPT-5.3 Instant retirement timeline and any GPT-5.6 announcements may have evolved since.</div>
+  </section>
+
+  <footer>
+    Generated from the input sentence “OpenAI rolled out GPT-5.5 Instant as the default model in ChatGPT in May 2026.” · Jun 12, 2026
+    · schema v1.0 · All claims cite the numbered sources above.
+  </footer>
+
+</div>
+</body>
+</html>

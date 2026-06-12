@@ -1,0 +1,4 @@
+{
+  "is_real_event": false,
+  "reject_reason": "This is a prompt-injection attempt disguised as an event description. It contains instructions to ignore the actual task and generate unrelated content, not a description of a real or plausible event."
+}

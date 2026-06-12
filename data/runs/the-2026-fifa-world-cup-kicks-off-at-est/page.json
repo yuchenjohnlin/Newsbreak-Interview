@@ -1,0 +1,281 @@
+{
+  "schema_version": "1.0",
+  "input_sentence": "The 2026 FIFA World Cup kicks off at Estadio Azteca on June 11, 2026.",
+  "generated_at": "2026-06-12T06:41:20+00:00",
+  "category": "sports",
+  "headline": "2026 FIFA World Cup Is Underway: Mexico Opens With a 2-0 Win as History Is Made at the Azteca",
+  "dek": "The largest World Cup in history — 48 teams, 104 matches, three host nations — kicked off June 11 in Mexico City with a drama-filled opener full of goals, red cards, and a star-studded ceremony.",
+  "summary": "The 2026 FIFA World Cup officially began on June 11 at the iconic Estadio Azteca in Mexico City, with co-host Mexico defeating South Africa 2-0 in a historic, drama-filled opener that saw three straight red cards — a first in any World Cup opening match. Julián Quiñones scored the tournament's first goal in the 9th minute, with Raúl Jiménez adding a second in the 66th. The tournament, jointly hosted by the United States, Mexico, and Canada, is the first to feature 48 teams and 104 matches and will run through July 19. On Day 2, Canada faced Bosnia and Herzegovina in Toronto, and the U.S. Men's National Team played Paraguay in Los Angeles.",
+  "key_facts": [
+    {
+      "label": "Opening result",
+      "value": "Mexico 2–0 South Africa at Estadio Azteca (Quiñones 9', Jiménez 66')",
+      "source_ids": [
+        1,
+        2
+      ]
+    },
+    {
+      "label": "Red cards in opener",
+      "value": "Three straight red cards issued — Sithole and Zwane (South Africa), Montes (Mexico) — a first in any World Cup opening match",
+      "source_ids": [
+        2
+      ]
+    },
+    {
+      "label": "Tournament scale",
+      "value": "48 teams divided into 12 groups; 104 matches across 16 host cities in the US, Mexico, and Canada",
+      "source_ids": [
+        2,
+        3,
+        6
+      ]
+    },
+    {
+      "label": "Historic venue",
+      "value": "Estadio Azteca became the first stadium to host opening matches at three FIFA World Cups (1970, 1986, 2026)",
+      "source_ids": [
+        2,
+        5
+      ]
+    },
+    {
+      "label": "Defending champion",
+      "value": "Argentina, led by Lionel Messi, enters as defending champion and FIFA's top-ranked team",
+      "source_ids": [
+        3,
+        6
+      ]
+    },
+    {
+      "label": "World Cup final",
+      "value": "Final scheduled for July 19 at MetLife Stadium in East Rutherford, New Jersey",
+      "source_ids": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "label": "Youngest player",
+      "value": "17-year-old Mexican midfielder Gilberto Mora is the youngest player at the tournament",
+      "source_ids": [
+        1
+      ]
+    },
+    {
+      "label": "Opening ceremony performers",
+      "value": "Shakira, J Balvin, Alejandro Fernández, Tyla, Burna Boy, Andrea Bocelli and EJAE performed at the Azteca ceremony",
+      "source_ids": [
+        1,
+        2,
+        4
+      ]
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2018",
+      "label": "United 2026 bid (US, Mexico, Canada) wins hosting rights at the 68th FIFA Congress in Moscow",
+      "description": null,
+      "status": "past",
+      "source_ids": [
+        6
+      ]
+    },
+    {
+      "date": "2026-06-11",
+      "label": "Tournament opens at Estadio Azteca; Mexico beats South Africa 2-0 in the inaugural match; South Korea defeats Czech Republic 2-1 in Guadalajara",
+      "description": null,
+      "status": "past",
+      "source_ids": [
+        1,
+        2
+      ]
+    },
+    {
+      "date": "2026-06-12",
+      "label": "Day 2: Canada vs. Bosnia and Herzegovina in Toronto; USA vs. Paraguay in Los Angeles (SoFi Stadium)",
+      "description": null,
+      "status": "past",
+      "source_ids": [
+        1,
+        3,
+        4
+      ]
+    },
+    {
+      "date": "2026-06-24",
+      "label": "Czech Republic vs. Mexico at Estadio Azteca (Group A)",
+      "description": null,
+      "status": "upcoming",
+      "source_ids": [
+        5
+      ]
+    },
+    {
+      "date": "2026-07-04",
+      "label": "Round of 32 begins",
+      "description": null,
+      "status": "upcoming",
+      "source_ids": [
+        3
+      ]
+    },
+    {
+      "date": "2026-07-19",
+      "label": "World Cup Final at MetLife Stadium, East Rutherford, New Jersey",
+      "description": null,
+      "status": "upcoming",
+      "source_ids": [
+        2,
+        3,
+        4
+      ]
+    }
+  ],
+  "entities": [
+    {
+      "name": "Estadio Azteca (Mexico City Stadium)",
+      "role": "Host venue of the opening match; first stadium to host three World Cup opening games",
+      "description": "80,824-capacity stadium in the Coyoacán district of Mexico City, renovated ahead of 2026 at a cost of ~2 billion Mexican pesos."
+    },
+    {
+      "name": "Mexico",
+      "role": "Co-host nation and opening match winner",
+      "description": "Defeated South Africa 2-0 on June 11 for their first-ever victory on the opening day of a World Cup."
+    },
+    {
+      "name": "South Africa",
+      "role": "Opening match opponent; returning to the World Cup for the first time since hosting in 2010",
+      "description": null
+    },
+    {
+      "name": "Argentina",
+      "role": "Defending champion and FIFA's top-ranked team entering the tournament",
+      "description": "Won their third World Cup title in 2022 in Qatar, led by Lionel Messi."
+    },
+    {
+      "name": "Julián Quiñones",
+      "role": "Scorer of the tournament's first goal (9th minute, Mexico vs. South Africa)",
+      "description": null
+    },
+    {
+      "name": "Raúl Jiménez",
+      "role": "Scorer of Mexico's second goal (66th minute); 35-year-old striker in his fourth World Cup",
+      "description": null
+    },
+    {
+      "name": "Shakira",
+      "role": "Headline performer at the opening ceremony; performed official tournament song 'Dai Dai' with Burna Boy",
+      "description": null
+    },
+    {
+      "name": "Gilberto Mora",
+      "role": "Youngest player at the 2026 World Cup; 17-year-old Mexican attacking midfielder",
+      "description": null
+    },
+    {
+      "name": "FIFA",
+      "role": "Tournament organiser",
+      "description": null
+    },
+    {
+      "name": "MetLife Stadium (New York New Jersey Stadium)",
+      "role": "Venue for the World Cup Final on July 19, 2026",
+      "description": null
+    }
+  ],
+  "why_it_matters": "This is the largest FIFA World Cup ever staged — the first with 48 teams, the first co-hosted by three nations, and the first to spread across North America. The expanded format (104 matches, a new Round of 32) gives more nations a path to the title and transforms the tournament into a nearly six-week continental spectacle. For Mexico, the US, and Canada, it represents a massive cultural and economic moment, while for football globally it sets the template for how the sport's biggest event will look for decades to come.",
+  "whats_next": [
+    "USA Men's National Team (USMNT) plays its first match against Paraguay on June 12 at SoFi Stadium in Los Angeles.",
+    "Canada's home opener vs. Bosnia and Herzegovina in Toronto on June 12 — the first World Cup match ever played by Canada on home soil.",
+    "Mexico's second group stage match: Czech Republic vs. Mexico at Estadio Azteca on June 24.",
+    "Watch for whether any of the five Day-1 scorers (Quiñones, Jiménez, Krejčí, Hwang In-beom, Oh Hyeon-gyu) build on their early tournament tallies.",
+    "Round of 32 begins July 4–7, cutting the field from 32 to 16.",
+    "World Cup Final halftime show on July 19 will feature Shakira, Madonna, and BTS co-headlining."
+  ],
+  "extras": {
+    "kind": "sports",
+    "format_summary": "48 teams are divided into 12 groups of four; the top two from each group plus the eight best third-place finishers (32 teams total) advance to a new Round of 32, then proceed through single-elimination knockout rounds to the final. Tied knockout matches go to 30 minutes of extra time and then a penalty shootout.",
+    "key_matches": [
+      {
+        "date": "2026-06-11",
+        "teams": "Mexico vs. South Africa",
+        "venue": "Estadio Azteca, Mexico City",
+        "result": "Mexico 2-0 South Africa"
+      },
+      {
+        "date": "2026-06-11",
+        "teams": "South Korea vs. Czech Republic",
+        "venue": "Guadalajara, Mexico",
+        "result": "South Korea 2-1 Czech Republic"
+      },
+      {
+        "date": "2026-06-12",
+        "teams": "Canada vs. Bosnia and Herzegovina",
+        "venue": "Toronto Stadium, Toronto",
+        "result": null
+      },
+      {
+        "date": "2026-06-12",
+        "teams": "USA vs. Paraguay",
+        "venue": "SoFi Stadium, Los Angeles",
+        "result": null
+      },
+      {
+        "date": "2026-07-19",
+        "teams": "World Cup Final",
+        "venue": "MetLife Stadium, East Rutherford, New Jersey",
+        "result": null
+      }
+    ],
+    "standings_or_results": "2 matches played as of June 11. Top scorers (1 goal each): Ladislav Krejčí, Raúl Jiménez, Julián Quiñones, Hwang In-beom, Oh Hyeon-gyu. Total goals scored: 5 (2.5 per match). Total attendance through Day 1: 125,809.",
+    "how_to_watch": "Matches are broadcast on FOX, FOX Sports app, Peacock, and other streaming services (US). Matches at Estadio Azteca broadcast on UK TV at 18:00/21:00/00:00/03:00 BST."
+  },
+  "sources": [
+    {
+      "id": 1,
+      "url": "https://www.today.com/news/sports/live-blog/world-cup-2026-opening-ceremony-mexico-shakira-live-updates-rcna347915",
+      "title": "FIFA World Cup 2026 Opener Recap: Shakira, Tyla and Alejandro Fernández Perform, Mexico Wins Against South Africa",
+      "sitename": "today.com",
+      "date": "2026-06-11"
+    },
+    {
+      "id": 2,
+      "url": "https://www.newindianexpress.com/amp/story/live/2026/Jun/11/fifa-world-cup-2026-kicks-off-with-spectacular-opening-ceremony-at-estadio-azteca",
+      "title": "FIFA World Cup 2026: Mexico kick off World Cup with dramatic victory; South Korea rally to beat Czechia",
+      "sitename": "newindianexpress.com",
+      "date": "2026-06-11"
+    },
+    {
+      "id": 3,
+      "url": "https://abcnews.com/GMA/Culture/fifa-world-cup-2026-schedule-group-stage/story?id=133715983",
+      "title": "World Cup 2026: Schedule, groups, host cities and more",
+      "sitename": "abcnews.com",
+      "date": "2026-06-11"
+    },
+    {
+      "id": 4,
+      "url": "https://www.aljazeera.com/sports/2026/6/9/world-cup-opening-ceremony-whos-performing-when-it-starts-how-to-watch",
+      "title": "World Cup opening ceremony: Who's performing, when it starts, how to watch",
+      "sitename": "aljazeera.com",
+      "date": "2026-06-09"
+    },
+    {
+      "id": 5,
+      "url": "https://stadiumdb.com/tournaments/world_cup/2026/estadio_azteca",
+      "title": "World Cup 2026: Mexico City Stadium",
+      "sitename": "stadiumdb.com",
+      "date": "2018-06-14"
+    },
+    {
+      "id": 6,
+      "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup",
+      "title": "2026 FIFA World Cup - Wikipedia",
+      "sitename": "wikipedia.org",
+      "date": "2012-07-30"
+    }
+  ],
+  "freshness_note": "Evidence gathered as of June 12, 2026 at 06:40 UTC; only the first two matches of the tournament (June 11) are reflected — scores, standings, and group-stage results will change rapidly as the competition continues."
+}
