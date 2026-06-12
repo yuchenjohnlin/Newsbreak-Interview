@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Knicks&#39; Historic Game 4 Comeback Puts Them One Win From the Title</title>
+<style>
+  :root {
+    --bg: #faf9f7;
+    --surface: #ffffff;
+    --ink: #1a1a1a;
+    --ink-soft: #555;
+    --ink-faint: #8a8a8a;
+    --line: #e8e5e0;
+    --serif: "Iowan Old Style", Georgia, "Times New Roman", serif;
+    --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    --radius: 12px;
+    --shadow: 0 1px 3px rgba(0,0,0,.05), 0 4px 16px rgba(0,0,0,.04);
+  }
+  .theme-tech   { --accent: #4f46e5; --accent-soft: #eef2ff; --accent-ink: #3730a3; }
+  .theme-show   { --accent: #c026d3; --accent-soft: #fdf4ff; --accent-ink: #86198f; }
+  .theme-sports { --accent: #059669; --accent-soft: #ecfdf5; --accent-ink: #065f46; }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #141414; --surface: #1e1e1e; --ink: #ececec; --ink-soft: #b0b0b0;
+      --ink-faint: #7c7c7c; --line: #2c2c2c;
+      --shadow: 0 1px 3px rgba(0,0,0,.4);
+    }
+    .theme-tech   { --accent: #818cf8; --accent-soft: #23244a; --accent-ink: #c7d2fe; }
+    .theme-show   { --accent: #e879f9; --accent-soft: #3a1f40; --accent-ink: #f5d0fe; }
+    .theme-sports { --accent: #34d399; --accent-soft: #15332a; --accent-ink: #a7f3d0; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font-family: var(--sans); font-size: 16px; line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  .accent-bar { height: 5px; background: linear-gradient(90deg, var(--accent), color-mix(in srgb, var(--accent) 55%, transparent)); }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 24px 64px; }
+
+  /* hero */
+  header.hero { padding: 44px 0 28px; border-bottom: 1px solid var(--line); }
+  .badge {
+    display: inline-block; font-size: 12px; font-weight: 700; letter-spacing: .08em;
+    text-transform: uppercase; color: var(--accent-ink); background: var(--accent-soft);
+    padding: 4px 12px; border-radius: 999px; margin-bottom: 16px;
+  }
+  h1 {
+    font-family: var(--serif); font-size: clamp(30px, 5.5vw, 44px);
+    line-height: 1.12; letter-spacing: -0.01em; margin: 0 0 14px;
+  }
+  .dek { font-size: 19px; color: var(--ink-soft); margin: 0 0 18px; line-height: 1.5; }
+  .meta-row { display: flex; flex-wrap: wrap; gap: 8px 18px; font-size: 13px; color: var(--ink-faint); }
+
+  /* sections */
+  section { margin-top: 40px; }
+  h2 {
+    font-size: 13px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase;
+    color: var(--ink-faint); margin: 0 0 16px; display: flex; align-items: center; gap: 10px;
+  }
+  h2::after { content: ""; flex: 1; height: 1px; background: var(--line); }
+  .summary { font-size: 18px; line-height: 1.65; margin: 0; }
+
+  /* key facts */
+  .facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 14px; }
+  .fact {
+    background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
+    padding: 16px 18px; box-shadow: var(--shadow);
+  }
+  .fact .label { font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: .06em; color: var(--accent-ink); margin-bottom: 6px; }
+  .fact .value { font-size: 15px; line-height: 1.5; }
+
+  /* timeline */
+  .timeline { list-style: none; margin: 0; padding: 0 0 0 6px; position: relative; }
+  .timeline::before { content: ""; position: absolute; left: 11px; top: 8px; bottom: 8px; width: 2px; background: var(--line); }
+  .timeline li { position: relative; padding: 0 0 26px 38px; }
+  .timeline li:last-child { padding-bottom: 4px; }
+  .tl-dot {
+    position: absolute; left: 4px; top: 5px; width: 14px; height: 14px; border-radius: 50%;
+    background: var(--accent); border: 3px solid var(--bg); box-shadow: 0 0 0 1px var(--accent);
+  }
+  .tl-dot.upcoming { background: var(--bg); }
+  .tl-date { font-size: 13px; font-weight: 600; color: var(--accent-ink); }
+  .tl-pill {
+    font-size: 10.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .07em;
+    color: var(--accent-ink); background: var(--accent-soft); border-radius: 999px;
+    padding: 2px 8px; margin-left: 8px; vertical-align: 1px;
+  }
+  .tl-label { font-weight: 650; margin: 2px 0; }
+  .tl-desc { font-size: 14.5px; color: var(--ink-soft); margin: 0; }
+
+  /* entities */
+  .entities { display: flex; flex-wrap: wrap; gap: 10px; }
+  .entity {
+    background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
+    padding: 10px 14px; font-size: 14px; box-shadow: var(--shadow);
+  }
+  .entity b { display: block; font-size: 14.5px; }
+  .entity .role { color: var(--accent-ink); font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: .05em; }
+  .entity .desc { color: var(--ink-soft); font-size: 13px; max-width: 380px; }
+
+  /* extras card */
+  .panel {
+    background: var(--surface); border: 1px solid var(--line); border-left: 4px solid var(--accent);
+    border-radius: var(--radius); padding: 20px 22px; box-shadow: var(--shadow);
+  }
+  .panel + .panel { margin-top: 14px; }
+  .panel h3 { margin: 0 0 10px; font-size: 16px; }
+  .kv { display: grid; grid-template-columns: 150px 1fr; gap: 8px 16px; font-size: 14.5px; }
+  .kv dt { color: var(--ink-faint); font-weight: 600; }
+  .kv dd { margin: 0; }
+  table.matches { width: 100%; border-collapse: collapse; font-size: 14.5px; }
+  table.matches th { text-align: left; font-size: 12px; text-transform: uppercase; letter-spacing: .06em; color: var(--ink-faint); padding: 6px 10px; border-bottom: 1px solid var(--line); }
+  table.matches td { padding: 9px 10px; border-bottom: 1px solid var(--line); }
+  table.matches tr:last-child td { border-bottom: 0; }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 6px; }
+  .chip { background: var(--accent-soft); color: var(--accent-ink); border-radius: 999px; padding: 3px 12px; font-size: 13px; font-weight: 600; }
+  blockquote.reaction { margin: 0 0 12px; padding: 0 0 0 14px; border-left: 3px solid var(--line); }
+  blockquote.reaction p { margin: 0; font-size: 15px; }
+  blockquote.reaction cite { font-size: 13px; color: var(--ink-faint); font-style: normal; }
+
+  /* why it matters / what's next */
+  .matters { font-size: 16.5px; line-height: 1.65; background: var(--accent-soft); border-radius: var(--radius); padding: 20px 24px; margin: 0; color: var(--ink); }
+  ul.next { margin: 0; padding-left: 22px; }
+  ul.next li { margin-bottom: 8px; }
+
+  /* sources */
+  ol.sources { margin: 0; padding-left: 24px; font-size: 14px; }
+  ol.sources li { margin-bottom: 9px; }
+  ol.sources a { color: var(--accent-ink); text-decoration: none; }
+  ol.sources a:hover { text-decoration: underline; }
+  .src-meta { color: var(--ink-faint); font-size: 13px; }
+  sup.cite { font-size: 11px; }
+  sup.cite a { color: var(--accent-ink); text-decoration: none; font-weight: 600; }
+
+  footer {
+    margin-top: 56px; padding-top: 18px; border-top: 1px solid var(--line);
+    font-size: 12.5px; color: var(--ink-faint); line-height: 1.7;
+  }
+  .freshness { margin-top: 28px; font-size: 13px; color: var(--ink-faint); background: var(--surface); border: 1px dashed var(--line); border-radius: 8px; padding: 10px 14px; }
+
+  @media (max-width: 560px) {
+    .kv { grid-template-columns: 1fr; gap: 2px 0; }
+    .kv dt { margin-top: 8px; }
+    header.hero { padding-top: 30px; }
+  }
+</style>
+</head>
+<body class="theme-sports">
+<div class="accent-bar"></div>
+<div class="wrap">
+
+  <header class="hero">
+    <span class="badge">
+Sports · Tournament    </span>
+    <h1>Knicks&#39; Historic Game 4 Comeback Puts Them One Win From the Title</h1>
+    <p class="dek">OG Anunoby&#39;s tip-in with 1.2 seconds left capped the largest comeback in NBA Finals history, erasing a 29-point deficit to give New York a 3-1 series lead over San Antonio.</p>
+    <div class="meta-row">
+      <span>Topic page · generated Jun 12, 2026</span>
+      <span>5 sources</span>
+    </div>
+  </header>
+
+  <section>
+    <p class="summary">The New York Knicks defeated the San Antonio Spurs 107-106 on June 11, 2026, completing the largest comeback in NBA Finals history by overcoming a 29-point deficit. OG Anunoby tipped in a Jalen Brunson miss with 1.2 seconds remaining to seal the win at Madison Square Garden. The victory gives New York a 3-1 series lead and puts them one win away from their first NBA championship since 1973. Game 5 is scheduled for Saturday, June 14, at Frost Bank Center in San Antonio.</p>
+  </section>
+
+  <section>
+    <h2>Key facts</h2>
+    <div class="facts">
+      <div class="fact">
+        <div class="label">Comeback margin</div>
+        <div class="value">Largest in NBA Finals history — Knicks overcame a 29-point deficit (trailed 81-52 early in the 3rd quarter)<sup class="cite"><a href="#src-1">[1]</a><a href="#src-2">[2]</a><a href="#src-4">[4]</a></sup></div>
+      </div>
+      <div class="fact">
+        <div class="label">Final score</div>
+        <div class="value">Knicks 107, Spurs 106<sup class="cite"><a href="#src-1">[1]</a><a href="#src-4">[4]</a></sup></div>
+      </div>
+      <div class="fact">
+        <div class="label">Game-winner</div>
+        <div class="value">OG Anunoby tip-in of a Brunson miss with 1.2 seconds left<sup class="cite"><a href="#src-1">[1]</a><a href="#src-2">[2]</a><a href="#src-4">[4]</a></sup></div>
+      </div>
+      <div class="fact">
+        <div class="label">Series lead</div>
+        <div class="value">Knicks lead 3-1; one win from their first title since 1973<sup class="cite"><a href="#src-1">[1]</a><a href="#src-2">[2]</a><a href="#src-5">[5]</a></sup></div>
+      </div>
+      <div class="fact">
+        <div class="label">Brunson&#39;s line</div>
+        <div class="value">36 pts, 5 reb, 7 ast, 3 stl — 9 points in the 4th quarter<sup class="cite"><a href="#src-1">[1]</a><a href="#src-4">[4]</a></sup></div>
+      </div>
+      <div class="fact">
+        <div class="label">Anunoby&#39;s line</div>
+        <div class="value">33 pts (10-15 FG, 7-9 3PM), block on Fox, game-winning tip-in<sup class="cite"><a href="#src-1">[1]</a><a href="#src-3">[3]</a></sup></div>
+      </div>
+      <div class="fact">
+        <div class="label">Spurs&#39; record first half</div>
+        <div class="value">Spurs hit 14 3-pointers in the first half — an NBA Finals record for a half — and led 76-49 at the break<sup class="cite"><a href="#src-1">[1]</a><a href="#src-4">[4]</a></sup></div>
+      </div>
+      <div class="fact">
+        <div class="label">Previous Finals comeback record</div>
+        <div class="value">24 points, by the Boston Celtics vs. Lakers in 2008<sup class="cite"><a href="#src-2">[2]</a></sup></div>
+      </div>
+      <div class="fact">
+        <div class="label">TV viewership</div>
+        <div class="value">Game 3 averaged 23.8 million viewers — most-watched Finals Game 3 in 28 years<sup class="cite"><a href="#src-1">[1]</a></sup></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Timeline</h2>
+    <ul class="timeline">
+      <li>
+        <span class="tl-dot"></span>
+        <span class="tl-date">June 3, 2026</span>
+        <div class="tl-label">Series opener — Knicks win Game 1<sup class="cite"><a href="#src-5">[5]</a></sup></div>
+<p class="tl-desc">New York wins Game 1 in San Antonio, starting the first 2-0 road opening in Knicks franchise history.</p>      </li>
+      <li>
+        <span class="tl-dot"></span>
+        <span class="tl-date">Jun 7, 2026</span>
+        <div class="tl-label">Spurs avoid sweep — Game 3 win<sup class="cite"><a href="#src-1">[1]</a><a href="#src-5">[5]</a></sup></div>
+<p class="tl-desc">San Antonio wins Game 3, preventing a sweep and cutting the deficit to 2-1. Game averages 23.8 million viewers.</p>      </li>
+      <li>
+        <span class="tl-dot"></span>
+        <span class="tl-date">Jun 11, 2026</span>
+        <div class="tl-label">Game 4 — Historic 29-point comeback at MSG<sup class="cite"><a href="#src-1">[1]</a><a href="#src-2">[2]</a><a href="#src-4">[4]</a></sup></div>
+<p class="tl-desc">Trailing 81-52 in the 3rd quarter, the Knicks outscore the Spurs 58-30 in the second half. Anunoby&#39;s tip-in with 1.2 seconds left wins it 107-106.</p>      </li>
+      <li>
+        <span class="tl-dot upcoming"></span>
+        <span class="tl-date">Jun 14, 2026</span>
+<span class="tl-pill">Upcoming</span>        <div class="tl-label">Game 5 — San Antonio (8:30 ET, ABC)<sup class="cite"><a href="#src-1">[1]</a><a href="#src-4">[4]</a></sup></div>
+<p class="tl-desc">Knicks can clinch their first NBA title since 1973 at Frost Bank Center. Spurs must win to survive.</p>      </li>
+      <li>
+        <span class="tl-dot upcoming"></span>
+        <span class="tl-date">Jun 19, 2026</span>
+<span class="tl-pill">Upcoming</span>        <div class="tl-label">Possible Game 7 (if necessary)<sup class="cite"><a href="#src-5">[5]</a></sup></div>
+<p class="tl-desc">Latest possible date for the series if it goes the distance.</p>      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Who's involved</h2>
+    <div class="entities">
+      <div class="entity">
+        <span class="role">Eastern Conference champion; lead the series 3-1</span>
+        <b>New York Knicks</b>
+      </div>
+      <div class="entity">
+        <span class="role">Western Conference champion; trail 3-1</span>
+        <b>San Antonio Spurs</b>
+      </div>
+      <div class="entity">
+        <span class="role">Knicks forward; hit game-winning tip-in; series Finals MVP frontrunner (23.8 ppg)</span>
+        <b>OG Anunoby</b>
+      </div>
+      <div class="entity">
+        <span class="role">Knicks guard; 36 points in Game 4; series leader with 29.5 ppg</span>
+        <b>Jalen Brunson</b>
+      </div>
+      <div class="entity">
+        <span class="role">Spurs center; 24 pts / 13 reb in Game 4; series leader for San Antonio (27.8 ppg)</span>
+        <b>Victor Wembanyama</b>
+      </div>
+      <div class="entity">
+        <span class="role">Knicks center; 13 pts / 10 reb in Game 4 despite early foul trouble</span>
+        <b>Karl-Anthony Towns</b>
+      </div>
+      <div class="entity">
+        <span class="role">Knicks reserve guard; 8 key points off bench in the 4th-quarter comeback</span>
+        <b>Jose Alvarado</b>
+      </div>
+      <div class="entity">
+        <span class="role">Spurs rookie; 21 pts in Game 4 — youngest player to score 20+ in a Finals game</span>
+        <b>Dylan Harper</b>
+      </div>
+      <div class="entity">
+        <span class="role">Spurs guard; missed layup in final seconds that Anunoby blocked to set up game-winner</span>
+        <b>De&#39;Aaron Fox</b>
+      </div>
+      <div class="entity">
+        <span class="role">Knicks head coach; replaced Tom Thibodeau before the 2025-26 season</span>
+        <b>Mike Brown</b>
+      </div>
+      <div class="entity">
+        <span class="role">Home arena for the Knicks; site of the historic Game 4</span>
+        <b>Madison Square Garden</b>
+      </div>
+      <div class="entity">
+        <span class="role">Spurs home arena; site of Game 5</span>
+        <b>Frost Bank Center</b>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>The tournament</h2>
+    <div class="panel">
+      <dl class="kv">
+        <dt>Format</dt><dd>Best-of-seven series between the Eastern Conference champion New York Knicks and Western Conference champion San Antonio Spurs. The series runs June 3–19, 2026, with home-court advantage belonging to the Knicks.</dd>
+<dt>So far</dt><dd>New York Knicks lead series 3-1</dd><dt>How to watch</dt><dd>ABC (US broadcast); Game 5 tip-off at 8:30 ET on Saturday, June 14</dd>      </dl>
+    </div>
+    <div class="panel">
+      <h3>Key matches</h3>
+      <table class="matches">
+        <thead><tr><th>Date</th><th>Match</th><th>Venue</th><th>Result</th></tr></thead>
+        <tbody>
+          <tr>
+            <td>June 3, 2026</td>
+            <td>Spurs vs. Knicks (Game 1)</td>
+            <td>Frost Bank Center, San Antonio</td>
+            <td>Knicks win</td>
+          </tr>
+          <tr>
+            <td>~June 5, 2026</td>
+            <td>Spurs vs. Knicks (Game 2)</td>
+            <td>Frost Bank Center, San Antonio</td>
+            <td>Knicks win</td>
+          </tr>
+          <tr>
+            <td>~June 8, 2026</td>
+            <td>Knicks vs. Spurs (Game 3)</td>
+            <td>Madison Square Garden, New York</td>
+            <td>Spurs win</td>
+          </tr>
+          <tr>
+            <td>June 11, 2026</td>
+            <td>Knicks vs. Spurs (Game 4)</td>
+            <td>Madison Square Garden, New York</td>
+            <td>Knicks 107, Spurs 106 (OT comeback — Anunoby tip-in)</td>
+          </tr>
+          <tr>
+            <td>June 14, 2026</td>
+            <td>Spurs vs. Knicks (Game 5)</td>
+            <td>Frost Bank Center, San Antonio</td>
+            <td>—</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <h2>Why it matters</h2>
+    <p class="matters">The Knicks are on the brink of ending a 53-year championship drought, the longest active title drought among the NBA&#39;s marquee franchises. A Game 4 performance that defied a 0.5% historical win probability — no playoff team had ever come back from 20+ down in a Finals game — cements this as one of the most dramatic moments in NBA history. For San Antonio, blowing a 29-point lead with a generational talent in Victor Wembanyama raises urgent questions about their ability to close out games at the sport&#39;s highest level.</p>
+  </section>
+
+  <section>
+    <h2>What to watch next</h2>
+    <ul class="next">
+<li>Game 5 on Saturday, June 14 in San Antonio (8:30 ET, ABC) — Knicks can clinch their first title since 1973.</li><li>Watch whether the Spurs can replicate the same kind of historic comeback the Knicks just pulled off.</li><li>Finals MVP race: Anunoby leads but Brunson&#39;s performance in a potential closeout game could shift the vote.</li><li>If the Knicks win, monitor whether the NBA champion will receive a White House invitation given Trump&#39;s history with the league.</li><li>If the Spurs force a Game 6, the series returns to New York; a possible Game 7 would be June 19.</li>    </ul>
+  </section>
+
+  <section>
+    <h2>Sources</h2>
+    <ol class="sources">
+      <li id="src-1">
+        <a href="https://www.nba.com/news/starting-5-june-11-2026" target="_blank" rel="noopener">Starting 5: Knicks complete epic comeback in Game 4, go up 3-1 in Finals</a>
+        <span class="src-meta">nba.com · Jun 11, 2026</span>
+      </li>
+      <li id="src-2">
+        <a href="https://www.bbc.com/sport/basketball/articles/c04ylwkg67po" target="_blank" rel="noopener">NBA Finals 2026: New York Knicks beat San Antonio Spurs in record comeback</a>
+        <span class="src-meta">bbc.com · Jun 11, 2026</span>
+      </li>
+      <li id="src-3">
+        <a href="https://www.nba.com/news/finals-mvp-ladder-june-11-2026" target="_blank" rel="noopener">Finals MVP Ladder: OG Anunoby sprints to the top after Game 4 heroics</a>
+        <span class="src-meta">nba.com · Jun 11, 2026</span>
+      </li>
+      <li id="src-4">
+        <a href="https://www.nytimes.com/athletic/7349256/2026/06/10/knicks-spurs-nba-finals-game-4-score-results-takeaways/" target="_blank" rel="noopener">Knicks stage historic Game 4 comeback against Spurs, 1 win away from title</a>
+        <span class="src-meta">nytimes.com · Jun 10, 2026</span>
+      </li>
+      <li id="src-5">
+        <a href="https://en.wikipedia.org/wiki/2026_NBA_Finals" target="_blank" rel="noopener">2026 NBA Finals - Wikipedia</a>
+        <span class="src-meta">wikipedia.org · Feb 15, 2026</span>
+      </li>
+    </ol>
+    <div class="freshness">⏱ Evidence gathered at 2026-06-12T07:36:01+00:00, approximately 12 hours after Game 4; Game 5 results and any roster/injury updates that occur before tip-off on June 14 are not reflected here.</div>
+  </section>
+
+  <footer>
+    Generated from the input sentence “The New York Knicks pulled off a dramatic comeback in the NBA Finals on June 11, 2026, taking a nearly insurmountable lead.” · Jun 12, 2026
+    · schema v1.0 · All claims cite the numbered sources above.
+  </footer>
+
+</div>
+</body>
+</html>
