@@ -40,7 +40,7 @@
   .wrap { max-width: 880px; margin: 0 auto; padding: 0 24px 64px; }
 
   /* hero */
-  header.hero { padding: 44px 0 28px; border-bottom: 1px solid var(--line); }
+  header.hero { padding: 44px 0 0; }
   .badge {
     display: inline-block; font-size: 12px; font-weight: 700; letter-spacing: .08em;
     text-transform: uppercase; color: var(--accent-ink); background: var(--accent-soft);
@@ -52,17 +52,41 @@
   }
   .dek { font-size: 19px; color: var(--ink-soft); margin: 0 0 18px; line-height: 1.5; }
   .meta-row { display: flex; flex-wrap: wrap; gap: 8px 18px; font-size: 13px; color: var(--ink-faint); }
+  .hero-img { margin: 22px 0 0; }
+  .hero-img img { width: 100%; max-height: 420px; object-fit: cover; border-radius: var(--radius); box-shadow: var(--shadow); display: block; }
+  .hero-img figcaption { font-size: 12.5px; color: var(--ink-faint); margin-top: 8px; }
+
+  /* top-line stat band — the loudest facts, attached to the hero */
+  .topline {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1px;
+    background: var(--line); border: 1px solid var(--line); border-radius: var(--radius);
+    overflow: hidden; margin: 26px 0 0; box-shadow: var(--shadow);
+  }
+  .topline .cell { background: var(--surface); padding: 16px 18px 14px; }
+  .topline .value { font-family: var(--serif); font-size: 22px; font-weight: 700; line-height: 1.25; color: var(--accent-ink); }
+  .topline .label { font-size: 11.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .07em; color: var(--ink-faint); margin-top: 4px; }
 
   /* sections */
-  section { margin-top: 40px; }
+  section { margin-top: 44px; }
   h2 {
     font-size: 13px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase;
     color: var(--ink-faint); margin: 0 0 16px; display: flex; align-items: center; gap: 10px;
   }
   h2::after { content: ""; flex: 1; height: 1px; background: var(--line); }
-  .summary { font-size: 18px; line-height: 1.65; margin: 0; }
+  .summary { font-size: 18.5px; line-height: 1.65; margin: 0; font-family: var(--serif); }
 
-  /* key facts */
+  /* pull quote — the page's emotional beat */
+  .pull {
+    margin: 40px 0 0; padding: 6px 0 6px 26px; border-left: 4px solid var(--accent);
+    position: relative;
+  }
+  .pull p {
+    font-family: var(--serif); font-size: clamp(20px, 3vw, 26px); line-height: 1.4;
+    font-style: italic; margin: 0; color: var(--ink);
+  }
+  .pull cite { display: block; margin-top: 10px; font-style: normal; font-size: 14px; color: var(--accent-ink); font-weight: 600; }
+
+  /* key facts grid (the quieter details) */
   .facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 14px; }
   .fact {
     background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
@@ -120,9 +144,18 @@
   blockquote.reaction p { margin: 0; font-size: 15px; }
   blockquote.reaction cite { font-size: 13px; color: var(--ink-faint); font-style: normal; }
 
-  /* why it matters / what's next */
-  .matters { font-size: 16.5px; line-height: 1.65; background: var(--accent-soft); border-radius: var(--radius); padding: 20px 24px; margin: 0; color: var(--ink); }
-  ul.next { margin: 0; padding-left: 22px; }
+  /* closing coda: the story's ending, side by side */
+  .coda { display: grid; grid-template-columns: 1.2fr 1fr; gap: 16px; }
+  .coda .matters {
+    font-size: 16.5px; line-height: 1.65; background: var(--accent-soft);
+    border-radius: var(--radius); padding: 20px 24px; margin: 0; color: var(--ink);
+  }
+  .coda .watch {
+    background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
+    padding: 18px 22px; box-shadow: var(--shadow);
+  }
+  .coda .watch h3 { margin: 0 0 10px; font-size: 13px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-faint); }
+  ul.next { margin: 0; padding-left: 20px; font-size: 14.5px; }
   ul.next li { margin-bottom: 8px; }
 
   /* sources */
@@ -144,6 +177,7 @@
     .kv { grid-template-columns: 1fr; gap: 2px 0; }
     .kv dt { margin-top: 8px; }
     header.hero { padding-top: 30px; }
+    .coda { grid-template-columns: 1fr; }
   }
 </style>
 </head>
@@ -161,48 +195,21 @@ Culture · Live event
       <span>Topic page · generated Jun 12, 2026</span>
       <span>6 sources</span>
     </div>
+    <div class="topline">
+      <div class="cell">
+        <div class="value">1. Bulgaria, 2. Israel, 3. Romania, 4. Australia, 5. Italy<sup class="cite"><a href="#src-6">[6]</a></sup></div>
+        <div class="label">Top 5</div>
+      </div>
+    </div>
   </header>
 
   <section>
+    <h2>Where things stand</h2>
     <p class="summary">The 70th Eurovision Song Contest took place in Vienna, Austria, from May 12–16, 2026, at the Wiener Stadthalle — the city&#39;s third time hosting the event. Bulgaria&#39;s DARA won the Grand Final on May 16 with &#34;Bangaranga,&#34; topping both the jury vote and televote by a record 173-point margin over the second-place entry. The contest featured 35 participating countries, with five nations (Iceland, Ireland, the Netherlands, Slovenia, and Spain) boycotting over Israel&#39;s inclusion. Romania finished third, equaling its best-ever placement, while Australia and Italy rounded out the top five.</p>
   </section>
 
   <section>
-    <h2>Key facts</h2>
-    <div class="facts">
-      <div class="fact">
-        <div class="label">Winner</div>
-        <div class="value">Bulgaria — DARA with &#34;Bangaranga&#34;, the country&#39;s first-ever Eurovision victory<sup class="cite"><a href="#src-2">[2]</a><a href="#src-6">[6]</a></sup></div>
-      </div>
-      <div class="fact">
-        <div class="label">Winning margin</div>
-        <div class="value">Record 173-point lead over second place, surpassing Alexander Rybak&#39;s 169-point margin from Moscow 2009<sup class="cite"><a href="#src-2">[2]</a><a href="#src-6">[6]</a></sup></div>
-      </div>
-      <div class="fact">
-        <div class="label">Venue</div>
-        <div class="value">Wiener Stadthalle, Vienna — capacity 16,152, hosting Eurovision for the second time after 2015<sup class="cite"><a href="#src-3">[3]</a><a href="#src-6">[6]</a></sup></div>
-      </div>
-      <div class="fact">
-        <div class="label">Hosts</div>
-        <div class="value">Victoria Swarovski and Michael Ostrowski; Emily Busvine in the green room<sup class="cite"><a href="#src-1">[1]</a><a href="#src-6">[6]</a></sup></div>
-      </div>
-      <div class="fact">
-        <div class="label">Participants</div>
-        <div class="value">35 countries — the fewest since 2003 — with 5 boycotting over Israel&#39;s inclusion<sup class="cite"><a href="#src-2">[2]</a><a href="#src-6">[6]</a></sup></div>
-      </div>
-      <div class="fact">
-        <div class="label">Top 5</div>
-        <div class="value">1. Bulgaria, 2. Israel, 3. Romania, 4. Australia, 5. Italy<sup class="cite"><a href="#src-6">[6]</a></sup></div>
-      </div>
-      <div class="fact">
-        <div class="label">Ticket sales</div>
-        <div class="value">All ~100,000 tickets across nine shows sold out in under an hour on January 13, 2026<sup class="cite"><a href="#src-4">[4]</a></sup></div>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <h2>Timeline</h2>
+    <h2>How it unfolded</h2>
     <ul class="timeline">
       <li>
         <span class="tl-dot"></span>
@@ -236,6 +243,50 @@ Culture · Live event
 <p class="tl-desc">DARA&#39;s &#34;Bangaranga&#34; wins both the jury vote and televote, giving Bulgaria its first Eurovision victory by a record margin.</p>      </li>
     </ul>
   </section>
+
+  <section>
+    <h2>The details</h2>
+    <div class="facts">
+      <div class="fact">
+        <div class="label">Winner</div>
+        <div class="value">Bulgaria — DARA with &#34;Bangaranga&#34;, the country&#39;s first-ever Eurovision victory<sup class="cite"><a href="#src-2">[2]</a><a href="#src-6">[6]</a></sup></div>
+      </div>
+      <div class="fact">
+        <div class="label">Winning margin</div>
+        <div class="value">Record 173-point lead over second place, surpassing Alexander Rybak&#39;s 169-point margin from Moscow 2009<sup class="cite"><a href="#src-2">[2]</a><a href="#src-6">[6]</a></sup></div>
+      </div>
+      <div class="fact">
+        <div class="label">Venue</div>
+        <div class="value">Wiener Stadthalle, Vienna — capacity 16,152, hosting Eurovision for the second time after 2015<sup class="cite"><a href="#src-3">[3]</a><a href="#src-6">[6]</a></sup></div>
+      </div>
+      <div class="fact">
+        <div class="label">Hosts</div>
+        <div class="value">Victoria Swarovski and Michael Ostrowski; Emily Busvine in the green room<sup class="cite"><a href="#src-1">[1]</a><a href="#src-6">[6]</a></sup></div>
+      </div>
+      <div class="fact">
+        <div class="label">Participants</div>
+        <div class="value">35 countries — the fewest since 2003 — with 5 boycotting over Israel&#39;s inclusion<sup class="cite"><a href="#src-2">[2]</a><a href="#src-6">[6]</a></sup></div>
+      </div>
+      <div class="fact">
+        <div class="label">Ticket sales</div>
+        <div class="value">All ~100,000 tickets across nine shows sold out in under an hour on January 13, 2026<sup class="cite"><a href="#src-4">[4]</a></sup></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>The event</h2>
+    <div class="panel">
+      <dl class="kv">
+        <dt>Venue</dt><dd>Wiener Stadthalle, Vienna, Austria</dd>
+        <dt>Dates</dt><dd>May 12–16, 2026</dd>
+<dt>Result</dt><dd>Bulgaria won with &#34;Bangaranga&#34; by DARA, topping both the jury vote and televote by a record 173-point margin. Top 5: Bulgaria, Israel, Romania, Australia, Italy.</dd><dt>How to watch</dt><dd>Broadcast live by participating national broadcasters. Public screenings were held at Eurovision Village (Rathausplatz, May 10–17) and EuroClub (Prater Dome, May 11–16).</dd>      </dl>
+      <h3 style="margin-top:16px">Lineup &amp; participants</h3>
+      <div class="chips">
+<span class="chip">Bulgaria — DARA: &#34;Bangaranga&#34; (Winner)</span><span class="chip">Israel (2nd place)</span><span class="chip">Romania — Alexandra Căpitănescu: &#34;Choke Me&#34; (3rd place)</span><span class="chip">Australia — Delta Goodrem (4th place)</span><span class="chip">Italy (5th place)</span><span class="chip">Denmark — Søren Torpegaard Lund (7th place)</span><span class="chip">Interval act: Alexander Rybak, Erika Vikman, Kristian Kostov, Lordi, Max Mutzke, Miriana Conte, Ruslana, Verka Seduchka</span>      </div>
+    </div>
+  </section>
+
 
   <section>
     <h2>Who's involved</h2>
@@ -287,29 +338,17 @@ Culture · Live event
     </div>
   </section>
 
+
   <section>
-    <h2>The event</h2>
-    <div class="panel">
-      <dl class="kv">
-        <dt>Venue</dt><dd>Wiener Stadthalle, Vienna, Austria</dd>
-        <dt>Dates</dt><dd>May 12–16, 2026</dd>
-<dt>Result</dt><dd>Bulgaria won with &#34;Bangaranga&#34; by DARA, topping both the jury vote and televote by a record 173-point margin. Top 5: Bulgaria, Israel, Romania, Australia, Italy.</dd><dt>How to watch</dt><dd>Broadcast live by participating national broadcasters. Public screenings were held at Eurovision Village (Rathausplatz, May 10–17) and EuroClub (Prater Dome, May 11–16).</dd>      </dl>
-      <h3 style="margin-top:16px">Lineup &amp; participants</h3>
-      <div class="chips">
-<span class="chip">Bulgaria — DARA: &#34;Bangaranga&#34; (Winner)</span><span class="chip">Israel (2nd place)</span><span class="chip">Romania — Alexandra Căpitănescu: &#34;Choke Me&#34; (3rd place)</span><span class="chip">Australia — Delta Goodrem (4th place)</span><span class="chip">Italy (5th place)</span><span class="chip">Denmark — Søren Torpegaard Lund (7th place)</span><span class="chip">Interval act: Alexander Rybak, Erika Vikman, Kristian Kostov, Lordi, Max Mutzke, Miriana Conte, Ruslana, Verka Seduchka</span>      </div>
+    <h2>The bigger picture</h2>
+    <div class="coda">
+      <p class="matters">The 70th anniversary edition was a landmark moment for the contest, producing Bulgaria&#39;s first-ever winner and the highest winning margin in Eurovision history. Five countries staged the largest boycott since 1970 over Israel&#39;s participation, reflecting how the geopolitical tensions around the Gaza conflict have increasingly spilled into the contest. The record sell-out speed and Vienna&#39;s city-wide programming underline Eurovision&#39;s growing status as one of the world&#39;s biggest live entertainment events.</p>
+      <div class="watch">
+        <h3>What to watch</h3>
+        <ul class="next">
+<li>Bulgaria, as the 2026 winner, earns the right to host — or delegate hosting of — Eurovision 2027.</li><li>ORF and BNT (Bulgarian National Television) will begin discussions on the 2027 host city and venue selection.</li><li>The five boycotting countries (Iceland, Ireland, Netherlands, Slovenia, Spain) will decide whether to return for Eurovision 2027.</li><li>EBU may revisit participation rules regarding Israel following the historic five-country boycott.</li>        </ul>
+      </div>
     </div>
-  </section>
-
-
-  <section>
-    <h2>Why it matters</h2>
-    <p class="matters">The 70th anniversary edition was a landmark moment for the contest, producing Bulgaria&#39;s first-ever winner and the highest winning margin in Eurovision history. Five countries staged the largest boycott since 1970 over Israel&#39;s participation, reflecting how the geopolitical tensions around the Gaza conflict have increasingly spilled into the contest. The record sell-out speed and Vienna&#39;s city-wide programming underline Eurovision&#39;s growing status as one of the world&#39;s biggest live entertainment events.</p>
-  </section>
-
-  <section>
-    <h2>What to watch next</h2>
-    <ul class="next">
-<li>Bulgaria, as the 2026 winner, earns the right to host — or delegate hosting of — Eurovision 2027.</li><li>ORF and BNT (Bulgarian National Television) will begin discussions on the 2027 host city and venue selection.</li><li>The five boycotting countries (Iceland, Ireland, Netherlands, Slovenia, Spain) will decide whether to return for Eurovision 2027.</li><li>EBU may revisit participation rules regarding Israel following the historic five-country boycott.</li>    </ul>
   </section>
 
   <section>

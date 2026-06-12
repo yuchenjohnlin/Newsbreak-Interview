@@ -1,0 +1,360 @@
+{
+  "schema_version": "1.0",
+  "input_sentence": "Anthropic released a new Claude model with major performance gains.",
+  "generated_at": "2026-06-12T11:40:08+00:00",
+  "category": "tech",
+  "headline": "Anthropic Launches Claude Fable 5 and Mythos 5 with Sweeping Performance Leaps",
+  "dek": "Fable 5 claims state-of-the-art across coding, vision, and scientific research, while Mythos 5 extends AI into autonomous drug design and genomics — both at half the price of the previous Mythos Preview.",
+  "hero_image": {
+    "url": "https://imgs.search.brave.com/qsg_0UNyRvUK29JV8jA1gdIGxreQu1SyZ1X3t1-osAw/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/c2FuaXR5LmlvL2lt/YWdlcy80enJ6b3Zi/Yi93ZWJzaXRlL2I3/MDU1MTE5NDIzNDI3/YzQwYTBlNGQ4NDA1/NGFlZDE3NjgyYjUw/YTItMjg4MHgxNjIw/LnBuZw",
+    "caption": "Anthropic's official announcement of Claude Fable 5 and Claude Mythos 5, published June 9, 2026.",
+    "credit_source_id": 4
+  },
+  "summary": "Anthropic launched Claude Fable 5 and Claude Mythos 5 on June 9, 2026, marking the first public release of a Mythos-class model. Fable 5 is available to Pro, Max, Team, and Enterprise users and tops nearly every benchmark Anthropic tested, while Mythos 5 — sharing the same underlying model but with fewer safety restrictions — is reserved for roughly 200 approved institutions via Project Glasswing. On the SWE-Bench Pro software engineering benchmark, Fable 5 scores 80.3%, well ahead of rivals GPT-5.5 (58.6%) and Gemini 3.1 Pro (54.2%). Both models are priced at $10 per million input tokens and $50 per million output tokens — less than half the cost of Claude Mythos Preview.",
+  "key_facts": [
+    {
+      "label": "SWE-Bench Pro score (Fable 5)",
+      "value": "80.3%, vs. Claude Opus 4.8 at 69.2%, GPT-5.5 at 58.6%, and Gemini 3.1 Pro at 54.2%",
+      "source_ids": [
+        1,
+        4
+      ]
+    },
+    {
+      "label": "FrontierCode score (Fable 5)",
+      "value": "29.3%, vs. Claude Opus 4.8 at 13.4% and GPT-5.5 at 5.7%",
+      "source_ids": [
+        1,
+        4
+      ]
+    },
+    {
+      "label": "Pricing",
+      "value": "$10/M input tokens and $50/M output tokens — less than half the price of Claude Mythos Preview",
+      "source_ids": [
+        1,
+        2,
+        4
+      ]
+    },
+    {
+      "label": "ExploitBench (cybersecurity) score — Mythos 5",
+      "value": "78%, up from 69% for Mythos Preview and 40% for Opus 4.8",
+      "source_ids": [
+        1
+      ]
+    },
+    {
+      "label": "Drug design acceleration",
+      "value": "Mythos 5 sped up parts of the drug design process ~10×; 9 of 14 protein targets yielded strong drug design candidates",
+      "source_ids": [
+        1,
+        4
+      ]
+    },
+    {
+      "label": "Real-world coding case (Stripe)",
+      "value": "Fable 5 compressed months of engineering work into days; completed a 50M-line Ruby codebase migration in one day that would have taken a full team over two months",
+      "source_ids": [
+        1,
+        2,
+        4
+      ]
+    },
+    {
+      "label": "Mythos 5 scientific hypotheses",
+      "value": "Mythos 5 molecular biology hypotheses preferred over Opus-class models ~80% of the time in blinded comparisons; one E. coli hypothesis corroborated by an independent study",
+      "source_ids": [
+        1,
+        4
+      ]
+    },
+    {
+      "label": "Autonomous genomics research",
+      "value": "Mythos 5 worked autonomously for over a week, compiling single-cell data for millions of cells from 138 animal species; resulting model outperformed a recent Science publication despite being 100× smaller",
+      "source_ids": [
+        1,
+        4
+      ]
+    },
+    {
+      "label": "Approved Mythos 5 institutions",
+      "value": "~200 institutions via Project Glasswing after Anthropic added 150 new institutions the week of launch",
+      "source_ids": [
+        3
+      ]
+    },
+    {
+      "label": "Subscription plan availability",
+      "value": "Fable 5 included on Pro, Max, Team, and Enterprise plans; after June 23, 2026, usage credits may be required until capacity expands",
+      "source_ids": [
+        2
+      ]
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2026-04-01",
+      "label": "Claude Mythos Preview launched via Project Glasswing",
+      "description": "Restricted release to partners including AWS, Microsoft, Apple, and CrowdStrike for cybersecurity applications.",
+      "status": "past",
+      "source_ids": [
+        2,
+        3
+      ]
+    },
+    {
+      "date": "2026-05-28",
+      "label": "Claude Opus 4.8 released",
+      "description": "Anthropic's previous flagship model, priced at $5/M input and $25/M output tokens, setting the performance baseline Fable 5 would surpass.",
+      "status": "past",
+      "source_ids": [
+        5,
+        6
+      ]
+    },
+    {
+      "date": "2026-06-02",
+      "label": "~150 new institutions added to Mythos access list",
+      "description": "Brought total authorized Project Glasswing institutions to approximately 200 ahead of the public Fable 5 launch.",
+      "status": "past",
+      "source_ids": [
+        3
+      ]
+    },
+    {
+      "date": "2026-06-09",
+      "label": "Claude Fable 5 and Claude Mythos 5 officially launched",
+      "description": "Fable 5 made publicly available; Mythos 5 restricted to Project Glasswing partners. Both priced at $10/M input and $50/M output tokens.",
+      "status": "past",
+      "source_ids": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "date": "2026-06-23",
+      "label": "Free plan inclusion period ends for Fable 5",
+      "description": "After June 23, usage credits may be required for Fable 5 access on Claude.ai subscription plans until capacity expands.",
+      "status": "upcoming",
+      "source_ids": [
+        2
+      ]
+    },
+    {
+      "date": "2026-Q3",
+      "label": "Genomics research results publication planned",
+      "description": "Anthropic plans to publish the autonomous Mythos 5 genomics research results in the coming months.",
+      "status": "upcoming",
+      "source_ids": [
+        1
+      ]
+    }
+  ],
+  "entities": [
+    {
+      "name": "Anthropic",
+      "role": "Developer and publisher of Claude Fable 5 and Mythos 5",
+      "description": null
+    },
+    {
+      "name": "Claude Fable 5",
+      "role": "New general-use Mythos-class model, publicly available",
+      "description": null
+    },
+    {
+      "name": "Claude Mythos 5",
+      "role": "Restricted Mythos-class model with reduced safety guardrails for approved partners",
+      "description": null
+    },
+    {
+      "name": "Project Glasswing",
+      "role": "US government-linked program governing Mythos 5 access for cybersecurity institutions",
+      "description": null
+    },
+    {
+      "name": "Stripe",
+      "role": "Early tester reporting major coding productivity gains with Fable 5",
+      "description": null
+    },
+    {
+      "name": "IMC",
+      "role": "Trading group confirming Fable 5 passed their trading analysis evaluations nearly across the board",
+      "description": null
+    },
+    {
+      "name": "Claude Opus 4.8",
+      "role": "Previous Anthropic flagship model; benchmark baseline and safety fallback for Fable 5",
+      "description": null
+    },
+    {
+      "name": "GPT-5.5 (OpenAI)",
+      "role": "Competitor model used in benchmark comparisons",
+      "description": null
+    },
+    {
+      "name": "Gemini 3.1 Pro (Google)",
+      "role": "Competitor model used in benchmark comparisons",
+      "description": null
+    }
+  ],
+  "reactions": [
+    {
+      "source": "Stripe (early tester)",
+      "take": "Fable 5 compressed five months of engineering work into days; completed a codebase-wide migration of a 50M-line Ruby repo in one day that would otherwise have taken a full team over two months.",
+      "source_ids": [
+        1,
+        4
+      ]
+    },
+    {
+      "source": "IMC (trading group)",
+      "take": "Fable 5 passed their trading analysis evaluations almost across the board, including factual lookup, conceptual reasoning, root-cause analysis, and expected-value analysis.",
+      "source_ids": [
+        1,
+        4
+      ]
+    },
+    {
+      "source": "Anthropic internal protein design team",
+      "take": "Mythos 5 accelerated parts of the drug design process by around 10×; the model matched or beat skilled human operators when working with protein design and bioinformatics tools without human assistance.",
+      "source_ids": [
+        1,
+        4
+      ]
+    },
+    {
+      "source": "Anthropic (on Mythos 5 scientific hypotheses)",
+      "take": "Mythos 5 is the first model to consistently produce novel, compelling scientific hypotheses; one E. coli protein mechanism hypothesis was corroborated by an independent lab working on the same problem.",
+      "source_ids": [
+        1,
+        4
+      ]
+    },
+    {
+      "source": "The Decoder",
+      "take": "Flagged that the price jump to $10/M input tokens is nearly double that of Claude Opus 4.8, and that Fable 5 is no longer included in standard subscription plans after June 22 — noting token efficiency per task remains to be determined.",
+      "source_ids": [
+        1
+      ]
+    }
+  ],
+  "why_it_matters": "Fable 5 and Mythos 5 represent a new performance tier that Anthropic claims surpasses all of its prior generally available models and key rivals in coding, scientific reasoning, and vision — with real-world validation from companies like Stripe and IMC. The dual-model strategy, separating a safety-guardrailed public model from a restricted, higher-capability research model, sets a precedent for how frontier AI labs might responsibly release increasingly powerful systems. Mythos 5's autonomous drug design and genomics results, if independently validated, could mark a concrete step toward AI-accelerated scientific discovery.",
+  "whats_next": [
+    "June 23, 2026: Fable 5's free inclusion period on Claude.ai subscription plans ends; usage credits may be required until capacity expands.",
+    "Planned expansion of Mythos 5 access beyond Project Glasswing via a broader Trusted Access Program.",
+    "Planned launch of a Trusted Access Program for biology researchers (Fable 5 without bio/chemistry safeguards).",
+    "Anthropic to publish autonomous genomics research results from Mythos 5 in the coming months.",
+    "Continued improvement of Fable 5 safety guardrails to reduce false-positive triggers below the current <5% rate.",
+    "Watch for independent benchmark validation and competitor responses from OpenAI and Google."
+  ],
+  "extras": {
+    "kind": "tech",
+    "product": "Claude Fable 5 & Claude Mythos 5",
+    "company": "Anthropic",
+    "rollout_status": "Fable 5 is available immediately on Claude.ai Pro, Max, Team, and Enterprise plans, and via the Claude API. Mythos 5 is restricted to ~200 Project Glasswing partner institutions in collaboration with the US government; a broader Trusted Access Program is planned. A Trusted Access Program for biology researchers (with bio/chemistry safeguards lifted but cyber safeguards retained) is also forthcoming.",
+    "benchmarks_or_specs": [
+      {
+        "label": "SWE-Bench Pro (Fable 5)",
+        "value": "80.3%",
+        "source_ids": [
+          1,
+          4
+        ]
+      },
+      {
+        "label": "FrontierCode / Cognition (Fable 5)",
+        "value": "29.3%",
+        "source_ids": [
+          1,
+          4
+        ]
+      },
+      {
+        "label": "ExploitBench cybersecurity (Mythos 5)",
+        "value": "78%",
+        "source_ids": [
+          1
+        ]
+      },
+      {
+        "label": "Input token price",
+        "value": "$10 per million tokens",
+        "source_ids": [
+          1,
+          4
+        ]
+      },
+      {
+        "label": "Output token price",
+        "value": "$50 per million tokens",
+        "source_ids": [
+          1,
+          4
+        ]
+      },
+      {
+        "label": "Safety safeguard trigger rate (Fable 5)",
+        "value": "Less than 5% of sessions on average",
+        "source_ids": [
+          2,
+          4
+        ]
+      },
+      {
+        "label": "Subscription plan usage weighting",
+        "value": "Counts as 2× usage on Claude.ai plans",
+        "source_ids": [
+          1
+        ]
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": 1,
+      "url": "https://the-decoder.com/anthropic-releases-claude-fable-5-and-mythos-5-with-major-gains-in-coding-and-science/",
+      "title": "Anthropic releases Claude Fable 5 and Mythos 5 with major gains in coding and science",
+      "sitename": "the-decoder.com",
+      "date": "2026-06-09"
+    },
+    {
+      "id": 2,
+      "url": "https://finance.yahoo.com/markets/crypto/articles/anthropic-claude-mythos-launches-today-142844796.html",
+      "title": "Anthropic's Claude Fable 5 and Mythos 5 Launch: What To Know",
+      "sitename": "yahoo.com",
+      "date": "2026-06-09"
+    },
+    {
+      "id": 3,
+      "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/261956436-anthropic-releases-mythos-claude-fable-5-ai-tradingkey",
+      "title": "Anthropic Releases First Public Mythos-Class Model Claude Fable 5",
+      "sitename": "tradingkey.com",
+      "date": "2026-06-09"
+    },
+    {
+      "id": 4,
+      "url": "https://www.anthropic.com/news/claude-fable-5-mythos-5",
+      "title": "Claude Fable 5 and Claude Mythos 5",
+      "sitename": "anthropic.com",
+      "date": "2026-06-09"
+    },
+    {
+      "id": 5,
+      "url": "https://www.anthropic.com/claude/opus",
+      "title": "Claude Opus",
+      "sitename": "anthropic.com",
+      "date": "2026-05-28"
+    },
+    {
+      "id": 6,
+      "url": "https://www.anthropic.com/news/claude-opus-4-8",
+      "title": "Introducing Claude Opus 4.8",
+      "sitename": "anthropic.com",
+      "date": "2026-05-28"
+    }
+  ],
+  "freshness_note": "Evidence was gathered on June 12, 2026; post-launch benchmark challenges, capacity expansion updates, or competitor responses may have emerged since."
+}

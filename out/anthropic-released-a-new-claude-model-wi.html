@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Anthropic&#39;s Claude Fable 5 Arrives as the Most Capable Public Model Yet — and Traffic Breaks Records</title>
+<title>Anthropic Launches Claude Fable 5 and Mythos 5 with Sweeping Performance Leaps</title>
 <style>
   :root {
     --bg: #faf9f7;
@@ -40,7 +40,7 @@
   .wrap { max-width: 880px; margin: 0 auto; padding: 0 24px 64px; }
 
   /* hero */
-  header.hero { padding: 44px 0 28px; border-bottom: 1px solid var(--line); }
+  header.hero { padding: 44px 0 0; }
   .badge {
     display: inline-block; font-size: 12px; font-weight: 700; letter-spacing: .08em;
     text-transform: uppercase; color: var(--accent-ink); background: var(--accent-soft);
@@ -52,17 +52,41 @@
   }
   .dek { font-size: 19px; color: var(--ink-soft); margin: 0 0 18px; line-height: 1.5; }
   .meta-row { display: flex; flex-wrap: wrap; gap: 8px 18px; font-size: 13px; color: var(--ink-faint); }
+  .hero-img { margin: 22px 0 0; }
+  .hero-img img { width: 100%; max-height: 420px; object-fit: cover; border-radius: var(--radius); box-shadow: var(--shadow); display: block; }
+  .hero-img figcaption { font-size: 12.5px; color: var(--ink-faint); margin-top: 8px; }
+
+  /* top-line stat band — the loudest facts, attached to the hero */
+  .topline {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1px;
+    background: var(--line); border: 1px solid var(--line); border-radius: var(--radius);
+    overflow: hidden; margin: 26px 0 0; box-shadow: var(--shadow);
+  }
+  .topline .cell { background: var(--surface); padding: 16px 18px 14px; }
+  .topline .value { font-family: var(--serif); font-size: 22px; font-weight: 700; line-height: 1.25; color: var(--accent-ink); }
+  .topline .label { font-size: 11.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .07em; color: var(--ink-faint); margin-top: 4px; }
 
   /* sections */
-  section { margin-top: 40px; }
+  section { margin-top: 44px; }
   h2 {
     font-size: 13px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase;
     color: var(--ink-faint); margin: 0 0 16px; display: flex; align-items: center; gap: 10px;
   }
   h2::after { content: ""; flex: 1; height: 1px; background: var(--line); }
-  .summary { font-size: 18px; line-height: 1.65; margin: 0; }
+  .summary { font-size: 18.5px; line-height: 1.65; margin: 0; font-family: var(--serif); }
 
-  /* key facts */
+  /* pull quote — the page's emotional beat */
+  .pull {
+    margin: 40px 0 0; padding: 6px 0 6px 26px; border-left: 4px solid var(--accent);
+    position: relative;
+  }
+  .pull p {
+    font-family: var(--serif); font-size: clamp(20px, 3vw, 26px); line-height: 1.4;
+    font-style: italic; margin: 0; color: var(--ink);
+  }
+  .pull cite { display: block; margin-top: 10px; font-style: normal; font-size: 14px; color: var(--accent-ink); font-weight: 600; }
+
+  /* key facts grid (the quieter details) */
   .facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 14px; }
   .fact {
     background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
@@ -120,9 +144,18 @@
   blockquote.reaction p { margin: 0; font-size: 15px; }
   blockquote.reaction cite { font-size: 13px; color: var(--ink-faint); font-style: normal; }
 
-  /* why it matters / what's next */
-  .matters { font-size: 16.5px; line-height: 1.65; background: var(--accent-soft); border-radius: var(--radius); padding: 20px 24px; margin: 0; color: var(--ink); }
-  ul.next { margin: 0; padding-left: 22px; }
+  /* closing coda: the story's ending, side by side */
+  .coda { display: grid; grid-template-columns: 1.2fr 1fr; gap: 16px; }
+  .coda .matters {
+    font-size: 16.5px; line-height: 1.65; background: var(--accent-soft);
+    border-radius: var(--radius); padding: 20px 24px; margin: 0; color: var(--ink);
+  }
+  .coda .watch {
+    background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
+    padding: 18px 22px; box-shadow: var(--shadow);
+  }
+  .coda .watch h3 { margin: 0 0 10px; font-size: 13px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-faint); }
+  ul.next { margin: 0; padding-left: 20px; font-size: 14.5px; }
   ul.next li { margin-bottom: 8px; }
 
   /* sources */
@@ -144,6 +177,7 @@
     .kv { grid-template-columns: 1fr; gap: 2px 0; }
     .kv dt { margin-top: 8px; }
     header.hero { padding-top: 30px; }
+    .coda { grid-template-columns: 1fr; }
   }
 </style>
 </head>
@@ -155,123 +189,109 @@
     <span class="badge">
 Tech · Product launch
     </span>
-    <h1>Anthropic&#39;s Claude Fable 5 Arrives as the Most Capable Public Model Yet — and Traffic Breaks Records</h1>
-    <p class="dek">The June 9 launch of Claude Fable 5 and restricted-access Mythos 5 caps a year of rapid-fire model releases and puts Anthropic on the cusp of a blockbuster IPO.</p>
+    <h1>Anthropic Launches Claude Fable 5 and Mythos 5 with Sweeping Performance Leaps</h1>
+    <p class="dek">Fable 5 claims state-of-the-art across coding, vision, and scientific research, while Mythos 5 extends AI into autonomous drug design and genomics — both at half the price of the previous Mythos Preview.</p>
     <div class="meta-row">
       <span>Topic page · generated Jun 12, 2026</span>
       <span>6 sources</span>
     </div>
+    <figure class="hero-img">
+      <img src="https://imgs.search.brave.com/qsg_0UNyRvUK29JV8jA1gdIGxreQu1SyZ1X3t1-osAw/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/c2FuaXR5LmlvL2lt/YWdlcy80enJ6b3Zi/Yi93ZWJzaXRlL2I3/MDU1MTE5NDIzNDI3/YzQwYTBlNGQ4NDA1/NGFlZDE3NjgyYjUw/YTItMjg4MHgxNjIw/LnBuZw" alt="Anthropic&#39;s official announcement of Claude Fable 5 and Claude Mythos 5, published June 9, 2026."
+           loading="lazy" onerror="this.parentElement.style.display='none'">
+      <figcaption>Anthropic&#39;s official announcement of Claude Fable 5 and Claude Mythos 5, published June 9, 2026.<sup class="cite"><a href="#src-4">[4]</a></sup></figcaption>
+    </figure>
+    <div class="topline">
+      <div class="cell">
+        <div class="value">29.3%, vs. Claude Opus 4.8 at 13.4% and GPT-5.5 at 5.7%<sup class="cite"><a href="#src-1">[1]</a><a href="#src-4">[4]</a></sup></div>
+        <div class="label">FrontierCode score (Fable 5)</div>
+      </div>
+      <div class="cell">
+        <div class="value">78%, up from 69% for Mythos Preview and 40% for Opus 4.8<sup class="cite"><a href="#src-1">[1]</a></sup></div>
+        <div class="label">ExploitBench (cybersecurity) score — Mythos 5</div>
+      </div>
+    </div>
   </header>
 
   <section>
-    <p class="summary">Anthropic released Claude Fable 5 on June 9, 2026, making it the newest generally available Claude model. It is built on the same underlying model as the restricted-access Claude Mythos 5, with safeguards that route sensitive cybersecurity, biology, chemistry, and distillation requests to Claude Opus 4.8. The launches follow a string of Opus-class upgrades across 2026—Opus 4.6 (February), 4.7 (April), and 4.8 (May)—each delivering benchmark gains in coding, agentic tasks, and professional work. Web traffic to Claude hit a record 952 million visits in May 2026, up 855% year-over-year, and the model&#39;s share of AI chatbot visits climbed from 1.6% to 9% in a single year.</p>
-  </section>
-
-  <section>
-    <h2>Key facts</h2>
-    <div class="facts">
-      <div class="fact">
-        <div class="label">Newest public model</div>
-        <div class="value">Claude Fable 5, released June 9, 2026; built on the Mythos-class architecture, sitting above Opus in Anthropic&#39;s model hierarchy.<sup class="cite"><a href="#src-2">[2]</a></sup></div>
-      </div>
-      <div class="fact">
-        <div class="label">Restricted twin</div>
-        <div class="value">Claude Mythos 5 launched the same day as Fable 5 with some safeguards lifted for approved cyberdefense and trusted-access programs (Project Glasswing).<sup class="cite"><a href="#src-2">[2]</a><a href="#src-4">[4]</a></sup></div>
-      </div>
-      <div class="fact">
-        <div class="label">Opus 4.8 fallback role</div>
-        <div class="value">Claude Opus 4.8 (released May 28, 2026) acts as a fallback for Fable 5 requests that trigger safeguards, and is the only model to complete every case on the Super-Agent benchmark end-to-end.<sup class="cite"><a href="#src-2">[2]</a><a href="#src-3">[3]</a></sup></div>
-      </div>
-      <div class="fact">
-        <div class="label">Opus 4.8 browser-agent score</div>
-        <div class="value">Scored 84% on Online-Mind2Web, described as a meaningful jump over both Opus 4.7 and GPT-5.5.<sup class="cite"><a href="#src-3">[3]</a></sup></div>
-      </div>
-      <div class="fact">
-        <div class="label">Opus 4.7 coding lift</div>
-        <div class="value">Lifted resolution by 13% over Opus 4.6 on a 93-task coding benchmark, with four tasks neither Opus 4.6 nor Sonnet 4.6 could solve.<sup class="cite"><a href="#src-4">[4]</a></sup></div>
-      </div>
-      <div class="fact">
-        <div class="label">Opus 4.6 context window</div>
-        <div class="value">First Opus-class model to feature a 1M token context window (in beta); outperformed GPT-5.2 by ~144 Elo points on the GDPval-AA knowledge-work evaluation.<sup class="cite"><a href="#src-5">[5]</a></sup></div>
-      </div>
-      <div class="fact">
-        <div class="label">Web traffic record</div>
-        <div class="value">Claude.ai received 952 million visits in May 2026, up 855.6% year-over-year and its fifth straight month of growth.<sup class="cite"><a href="#src-1">[1]</a></sup></div>
-      </div>
-      <div class="fact">
-        <div class="label">Market-share gain</div>
-        <div class="value">Claude&#39;s share of AI chatbot web visits rose from 1.6% (May 2025) to ~9% (May 2026), third behind ChatGPT and Gemini.<sup class="cite"><a href="#src-1">[1]</a></sup></div>
-      </div>
+    <h2>Where things stand</h2>
+    <p class="summary">Anthropic launched Claude Fable 5 and Claude Mythos 5 on June 9, 2026, marking the first public release of a Mythos-class model. Fable 5 is available to Pro, Max, Team, and Enterprise users and tops nearly every benchmark Anthropic tested, while Mythos 5 — sharing the same underlying model but with fewer safety restrictions — is reserved for roughly 200 approved institutions via Project Glasswing. On the SWE-Bench Pro software engineering benchmark, Fable 5 scores 80.3%, well ahead of rivals GPT-5.5 (58.6%) and Gemini 3.1 Pro (54.2%). Both models are priced at $10 per million input tokens and $50 per million output tokens — less than half the cost of Claude Mythos Preview.</p>
+    <div class="pull">
+      <p>“Fable 5 compressed five months of engineering work into days; completed a codebase-wide migration of a 50M-line Ruby repo in one day that would otherwise have taken a full team over two months.”<sup class="cite"><a href="#src-1">[1]</a><a href="#src-4">[4]</a></sup></p>
+      <cite>— Stripe (early tester)</cite>
     </div>
   </section>
 
   <section>
-    <h2>Timeline</h2>
+    <h2>How it unfolded</h2>
     <ul class="timeline">
       <li>
         <span class="tl-dot"></span>
-        <span class="tl-date">Feb 5, 2026</span>
-        <div class="tl-label">Claude Opus 4.6 released<sup class="cite"><a href="#src-5">[5]</a></sup></div>
-<p class="tl-desc">Introduced 1M token context (beta), leading benchmark scores on Terminal-Bench 2.0, Humanity&#39;s Last Exam, and GDPval-AA.</p>      </li>
-      <li>
-        <span class="tl-dot"></span>
-        <span class="tl-date">Feb 17, 2026</span>
-        <div class="tl-label">Claude Sonnet 4.6 released<sup class="cite"><a href="#src-2">[2]</a></sup></div>
-<p class="tl-desc">Sonnet upgrade for coding, computer use, long-context reasoning, agent planning, and design tasks.</p>      </li>
-      <li>
-        <span class="tl-dot"></span>
-        <span class="tl-date">Apr 16, 2026</span>
-        <div class="tl-label">Claude Opus 4.7 released<sup class="cite"><a href="#src-4">[4]</a></sup></div>
-<p class="tl-desc">Notable gains in advanced software engineering, high-resolution vision, and long-running agentic tasks; first model to ship with cyber-request safeguards.</p>      </li>
+        <span class="tl-date">Apr 1, 2026</span>
+        <div class="tl-label">Claude Mythos Preview launched via Project Glasswing<sup class="cite"><a href="#src-2">[2]</a><a href="#src-3">[3]</a></sup></div>
+<p class="tl-desc">Restricted release to partners including AWS, Microsoft, Apple, and CrowdStrike for cybersecurity applications.</p>      </li>
       <li>
         <span class="tl-dot"></span>
         <span class="tl-date">May 28, 2026</span>
-        <div class="tl-label">Claude Opus 4.8 released<sup class="cite"><a href="#src-3">[3]</a></sup></div>
-<p class="tl-desc">Fastest Opus yet (2.5× speed fast mode, 3× cheaper than prior models); only model to pass all Super-Agent benchmark cases end-to-end; 84% on Online-Mind2Web.</p>      </li>
+        <div class="tl-label">Claude Opus 4.8 released<sup class="cite"><a href="#src-5">[5]</a><a href="#src-6">[6]</a></sup></div>
+<p class="tl-desc">Anthropic&#39;s previous flagship model, priced at $5/M input and $25/M output tokens, setting the performance baseline Fable 5 would surpass.</p>      </li>
+      <li>
+        <span class="tl-dot"></span>
+        <span class="tl-date">Jun 2, 2026</span>
+        <div class="tl-label">~150 new institutions added to Mythos access list<sup class="cite"><a href="#src-3">[3]</a></sup></div>
+<p class="tl-desc">Brought total authorized Project Glasswing institutions to approximately 200 ahead of the public Fable 5 launch.</p>      </li>
       <li>
         <span class="tl-dot"></span>
         <span class="tl-date">Jun 9, 2026</span>
-        <div class="tl-label">Claude Fable 5 &amp; Mythos 5 released<sup class="cite"><a href="#src-1">[1]</a><a href="#src-2">[2]</a></sup></div>
-<p class="tl-desc">Fable 5 becomes the newest generally available Mythos-class model with safeguards; Mythos 5 launches in restricted access for trusted cyberdefense programs.</p>      </li>
+        <div class="tl-label">Claude Fable 5 and Claude Mythos 5 officially launched<sup class="cite"><a href="#src-1">[1]</a><a href="#src-2">[2]</a><a href="#src-3">[3]</a><a href="#src-4">[4]</a></sup></div>
+<p class="tl-desc">Fable 5 made publicly available; Mythos 5 restricted to Project Glasswing partners. Both priced at $10/M input and $50/M output tokens.</p>      </li>
       <li>
         <span class="tl-dot upcoming"></span>
-        <span class="tl-date">Sep 1, 2026</span>
-<span class="tl-pill">Upcoming</span>        <div class="tl-label">Anthropic IPO (expected fall 2026)<sup class="cite"><a href="#src-1">[1]</a></sup></div>
-<p class="tl-desc">Anthropic confidentially filed with the SEC; IPO could come as soon as fall 2026 after a $65B funding round valued the company at nearly $1 trillion.</p>      </li>
+        <span class="tl-date">Jun 23, 2026</span>
+<span class="tl-pill">Upcoming</span>        <div class="tl-label">Free plan inclusion period ends for Fable 5<sup class="cite"><a href="#src-2">[2]</a></sup></div>
+<p class="tl-desc">After June 23, usage credits may be required for Fable 5 access on Claude.ai subscription plans until capacity expands.</p>      </li>
+      <li>
+        <span class="tl-dot upcoming"></span>
+        <span class="tl-date">2026-Q3</span>
+<span class="tl-pill">Upcoming</span>        <div class="tl-label">Genomics research results publication planned<sup class="cite"><a href="#src-1">[1]</a></sup></div>
+<p class="tl-desc">Anthropic plans to publish the autonomous Mythos 5 genomics research results in the coming months.</p>      </li>
     </ul>
   </section>
 
   <section>
-    <h2>Who's involved</h2>
-    <div class="entities">
-      <div class="entity">
-        <span class="role">Developer and publisher of the Claude model family</span>
-        <b>Anthropic</b>
-<span class="desc">AI safety company valued at nearly $1 trillion after a $65B funding round; confidentially filed for IPO in June 2026.</span>      </div>
-      <div class="entity">
-        <span class="role">Newest generally available Mythos-class model</span>
-        <b>Claude Fable 5</b>
-<span class="desc">Released June 9, 2026; designed for difficult coding, long-horizon agents, vision, and complex research with tiered safeguards.</span>      </div>
-      <div class="entity">
-        <span class="role">Restricted-access twin of Fable 5</span>
-        <b>Claude Mythos 5</b>
-<span class="desc">Same underlying model as Fable 5 with some safeguards lifted; available only to Project Glasswing and trusted cyberdefense programs.</span>      </div>
-      <div class="entity">
-        <span class="role">Leading Opus-class model and Fable 5 safeguard fallback</span>
-        <b>Claude Opus 4.8</b>
-<span class="desc">Released May 28, 2026; first model to complete all Super-Agent benchmark cases; 84% on Online-Mind2Web.</span>      </div>
-      <div class="entity">
-        <span class="role">CEO of Anthropic</span>
-        <b>Dario Amodei</b>
-<span class="desc">Publicly objected to DoD use of Anthropic technology for mass surveillance in February 2026.</span>      </div>
-      <div class="entity">
-        <span class="role">Restricted trusted-access program for Mythos-level cybersecurity use</span>
-        <b>Project Glasswing</b>
-<span class="desc">Announced alongside Opus 4.7; provides approved cyberdefense professionals access to less-safeguarded Mythos-class models.</span>      </div>
-      <div class="entity">
-        <span class="role">Primary competitor</span>
-        <b>OpenAI / ChatGPT</b>
-<span class="desc">ChatGPT&#39;s share of AI chatbot web visits fell from 76.4% to 52.7% over the past year as Claude surged.</span>      </div>
+    <h2>The details</h2>
+    <div class="facts">
+      <div class="fact">
+        <div class="label">SWE-Bench Pro score (Fable 5)</div>
+        <div class="value">80.3%, vs. Claude Opus 4.8 at 69.2%, GPT-5.5 at 58.6%, and Gemini 3.1 Pro at 54.2%<sup class="cite"><a href="#src-1">[1]</a><a href="#src-4">[4]</a></sup></div>
+      </div>
+      <div class="fact">
+        <div class="label">Pricing</div>
+        <div class="value">$10/M input tokens and $50/M output tokens — less than half the price of Claude Mythos Preview<sup class="cite"><a href="#src-1">[1]</a><a href="#src-2">[2]</a><a href="#src-4">[4]</a></sup></div>
+      </div>
+      <div class="fact">
+        <div class="label">Drug design acceleration</div>
+        <div class="value">Mythos 5 sped up parts of the drug design process ~10×; 9 of 14 protein targets yielded strong drug design candidates<sup class="cite"><a href="#src-1">[1]</a><a href="#src-4">[4]</a></sup></div>
+      </div>
+      <div class="fact">
+        <div class="label">Real-world coding case (Stripe)</div>
+        <div class="value">Fable 5 compressed months of engineering work into days; completed a 50M-line Ruby codebase migration in one day that would have taken a full team over two months<sup class="cite"><a href="#src-1">[1]</a><a href="#src-2">[2]</a><a href="#src-4">[4]</a></sup></div>
+      </div>
+      <div class="fact">
+        <div class="label">Mythos 5 scientific hypotheses</div>
+        <div class="value">Mythos 5 molecular biology hypotheses preferred over Opus-class models ~80% of the time in blinded comparisons; one E. coli hypothesis corroborated by an independent study<sup class="cite"><a href="#src-1">[1]</a><a href="#src-4">[4]</a></sup></div>
+      </div>
+      <div class="fact">
+        <div class="label">Autonomous genomics research</div>
+        <div class="value">Mythos 5 worked autonomously for over a week, compiling single-cell data for millions of cells from 138 animal species; resulting model outperformed a recent Science publication despite being 100× smaller<sup class="cite"><a href="#src-1">[1]</a><a href="#src-4">[4]</a></sup></div>
+      </div>
+      <div class="fact">
+        <div class="label">Approved Mythos 5 institutions</div>
+        <div class="value">~200 institutions via Project Glasswing after Anthropic added 150 new institutions the week of launch<sup class="cite"><a href="#src-3">[3]</a></sup></div>
+      </div>
+      <div class="fact">
+        <div class="label">Subscription plan availability</div>
+        <div class="value">Fable 5 included on Pro, Max, Team, and Enterprise plans; after June 23, 2026, usage credits may be required until capacity expands<sup class="cite"><a href="#src-2">[2]</a></sup></div>
+      </div>
     </div>
   </section>
 
@@ -279,85 +299,131 @@ Tech · Product launch
     <h2>The rollout</h2>
     <div class="panel">
       <dl class="kv">
-        <dt>Product</dt><dd>Claude Fable 5 / Claude Mythos 5 / Claude Opus 4.8</dd>
+        <dt>Product</dt><dd>Claude Fable 5 &amp; Claude Mythos 5</dd>
         <dt>Company</dt><dd>Anthropic</dd>
-        <dt>Availability</dt><dd>Claude Fable 5 is generally available on claude.ai, the Claude API, Amazon Bedrock, Google Cloud Vertex AI, and Microsoft Foundry as of June 9, 2026. Claude Mythos 5 has restricted access for Project Glasswing and trusted-access programs only. Claude Opus 4.8 is available across all Claude products and the API at the same price as prior Opus models; fast mode is 3× cheaper than previous generations.</dd>
+        <dt>Availability</dt><dd>Fable 5 is available immediately on Claude.ai Pro, Max, Team, and Enterprise plans, and via the Claude API. Mythos 5 is restricted to ~200 Project Glasswing partner institutions in collaboration with the US government; a broader Trusted Access Program is planned. A Trusted Access Program for biology researchers (with bio/chemistry safeguards lifted but cyber safeguards retained) is also forthcoming.</dd>
       </dl>
     </div>
     <div class="panel">
       <h3>By the numbers</h3>
       <dl class="kv">
-        <dt>Online-Mind2Web (browser agent)</dt><dd>Claude Opus 4.8: 84% — meaningful jump over Opus 4.7 and GPT-5.5<sup class="cite"><a href="#src-3">[3]</a></sup></dd>
-        <dt>Super-Agent benchmark</dt><dd>Claude Opus 4.8 is the only model to complete every case end-to-end, beating prior Opus models and GPT-5.5 at cost parity<sup class="cite"><a href="#src-3">[3]</a></sup></dd>
-        <dt>Legal Agent Benchmark</dt><dd>Opus 4.8 delivers highest recorded score; first model to break 10% overall on the all-pass standard<sup class="cite"><a href="#src-3">[3]</a></sup></dd>
-        <dt>Coding benchmark (93-task)</dt><dd>Opus 4.7 lifted resolution 13% over Opus 4.6; solved 4 tasks neither Opus 4.6 nor Sonnet 4.6 could complete<sup class="cite"><a href="#src-4">[4]</a></sup></dd>
-        <dt>GDPval-AA (knowledge work)</dt><dd>Opus 4.6 outperformed GPT-5.2 by ~144 Elo points and Opus 4.5 by 190 points<sup class="cite"><a href="#src-5">[5]</a></sup></dd>
-        <dt>Opus 4.8 fast mode speed / cost</dt><dd>2.5× faster than standard mode; 3× cheaper than fast mode on prior Opus models<sup class="cite"><a href="#src-3">[3]</a></sup></dd>
-        <dt>Opus 4.8 code flaw honesty</dt><dd>~4× less likely than Opus 4.7 to let code flaws pass unremarked<sup class="cite"><a href="#src-3">[3]</a></sup></dd>
+        <dt>SWE-Bench Pro (Fable 5)</dt><dd>80.3%<sup class="cite"><a href="#src-1">[1]</a><a href="#src-4">[4]</a></sup></dd>
+        <dt>FrontierCode / Cognition (Fable 5)</dt><dd>29.3%<sup class="cite"><a href="#src-1">[1]</a><a href="#src-4">[4]</a></sup></dd>
+        <dt>ExploitBench cybersecurity (Mythos 5)</dt><dd>78%<sup class="cite"><a href="#src-1">[1]</a></sup></dd>
+        <dt>Input token price</dt><dd>$10 per million tokens<sup class="cite"><a href="#src-1">[1]</a><a href="#src-4">[4]</a></sup></dd>
+        <dt>Output token price</dt><dd>$50 per million tokens<sup class="cite"><a href="#src-1">[1]</a><a href="#src-4">[4]</a></sup></dd>
+        <dt>Safety safeguard trigger rate (Fable 5)</dt><dd>Less than 5% of sessions on average<sup class="cite"><a href="#src-2">[2]</a><a href="#src-4">[4]</a></sup></dd>
+        <dt>Subscription plan usage weighting</dt><dd>Counts as 2× usage on Claude.ai plans<sup class="cite"><a href="#src-1">[1]</a></sup></dd>
       </dl>
     </div>
+  </section>
+
+
+  <section>
+    <h2>Who's involved</h2>
+    <div class="entities">
+      <div class="entity">
+        <span class="role">Developer and publisher of Claude Fable 5 and Mythos 5</span>
+        <b>Anthropic</b>
+      </div>
+      <div class="entity">
+        <span class="role">New general-use Mythos-class model, publicly available</span>
+        <b>Claude Fable 5</b>
+      </div>
+      <div class="entity">
+        <span class="role">Restricted Mythos-class model with reduced safety guardrails for approved partners</span>
+        <b>Claude Mythos 5</b>
+      </div>
+      <div class="entity">
+        <span class="role">US government-linked program governing Mythos 5 access for cybersecurity institutions</span>
+        <b>Project Glasswing</b>
+      </div>
+      <div class="entity">
+        <span class="role">Early tester reporting major coding productivity gains with Fable 5</span>
+        <b>Stripe</b>
+      </div>
+      <div class="entity">
+        <span class="role">Trading group confirming Fable 5 passed their trading analysis evaluations nearly across the board</span>
+        <b>IMC</b>
+      </div>
+      <div class="entity">
+        <span class="role">Previous Anthropic flagship model; benchmark baseline and safety fallback for Fable 5</span>
+        <b>Claude Opus 4.8</b>
+      </div>
+      <div class="entity">
+        <span class="role">Competitor model used in benchmark comparisons</span>
+        <b>GPT-5.5 (OpenAI)</b>
+      </div>
+      <div class="entity">
+        <span class="role">Competitor model used in benchmark comparisons</span>
+        <b>Gemini 3.1 Pro (Google)</b>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>The conversation</h2>
     <div class="panel">
-      <h3>What people are saying</h3>
       <blockquote class="reaction">
-        <p>Opus 4.8 uses tools cleanly and follows instructions with the consistency needed for autonomous engineering workloads; fixes comment-verbosity and tool-calling issues seen in Opus 4.7.<sup class="cite"><a href="#src-3">[3]</a></sup></p>
-        <cite>— Devin (Cognition)</cite>
+        <p>Fable 5 passed their trading analysis evaluations almost across the board, including factual lookup, conceptual reasoning, root-cause analysis, and expected-value analysis.<sup class="cite"><a href="#src-1">[1]</a><a href="#src-4">[4]</a></sup></p>
+        <cite>— IMC (trading group)</cite>
       </blockquote>
       <blockquote class="reaction">
-        <p>Opus 4.8 unlocks a step change in agentic reasoning and multimodal strength at 61% cheaper token cost than Opus 4.7.<sup class="cite"><a href="#src-3">[3]</a></sup></p>
-        <cite>— Databricks (Genie)</cite>
+        <p>Mythos 5 accelerated parts of the drug design process by around 10×; the model matched or beat skilled human operators when working with protein design and bioinformatics tools without human assistance.<sup class="cite"><a href="#src-1">[1]</a><a href="#src-4">[4]</a></sup></p>
+        <cite>— Anthropic internal protein design team</cite>
       </blockquote>
       <blockquote class="reaction">
-        <p>Opus 4.7 was an easy upgrade: achieved the same quality at lower cost, and pushes back during technical discussions to help make better decisions.<sup class="cite"><a href="#src-4">[4]</a></sup></p>
-        <cite>— Replit</cite>
+        <p>Mythos 5 is the first model to consistently produce novel, compelling scientific hypotheses; one E. coli protein mechanism hypothesis was corroborated by an independent lab working on the same problem.<sup class="cite"><a href="#src-1">[1]</a><a href="#src-4">[4]</a></sup></p>
+        <cite>— Anthropic (on Mythos 5 scientific hypotheses)</cite>
       </blockquote>
       <blockquote class="reaction">
-        <p>Claude has benefitted from Anthropic positioning the technology as a &#39;more thoughtful, safety-forward chatbot.&#39;<sup class="cite"><a href="#src-1">[1]</a></sup></p>
-        <cite>— Comscore (via Forbes)</cite>
+        <p>Flagged that the price jump to $10/M input tokens is nearly double that of Claude Opus 4.8, and that Fable 5 is no longer included in standard subscription plans after June 22 — noting token efficiency per task remains to be determined.<sup class="cite"><a href="#src-1">[1]</a></sup></p>
+        <cite>— The Decoder</cite>
       </blockquote>
     </div>
   </section>
 
-
   <section>
-    <h2>Why it matters</h2>
-    <p class="matters">Anthropic has gone from a niche safety-focused lab to the most valuable AI startup in the world in roughly a year, with Claude&#39;s chatbot market share rising nearly sixfold. The Fable 5 / Mythos 5 launch is the first public deployment of Anthropic&#39;s most powerful model architecture, testing whether strong-capability AI can be responsibly released with tiered safeguards. With an IPO on the horizon and web traffic at all-time highs, how Anthropic manages the tension between capability and safety will set a precedent for the broader industry.</p>
-  </section>
-
-  <section>
-    <h2>What to watch next</h2>
-    <ul class="next">
-<li>Watch for broader or tiered public access to Claude Mythos 5 as Anthropic evaluates real-world deployment of Fable 5 safeguards.</li><li>Anthropic&#39;s IPO is expected as soon as fall 2026 following its confidential SEC filing — a key milestone for the entire AI sector.</li><li>Monitor whether Claude&#39;s web-traffic growth (up 360% Jan–May 2026) continues as ChatGPT&#39;s market share erodes further.</li><li>Further Opus or Mythos-class model updates are likely given Anthropic&#39;s cadence of roughly one major release every 4–6 weeks in 2026.</li><li>Outcome of Anthropic&#39;s Cyber Verification Program will shape how cyber safeguards are applied to future Mythos-class public releases.</li>    </ul>
+    <h2>The bigger picture</h2>
+    <div class="coda">
+      <p class="matters">Fable 5 and Mythos 5 represent a new performance tier that Anthropic claims surpasses all of its prior generally available models and key rivals in coding, scientific reasoning, and vision — with real-world validation from companies like Stripe and IMC. The dual-model strategy, separating a safety-guardrailed public model from a restricted, higher-capability research model, sets a precedent for how frontier AI labs might responsibly release increasingly powerful systems. Mythos 5&#39;s autonomous drug design and genomics results, if independently validated, could mark a concrete step toward AI-accelerated scientific discovery.</p>
+      <div class="watch">
+        <h3>What to watch</h3>
+        <ul class="next">
+<li>June 23, 2026: Fable 5&#39;s free inclusion period on Claude.ai subscription plans ends; usage credits may be required until capacity expands.</li><li>Planned expansion of Mythos 5 access beyond Project Glasswing via a broader Trusted Access Program.</li><li>Planned launch of a Trusted Access Program for biology researchers (Fable 5 without bio/chemistry safeguards).</li><li>Anthropic to publish autonomous genomics research results from Mythos 5 in the coming months.</li><li>Continued improvement of Fable 5 safety guardrails to reduce false-positive triggers below the current &lt;5% rate.</li><li>Watch for independent benchmark validation and competitor responses from OpenAI and Google.</li>        </ul>
+      </div>
+    </div>
   </section>
 
   <section>
     <h2>Sources</h2>
     <ol class="sources">
       <li id="src-1">
-        <a href="https://www.forbes.com/sites/conormurray/2026/06/11/claude-traffic-surges-as-anthropic-readies-blockbuster-ipo/" target="_blank" rel="noopener">Claude Web Visits Surge Before Anthropic&#39;s IPO</a>
-        <span class="src-meta">Forbes · Jun 11, 2026</span>
+        <a href="https://the-decoder.com/anthropic-releases-claude-fable-5-and-mythos-5-with-major-gains-in-coding-and-science/" target="_blank" rel="noopener">Anthropic releases Claude Fable 5 and Mythos 5 with major gains in coding and science</a>
+        <span class="src-meta">the-decoder.com · Jun 9, 2026</span>
       </li>
       <li id="src-2">
-        <a href="https://www.scriptbyai.com/anthropic-claude-timeline/" target="_blank" rel="noopener">Claude Timeline: Model Release Dates and Key Milestones (Fable 5 Released)</a>
-        <span class="src-meta">scriptbyai.com · Jun 9, 2026</span>
+        <a href="https://finance.yahoo.com/markets/crypto/articles/anthropic-claude-mythos-launches-today-142844796.html" target="_blank" rel="noopener">Anthropic&#39;s Claude Fable 5 and Mythos 5 Launch: What To Know</a>
+        <span class="src-meta">yahoo.com · Jun 9, 2026</span>
       </li>
       <li id="src-3">
-        <a href="https://www.anthropic.com/news/claude-opus-4-8" target="_blank" rel="noopener">Introducing Claude Opus 4.8</a>
-        <span class="src-meta">Anthropic · May 28, 2026</span>
+        <a href="https://www.tradingkey.com/analysis/stocks/us-stocks/261956436-anthropic-releases-mythos-claude-fable-5-ai-tradingkey" target="_blank" rel="noopener">Anthropic Releases First Public Mythos-Class Model Claude Fable 5</a>
+        <span class="src-meta">tradingkey.com · Jun 9, 2026</span>
       </li>
       <li id="src-4">
-        <a href="https://www.anthropic.com/news/claude-opus-4-7" target="_blank" rel="noopener">Introducing Claude Opus 4.7</a>
-        <span class="src-meta">Anthropic · Apr 16, 2026</span>
+        <a href="https://www.anthropic.com/news/claude-fable-5-mythos-5" target="_blank" rel="noopener">Claude Fable 5 and Claude Mythos 5</a>
+        <span class="src-meta">anthropic.com · Jun 9, 2026</span>
       </li>
       <li id="src-5">
-        <a href="https://www.anthropic.com/news/claude-opus-4-6" target="_blank" rel="noopener">Claude Opus 4.6</a>
-        <span class="src-meta">Anthropic · Feb 5, 2026</span>
+        <a href="https://www.anthropic.com/claude/opus" target="_blank" rel="noopener">Claude Opus</a>
+        <span class="src-meta">anthropic.com · May 28, 2026</span>
       </li>
       <li id="src-6">
-        <a href="https://en.wikipedia.org/wiki/Claude_(language_model)" target="_blank" rel="noopener">Claude (language model) - Wikipedia</a>
-        <span class="src-meta">Wikipedia · Jan 22, 2024</span>
+        <a href="https://www.anthropic.com/news/claude-opus-4-8" target="_blank" rel="noopener">Introducing Claude Opus 4.8</a>
+        <span class="src-meta">anthropic.com · May 28, 2026</span>
       </li>
     </ol>
-    <div class="freshness">⏱ Evidence gathered June 12, 2026; IPO timing, model access tiers, and benchmark standings may have changed since.</div>
+    <div class="freshness">⏱ Evidence was gathered on June 12, 2026; post-launch benchmark challenges, capacity expansion updates, or competitor responses may have emerged since.</div>
   </section>
 
   <footer>

@@ -1,0 +1,10 @@
+{
+  "sentence": "Anthropic released a new Claude model with major performance gains.",
+  "orchestrator": "deterministic",
+  "status": "success",
+  "finished_at": "2026-06-12T11:40:08+00:00",
+  "headline": "Anthropic Launches Claude Fable 5 and Mythos 5 with Sweeping Performance Leaps",
+  "n_documents": 6,
+  "template": "page.html.j2",
+  "out_path": "out/anthropic-released-a-new-claude-model-wi.html"
+}

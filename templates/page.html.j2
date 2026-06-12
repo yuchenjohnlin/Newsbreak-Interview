@@ -40,7 +40,7 @@
   .wrap { max-width: 880px; margin: 0 auto; padding: 0 24px 64px; }
 
   /* hero */
-  header.hero { padding: 44px 0 28px; border-bottom: 1px solid var(--line); }
+  header.hero { padding: 44px 0 0; }
   .badge {
     display: inline-block; font-size: 12px; font-weight: 700; letter-spacing: .08em;
     text-transform: uppercase; color: var(--accent-ink); background: var(--accent-soft);
@@ -56,16 +56,37 @@
   .hero-img img { width: 100%; max-height: 420px; object-fit: cover; border-radius: var(--radius); box-shadow: var(--shadow); display: block; }
   .hero-img figcaption { font-size: 12.5px; color: var(--ink-faint); margin-top: 8px; }
 
+  /* top-line stat band — the loudest facts, attached to the hero */
+  .topline {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1px;
+    background: var(--line); border: 1px solid var(--line); border-radius: var(--radius);
+    overflow: hidden; margin: 26px 0 0; box-shadow: var(--shadow);
+  }
+  .topline .cell { background: var(--surface); padding: 16px 18px 14px; }
+  .topline .value { font-family: var(--serif); font-size: 22px; font-weight: 700; line-height: 1.25; color: var(--accent-ink); }
+  .topline .label { font-size: 11.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .07em; color: var(--ink-faint); margin-top: 4px; }
+
   /* sections */
-  section { margin-top: 40px; }
+  section { margin-top: 44px; }
   h2 {
     font-size: 13px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase;
     color: var(--ink-faint); margin: 0 0 16px; display: flex; align-items: center; gap: 10px;
   }
   h2::after { content: ""; flex: 1; height: 1px; background: var(--line); }
-  .summary { font-size: 18px; line-height: 1.65; margin: 0; }
+  .summary { font-size: 18.5px; line-height: 1.65; margin: 0; font-family: var(--serif); }
 
-  /* key facts */
+  /* pull quote — the page's emotional beat */
+  .pull {
+    margin: 40px 0 0; padding: 6px 0 6px 26px; border-left: 4px solid var(--accent);
+    position: relative;
+  }
+  .pull p {
+    font-family: var(--serif); font-size: clamp(20px, 3vw, 26px); line-height: 1.4;
+    font-style: italic; margin: 0; color: var(--ink);
+  }
+  .pull cite { display: block; margin-top: 10px; font-style: normal; font-size: 14px; color: var(--accent-ink); font-weight: 600; }
+
+  /* key facts grid (the quieter details) */
   .facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 14px; }
   .fact {
     background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
@@ -123,9 +144,18 @@
   blockquote.reaction p { margin: 0; font-size: 15px; }
   blockquote.reaction cite { font-size: 13px; color: var(--ink-faint); font-style: normal; }
 
-  /* why it matters / what's next */
-  .matters { font-size: 16.5px; line-height: 1.65; background: var(--accent-soft); border-radius: var(--radius); padding: 20px 24px; margin: 0; color: var(--ink); }
-  ul.next { margin: 0; padding-left: 22px; }
+  /* closing coda: the story's ending, side by side */
+  .coda { display: grid; grid-template-columns: 1.2fr 1fr; gap: 16px; }
+  .coda .matters {
+    font-size: 16.5px; line-height: 1.65; background: var(--accent-soft);
+    border-radius: var(--radius); padding: 20px 24px; margin: 0; color: var(--ink);
+  }
+  .coda .watch {
+    background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
+    padding: 18px 22px; box-shadow: var(--shadow);
+  }
+  .coda .watch h3 { margin: 0 0 10px; font-size: 13px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-faint); }
+  ul.next { margin: 0; padding-left: 20px; font-size: 14.5px; }
   ul.next li { margin-bottom: 8px; }
 
   /* sources */
@@ -147,6 +177,7 @@
     .kv { grid-template-columns: 1fr; gap: 2px 0; }
     .kv dt { margin-top: 8px; }
     header.hero { padding-top: 30px; }
+    .coda { grid-template-columns: 1fr; }
   }
 </style>
 </head>
@@ -155,6 +186,18 @@
 <sup class="cite">{% for i in ids %}<a href="#src-{{ i }}">[{{ i }}]</a>{% endfor %}</sup>
 {%- endif -%}
 {% endmacro %}
+{# Partition facts: up to 3 short ones become the loud top-line band; the rest
+   stay in the detail grid. Synthesis orders facts most-newsworthy-first. #}
+{% set ns = namespace(band=[], grid=[], pull=none, talk=[]) %}
+{% for f in page.key_facts %}
+  {% if f.value|length <= 64 and ns.band|length < 3 %}{% set ns.band = ns.band + [f] %}
+  {% else %}{% set ns.grid = ns.grid + [f] %}{% endif %}
+{% endfor %}
+{# First punchy reaction becomes the pull quote; the rest are the conversation. #}
+{% for r in page.reactions %}
+  {% if ns.pull is none and r.take|length <= 220 %}{% set ns.pull = r %}
+  {% else %}{% set ns.talk = ns.talk + [r] %}{% endif %}
+{% endfor %}
 <body class="theme-{{ page.category }}">
 <div class="accent-bar"></div>
 <div class="wrap">
@@ -180,26 +223,31 @@
       {% endif %}
     </figure>
     {% endif %}
-  </header>
-
-  <section>
-    <p class="summary">{{ page.summary }}</p>
-  </section>
-
-  <section>
-    <h2>Key facts</h2>
-    <div class="facts">
-      {% for f in page.key_facts %}
-      <div class="fact">
-        <div class="label">{{ f.label }}</div>
+    {% if ns.band %}
+    <div class="topline">
+      {% for f in ns.band %}
+      <div class="cell">
         <div class="value">{{ f.value }}{{ cite(f.source_ids) }}</div>
+        <div class="label">{{ f.label }}</div>
       </div>
       {% endfor %}
     </div>
+    {% endif %}
+  </header>
+
+  <section>
+    <h2>Where things stand</h2>
+    <p class="summary">{{ page.summary }}</p>
+    {% if ns.pull %}
+    <div class="pull">
+      <p>“{{ ns.pull.take }}”{{ cite(ns.pull.source_ids) }}</p>
+      <cite>— {{ ns.pull.source }}</cite>
+    </div>
+    {% endif %}
   </section>
 
   <section>
-    <h2>Timeline</h2>
+    <h2>How it unfolded</h2>
     <ul class="timeline">
       {% for t in page.timeline %}
       <li>
@@ -213,15 +261,14 @@
     </ul>
   </section>
 
-  {% if page.entities %}
+  {% if ns.grid %}
   <section>
-    <h2>Who's involved</h2>
-    <div class="entities">
-      {% for e in page.entities %}
-      <div class="entity">
-        <span class="role">{{ e.role }}</span>
-        <b>{{ e.name }}</b>
-        {% if e.description %}<span class="desc">{{ e.description }}</span>{% endif %}
+    <h2>The details</h2>
+    <div class="facts">
+      {% for f in ns.grid %}
+      <div class="fact">
+        <div class="label">{{ f.label }}</div>
+        <div class="value">{{ f.value }}{{ cite(f.source_ids) }}</div>
       </div>
       {% endfor %}
     </div>
@@ -302,11 +349,26 @@
   </section>
   {% endif %}
 
-  {% if page.reactions %}
+  {% if page.entities %}
   <section>
-    <h2>Reactions &amp; fallout</h2>
+    <h2>Who's involved</h2>
+    <div class="entities">
+      {% for e in page.entities %}
+      <div class="entity">
+        <span class="role">{{ e.role }}</span>
+        <b>{{ e.name }}</b>
+        {% if e.description %}<span class="desc">{{ e.description }}</span>{% endif %}
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+  {% if ns.talk %}
+  <section>
+    <h2>The conversation</h2>
     <div class="panel">
-      {% for r in page.reactions %}
+      {% for r in ns.talk %}
       <blockquote class="reaction">
         <p>{{ r.take }}{{ cite(r.source_ids) }}</p>
         <cite>— {{ r.source }}</cite>
@@ -317,18 +379,19 @@
   {% endif %}
 
   <section>
-    <h2>Why it matters</h2>
-    <p class="matters">{{ page.why_it_matters }}</p>
+    <h2>The bigger picture</h2>
+    <div class="coda">
+      <p class="matters">{{ page.why_it_matters }}</p>
+      {% if page.whats_next %}
+      <div class="watch">
+        <h3>What to watch</h3>
+        <ul class="next">
+          {% for n in page.whats_next %}<li>{{ n }}</li>{% endfor %}
+        </ul>
+      </div>
+      {% endif %}
+    </div>
   </section>
-
-  {% if page.whats_next %}
-  <section>
-    <h2>What to watch next</h2>
-    <ul class="next">
-      {% for n in page.whats_next %}<li>{{ n }}</li>{% endfor %}
-    </ul>
-  </section>
-  {% endif %}
 
   <section>
     <h2>Sources</h2>

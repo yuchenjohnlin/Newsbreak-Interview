@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Knicks&#39; Historic Game 4 Comeback Puts Them One Win From the Title</title>
+<title>Knicks Complete Largest Comeback in NBA Finals History, Lead Spurs 3-1</title>
 <style>
   :root {
     --bg: #faf9f7;
@@ -40,7 +40,7 @@
   .wrap { max-width: 880px; margin: 0 auto; padding: 0 24px 64px; }
 
   /* hero */
-  header.hero { padding: 44px 0 28px; border-bottom: 1px solid var(--line); }
+  header.hero { padding: 44px 0 0; }
   .badge {
     display: inline-block; font-size: 12px; font-weight: 700; letter-spacing: .08em;
     text-transform: uppercase; color: var(--accent-ink); background: var(--accent-soft);
@@ -52,17 +52,41 @@
   }
   .dek { font-size: 19px; color: var(--ink-soft); margin: 0 0 18px; line-height: 1.5; }
   .meta-row { display: flex; flex-wrap: wrap; gap: 8px 18px; font-size: 13px; color: var(--ink-faint); }
+  .hero-img { margin: 22px 0 0; }
+  .hero-img img { width: 100%; max-height: 420px; object-fit: cover; border-radius: var(--radius); box-shadow: var(--shadow); display: block; }
+  .hero-img figcaption { font-size: 12.5px; color: var(--ink-faint); margin-top: 8px; }
+
+  /* top-line stat band — the loudest facts, attached to the hero */
+  .topline {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1px;
+    background: var(--line); border: 1px solid var(--line); border-radius: var(--radius);
+    overflow: hidden; margin: 26px 0 0; box-shadow: var(--shadow);
+  }
+  .topline .cell { background: var(--surface); padding: 16px 18px 14px; }
+  .topline .value { font-family: var(--serif); font-size: 22px; font-weight: 700; line-height: 1.25; color: var(--accent-ink); }
+  .topline .label { font-size: 11.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .07em; color: var(--ink-faint); margin-top: 4px; }
 
   /* sections */
-  section { margin-top: 40px; }
+  section { margin-top: 44px; }
   h2 {
     font-size: 13px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase;
     color: var(--ink-faint); margin: 0 0 16px; display: flex; align-items: center; gap: 10px;
   }
   h2::after { content: ""; flex: 1; height: 1px; background: var(--line); }
-  .summary { font-size: 18px; line-height: 1.65; margin: 0; }
+  .summary { font-size: 18.5px; line-height: 1.65; margin: 0; font-family: var(--serif); }
 
-  /* key facts */
+  /* pull quote — the page's emotional beat */
+  .pull {
+    margin: 40px 0 0; padding: 6px 0 6px 26px; border-left: 4px solid var(--accent);
+    position: relative;
+  }
+  .pull p {
+    font-family: var(--serif); font-size: clamp(20px, 3vw, 26px); line-height: 1.4;
+    font-style: italic; margin: 0; color: var(--ink);
+  }
+  .pull cite { display: block; margin-top: 10px; font-style: normal; font-size: 14px; color: var(--accent-ink); font-weight: 600; }
+
+  /* key facts grid (the quieter details) */
   .facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 14px; }
   .fact {
     background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
@@ -120,9 +144,18 @@
   blockquote.reaction p { margin: 0; font-size: 15px; }
   blockquote.reaction cite { font-size: 13px; color: var(--ink-faint); font-style: normal; }
 
-  /* why it matters / what's next */
-  .matters { font-size: 16.5px; line-height: 1.65; background: var(--accent-soft); border-radius: var(--radius); padding: 20px 24px; margin: 0; color: var(--ink); }
-  ul.next { margin: 0; padding-left: 22px; }
+  /* closing coda: the story's ending, side by side */
+  .coda { display: grid; grid-template-columns: 1.2fr 1fr; gap: 16px; }
+  .coda .matters {
+    font-size: 16.5px; line-height: 1.65; background: var(--accent-soft);
+    border-radius: var(--radius); padding: 20px 24px; margin: 0; color: var(--ink);
+  }
+  .coda .watch {
+    background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
+    padding: 18px 22px; box-shadow: var(--shadow);
+  }
+  .coda .watch h3 { margin: 0 0 10px; font-size: 13px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-faint); }
+  ul.next { margin: 0; padding-left: 20px; font-size: 14.5px; }
   ul.next li { margin-bottom: 8px; }
 
   /* sources */
@@ -144,6 +177,7 @@
     .kv { grid-template-columns: 1fr; gap: 2px 0; }
     .kv dt { margin-top: 8px; }
     header.hero { padding-top: 30px; }
+    .coda { grid-template-columns: 1fr; }
   }
 </style>
 </head>
@@ -154,141 +188,104 @@
   <header class="hero">
     <span class="badge">
 Sports · Tournament    </span>
-    <h1>Knicks&#39; Historic Game 4 Comeback Puts Them One Win From the Title</h1>
-    <p class="dek">OG Anunoby&#39;s tip-in with 1.2 seconds left capped the largest comeback in NBA Finals history, erasing a 29-point deficit to give New York a 3-1 series lead over San Antonio.</p>
+    <h1>Knicks Complete Largest Comeback in NBA Finals History, Lead Spurs 3-1</h1>
+    <p class="dek">OG Anunoby&#39;s tip-in with 1.2 seconds left capped a 29-point comeback as New York puts San Antonio on the brink of elimination.</p>
     <div class="meta-row">
       <span>Topic page · generated Jun 12, 2026</span>
-      <span>5 sources</span>
+      <span>7 sources</span>
+    </div>
+    <figure class="hero-img">
+      <img src="https://imgs.search.brave.com/qfzVKXzHlrrvCHhBFKPZ3FawtVNA5dH0QkAngpywfsE/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pY2hl/Zi5iYmNpLmNvLnVr/L2FjZS9icmFuZGVk/X3Nwb3J0LzEyMDAv/Y3BzcHJvZHBiLzlj/ZmUvbGl2ZS9lZjRh/NTkyMC02NTY3LTEx/ZjEtYTFmOS1hZmQ2/ZjNkZTljZmEuanBn" alt="OG Anunoby&#39;s tip-in with 1.2 seconds remaining sealed the Knicks&#39; record 29-point comeback win over the Spurs in Game 4 of the 2026 NBA Finals."
+           loading="lazy" onerror="this.parentElement.style.display='none'">
+      <figcaption>OG Anunoby&#39;s tip-in with 1.2 seconds remaining sealed the Knicks&#39; record 29-point comeback win over the Spurs in Game 4 of the 2026 NBA Finals.<sup class="cite"><a href="#src-1">[1]</a></sup></figcaption>
+    </figure>
+    <div class="topline">
+      <div class="cell">
+        <div class="value">Knicks 107, Spurs 106 (New York leads series 3-1)<sup class="cite"><a href="#src-1">[1]</a><a href="#src-3">[3]</a></sup></div>
+        <div class="label">Final score</div>
+      </div>
     </div>
   </header>
 
   <section>
-    <p class="summary">The New York Knicks defeated the San Antonio Spurs 107-106 on June 11, 2026, completing the largest comeback in NBA Finals history by overcoming a 29-point deficit. OG Anunoby tipped in a Jalen Brunson miss with 1.2 seconds remaining to seal the win at Madison Square Garden. The victory gives New York a 3-1 series lead and puts them one win away from their first NBA championship since 1973. Game 5 is scheduled for Saturday, June 14, at Frost Bank Center in San Antonio.</p>
-  </section>
-
-  <section>
-    <h2>Key facts</h2>
-    <div class="facts">
-      <div class="fact">
-        <div class="label">Comeback margin</div>
-        <div class="value">Largest in NBA Finals history — Knicks overcame a 29-point deficit (trailed 81-52 early in the 3rd quarter)<sup class="cite"><a href="#src-1">[1]</a><a href="#src-2">[2]</a><a href="#src-4">[4]</a></sup></div>
-      </div>
-      <div class="fact">
-        <div class="label">Final score</div>
-        <div class="value">Knicks 107, Spurs 106<sup class="cite"><a href="#src-1">[1]</a><a href="#src-4">[4]</a></sup></div>
-      </div>
-      <div class="fact">
-        <div class="label">Game-winner</div>
-        <div class="value">OG Anunoby tip-in of a Brunson miss with 1.2 seconds left<sup class="cite"><a href="#src-1">[1]</a><a href="#src-2">[2]</a><a href="#src-4">[4]</a></sup></div>
-      </div>
-      <div class="fact">
-        <div class="label">Series lead</div>
-        <div class="value">Knicks lead 3-1; one win from their first title since 1973<sup class="cite"><a href="#src-1">[1]</a><a href="#src-2">[2]</a><a href="#src-5">[5]</a></sup></div>
-      </div>
-      <div class="fact">
-        <div class="label">Brunson&#39;s line</div>
-        <div class="value">36 pts, 5 reb, 7 ast, 3 stl — 9 points in the 4th quarter<sup class="cite"><a href="#src-1">[1]</a><a href="#src-4">[4]</a></sup></div>
-      </div>
-      <div class="fact">
-        <div class="label">Anunoby&#39;s line</div>
-        <div class="value">33 pts (10-15 FG, 7-9 3PM), block on Fox, game-winning tip-in<sup class="cite"><a href="#src-1">[1]</a><a href="#src-3">[3]</a></sup></div>
-      </div>
-      <div class="fact">
-        <div class="label">Spurs&#39; record first half</div>
-        <div class="value">Spurs hit 14 3-pointers in the first half — an NBA Finals record for a half — and led 76-49 at the break<sup class="cite"><a href="#src-1">[1]</a><a href="#src-4">[4]</a></sup></div>
-      </div>
-      <div class="fact">
-        <div class="label">Previous Finals comeback record</div>
-        <div class="value">24 points, by the Boston Celtics vs. Lakers in 2008<sup class="cite"><a href="#src-2">[2]</a></sup></div>
-      </div>
-      <div class="fact">
-        <div class="label">TV viewership</div>
-        <div class="value">Game 3 averaged 23.8 million viewers — most-watched Finals Game 3 in 28 years<sup class="cite"><a href="#src-1">[1]</a></sup></div>
-      </div>
+    <h2>Where things stand</h2>
+    <p class="summary">The New York Knicks overcame a 29-point deficit to defeat the San Antonio Spurs 107-106 in Game 4 of the 2026 NBA Finals on June 11, the largest comeback in NBA Finals history. OG Anunoby tipped in a missed Jalen Brunson three-pointer with 1.2 seconds remaining to seal the win at Madison Square Garden. The Knicks now lead the best-of-seven series 3-1 and are one win away from their first championship since 1973. Game 5 is scheduled for Saturday, June 13 in San Antonio.</p>
+    <div class="pull">
+      <p>“Called the Spurs &#39;the dumbest basketball team in the history of civilisation&#39; after they blew the 29-point lead, saying San Antonio&#39;s mismanagement actively helped the Knicks win.”<sup class="cite"><a href="#src-1">[1]</a></sup></p>
+      <cite>— Charles Barkley, ESPN</cite>
     </div>
   </section>
 
   <section>
-    <h2>Timeline</h2>
+    <h2>How it unfolded</h2>
     <ul class="timeline">
       <li>
         <span class="tl-dot"></span>
-        <span class="tl-date">June 3, 2026</span>
-        <div class="tl-label">Series opener — Knicks win Game 1<sup class="cite"><a href="#src-5">[5]</a></sup></div>
-<p class="tl-desc">New York wins Game 1 in San Antonio, starting the first 2-0 road opening in Knicks franchise history.</p>      </li>
+        <span class="tl-date">Jun 3, 2026</span>
+        <div class="tl-label">Game 1: Spurs win 105-95<sup class="cite"><a href="#src-3">[3]</a></sup></div>
+      </li>
       <li>
         <span class="tl-dot"></span>
-        <span class="tl-date">Jun 7, 2026</span>
-        <div class="tl-label">Spurs avoid sweep — Game 3 win<sup class="cite"><a href="#src-1">[1]</a><a href="#src-5">[5]</a></sup></div>
-<p class="tl-desc">San Antonio wins Game 3, preventing a sweep and cutting the deficit to 2-1. Game averages 23.8 million viewers.</p>      </li>
+        <span class="tl-date">Jun 5, 2026</span>
+        <div class="tl-label">Game 2: Knicks win 105-104, even series 1-1<sup class="cite"><a href="#src-3">[3]</a></sup></div>
+      </li>
+      <li>
+        <span class="tl-dot"></span>
+        <span class="tl-date">Jun 8, 2026</span>
+        <div class="tl-label">Game 3: Spurs win 115-111, take 2-1 series lead<sup class="cite"><a href="#src-3">[3]</a></sup></div>
+      </li>
       <li>
         <span class="tl-dot"></span>
         <span class="tl-date">Jun 11, 2026</span>
-        <div class="tl-label">Game 4 — Historic 29-point comeback at MSG<sup class="cite"><a href="#src-1">[1]</a><a href="#src-2">[2]</a><a href="#src-4">[4]</a></sup></div>
-<p class="tl-desc">Trailing 81-52 in the 3rd quarter, the Knicks outscore the Spurs 58-30 in the second half. Anunoby&#39;s tip-in with 1.2 seconds left wins it 107-106.</p>      </li>
+        <div class="tl-label">Game 4: Knicks complete 29-point comeback, win 107-106; lead series 3-1<sup class="cite"><a href="#src-1">[1]</a><a href="#src-3">[3]</a><a href="#src-4">[4]</a></sup></div>
+      </li>
       <li>
         <span class="tl-dot upcoming"></span>
-        <span class="tl-date">Jun 14, 2026</span>
-<span class="tl-pill">Upcoming</span>        <div class="tl-label">Game 5 — San Antonio (8:30 ET, ABC)<sup class="cite"><a href="#src-1">[1]</a><a href="#src-4">[4]</a></sup></div>
-<p class="tl-desc">Knicks can clinch their first NBA title since 1973 at Frost Bank Center. Spurs must win to survive.</p>      </li>
+        <span class="tl-date">Jun 13, 2026</span>
+<span class="tl-pill">Upcoming</span>        <div class="tl-label">Game 5: Spurs vs. Knicks in San Antonio, 8:30 p.m. ET on ABC (elimination game for Spurs)<sup class="cite"><a href="#src-3">[3]</a><a href="#src-4">[4]</a></sup></div>
+      </li>
       <li>
         <span class="tl-dot upcoming"></span>
-        <span class="tl-date">Jun 19, 2026</span>
-<span class="tl-pill">Upcoming</span>        <div class="tl-label">Possible Game 7 (if necessary)<sup class="cite"><a href="#src-5">[5]</a></sup></div>
-<p class="tl-desc">Latest possible date for the series if it goes the distance.</p>      </li>
+        <span class="tl-date">Jun 16, 2026</span>
+<span class="tl-pill">Upcoming</span>        <div class="tl-label">Game 6 (if necessary): Knicks vs. Spurs, 8:30 p.m. ET on ABC<sup class="cite"><a href="#src-3">[3]</a></sup></div>
+      </li>
     </ul>
   </section>
 
   <section>
-    <h2>Who's involved</h2>
-    <div class="entities">
-      <div class="entity">
-        <span class="role">Eastern Conference champion; lead the series 3-1</span>
-        <b>New York Knicks</b>
+    <h2>The details</h2>
+    <div class="facts">
+      <div class="fact">
+        <div class="label">Record comeback</div>
+        <div class="value">Knicks overcame a 29-point deficit — the largest comeback in NBA Finals history, surpassing the Celtics&#39; 24-point comeback vs. Lakers in 2008<sup class="cite"><a href="#src-1">[1]</a><a href="#src-3">[3]</a></sup></div>
       </div>
-      <div class="entity">
-        <span class="role">Western Conference champion; trail 3-1</span>
-        <b>San Antonio Spurs</b>
+      <div class="fact">
+        <div class="label">Game-winner</div>
+        <div class="value">OG Anunoby tip-in with 1.2 seconds remaining gave Knicks a 107-106 lead<sup class="cite"><a href="#src-1">[1]</a><a href="#src-2">[2]</a><a href="#src-3">[3]</a></sup></div>
       </div>
-      <div class="entity">
-        <span class="role">Knicks forward; hit game-winning tip-in; series Finals MVP frontrunner (23.8 ppg)</span>
-        <b>OG Anunoby</b>
+      <div class="fact">
+        <div class="label">Halftime deficit</div>
+        <div class="value">Knicks trailed 76-49 at half — the largest halftime deficit for a home team in Finals history<sup class="cite"><a href="#src-1">[1]</a><a href="#src-6">[6]</a></sup></div>
       </div>
-      <div class="entity">
-        <span class="role">Knicks guard; 36 points in Game 4; series leader with 29.5 ppg</span>
-        <b>Jalen Brunson</b>
+      <div class="fact">
+        <div class="label">Brunson&#39;s performance</div>
+        <div class="value">Jalen Brunson led all scorers with 36 points and gave Knicks their first lead at 105-104 with 1:22 remaining<sup class="cite"><a href="#src-3">[3]</a><a href="#src-5">[5]</a><a href="#src-6">[6]</a></sup></div>
       </div>
-      <div class="entity">
-        <span class="role">Spurs center; 24 pts / 13 reb in Game 4; series leader for San Antonio (27.8 ppg)</span>
-        <b>Victor Wembanyama</b>
+      <div class="fact">
+        <div class="label">Anunoby&#39;s performance</div>
+        <div class="value">OG Anunoby scored 33 points on 10-for-15 shooting, including 7-of-9 from three, plus the game-winning tip-in and a critical block<sup class="cite"><a href="#src-2">[2]</a><a href="#src-3">[3]</a></sup></div>
       </div>
-      <div class="entity">
-        <span class="role">Knicks center; 13 pts / 10 reb in Game 4 despite early foul trouble</span>
-        <b>Karl-Anthony Towns</b>
+      <div class="fact">
+        <div class="label">Wembanyama&#39;s line</div>
+        <div class="value">Victor Wembanyama scored 24 points and grabbed 13 rebounds for San Antonio but shot 9-for-25 overall<sup class="cite"><a href="#src-1">[1]</a><a href="#src-6">[6]</a></sup></div>
       </div>
-      <div class="entity">
-        <span class="role">Knicks reserve guard; 8 key points off bench in the 4th-quarter comeback</span>
-        <b>Jose Alvarado</b>
+      <div class="fact">
+        <div class="label">Win probability</div>
+        <div class="value">With 9:33 remaining, ESPN Analytics gave the Spurs a 99.6% win probability — a 1-in-250 chance for the Knicks<sup class="cite"><a href="#src-4">[4]</a></sup></div>
       </div>
-      <div class="entity">
-        <span class="role">Spurs rookie; 21 pts in Game 4 — youngest player to score 20+ in a Finals game</span>
-        <b>Dylan Harper</b>
-      </div>
-      <div class="entity">
-        <span class="role">Spurs guard; missed layup in final seconds that Anunoby blocked to set up game-winner</span>
-        <b>De&#39;Aaron Fox</b>
-      </div>
-      <div class="entity">
-        <span class="role">Knicks head coach; replaced Tom Thibodeau before the 2025-26 season</span>
-        <b>Mike Brown</b>
-      </div>
-      <div class="entity">
-        <span class="role">Home arena for the Knicks; site of the historic Game 4</span>
-        <b>Madison Square Garden</b>
-      </div>
-      <div class="entity">
-        <span class="role">Spurs home arena; site of Game 5</span>
-        <b>Frost Bank Center</b>
+      <div class="fact">
+        <div class="label">Championship drought</div>
+        <div class="value">A Knicks title would be their first since 1973 — closing the longest gap between championships in NBA history<sup class="cite"><a href="#src-3">[3]</a><a href="#src-4">[4]</a></sup></div>
       </div>
     </div>
   </section>
@@ -297,8 +294,8 @@ Sports · Tournament    </span>
     <h2>The tournament</h2>
     <div class="panel">
       <dl class="kv">
-        <dt>Format</dt><dd>Best-of-seven series between the Eastern Conference champion New York Knicks and Western Conference champion San Antonio Spurs. The series runs June 3–19, 2026, with home-court advantage belonging to the Knicks.</dd>
-<dt>So far</dt><dd>New York Knicks lead series 3-1</dd><dt>How to watch</dt><dd>ABC (US broadcast); Game 5 tip-off at 8:30 ET on Saturday, June 14</dd>      </dl>
+        <dt>Format</dt><dd>The NBA Finals is a best-of-seven series between the Eastern Conference champion New York Knicks and Western Conference champion San Antonio Spurs. The first team to win four games claims the title.</dd>
+<dt>So far</dt><dd>New York Knicks lead series 3-1</dd><dt>How to watch</dt><dd>Games on ABC and ESPN; also streaming on fubo.</dd>      </dl>
     </div>
     <div class="panel">
       <h3>Key matches</h3>
@@ -306,33 +303,39 @@ Sports · Tournament    </span>
         <thead><tr><th>Date</th><th>Match</th><th>Venue</th><th>Result</th></tr></thead>
         <tbody>
           <tr>
-            <td>June 3, 2026</td>
+            <td>Jun 3, 2026</td>
             <td>Spurs vs. Knicks (Game 1)</td>
-            <td>Frost Bank Center, San Antonio</td>
-            <td>Knicks win</td>
+            <td>Madison Square Garden, New York</td>
+            <td>Spurs 105, Knicks 95</td>
           </tr>
           <tr>
-            <td>~June 5, 2026</td>
+            <td>Jun 5, 2026</td>
             <td>Spurs vs. Knicks (Game 2)</td>
-            <td>Frost Bank Center, San Antonio</td>
-            <td>Knicks win</td>
-          </tr>
-          <tr>
-            <td>~June 8, 2026</td>
-            <td>Knicks vs. Spurs (Game 3)</td>
             <td>Madison Square Garden, New York</td>
-            <td>Spurs win</td>
+            <td>Knicks 105, Spurs 104</td>
           </tr>
           <tr>
-            <td>June 11, 2026</td>
-            <td>Knicks vs. Spurs (Game 4)</td>
+            <td>Jun 8, 2026</td>
+            <td>Spurs vs. Knicks (Game 3)</td>
             <td>Madison Square Garden, New York</td>
-            <td>Knicks 107, Spurs 106 (OT comeback — Anunoby tip-in)</td>
+            <td>Spurs 115, Knicks 111</td>
           </tr>
           <tr>
-            <td>June 14, 2026</td>
+            <td>Jun 11, 2026</td>
+            <td>Spurs vs. Knicks (Game 4)</td>
+            <td>Madison Square Garden, New York</td>
+            <td>Knicks 107, Spurs 106 — RECORD 29-PT COMEBACK</td>
+          </tr>
+          <tr>
+            <td>Jun 13, 2026</td>
             <td>Spurs vs. Knicks (Game 5)</td>
-            <td>Frost Bank Center, San Antonio</td>
+            <td>San Antonio</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <td>Jun 16, 2026</td>
+            <td>Knicks vs. Spurs (Game 6, if necessary)</td>
+            <td>New York</td>
             <td>—</td>
           </tr>
         </tbody>
@@ -341,41 +344,146 @@ Sports · Tournament    </span>
   </section>
 
   <section>
-    <h2>Why it matters</h2>
-    <p class="matters">The Knicks are on the brink of ending a 53-year championship drought, the longest active title drought among the NBA&#39;s marquee franchises. A Game 4 performance that defied a 0.5% historical win probability — no playoff team had ever come back from 20+ down in a Finals game — cements this as one of the most dramatic moments in NBA history. For San Antonio, blowing a 29-point lead with a generational talent in Victor Wembanyama raises urgent questions about their ability to close out games at the sport&#39;s highest level.</p>
+    <h2>Who's involved</h2>
+    <div class="entities">
+      <div class="entity">
+        <span class="role">Eastern Conference champion; leads Finals 3-1</span>
+        <b>New York Knicks</b>
+      </div>
+      <div class="entity">
+        <span class="role">Western Conference champion; trails series 3-1</span>
+        <b>San Antonio Spurs</b>
+      </div>
+      <div class="entity">
+        <span class="role">Knicks forward; hit the game-winning tip-in and leads Finals MVP ladder</span>
+        <b>OG Anunoby</b>
+      </div>
+      <div class="entity">
+        <span class="role">Knicks guard; game-high 36 points, gave team first lead in fourth quarter</span>
+        <b>Jalen Brunson</b>
+      </div>
+      <div class="entity">
+        <span class="role">Spurs star; 24 pts/13 reb in Game 4, No. 3 on Finals MVP ladder</span>
+        <b>Victor Wembanyama</b>
+      </div>
+      <div class="entity">
+        <span class="role">Host venue for Games 1-4 and potential Game 6</span>
+        <b>Madison Square Garden</b>
+      </div>
+      <div class="entity">
+        <span class="role">Head coach, New York Knicks</span>
+        <b>Mike Brown</b>
+      </div>
+      <div class="entity">
+        <span class="role">Knicks center; averaging double-double in Finals, No. 2 on MVP ladder</span>
+        <b>Karl-Anthony Towns</b>
+      </div>
+      <div class="entity">
+        <span class="role">Spurs guard; 21 points in Game 4, youngest player to score 20+ in a Finals game</span>
+        <b>Dylan Harper</b>
+      </div>
+      <div class="entity">
+        <span class="role">Spurs guard; made both free throws to give Spurs 106-105 lead before Anunoby&#39;s winner</span>
+        <b>Stephon Castle</b>
+      </div>
+    </div>
   </section>
 
   <section>
-    <h2>What to watch next</h2>
-    <ul class="next">
-<li>Game 5 on Saturday, June 14 in San Antonio (8:30 ET, ABC) — Knicks can clinch their first title since 1973.</li><li>Watch whether the Spurs can replicate the same kind of historic comeback the Knicks just pulled off.</li><li>Finals MVP race: Anunoby leads but Brunson&#39;s performance in a potential closeout game could shift the vote.</li><li>If the Knicks win, monitor whether the NBA champion will receive a White House invitation given Trump&#39;s history with the league.</li><li>If the Spurs force a Game 6, the series returns to New York; a possible Game 7 would be June 19.</li>    </ul>
+    <h2>The conversation</h2>
+    <div class="panel">
+      <blockquote class="reaction">
+        <p>Said he couldn&#39;t explain the collapse: &#39;I think it&#39;s just execution, greediness of some sort. We clearly weren&#39;t the most hungry in the second half.&#39;<sup class="cite"><a href="#src-1">[1]</a></sup></p>
+        <cite>— Victor Wembanyama, San Antonio Spurs</cite>
+      </blockquote>
+      <blockquote class="reaction">
+        <p>Credited team belief: &#39;One word that caps that all is just belief. It was chipping away, one possession at a time. It wasn&#39;t going to be one play to get us back.&#39;<sup class="cite"><a href="#src-1">[1]</a></sup></p>
+        <cite>— Jalen Brunson, New York Knicks</cite>
+      </blockquote>
+      <blockquote class="reaction">
+        <p>Declared: &#39;What we witnessed in New York on Wednesday night was nothing short of the greatest comeback in NBA history.&#39;<sup class="cite"><a href="#src-4">[4]</a></sup></p>
+        <cite>— Dan Devine, Yahoo Sports</cite>
+      </blockquote>
+      <blockquote class="reaction">
+        <p>Called it &#39;the most stunning game I&#39;ve ever seen.&#39;<sup class="cite"><a href="#src-4">[4]</a></sup></p>
+        <cite>— Michael Wilbon, ESPN</cite>
+      </blockquote>
+      <blockquote class="reaction">
+        <p>Called Anunoby&#39;s putback &#39;the most iconic shot in the history of New York basketball.&#39;<sup class="cite"><a href="#src-4">[4]</a></sup></p>
+        <cite>— Mike Brown, Knicks head coach</cite>
+      </blockquote>
+      <blockquote class="reaction">
+        <p>Revealed he was shouting from the sidelines coming out of the final timeout: &#39;The offensive rebound is there! The offensive rebound is there! Somebody go!&#39;<sup class="cite"><a href="#src-4">[4]</a></sup></p>
+        <cite>— Carmelo Anthony</cite>
+      </blockquote>
+      <blockquote class="reaction">
+        <p>Simply posted: &#39;OG Anunoby is different.&#39;<sup class="cite"><a href="#src-4">[4]</a></sup></p>
+        <cite>— Jaylen Brown (via X)</cite>
+      </blockquote>
+      <blockquote class="reaction">
+        <p>Exclaimed: &#39;Knicks, you are the NBA Champs! Spurs, are you kidding me??&#39;<sup class="cite"><a href="#src-6">[6]</a></sup></p>
+        <cite>— Isaiah Thomas (via X)</cite>
+      </blockquote>
+      <blockquote class="reaction">
+        <p>Nearly fell onto the court in disbelief after Josh Hart lost control of a would-be go-ahead layup, going viral as one of the most captured fan moments of the night.<sup class="cite"><a href="#src-5">[5]</a></sup></p>
+        <cite>— Larry David, celebrity fan</cite>
+      </blockquote>
+      <blockquote class="reaction">
+        <p>The lifelong Knicks fan was caught on camera in tears in the backseat of a car on the way home after the win.<sup class="cite"><a href="#src-5">[5]</a></sup></p>
+        <cite>— Tracy Morgan, celebrity fan</cite>
+      </blockquote>
+      <blockquote class="reaction">
+        <p>56 people were taken into custody — 15 arrested, 41 given summonses — after rowdy post-game crowds took over streets near MSG, climbed on vehicles, lit fireworks, and injured 10 officers. A planned official watch party had been abruptly cancelled earlier that day amid a dispute between MSG CEO James Dolan and city officials.<sup class="cite"><a href="#src-7">[7]</a></sup></p>
+        <cite>— NYPD / CBS News New York</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <section>
+    <h2>The bigger picture</h2>
+    <div class="coda">
+      <p class="matters">The Knicks are one win away from their first NBA championship since 1973 — which would close the longest title drought in franchise history and the longest gap between championships in NBA history. The Game 4 comeback itself is already cemented as the greatest in Finals history, instantly iconic in New York sports lore. For the young Spurs, led by 22-year-old Victor Wembanyama, squandering a 29-point lead has exposed costly inexperience on the game&#39;s biggest stage at the worst possible moment.</p>
+      <div class="watch">
+        <h3>What to watch</h3>
+        <ul class="next">
+<li>Game 5 in San Antonio on Saturday, June 13 (8:30 p.m. ET, ABC/fubo) — Knicks can clinch their first championship since 1973; Spurs must win to stay alive.</li><li>Watch for Wembanyama&#39;s response: the Spurs star has been the biggest Finals factor when the series has gone San Antonio&#39;s way, and he&#39;ll need a dominant closeout-game performance to force Game 6.</li><li>Monitor NYPD presence around MSG: authorities have pledged increased security after arrests at watch parties for Games 2, 3, and 4; a potential clinching celebration could draw massive crowds.</li><li>The Finals MVP race: Anunoby leads the ladder, but Brunson and Wembanyama could leapfrog him depending on who stars in the elimination game.</li><li>If the Spurs win Game 5, the series returns to New York for Game 6 on Tuesday, June 16.</li>        </ul>
+      </div>
+    </div>
   </section>
 
   <section>
     <h2>Sources</h2>
     <ol class="sources">
       <li id="src-1">
-        <a href="https://www.nba.com/news/starting-5-june-11-2026" target="_blank" rel="noopener">Starting 5: Knicks complete epic comeback in Game 4, go up 3-1 in Finals</a>
-        <span class="src-meta">nba.com · Jun 11, 2026</span>
+        <a href="https://www.bbc.com/sport/basketball/articles/c04ylwkg67po" target="_blank" rel="noopener">NBA Finals 2026: New York Knicks beat San Antonio Spurs in record comeback</a>
+        <span class="src-meta">BBC Sport · Jun 11, 2026</span>
       </li>
       <li id="src-2">
-        <a href="https://www.bbc.com/sport/basketball/articles/c04ylwkg67po" target="_blank" rel="noopener">NBA Finals 2026: New York Knicks beat San Antonio Spurs in record comeback</a>
-        <span class="src-meta">bbc.com · Jun 11, 2026</span>
+        <a href="https://www.nba.com/news/finals-mvp-ladder-june-11-2026" target="_blank" rel="noopener">Finals MVP Ladder: OG Anunoby sprints to the top after Game 4 heroics</a>
+        <span class="src-meta">NBA.com · Jun 11, 2026</span>
       </li>
       <li id="src-3">
-        <a href="https://www.nba.com/news/finals-mvp-ladder-june-11-2026" target="_blank" rel="noopener">Finals MVP Ladder: OG Anunoby sprints to the top after Game 4 heroics</a>
-        <span class="src-meta">nba.com · Jun 11, 2026</span>
+        <a href="https://www.cbssports.com/nba/news/2026-nba-playoff-bracket-matchups-schedule/" target="_blank" rel="noopener">2026 NBA playoff bracket, schedule: Knicks stun Spurs with largest comeback in NBA Finals history</a>
+        <span class="src-meta">CBS Sports · Jun 11, 2026</span>
       </li>
       <li id="src-4">
-        <a href="https://www.nytimes.com/athletic/7349256/2026/06/10/knicks-spurs-nba-finals-game-4-score-results-takeaways/" target="_blank" rel="noopener">Knicks stage historic Game 4 comeback against Spurs, 1 win away from title</a>
-        <span class="src-meta">nytimes.com · Jun 10, 2026</span>
+        <a href="https://www.nba.com/news/what-theyre-saying-knicks-win-game-4-nba-finals" target="_blank" rel="noopener">What They&#39;re Saying: Knicks complete historic Game 4 comeback vs. Spurs</a>
+        <span class="src-meta">NBA.com · Jun 11, 2026</span>
       </li>
       <li id="src-5">
-        <a href="https://en.wikipedia.org/wiki/2026_NBA_Finals" target="_blank" rel="noopener">2026 NBA Finals - Wikipedia</a>
-        <span class="src-meta">wikipedia.org · Feb 15, 2026</span>
+        <a href="https://www.si.com/nba/finals/ranking-best-celebrity-moments-reactions-knicks-wild-game-4-comeback" target="_blank" rel="noopener">Ranking the Best Celebrity Moments and Reactions From Knicks&#39; Wild Game 4 Comeback</a>
+        <span class="src-meta">Sports Illustrated · Jun 11, 2026</span>
+      </li>
+      <li id="src-6">
+        <a href="https://sports.yahoo.com/articles/greatest-comeback-finals-history-unreal-045555612.html" target="_blank" rel="noopener">&#39;Greatest Comeback in Finals History,&#39; &#39;UNREAL&#39; — NBA Players React to Knicks&#39; Historic Win in Game 4 of Finals vs. Spurs</a>
+        <span class="src-meta">Yahoo Sports · Jun 11, 2026</span>
+      </li>
+      <li id="src-7">
+        <a href="https://www.cbsnews.com/newyork/news/knicks-game-4-crowd-arrests-near-madison-square-garden/" target="_blank" rel="noopener">More than a dozen face charges after rowdy crowd takes over streets following Knicks Game 4 NBA Finals win</a>
+        <span class="src-meta">CBS News New York · Jun 11, 2026</span>
       </li>
     </ol>
-    <div class="freshness">⏱ Evidence gathered at 2026-06-12T07:36:01+00:00, approximately 12 hours after Game 4; Game 5 results and any roster/injury updates that occur before tip-off on June 14 are not reflected here.</div>
+    <div class="freshness">⏱ Evidence gathered at 2026-06-12T08:15:14+00:00; Game 5 has not yet been played and series results or injury news may have changed since.</div>
   </section>
 
   <footer>

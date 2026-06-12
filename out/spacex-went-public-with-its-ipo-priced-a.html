@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>SpaceX Blasts Off With Record-Breaking $75 Billion IPO</title>
+<title>SpaceX Goes Public: Largest IPO in History at $135 Per Share</title>
 <style>
   :root {
     --bg: #faf9f7;
@@ -40,7 +40,7 @@
   .wrap { max-width: 880px; margin: 0 auto; padding: 0 24px 64px; }
 
   /* hero */
-  header.hero { padding: 44px 0 28px; border-bottom: 1px solid var(--line); }
+  header.hero { padding: 44px 0 0; }
   .badge {
     display: inline-block; font-size: 12px; font-weight: 700; letter-spacing: .08em;
     text-transform: uppercase; color: var(--accent-ink); background: var(--accent-soft);
@@ -52,17 +52,41 @@
   }
   .dek { font-size: 19px; color: var(--ink-soft); margin: 0 0 18px; line-height: 1.5; }
   .meta-row { display: flex; flex-wrap: wrap; gap: 8px 18px; font-size: 13px; color: var(--ink-faint); }
+  .hero-img { margin: 22px 0 0; }
+  .hero-img img { width: 100%; max-height: 420px; object-fit: cover; border-radius: var(--radius); box-shadow: var(--shadow); display: block; }
+  .hero-img figcaption { font-size: 12.5px; color: var(--ink-faint); margin-top: 8px; }
+
+  /* top-line stat band — the loudest facts, attached to the hero */
+  .topline {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1px;
+    background: var(--line); border: 1px solid var(--line); border-radius: var(--radius);
+    overflow: hidden; margin: 26px 0 0; box-shadow: var(--shadow);
+  }
+  .topline .cell { background: var(--surface); padding: 16px 18px 14px; }
+  .topline .value { font-family: var(--serif); font-size: 22px; font-weight: 700; line-height: 1.25; color: var(--accent-ink); }
+  .topline .label { font-size: 11.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .07em; color: var(--ink-faint); margin-top: 4px; }
 
   /* sections */
-  section { margin-top: 40px; }
+  section { margin-top: 44px; }
   h2 {
     font-size: 13px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase;
     color: var(--ink-faint); margin: 0 0 16px; display: flex; align-items: center; gap: 10px;
   }
   h2::after { content: ""; flex: 1; height: 1px; background: var(--line); }
-  .summary { font-size: 18px; line-height: 1.65; margin: 0; }
+  .summary { font-size: 18.5px; line-height: 1.65; margin: 0; font-family: var(--serif); }
 
-  /* key facts */
+  /* pull quote — the page's emotional beat */
+  .pull {
+    margin: 40px 0 0; padding: 6px 0 6px 26px; border-left: 4px solid var(--accent);
+    position: relative;
+  }
+  .pull p {
+    font-family: var(--serif); font-size: clamp(20px, 3vw, 26px); line-height: 1.4;
+    font-style: italic; margin: 0; color: var(--ink);
+  }
+  .pull cite { display: block; margin-top: 10px; font-style: normal; font-size: 14px; color: var(--accent-ink); font-weight: 600; }
+
+  /* key facts grid (the quieter details) */
   .facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 14px; }
   .fact {
     background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
@@ -120,9 +144,18 @@
   blockquote.reaction p { margin: 0; font-size: 15px; }
   blockquote.reaction cite { font-size: 13px; color: var(--ink-faint); font-style: normal; }
 
-  /* why it matters / what's next */
-  .matters { font-size: 16.5px; line-height: 1.65; background: var(--accent-soft); border-radius: var(--radius); padding: 20px 24px; margin: 0; color: var(--ink); }
-  ul.next { margin: 0; padding-left: 22px; }
+  /* closing coda: the story's ending, side by side */
+  .coda { display: grid; grid-template-columns: 1.2fr 1fr; gap: 16px; }
+  .coda .matters {
+    font-size: 16.5px; line-height: 1.65; background: var(--accent-soft);
+    border-radius: var(--radius); padding: 20px 24px; margin: 0; color: var(--ink);
+  }
+  .coda .watch {
+    background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
+    padding: 18px 22px; box-shadow: var(--shadow);
+  }
+  .coda .watch h3 { margin: 0 0 10px; font-size: 13px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-faint); }
+  ul.next { margin: 0; padding-left: 20px; font-size: 14.5px; }
   ul.next li { margin-bottom: 8px; }
 
   /* sources */
@@ -144,6 +177,7 @@
     .kv { grid-template-columns: 1fr; gap: 2px 0; }
     .kv dt { margin-top: 8px; }
     header.hero { padding-top: 30px; }
+    .coda { grid-template-columns: 1fr; }
   }
 </style>
 </head>
@@ -155,138 +189,121 @@
     <span class="badge">
 Tech · Product launch
     </span>
-    <h1>SpaceX Blasts Off With Record-Breaking $75 Billion IPO</h1>
-    <p class="dek">Elon Musk&#39;s rocket-and-AI conglomerate priced 555.6 million shares at $135 each on June 11, surpassing Saudi Aramco&#39;s 2019 listing to become the largest IPO in history.</p>
+    <h1>SpaceX Goes Public: Largest IPO in History at $135 Per Share</h1>
+    <p class="dek">Space Exploration Technologies Corp. raised $75 billion on Nasdaq under ticker SPCX, smashing every prior IPO record and setting up Elon Musk to become the world&#39;s first trillionaire.</p>
     <div class="meta-row">
       <span>Topic page · generated Jun 12, 2026</span>
-      <span>5 sources</span>
+      <span>6 sources</span>
+    </div>
+    <figure class="hero-img">
+      <img src="https://imgs.search.brave.com/jXGxcoAMZp-Mtj_1uox3xIbRTPXk75iSQkWclBRYkSY/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9uZXdz/LnN0b2NrdHdpdHMt/Y2RuLmNvbS9sYXJn/ZV9HZXR0eV9JbWFn/ZXNfMjI3NzcxMTU3/OV9qcGdfZmU0ZGNm/MjQ5Yi53ZWJw" alt="SpaceX Starship V3 at Starbase, Boca Chica Beach, Texas — May 22, 2026."
+           loading="lazy" onerror="this.parentElement.style.display='none'">
+      <figcaption>SpaceX Starship V3 at Starbase, Boca Chica Beach, Texas — May 22, 2026.<sup class="cite"><a href="#src-5">[5]</a></sup></figcaption>
+    </figure>
+    <div class="topline">
+      <div class="cell">
+        <div class="value">$135 per share<sup class="cite"><a href="#src-1">[1]</a><a href="#src-2">[2]</a><a href="#src-3">[3]</a><a href="#src-4">[4]</a><a href="#src-5">[5]</a></sup></div>
+        <div class="label">IPO price</div>
+      </div>
+      <div class="cell">
+        <div class="value">~$75 billion — largest IPO in U.S. history<sup class="cite"><a href="#src-1">[1]</a><a href="#src-2">[2]</a><a href="#src-5">[5]</a></sup></div>
+        <div class="label">Total raised</div>
+      </div>
+      <div class="cell">
+        <div class="value">~$1.77 trillion at IPO price<sup class="cite"><a href="#src-3">[3]</a><a href="#src-5">[5]</a></sup></div>
+        <div class="label">Company valuation</div>
+      </div>
     </div>
   </header>
 
   <section>
-    <p class="summary">SpaceX priced its IPO at $135 per share on Thursday, June 11, 2026, raising $75 billion — the largest public offering ever — at a valuation of approximately $1.75 trillion. The company&#39;s shares began trading on the Nasdaq under the ticker SPCX on Friday, June 12. The offering covered roughly 555.6 million shares, with underwriters granted an option on an additional 83.3 million shares, and up to 30% of the float was reserved for retail investors. SpaceX entered the public markets as a three-division conglomerate spanning launch infrastructure (Falcon/Starship), Starlink satellite connectivity, and the newly acquired xAI artificial-intelligence business.</p>
-  </section>
-
-  <section>
-    <h2>Key facts</h2>
-    <div class="facts">
-      <div class="fact">
-        <div class="label">IPO price</div>
-        <div class="value">$135 per share (fixed, non-range offering)<sup class="cite"><a href="#src-1">[1]</a><a href="#src-2">[2]</a><a href="#src-4">[4]</a></sup></div>
-      </div>
-      <div class="fact">
-        <div class="label">Capital raised</div>
-        <div class="value">$75 billion — largest IPO in history, eclipsing Saudi Aramco&#39;s $29.4 billion in 2019<sup class="cite"><a href="#src-1">[1]</a><a href="#src-2">[2]</a></sup></div>
-      </div>
-      <div class="fact">
-        <div class="label">Valuation at IPO</div>
-        <div class="value">~$1.75 trillion, placing SpaceX among the 10 most valuable listed companies on Earth<sup class="cite"><a href="#src-1">[1]</a><a href="#src-2">[2]</a><a href="#src-5">[5]</a></sup></div>
-      </div>
-      <div class="fact">
-        <div class="label">Ticker &amp; exchange</div>
-        <div class="value">SPCX on the Nasdaq (and Nasdaq Texas)<sup class="cite"><a href="#src-1">[1]</a><a href="#src-2">[2]</a><a href="#src-5">[5]</a></sup></div>
-      </div>
-      <div class="fact">
-        <div class="label">Shares offered</div>
-        <div class="value">555,555,555 shares, plus an overallotment option of ~83.3 million additional shares<sup class="cite"><a href="#src-1">[1]</a></sup></div>
-      </div>
-      <div class="fact">
-        <div class="label">Retail allocation</div>
-        <div class="value">~30% of IPO shares (~$22.5 billion) reserved for retail investors via Schwab, Fidelity, Robinhood, SoFi, and E-Trade<sup class="cite"><a href="#src-4">[4]</a></sup></div>
-      </div>
-      <div class="fact">
-        <div class="label">Elon Musk voting control</div>
-        <div class="value">Musk retains &gt;80% of stock voting power and controls the board post-IPO<sup class="cite"><a href="#src-1">[1]</a><a href="#src-3">[3]</a></sup></div>
-      </div>
-      <div class="fact">
-        <div class="label">FY 2025 revenue</div>
-        <div class="value">$18.67 billion (33% YoY growth); company recorded a full-year operating loss of $4.2 billion<sup class="cite"><a href="#src-3">[3]</a><a href="#src-4">[4]</a></sup></div>
-      </div>
-      <div class="fact">
-        <div class="label">Oversubscription</div>
-        <div class="value">IPO was more than four times oversubscribed ahead of pricing<sup class="cite"><a href="#src-3">[3]</a></sup></div>
-      </div>
-      <div class="fact">
-        <div class="label">xAI integration</div>
-        <div class="value">SpaceX acquired xAI (owner of X and Grok) in an all-stock merger in February 2026; xAI&#39;s AI division posted a $4.3 billion operating loss in Q1 2025<sup class="cite"><a href="#src-1">[1]</a><a href="#src-3">[3]</a><a href="#src-5">[5]</a></sup></div>
-      </div>
+    <h2>Where things stand</h2>
+    <p class="summary">SpaceX priced its IPO at $135 per share for 555.6 million Class A shares on the night of June 11, 2026, raising approximately $75 billion — the largest IPO in U.S. history, more than tripling Saudi Aramco&#39;s prior record of $24.9 billion. The $SPCX ticker went live on the Nasdaq Global Select Market and Nasdaq Texas on June 12, 2026. Total investor demand exceeded $250 billion, roughly 3.5–4x oversubscribed, with retail orders alone topping $100 billion. At the IPO price, SpaceX is valued at approximately $1.77 trillion, and Musk retains about 82% of voting power through a dual-class share structure.</p>
+    <div class="pull">
+      <p>“Called the IPO &#39;the most ambitious mission in human history&#39; opening to ordinary investors, noting that through the offering, millions of people now hold a piece of SpaceX, xAI, and X simultaneously.”<sup class="cite"><a href="#src-4">[4]</a></sup></p>
+      <cite>— Sawyer Merritt (prominent Tesla/SpaceX commentator)</cite>
     </div>
   </section>
 
   <section>
-    <h2>Timeline</h2>
+    <h2>How it unfolded</h2>
     <ul class="timeline">
       <li>
         <span class="tl-dot"></span>
         <span class="tl-date">2002</span>
-        <div class="tl-label">SpaceX founded<sup class="cite"><a href="#src-5">[5]</a></sup></div>
-<p class="tl-desc">Elon Musk founded SpaceX to reduce the cost of space access and make humanity multi-planetary.</p>      </li>
+        <div class="tl-label">SpaceX founded<sup class="cite"><a href="#src-6">[6]</a></sup></div>
+<p class="tl-desc">Elon Musk founded Space Exploration Technologies Corp. with the goal of reducing space launch costs and colonizing Mars.</p>      </li>
       <li>
         <span class="tl-dot"></span>
         <span class="tl-date">2026-02</span>
-        <div class="tl-label">xAI acquired by SpaceX<sup class="cite"><a href="#src-1">[1]</a><a href="#src-5">[5]</a></sup></div>
-<p class="tl-desc">SpaceX completed an all-stock merger with Musk&#39;s AI company xAI, valuing SpaceX at ~$1.25 trillion at the time.</p>      </li>
-      <li>
-        <span class="tl-dot"></span>
-        <span class="tl-date">Apr 1, 2026</span>
-        <div class="tl-label">Confidential S-1 draft filed with SEC<sup class="cite"><a href="#src-5">[5]</a></sup></div>
-<p class="tl-desc">SpaceX filed a confidential draft registration statement, officially beginning the IPO process.</p>      </li>
+        <div class="tl-label">SpaceX acquires xAI and X<sup class="cite"><a href="#src-6">[6]</a></sup></div>
+<p class="tl-desc">SpaceX bought xAI — Musk&#39;s AI company that owns X (formerly Twitter) — in an all-stock deal valued at ~$250 billion; xAI later rebranded as SpaceXAI.</p>      </li>
       <li>
         <span class="tl-dot"></span>
         <span class="tl-date">May 20, 2026</span>
-        <div class="tl-label">S-1 made public<sup class="cite"><a href="#src-5">[5]</a></sup></div>
-<p class="tl-desc">SpaceX&#39;s full S-1 prospectus became publicly available, disclosing financials and governance details.</p>      </li>
+        <div class="tl-label">S-1 filing made public<sup class="cite"><a href="#src-3">[3]</a><a href="#src-6">[6]</a></sup></div>
+<p class="tl-desc">SpaceX&#39;s IPO registration statement (S-1) became publicly available, disclosing financials and plans to sell ~555.6 million shares at $135 per share.</p>      </li>
+      <li>
+        <span class="tl-dot"></span>
+        <span class="tl-date">Jun 10, 2026</span>
+        <div class="tl-label">Retail indication-of-interest window closes<sup class="cite"><a href="#src-4">[4]</a></sup></div>
+<p class="tl-desc">Fidelity and other participating brokers closed their retail investor indication-of-interest windows at 4:00 PM ET.</p>      </li>
       <li>
         <span class="tl-dot"></span>
         <span class="tl-date">Jun 11, 2026</span>
-        <div class="tl-label">IPO priced at $135 per share<sup class="cite"><a href="#src-1">[1]</a><a href="#src-2">[2]</a></sup></div>
-<p class="tl-desc">SpaceX confirmed the pricing of 555.6 million shares at $135 each, raising $75 billion in the largest IPO ever.</p>      </li>
+        <div class="tl-label">IPO officially priced at $135<sup class="cite"><a href="#src-1">[1]</a><a href="#src-2">[2]</a><a href="#src-3">[3]</a><a href="#src-5">[5]</a></sup></div>
+<p class="tl-desc">SpaceX confirmed the final IPO price of $135 per share, raising ~$75 billion. Retail orders had already exceeded $100 billion.</p>      </li>
       <li>
         <span class="tl-dot"></span>
         <span class="tl-date">Jun 12, 2026</span>
-        <div class="tl-label">SPCX begins trading on Nasdaq<sup class="cite"><a href="#src-1">[1]</a><a href="#src-2">[2]</a></sup></div>
-<p class="tl-desc">SpaceX shares started trading publicly on the Nasdaq under ticker SPCX; Nasdaq and FTSE Russell fast-tracked index inclusion.</p>      </li>
+        <div class="tl-label">$SPCX begins trading on Nasdaq<sup class="cite"><a href="#src-1">[1]</a><a href="#src-4">[4]</a><a href="#src-5">[5]</a></sup></div>
+<p class="tl-desc">SpaceX shares went live on the Nasdaq Global Select Market and Nasdaq Texas under ticker SPCX, marking the historic public debut.</p>      </li>
+      <li>
+        <span class="tl-dot upcoming"></span>
+        <span class="tl-date">Jun 15, 2026</span>
+<span class="tl-pill">Upcoming</span>        <div class="tl-label">Expected offering close<sup class="cite"><a href="#src-4">[4]</a><a href="#src-5">[5]</a></sup></div>
+<p class="tl-desc">The IPO is expected to formally close, subject to standard conditions. Underwriters have 30 days from this date to exercise their option for 83.3 million additional shares.</p>      </li>
     </ul>
   </section>
 
   <section>
-    <h2>Who's involved</h2>
-    <div class="entities">
-      <div class="entity">
-        <span class="role">Issuing company; rocket, satellite internet, and AI conglomerate going public</span>
-        <b>SpaceX</b>
+    <h2>The details</h2>
+    <div class="facts">
+      <div class="fact">
+        <div class="label">Total investor demand</div>
+        <div class="value">&gt;$250 billion (~3.5–4x oversubscribed)<sup class="cite"><a href="#src-3">[3]</a><a href="#src-4">[4]</a></sup></div>
       </div>
-      <div class="entity">
-        <span class="role">CEO and founder; retains &gt;80% voting power post-IPO</span>
-        <b>Elon Musk</b>
+      <div class="fact">
+        <div class="label">Retail order demand</div>
+        <div class="value">&gt;$100 billion; up to 30% of shares reserved for retail<sup class="cite"><a href="#src-1">[1]</a><a href="#src-3">[3]</a><a href="#src-4">[4]</a><a href="#src-6">[6]</a></sup></div>
       </div>
-      <div class="entity">
-        <span class="role">AI division (owner of X and Grok) acquired by SpaceX in February 2026</span>
-        <b>xAI</b>
+      <div class="fact">
+        <div class="label">Shares offered</div>
+        <div class="value">555,555,555 Class A shares, plus 30-day underwriter option for 83.3M more<sup class="cite"><a href="#src-1">[1]</a><a href="#src-2">[2]</a><a href="#src-4">[4]</a><a href="#src-5">[5]</a></sup></div>
       </div>
-      <div class="entity">
-        <span class="role">Listing exchange for SPCX; fast-tracked index inclusion</span>
-        <b>Nasdaq</b>
+      <div class="fact">
+        <div class="label">Ticker / Exchange</div>
+        <div class="value">$SPCX on Nasdaq Global Select Market and Nasdaq Texas<sup class="cite"><a href="#src-1">[1]</a><a href="#src-4">[4]</a><a href="#src-5">[5]</a></sup></div>
       </div>
-      <div class="entity">
-        <span class="role">Previous record-holder for largest IPO ($29.4 billion in 2019), now surpassed</span>
-        <b>Saudi Aramco</b>
+      <div class="fact">
+        <div class="label">Expected offering close</div>
+        <div class="value">June 15, 2026<sup class="cite"><a href="#src-4">[4]</a><a href="#src-5">[5]</a></sup></div>
       </div>
-      <div class="entity">
-        <span class="role">SpaceX&#39;s satellite internet business; primary revenue and profit engine</span>
-        <b>Starlink</b>
+      <div class="fact">
+        <div class="label">Musk voting power post-IPO</div>
+        <div class="value">~82% of total voting power<sup class="cite"><a href="#src-1">[1]</a><a href="#src-5">[5]</a></sup></div>
       </div>
-      <div class="entity">
-        <span class="role">ChatGPT maker; also filed IPO paperwork, expected to list later in 2026</span>
-        <b>OpenAI</b>
+      <div class="fact">
+        <div class="label">Q1 2026 revenue</div>
+        <div class="value">$4.69 billion (+15% YoY); net loss of $4.28 billion<sup class="cite"><a href="#src-1">[1]</a><a href="#src-6">[6]</a></sup></div>
       </div>
-      <div class="entity">
-        <span class="role">Claude AI maker; also filed IPO paperwork, expected to list later in 2026</span>
-        <b>Anthropic</b>
+      <div class="fact">
+        <div class="label">Full-year 2025 revenue</div>
+        <div class="value">$18.67 billion (+33% YoY)<sup class="cite"><a href="#src-1">[1]</a><a href="#src-5">[5]</a></sup></div>
       </div>
-      <div class="entity">
-        <span class="role">IPO research firm providing analyst commentary on the offering</span>
-        <b>Renaissance Capital</b>
+      <div class="fact">
+        <div class="label">Addressable market estimate</div>
+        <div class="value">$28.5 trillion (company&#39;s own estimate)<sup class="cite"><a href="#src-3">[3]</a><a href="#src-5">[5]</a></sup></div>
       </div>
     </div>
   </section>
@@ -295,88 +312,148 @@ Tech · Product launch
     <h2>The rollout</h2>
     <div class="panel">
       <dl class="kv">
-        <dt>Product</dt><dd>SpaceX IPO (Ticker: SPCX)</dd>
-        <dt>Company</dt><dd>SpaceX</dd>
-        <dt>Availability</dt><dd>IPO priced June 11, 2026; shares began trading on the Nasdaq on June 12, 2026. Retail investors can access shares via Charles Schwab, Fidelity, Robinhood, SoFi, and Morgan Stanley&#39;s E-Trade. Nasdaq and FTSE Russell fast-tracked index inclusion, meaning passive index funds are required to acquire SPCX shares.</dd>
+        <dt>Product</dt><dd>SpaceX IPO (ticker: $SPCX)</dd>
+        <dt>Company</dt><dd>Space Exploration Technologies Corp. (SpaceX)</dd>
+        <dt>Availability</dt><dd>Shares went live on Nasdaq Global Select Market and Nasdaq Texas on June 12, 2026. Up to 30% of shares (~$23 billion) reserved for retail investors via brokers including Fidelity. Offering expected to close June 15, 2026. Underwriters hold a 30-day option to purchase an additional 83.3 million shares.</dd>
       </dl>
     </div>
     <div class="panel">
       <h3>By the numbers</h3>
       <dl class="kv">
-        <dt>Price-to-sales ratio (trailing)</dt><dd>~94x FY2025 revenue of $18.67 billion<sup class="cite"><a href="#src-5">[5]</a></sup></dd>
-        <dt>Starlink revenue (FY 2025)</dt><dd>$11.39 billion at 60%+ EBITDA margins<sup class="cite"><a href="#src-5">[5]</a></sup></dd>
-        <dt>Starlink subscribers</dt><dd>Past 10 million subscribers<sup class="cite"><a href="#src-5">[5]</a></sup></dd>
-        <dt>Military contracts</dt><dd>~$8 billion; SpaceX conducted 11 of 12 U.S. National Security Space Launch medium- and heavy-lift missions in 2025<sup class="cite"><a href="#src-2">[2]</a></sup></dd>
-        <dt>xAI division operating loss (Q1 2025)</dt><dd>$4.3 billion, wiping out Starlink profits<sup class="cite"><a href="#src-3">[3]</a></sup></dd>
-        <dt>Valuation growth</dt><dd>From ~$400 billion (mid-2025) → ~$1.25 trillion (Feb 2026 xAI merger) → ~$1.75 trillion (IPO)<sup class="cite"><a href="#src-5">[5]</a></sup></dd>
+        <dt>IPO price per share</dt><dd>$135.00<sup class="cite"><a href="#src-1">[1]</a><a href="#src-2">[2]</a><a href="#src-5">[5]</a></sup></dd>
+        <dt>Gross proceeds</dt><dd>~$75 billion<sup class="cite"><a href="#src-1">[1]</a><a href="#src-2">[2]</a><a href="#src-5">[5]</a></sup></dd>
+        <dt>Company valuation at IPO</dt><dd>~$1.77 trillion<sup class="cite"><a href="#src-3">[3]</a><a href="#src-5">[5]</a></sup></dd>
+        <dt>Oversubscription rate</dt><dd>~3.5–4x (~$250 billion in total demand)<sup class="cite"><a href="#src-3">[3]</a><a href="#src-4">[4]</a></sup></dd>
+        <dt>Retail share allocation</dt><dd>Up to 30% (~$23 billion)<sup class="cite"><a href="#src-4">[4]</a><a href="#src-6">[6]</a></sup></dd>
+        <dt>Hyperliquid synthetic price (pre-debut)</dt><dd>$167 — implying ~24% first-day pop<sup class="cite"><a href="#src-2">[2]</a></sup></dd>
+        <dt>Google GPU deal (Oct 2026–Jun 2029)</dt><dd>$920 million/month for ~110,000 Nvidia GPUs<sup class="cite"><a href="#src-5">[5]</a></sup></dd>
+        <dt>Starlink customers</dt><dd>~10 million across 160 countries<sup class="cite"><a href="#src-6">[6]</a></sup></dd>
       </dl>
     </div>
+  </section>
+
+
+  <section>
+    <h2>Who's involved</h2>
+    <div class="entities">
+      <div class="entity">
+        <span class="role">IPO issuer; world&#39;s dominant launch provider going public for the first time</span>
+        <b>SpaceX (Space Exploration Technologies Corp.)</b>
+<span class="desc">Founded by Elon Musk in 2002; operates Falcon 9, Starship, Starlink, and — following acquisition — xAI and X.</span>      </div>
+      <div class="entity">
+        <span class="role">Founder, CEO, and controlling shareholder (~82% voting power post-IPO)</span>
+        <b>Elon Musk</b>
+<span class="desc">Expected to become the world&#39;s first trillionaire as a result of the offering.</span>      </div>
+      <div class="entity">
+        <span class="role">Listing exchange (Nasdaq Global Select Market and Nasdaq Texas)</span>
+        <b>Nasdaq</b>
+      </div>
+      <div class="entity">
+        <span class="role">Book-running managers for the IPO</span>
+        <b>Goldman Sachs / Morgan Stanley / J.P. Morgan (lead underwriters)</b>
+<span class="desc">Led a syndicate of 10 book-runners and 13 co-managers.</span>      </div>
+      <div class="entity">
+        <span class="role">Major institutional investor; placed at least $5 billion order</span>
+        <b>BlackRock</b>
+      </div>
+      <div class="entity">
+        <span class="role">Critic; requested SEC delay the IPO over governance and valuation concerns</span>
+        <b>Sen. Elizabeth Warren</b>
+      </div>
+      <div class="entity">
+        <span class="role">SpaceX COO and major shareholder (~12.6 million shares)</span>
+        <b>Gwynne Shotwell</b>
+      </div>
+      <div class="entity">
+        <span class="role">SpaceX board member receiving 503.4 million shares (~$68 billion at IPO price)</span>
+        <b>Antonio Gracias (Valor Management)</b>
+      </div>
+      <div class="entity">
+        <span class="role">Retail brokerage offering IPO access; lowered minimum to $2,000 for this offering</span>
+        <b>Fidelity</b>
+      </div>
+      <div class="entity">
+        <span class="role">Major commercial customer; $920M/month GPU deal starting October 2026</span>
+        <b>Google (Alphabet)</b>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>The conversation</h2>
     <div class="panel">
-      <h3>What people are saying</h3>
       <blockquote class="reaction">
-        <p>Called the IPO as much a bet on Elon Musk as on the business, noting his divided attention across multiple companies as a key risk, but acknowledged many investors are &#39;sold on his vision.&#39;<sup class="cite"><a href="#src-1">[1]</a></sup></p>
-        <cite>— Angelo Bochanis, Renaissance Capital (via NPR)</cite>
+        <p>In a 12-page letter to SEC Commissioner Paul Atkins, Warren requested a delay of the IPO, arguing SpaceX&#39;s governance structure gives Musk &#39;unprecedented level of power&#39; over investors, that mandatory arbitration guts shareholder rights, and that analysts have called the valuation &#39;nonsensical&#39; and &#39;smoke-and-mirrors accounting.&#39; She also warned that passive index-fund investors could be forced into SpaceX exposure with no choice.<sup class="cite"><a href="#src-3">[3]</a></sup></p>
+        <cite>— Sen. Elizabeth Warren (D-Mass.)</cite>
       </blockquote>
       <blockquote class="reaction">
-        <p>Noted SpaceX&#39;s unusual fixed-price approach defied IPO convention, saying &#39;there&#39;s zero math that makes any sense whatsoever&#39; at the $1.77 trillion valuation.<sup class="cite"><a href="#src-4">[4]</a></sup></p>
-        <cite>— Lise Buyer, Class V Group (via CNBC)</cite>
+        <p>Told the Wall Street Journal that SpaceX is &#39;essentially closing off every possible avenue for shareholders to have any influence at all,&#39; citing the combination of supervoting shares, mandatory arbitration, stricter rules on shareholder proposals, and Texas corporate law.<sup class="cite"><a href="#src-3">[3]</a></sup></p>
+        <cite>— Ann Lipton, law professor, University of Colorado Boulder</cite>
       </blockquote>
       <blockquote class="reaction">
-        <p>Called the stock too expensive at ~90x revenue with only 15% recent revenue growth, suggesting investors buy Nvidia instead for better AI exposure.<sup class="cite"><a href="#src-2">[2]</a></sup></p>
-        <cite>— Dan Niles, portfolio manager (via Business Insider/CNBC)</cite>
+        <p>Noted that millions of retail investors now hold a piece of all three Musk ventures — SpaceX, xAI, and X — via the single public offering.<sup class="cite"><a href="#src-4">[4]</a></sup></p>
+        <cite>— Whole Mars Catalog</cite>
       </blockquote>
       <blockquote class="reaction">
-        <p>&#39;Never bet against Elon,&#39; noting he watched SpaceX grow from a rented warehouse to a $1.75 trillion valuation despite experts calling it impossible.<sup class="cite"><a href="#src-2">[2]</a></sup></p>
-        <cite>— Peter Diamandis, tech entrepreneur (via Business Insider/X)</cite>
+        <p>Priced synthetic SpaceX shares at $167 ahead of the debut, implying market participants expected roughly a 24% first-day pop from the $135 IPO price.<sup class="cite"><a href="#src-2">[2]</a></sup></p>
+        <cite>— Hyperliquid (crypto synthetic market)</cite>
       </blockquote>
       <blockquote class="reaction">
-        <p>Called these AI-related IPOs a &#39;sobering moment,&#39; warning that public markets demand profits and practical business models, not just AI potential.<sup class="cite"><a href="#src-1">[1]</a></sup></p>
-        <cite>— Songyee Yoon, Principal Venture Partners (via NPR)</cite>
+        <p>Retail sentiment around $SPCX was rated &#39;extremely bullish&#39; on the platform heading into the debut.<sup class="cite"><a href="#src-5">[5]</a></sup></p>
+        <cite>— Stocktwits retail sentiment</cite>
       </blockquote>
       <blockquote class="reaction">
-        <p>Bullish, citing three &#39;prizes&#39; SpaceX can unlock: Starlink connectivity, space-based solar compute power, and access to rare earth minerals for AI chips.<sup class="cite"><a href="#src-2">[2]</a></sup></p>
-        <cite>— Chamath Palihapitiya (via Business Insider/X)</cite>
+        <p>Placed an order to purchase at least $5 billion in SpaceX shares ahead of the IPO — nearly as much as the entire $5.5 billion Cerebras IPO earlier in 2026.<sup class="cite"><a href="#src-3">[3]</a></sup></p>
+        <cite>— BlackRock</cite>
+      </blockquote>
+      <blockquote class="reaction">
+        <p>Cautioned that &#39;space is hard&#39; — the industry is capital-intensive, delays are common, and outright failures happen — urging investors to weigh SpaceX&#39;s extraordinary engineering ambitions against very real execution risk.<sup class="cite"><a href="#src-6">[6]</a></sup></p>
+        <cite>— Kiplinger / John Miley</cite>
       </blockquote>
     </div>
   </section>
 
-
   <section>
-    <h2>Why it matters</h2>
-    <p class="matters">The SpaceX IPO is the largest in history by a wide margin, instantly making SPCX one of the most valuable publicly listed companies on Earth and forcing passive index funds — including retirement and education accounts — to acquire its shares. The listing also opens SpaceX to mandatory quarterly and annual public financial reporting for the first time, bringing unprecedented scrutiny to its high-stakes bets on reusable rocketry, global satellite internet, and artificial intelligence. With OpenAI and Anthropic expected to follow with their own trillion-dollar-plus IPOs later in 2026, the SpaceX debut is seen as a key test of whether public markets will sustain sky-high AI and space valuations.</p>
-  </section>
-
-  <section>
-    <h2>What to watch next</h2>
-    <ul class="next">
-<li>Watch SPCX&#39;s opening trading price on June 12 to gauge whether the 4x-oversubscribed demand translates into a first-day pop or swift profit-taking.</li><li>Monitor Nasdaq and FTSE Russell index rebalancing dates, which will force passive funds to buy SPCX and could create significant market volatility.</li><li>Track SpaceX&#39;s first mandatory quarterly financial report as a public company — the first true look &#39;under the hood&#39; at xAI&#39;s losses vs. Starlink&#39;s profits.</li><li>Follow OpenAI and Anthropic IPO filings, expected later in 2026, which analysts say will each target valuations above $1 trillion.</li><li>Watch for any SEC disclosure requests or market-condition changes that could affect secondary offering of the ~83.3 million overallotment shares.</li>    </ul>
+    <h2>The bigger picture</h2>
+    <div class="coda">
+      <p class="matters">SpaceX&#39;s IPO is the largest in U.S. history, more than tripling Saudi Aramco&#39;s prior record, and signals a new era of private space infrastructure entering public markets. With Starlink serving 10 million customers across 160 countries and Starship still scaling, quarterly earnings scrutiny will for the first time expose the financial trajectory of the world&#39;s dominant launch provider. The deal also raises profound governance questions — Musk&#39;s 82% voting control, mandatory arbitration clauses, and Texas corporate law give shareholders unusually limited recourse, setting a precedent that regulators and index-fund investors will be watching closely.</p>
+      <div class="watch">
+        <h3>What to watch</h3>
+        <ul class="next">
+<li>First-day trading performance of $SPCX on June 12 — whether the stock pops toward the $167 Hyperliquid synthetic price or trades near the $135 IPO price.</li><li>Potential exercise of the underwriters&#39; 30-day option to purchase an additional 83.3 million shares, which would raise a further ~$11 billion.</li><li>Formal IPO close expected June 15, 2026.</li><li>SpaceX&#39;s first quarterly earnings call as a public company — bringing Starlink growth, Starship commercial launches, and government contract revenue under public scrutiny for the first time.</li><li>Google GPU deal begins October 2026: $920 million/month contract will be a closely watched revenue line item.</li><li>Potential regulatory follow-up from the SEC following Sen. Warren&#39;s letter requesting a review of governance disclosures and index-fund exposure.</li>        </ul>
+      </div>
+    </div>
   </section>
 
   <section>
     <h2>Sources</h2>
     <ol class="sources">
       <li id="src-1">
-        <a href="https://www.npr.org/2026/06/11/nx-s1-5853199/spacex-ipo-price-elon-musk" target="_blank" rel="noopener">SpaceX blasts off with a record-breaking $75 billion IPO</a>
-        <span class="src-meta">NPR · Jun 11, 2026</span>
+        <a href="https://upstox.com/news/market-news/ipo/space-x-ipo-priced-at-135-per-share-as-retail-order-crosses-100-billion/article-195213/" target="_blank" rel="noopener">SpaceX IPO priced at $135 per share as retail order crosses $100 billion</a>
+        <span class="src-meta">upstox.com · Jun 12, 2026</span>
       </li>
       <li id="src-2">
-        <a href="https://www.businessinsider.com/spacex-ipo-live-updates-pricing-spcx-stock-2026-6" target="_blank" rel="noopener">SpaceX IPO live updates: Who&#39;s buying — and who&#39;s staying away</a>
-        <span class="src-meta">Business Insider · Jun 11, 2026</span>
+        <a href="https://techcrunch.com/2026/06/11/spacex-officially-prices-shares-at-135-in-the-largest-ipo-ever/" target="_blank" rel="noopener">SpaceX officially prices shares at $135 in the largest IPO ever</a>
+        <span class="src-meta">techcrunch.com · Jun 11, 2026</span>
       </li>
       <li id="src-3">
-        <a href="https://finance.yahoo.com/markets/stocks/articles/spacex-going-public-1-77-211107771.html" target="_blank" rel="noopener">SpaceX Is Going Public at a $1.77 Trillion Valuation. Here&#39;s What a $10,000 Investment Could Return.</a>
-        <span class="src-meta">Yahoo Finance · Jun 10, 2026</span>
+        <a href="https://www.forbes.com/sites/tylerroush/2026/06/11/spacex-cements-final-ipo-price-at-135-as-retail-investor-orders-top-100-billion-live-updates/" target="_blank" rel="noopener">SpaceX IPO: Price Officially Set At $135 As Retail Orders Top $100 Billion (Live Updates)</a>
+        <span class="src-meta">forbes.com · Jun 11, 2026</span>
       </li>
       <li id="src-4">
-        <a href="https://www.cnbc.com/2026/06/09/spacex-ipo-explained-stock-price-date.html" target="_blank" rel="noopener">SpaceX IPO explained: The price is set, but retail allocation still up in the air</a>
-        <span class="src-meta">CNBC · Jun 9, 2026</span>
+        <a href="https://www.basenor.com/blogs/news/spacex-ipo-goes-live-spcx-begins-trading-on-nasdaq" target="_blank" rel="noopener">SpaceX IPO Goes Live: $SPCX Begins Trading on Nasdaq</a>
+        <span class="src-meta">basenor.com · Jun 11, 2026</span>
       </li>
       <li id="src-5">
-        <a href="https://www.forbes.com/sites/investor-hub/article/spacex-ipo-things-to-know/" target="_blank" rel="noopener">SpaceX IPO: 8 Things To Know Before It Goes Public</a>
-        <span class="src-meta">Forbes · Jun 3, 2026</span>
+        <a href="https://stocktwits.com/news-articles/markets/equity/spacex-finalizes-blockbuster-ipo-price-at-135-per-share-raises-record-75-billion/cZKcRuCR72z" target="_blank" rel="noopener">SpaceX Finalizes Blockbuster IPO Price at $135 Per Share, Raises Record $75B — All Set to Trade on Friday</a>
+        <span class="src-meta">stocktwits.com · Jun 11, 2026</span>
+      </li>
+      <li id="src-6">
+        <a href="https://www.kiplinger.com/investing/live/spacex-ipo-spcx-stock-updates-and-commentary" target="_blank" rel="noopener">SpaceX IPO: Live Updates and Commentary</a>
+        <span class="src-meta">kiplinger.com · Jun 11, 2026</span>
       </li>
     </ol>
-    <div class="freshness">⏱ Evidence gathered June 12, 2026 at 07:37 UTC; SPCX&#39;s opening trade price, first-day performance, and final retail allocation figures may have changed since sourcing.</div>
+    <div class="freshness">⏱ Evidence gathered on June 12, 2026 at 11:42 UTC — first-day trading results, final IPO close (expected June 15), and any underwriter option exercise had not yet been reported at time of sourcing.</div>
   </section>
 
   <footer>

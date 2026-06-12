@@ -242,10 +242,27 @@ What I actually defended against (each observed or directly tested):
 GPT-5.5 sentence as "fictional — GPT-5.5 does not exist", because the event
 postdates its knowledge cutoff. For a *hot-event* system this is lethal: the
 model's parametric memory says fresh events are fake precisely because they're
-fresh. The fix is a boundary correction: **the intake LLM judges only whether
-the input is structurally a usable event description; whether the event is
-real is decided by the evidence gate** — if live search can't corroborate it
-with ≥3 usable documents, the run fails on evidence, not on a stale prior.
+fresh — and since surprisingness correlates with newsworthiness, a
+parametric-prior gate is anti-correlated with the product's entire purpose.
+The fix took three escalating layers, each verified by a recurrence:
+
+1. *Prompt*: "never reject because you don't recognize the event" — worked for
+   GPT-5.5, failed later on "SpaceX went public": the claim was too
+   counter-prior ("everyone knows SpaceX is private").
+2. *Contract*: the schema field was named `is_real_event` — the name itself
+   invites a realness judgment. Renamed to `is_usable_input` with an explicit
+   "this is NOT a fact-check" description. The small model then *motivated-
+   reasoned around it*, inventing a bogus structural pretext ("lacks a date" —
+   sentences without dates had passed before) to justify its prior.
+3. *Model*: intake moved from Haiku to Sonnet, which respects the structural-
+   only boundary. The lesson: at a gate whose failure mode is silently killing
+   the most newsworthy inputs, instruction-following strength matters more
+   than the ~$0.01/run saved by a smaller model.
+
+The boundary stands: **the intake LLM judges only whether the input is
+structurally a usable event description; whether the event is real is decided
+by the evidence gate** — if live search can't corroborate it with ≥3 usable
+documents, the run fails on evidence, not on a stale prior.
 
 **A debugging case study the artifacts made possible.** While testing deep
 mode on a viral NBA Finals game, the agent's finish summary claimed the page

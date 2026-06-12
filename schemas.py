@@ -58,9 +58,11 @@ class EvidencePack(BaseModel):
 # --------------------------------------------------------------------------
 
 class IntakePlan(BaseModel):
-    is_real_event: bool
+    is_usable_input: bool = Field(
+        description="Whether the input is STRUCTURALLY a usable event description (a concrete event claim, not a question/instruction/gibberish). This is NOT a judgment of whether the event actually happened — that is decided downstream against live web evidence."
+    )
     reject_reason: Optional[str] = Field(
-        None, description="Why the input is not a usable event description (only when is_real_event is false)."
+        None, description="Why the input is not structurally usable (only when is_usable_input is false)."
     )
     category: Optional[Category] = None
     canonical_name: Optional[str] = Field(

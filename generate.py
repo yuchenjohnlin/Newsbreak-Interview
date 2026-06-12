@@ -145,7 +145,7 @@ def run_one(sentence: str, key: str, model: str, max_docs: int, outdir: Path,
 
     plan, raw_plan = plan_intake(sentence)
     (rundir / "intake.json").write_text(json.dumps(raw_plan, indent=2, ensure_ascii=False))
-    if not plan.is_real_event:
+    if not plan.is_usable_input:
         raise GateError(f"input rejected by intake gate: {plan.reject_reason}")
     print(f"  [intake] category={plan.category} | {plan.canonical_name}")
     for q in plan.facet_queries:
