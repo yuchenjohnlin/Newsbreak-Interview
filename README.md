@@ -40,6 +40,14 @@ python generate.py --sentence "The 2026 FIFA World Cup kicks off at Estadio Azte
 python generate.py input
 ```
 
+There are two orchestrators over the same stage functions:
+
+```bash
+python generate.py ...   # deterministic: fixed stage order, predictable, cheapest
+python agent.py ...      # agentic: a manager LLM drives the stages as tools and
+                         # decides recovery (re-search, fetch more, reject) itself
+```
+
 Output lands in `out/{slug}.html`. Each run also writes per-stage debug
 artifacts to `data/runs/{slug}/` (intake plan, clipped evidence pack, raw and
 validated page JSON) so any stage can be inspected after the fact.
@@ -51,7 +59,8 @@ Useful flags: `--model` (synthesis model, default `claude-sonnet-4-6`),
 
 | File | Role |
 |---|---|
-| `generate.py` | CLI orchestrator: intake gate → search+fetch → evidence pack → LLM synthesis → render |
+| `generate.py` | Deterministic orchestrator: intake gate → search+fetch → evidence pack → LLM synthesis → render |
+| `agent.py` | Agentic orchestrator: manager LLM drives the same stages as tools, logs every decision to `data/runs/{slug}/agent_log.json` |
 | `schemas.py` | The data contracts (evidence in, `TopicPage` out) + deterministic validation gates |
 | `synthesize.py` | The two LLM calls (intake triage, page synthesis), schema-enforced via forced tool use |
 | `render.py` + `templates/page.html.j2` | Jinja render of a validated `TopicPage` to one self-contained HTML file |

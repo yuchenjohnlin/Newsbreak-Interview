@@ -63,17 +63,38 @@ deterministic render: Jinja (StrictUndefined) → out/{slug}.html
 fetching, deduping, clipping, validating, rendering — is deterministic code,
 because it must behave identically on every run to be debuggable.
 
-I considered a free-form agent tool-loop (give the LLM search/fetch tools, let
-it decide when it has enough) and rejected it: the deterministic pre-pass
-already produced 5–6 good documents per event on the first try, so the loop
-would mostly burn tokens re-deciding solved problems while making failures
-non-reproducible. The facet-query step keeps the *useful* part of agency — one
-bounded decision about what to gather — without an open loop.
+**Two orchestrators over the same stage functions.** The system was built
+deterministic-first (`generate.py`, the diagram above): fixed stage order,
+cheapest, every run reproducible. Once that spine was proven, the same stages
+were wrapped as tools and handed to a manager LLM (`agent.py`): it triages the
+input itself, plans its own searches, picks which URLs to fetch, decides when
+evidence is sufficient, and reacts to failures (bot-blocked fetches → fetch
+other candidates; thin coverage → search again; uncorroborated core claim →
+reject with a user-facing reason). Tools return **structured errors as data**
+(rate-limited, bot-blocked, gate-failed, validation-failed with details), so
+recovery is an explicit model decision rather than a hidden retry loop.
+
+Two rules keep the agentic mode disciplined:
+
+- **Handles, not payloads.** Fetched page text never enters the manager's
+  conversation. Documents live in deterministic run state under `doc_id`s; the
+  agent sees only metadata (site, publish date, char count, error) and routes
+  ids. The data path stays validated end-to-end, and the loop stays cheap.
+- **Gates don't move.** The same pydantic contracts and validation gates sit
+  under both orchestrators; the agent decides *what to do next*, never *what
+  counts as valid*. A bounded turn budget (`--max-turns`) caps cost.
+
+Observed in testing: the deterministic run and the agent run produced
+equally-cited pages for the same event, but the agent chose a different,
+entirely un-blocked source set on its first pass (it reads snippets before
+committing to fetches) and rejected a prompt-injection input in one turn
+without spending a single tool call.
 
 **Observability**: every stage writes its artifact to `data/runs/{slug}/`
-(`intake.json`, `evidence.json`, `page_raw.json`, `page.json`). When a run
-fails, the artifacts show exactly which boundary it died at and what the LLM
-actually saw and said.
+(`intake.json`, `evidence.json`, `page_raw.json`, `page.json`); agent runs
+additionally log every tool call with inputs and results to `agent_log.json`.
+When a run fails, the artifacts show exactly which boundary it died at and
+what the LLM actually saw and said.
 
 ## 3. Prompt & data contract
 
@@ -194,12 +215,12 @@ can re-run, inspect mid-flight, and extend.
 1. **Claim–source entailment check** — after synthesis, a cheap-model pass
    verifying each key fact against its cited document's text; flag or drop
    non-entailed claims. Directly attacks the biggest open hallucination hole.
-2. **Manager/workflow agent** — today, stage failures end the run with
-   artifacts. A supervisor LLM could *read* those artifacts and choose recovery
-   (reformulate queries when evidence is thin, re-fetch when a key source
-   blocked, downgrade to a sparser page) — turning the pipeline into a system
-   that handles its own errors. The gates and artifacts were designed as its
-   hooks; deliberately not built until the deterministic spine was proven.
+2. **Harden the manager agent** — the v1 manager (`agent.py`) handles
+   recovery within a run. Next: failure-type-specific playbooks (paywall vs.
+   thin coverage vs. contradictory evidence), letting it downgrade to a
+   sparser page layout when evidence is structurally weak, and an eval
+   harness comparing agent vs. deterministic runs on cost, latency, and page
+   quality to decide which mode should be the production default.
 3. **Regeneration loop** — `--refresh` re-running search/fetch on an existing
    topic, diffing the new evidence pack, updating only changed sections; hot
    events change hourly, and this is also the fast iteration loop for schema
