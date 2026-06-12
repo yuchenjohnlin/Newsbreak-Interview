@@ -16,7 +16,7 @@ Design rationale, schemas, and failure-mode analysis: [DESIGN.md](DESIGN.md).
 Python 3.10+.
 
 ```bash
-pip install requests python-dotenv trafilatura pydantic jinja2 anthropic
+pip install -r requirements.txt
 cp .env.example .env   # then fill in the two required keys
 ```
 
@@ -79,6 +79,7 @@ clips the evidence pack, and asks the model to cite source IDs from that pack.
 | `schemas.py` | The data contracts (evidence in, `TopicPage` out) + deterministic validation gates |
 | `synthesize.py` | The two LLM calls (intake triage, page synthesis), schema-enforced via forced tool use |
 | `render.py` + `templates/page.html.j2` | Jinja render of a validated `TopicPage` to one self-contained HTML file |
+| `rerender.py` | Re-render pages from stored `data/runs/{slug}/page.json` — zero API calls; the template iteration loop |
 | `fetch_content.py` | URL fetching + article extraction (trafilatura), over-fetch walk-down |
 | `probe_search.py` | Exploration tool: compare Brave / SerpAPI / Tavily / Perplexity on the same queries |
 | `input` | The three example event sentences |

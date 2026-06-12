@@ -331,3 +331,29 @@ can re-run, inspect mid-flight, and extend.
    callers behind one normalized interface, so "fan-site sources for the
    casual profile, stats APIs for the analyst profile" is tool registration,
    not re-architecture.
+7. **Codebase reorganization** — the flat eight-module layout was the right
+   call for this scope (every file visible at the repo root, no indirection),
+   but it's at its limit. Target: a `topicgen/` package splitting `schemas/`
+   (input vs. output contracts), `retrieval/` (search + fetch tools behind
+   the registry interface from #6), `orchestrators/` (deterministic, agent),
+   and — most valuable — **prompts moved out of string constants into
+   versioned template files**, so prompt changes show up in diffs and reviews
+   the same way code changes do. The intake-gate saga (§5) was effectively
+   prompt engineering debugged through git history; first-class prompt files
+   would have made it cheaper.
+8. **Service-grade stack** — single-process Python scripts emitting static
+   HTML is a deliberate fit for the brief (no hosting, reviewers open files).
+   The production shape is: a FastAPI service wrapping the orchestrators, a
+   job queue for concurrent generations (one hot event triggers many editors),
+   and a TypeScript/React frontend once pages need what static HTML can't do —
+   live updates, client-side freshness re-checks, interactive timelines. The
+   pydantic schemas are the contract the TS types would be generated from.
+9. **Richer media: more images, video** — today each page gets one hero image
+   from search-result thumbnails. Visual content plus a tailored headline is
+   the appeal unit readers actually click; next steps in order: per-section
+   images (Brave's image-search endpoint as a second registered tool), video
+   embeds (YouTube results already surface in web search for sports/show
+   events), and a selection policy upgraded from "most central source's
+   thumbnail" to "image of the most viral content". Needs a licensing/
+   attribution gate before production use — committed thumbnails are
+   hotlinked, which is fine for a demo and not for a product.
