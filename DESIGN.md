@@ -43,7 +43,12 @@ block and its own visual treatment (accent color, section layout):
 re-running regenerates), original image sourcing beyond search thumbnails
 (licensing + fetch complexity), user comments/social embeds, more than three
 categories (each new category must earn its template, not get a generic
-fallback).
+fallback), and **audience-tailored pages** — the same event rendered
+differently for different reader segments (casual fan vs. stats-head; punchy
+vs. sober headline; denser vs. lighter layout). I find this direction genuinely
+promising and the architecture anticipates it (see §7), but the brief
+explicitly de-scopes accounts/personalization and rewards one polished
+example over breadth, so it was considered and cut.
 
 ## 2. System architecture
 
@@ -119,12 +124,30 @@ additionally log every tool call with inputs and results to `agent_log.json`.
 When a run fails, the artifacts show exactly which boundary it died at and
 what the LLM actually saw and said.
 
+**Storage layer**: storage today is deliberately just those JSON files on
+disk — one directory per topic, schema-validated on write, greppable and
+diffable, zero infrastructure (the brief explicitly de-scopes persistence).
+That is a real storage layer, not an accident: the evidence pack is fetched
+once and re-read by every downstream consumer. A database is *not* the next
+step until one of three triggers appears: cross-topic queries (entity
+correlation across stored packs), refresh loops that diff evidence over time
+for the same topic, or concurrent multi-user generation. When one does, the
+migration path is SQLite first (same single-file ergonomics, adds indexing
+and transactions; the pydantic schemas become the table contracts) — not a
+hosted database, which this workload doesn't justify.
+
 ## 3. Prompt & data contract
 
 Two pydantic schemas are the system's spine (`schemas.py`):
 
 - **`EvidencePack`** (input contract): the sentence, category, and N clipped
   documents each carrying `source_id`, url, sitename, publish date, text.
+  This schema doubles as the system's **storage boundary**: web fetching is
+  expensive, rate-limited and non-reproducible, so it happens exactly once
+  per run — everything downstream (synthesis, retries, re-renders, debugging)
+  reads the persisted pack, never the live web. The schema is also *why* the
+  input arrives clean: it keeps only the critical fields (provenance, dates,
+  clipped text) and discards the raw-HTML noise at the boundary.
 - **`TopicPage`** (output contract): shared core + `extras`, a **discriminated
   union** (`TechExtras | ShowExtras | SportsExtras`, discriminated on `kind`).
   This is the answer to "survives three very different event types without
@@ -173,6 +196,11 @@ prompt and inputs in my logs.
 Search gives snippets, not evidence — so a fetch layer (`fetch_content.py`)
 downloads each hit and extracts the main article text with **trafilatura**
 (clean body text + title/author/publish date, boilerplate stripped).
+
+Note: the LLM's built-in web-search tool is never enabled. All retrieval goes
+through our own tools, so every piece of text the synthesis model sees is in
+`evidence.json` — any page content can be traced (or shown to be untraceable)
+to a fetched document, which is what makes the citation gate meaningful.
 
 - **Citations**: documents are numbered into the evidence pack; the schema
   forces per-claim `source_ids`; the validator guarantees they resolve; the
@@ -273,4 +301,16 @@ can re-run, inspect mid-flight, and extend.
 5. **Cross-topic correlation** — the feature I cut from v1: related-event links
    ("GPT-5.5 ↔ the GPT-4o deprecation backlash") mined from shared entities
    across stored evidence packs, giving readers the bigger picture across
-   pages, not just within one.
+   pages, not just within one. This is also the first trigger that would
+   justify moving the JSON storage layer to SQLite (§2).
+6. **Audience-tailored variants via a flexible tool registry** — the cut
+   personalization direction (§1), done as segment presets rather than
+   per-user customization: a "reader profile" (casual / enthusiast / analyst)
+   that selects the template (the `--template` flag already proves layout
+   swapping), tunes headline register and section density in the synthesis
+   prompt, and — the structural piece — gives the manager agent a *registry*
+   of retrieval tools instead of one hardwired Brave call. The seams exist
+   today: `probe_search.py` already implements SerpAPI/Tavily/Perplexity
+   callers behind one normalized interface, so "fan-site sources for the
+   casual profile, stats APIs for the analyst profile" is tool registration,
+   not re-architecture.
